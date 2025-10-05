@@ -8,7 +8,7 @@ import CardActions from '@mui/material/CardActions';
 import Button from '@mui/material/Button';
 import Box from '@mui/system/Box';
 import homepageTheme from './theme';
-import { IconButton, ThemeProvider } from '@mui/material';
+import { CssBaseline, IconButton, ThemeProvider } from '@mui/material';
 import Container from '@mui/system/Container';
 
 import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
@@ -21,17 +21,18 @@ function App() {
   return (
     <>
     <ThemeProvider theme={homeTheme}>
+    <CssBaseline />
     <Container id="homepage" maxWidth={false} disableGutters>
-        <Card sx={{ width: 1, height: 1 }}>
+        <Card sx={{ p: 5, mb: 10 }}>
             <CardContent color="secondary" sx={{ }}>
-                <Typography gutterBottom color="primary" sx={{ fontSize: 52 }}>
+                <Typography color="primary" sx={{ fontSize: 52 }}>
                     Zach Magloughlin
                 </Typography>
             </CardContent>
         </Card>
-        <Box component="section" id="home_buttons">
+        <Box component="section" id="home_buttons" sx={{ display: "flex", flexWrap: "wrap", justifyContent: "space-around"}}>
             <Button variant="contained" color="secondary" size="large"
-                sx={{ 
+                sx={{
                     fontSize: "medium",
                     '&:hover': { fontSize: "large", borderColor: "primary.dark", borderWidth: '5%' },
                 }}>
@@ -42,6 +43,7 @@ function App() {
             </Button>
             <Button variant="contained" color="secondary" size="large">Enter Photography Portfolio</Button>
             <Button variant="contained" color="secondary" size="large">Enter D&DoWolf Wiki</Button>
+            <Button variant="contained" color="secondary" size="large">Enter Music Database</Button>
         </Box>
     </Container>
     </ThemeProvider>

@@ -1,5 +1,5 @@
 import { createTheme } from '@mui/material/styles';
-import { grey, blueGrey, blue, indigo } from '@mui/material/colors';
+import { grey, blueGrey, blue, indigo, cyan } from '@mui/material/colors';
 
 const theme = createTheme({
   colorSchemes: {
@@ -12,26 +12,32 @@ const homepageTheme = createTheme({
   colorSchemes: {
     light: {
       palette: {
+        background: {
+          default: cyan[50],
+        },
         primary: {
-          main: grey[300],
-          dark: grey[400],
-          contrastText: grey[800],
+          main: blueGrey[300],
+          dark: blueGrey[500],
+          contrastText: blueGrey[900],
         },
         secondary: {
-          main: blueGrey[200],
-          contrastText: blueGrey[700],
+          main: cyan[50],
+          contrastText: grey[900],
         }
       },
     },
     dark: {
       palette: {
+        background: {
+            
+        },
         primary: {
-          main: blue[200],
-          contrastText: blue[800],
+          main: blue[900],
+          contrastText: blue[200],
         },
         secondary: {
-          main: indigo[100],
-          contrastText: indigo[500],
+          main: indigo[500],
+          contrastText: indigo[100],
         }
       },
     },
