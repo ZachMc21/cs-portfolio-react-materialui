@@ -1,18 +1,13 @@
-import Button from "@mui/material/Button";
+import { styled } from "@mui/material/styles";
+import MuiButton from "@mui/material/Button";
 
-function HomepageButton(props) {
-  const { text } = props;
-  return (
-    <Button variant="contained" color="primary" className="homepage_button"
-        sx={{
-            ':hover': {
-                bgcolor: 'primary.main',
-                color: 'white',
-            },
-        }}>
-        <b>{text}</b>
-    </Button>
-  );
-};
+export const HomepageButton = styled(MuiButton)(( text ) => ({
+    padding: 4,
+    fontSize: "medium",
+    ':hover': {
+        fontSize: "large",
+        borderColor: "primary.dark"
+    },
+}));
 
 export default HomepageButton;

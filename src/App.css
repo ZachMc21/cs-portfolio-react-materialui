@@ -40,3 +40,31 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Mobile-first default: 1 column */
+Box#home_buttons {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+/* Tablet & laptop displays: 2 columns */
+@media (min-width: sm) {
+    Box#home_buttons {
+        max-width: 500px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* Widescreen displays: 4 columns */
+@media (min-width: xl) {
+    Box#home_buttons {
+        max-width: 500px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+Box#home_buttons > .homepage_button {
+    margin: 2;
+    padding: 3;
+}
