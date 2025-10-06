@@ -16,8 +16,8 @@ const homepageTheme = createTheme({
           default: cyan[50],
         },
         primary: {
-          main: blueGrey[300],
-          dark: blueGrey[500],
+          main: '#3b4e6b',
+          dark: '#212b3bff',
           contrastText: blueGrey[900],
         },
         secondary: {

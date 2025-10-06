@@ -30,11 +30,12 @@ function App() {
                 </Typography>
             </CardContent>
         </Card>
-        <Box component="section" id="home_buttons" sx={{ display: "flex", flexWrap: "wrap", justifyContent: "space-around"}}>
+        <Box component="section" id="home_buttons" sx={{ display: "flex", flexWrap: "wrap", justifyContent: "space-around", padding: 3, margin: 2}}>
             <Button variant="contained" color="secondary" size="large"
                 sx={{
                     fontSize: "medium",
-                    '&:hover': { fontSize: "large", borderColor: "primary.dark", borderWidth: '5%' },
+                    ':hover': { fontSize: "large", borderColor: "primary.dark" },
+                    flexDirection: 'column'
                 }}>
                 <Typography>Enter CS Portfolio</Typography>
                 <IconButton color="primary">
