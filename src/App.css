@@ -64,6 +64,7 @@ Box#home_buttons {
     }
 }
 
+/*
 HomepageButton * {
     display: "flex",
     flexDirection: "column",
@@ -71,3 +72,4 @@ HomepageButton * {
     alignItems: "stretch",
     alignContent: "center",
 }
+*/
