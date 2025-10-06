@@ -10,6 +10,7 @@ import Box from '@mui/system/Box';
 import homepageTheme from './theme';
 import { CssBaseline, Icon, IconButton, ThemeProvider } from '@mui/material';
 import Container from '@mui/system/Container';
+import Grid from '@mui/system/Grid';
 
 import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
 
@@ -33,24 +34,24 @@ function App() {
                 </Typography>
             </CardContent>
         </Card>
-        <Box component="section" id="home_buttons" sx={{ mx: 4, my: 2,}}>
+        <Grid container id="home_buttons" spacing={4} sx={{ placeItems: "center", placeContent: "center", gridTemplateColumns: "repeat(3, minmax(10px, 1fr))" }}>
             <HomepageButton variant="contained" color="secondary" disableElevation>
-                <Typography className="expand_on_hover">Enter CS Portfolio</Typography>
+                <Typography>Enter CS Portfolio </Typography>
                 <StyledDoubleArrowIcon className="expand_on_hover"/>
             </HomepageButton>
             <HomepageButton variant="contained" color="secondary" disableElevation>
-                <Typography className="expand_on_hover">Enter Photography Portfolio</Typography>
+                <Typography>Enter Photography Portfolio</Typography>
                 <StyledDoubleArrowIcon className="expand_on_hover"/>
             </HomepageButton>
             <HomepageButton variant="contained" color="secondary" disableElevation>
-                <Typography>Enter D&DoWolf Wiki</Typography>
+                <Typography>Enter D&DoWolf Wiki </Typography>
                 <StyledDoubleArrowIcon className="expand_on_hover"/>
             </HomepageButton>
             <HomepageButton variant="contained" color="secondary" disableElevation>
-                <Typography className="expand_on_hover">Enter Music Database</Typography>
+                <Typography>Enter Music Database </Typography>
                 <StyledDoubleArrowIcon className="expand_on_hover"/>
             </HomepageButton>
-        </Box> {/* end of homepage buttons */}
+        </Grid> {/* end of homepage buttons */}
     </Container>
     </ThemeProvider>
     {/*<div>

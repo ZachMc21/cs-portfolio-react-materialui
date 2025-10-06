@@ -5,35 +5,34 @@
 }
 
 /* Mobile-first default: 1 column */
-Box#home_buttons {
+Grid#home_buttons {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(4, minmax(1fr, 2rem));
     justify-content: space-between;
     justify-items: stretch;
-    /*column-gap: 5rem;
-    row-gap: 1rem; */
     gap: 3;
     padding: 1;
+    min-width: 1;
 }
 /* Tablet displays: 2 columns */
 @media (tablet) {
-    Box#home_buttons {
+    Grid#home_buttons {
         max-width: 0.5;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(1rem, 1fr));
     }
 }
 /* Laptop displays: 4 columns */
 @media (laptop) {
-    Box#home_buttons {
+    Grid#home_buttons {
         max-width: 0.25;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, minmax(1rem, 1fr));
     }
 }
 /* Widescreen displays: 4 columns */
 @media (desktop) {
-    Box#home_buttons {
+    Grid#home_buttons {
         max-width: 0.25;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, minmax(1rem, 1fr));
     }
 }
 
