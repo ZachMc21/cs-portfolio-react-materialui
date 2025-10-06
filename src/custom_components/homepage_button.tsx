@@ -10,7 +10,6 @@ export const HomepageButton = styled(MuiButton)(( ) => ({
     fontSize: "medium",
     ':hover': {
         fontSize: "large",
-        padding: "large"
     },
 }));
 

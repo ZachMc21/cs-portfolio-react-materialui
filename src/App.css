@@ -1,10 +1,11 @@
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
 
+/*
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -40,26 +41,31 @@
 .read-the-docs {
   color: #888;
 }
+*/
 
 /* Mobile-first default: 1 column */
 Box#home_buttons {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
 }
-
-/* Tablet & laptop displays: 2 columns */
-@media (min-width: sm) {
+/* Tablet displays: 2 columns */
+@media (tablet) {
     Box#home_buttons {
-        max-width: 500px;
+        max-width: 0.5;
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
-
-/* Widescreen displays: 4 columns */
-@media (min-width: xl) {
+/* Laptop displays: 4 columns */
+@media (laptop) {
     Box#home_buttons {
-        max-width: 500px;
+        max-width: 0.25;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+/* Widescreen displays: 4 columns */
+@media (desktop) {
+    Box#home_buttons {
+        max-width: 0.25;
         grid-template-columns: repeat(4, 1fr);
     }
 }

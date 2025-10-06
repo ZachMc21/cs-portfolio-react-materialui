@@ -1,6 +1,20 @@
 import { createTheme } from '@mui/material/styles';
 import { grey, blueGrey, blue, indigo, cyan } from '@mui/material/colors';
 
+declare module '@mui/material/styles' {
+  interface BreakpointOverrides {
+    xs: false; // removes the `xs` breakpoint
+    sm: false;
+    md: false;
+    lg: false;
+    xl: false;
+    mobile: true; // adds the `mobile` breakpoint
+    tablet: true;
+    laptop: true;
+    desktop: true;
+  }
+}
+
 const theme = createTheme({
   colorSchemes: {
     light: true,
@@ -18,11 +32,13 @@ const homepageTheme = createTheme({
         primary: {
           main: '#3b4e6b',
           dark: '#212b3bff',
-          contrastText: blueGrey[900],
+          contrastText: blueGrey[100],
         },
         secondary: {
-          main: cyan[50],
-          contrastText: grey[900],
+          light: cyan[50],
+          main: '#c3e8ed',
+          dark: '#afd6db',
+          contrastText: grey[800],
         }
       },
     },

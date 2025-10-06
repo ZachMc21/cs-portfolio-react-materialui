@@ -33,21 +33,31 @@ function App() {
             </CardContent>
         </Card>
         <Box component="section" id="home_buttons" sx={{ mx: 4, my: 2}}>
-            <HomepageButton variant="contained" color="secondary">
+            <HomepageButton variant="contained" color="secondary" disableElevation>
                 <Typography>Enter CS Portfolio</Typography>
-                <Icon color="primary">
+                <Icon>
                     <DoubleArrowIcon />
                 </Icon>
             </HomepageButton>
-            <HomepageButton variant="contained" color="secondary">
+            <HomepageButton variant="contained" color="secondary" disableElevation>
                 <Typography>Enter Photography Portfolio</Typography>
-                <Icon color="primary">
+                <Icon>
                     <DoubleArrowIcon />
                 </Icon>
             </HomepageButton>
-            <HomepageButton variant="contained" color="secondary">Enter D&DoWolf Wiki</HomepageButton>
-            <HomepageButton variant="contained" color="secondary">Enter Music Database</HomepageButton>
-        </Box>
+            <HomepageButton variant="contained" color="secondary" disableElevation>
+                <Typography>Enter D&DoWolf Wiki</Typography>
+                <Icon>
+                    <DoubleArrowIcon />
+                </Icon>
+            </HomepageButton>
+            <HomepageButton variant="contained" color="secondary" disableElevation>
+                <Typography>Enter Music Database</Typography>
+                <Icon>
+                    <DoubleArrowIcon />
+                </Icon>
+            </HomepageButton>
+        </Box> {/* end of homepage buttons */}
     </Container>
     </ThemeProvider>
     {/*<div>
