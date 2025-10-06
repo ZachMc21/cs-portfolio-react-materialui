@@ -1,5 +1,6 @@
 import { styled } from "@mui/material/styles";
 import MuiButton from "@mui/material/Button";
+//import StyledDoubleArrowIcon from "../custom_components/double_arrow_icon";
 
 export const HomepageButton = styled(MuiButton)(( ) => ({
     flexDirection: "column",
@@ -8,9 +9,11 @@ export const HomepageButton = styled(MuiButton)(( ) => ({
     padding: "extra-large",
     margin: "medium",
     fontSize: "medium",
-    ':hover': {
-        fontSize: "large",
-    },
+    "& :hover": {
+        ['${StyledDoubleArrowIcon}']: {
+            size: "extra-large"
+        }
+    }
 }));
 
 export default HomepageButton;

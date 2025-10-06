@@ -14,6 +14,7 @@ import Container from '@mui/system/Container';
 import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
 
 import HomepageButton from './custom_components/homepage_button';
+import StyledDoubleArrowIcon from './custom_components/double_arrow_icon';
 
 
 function App() {
@@ -35,27 +36,19 @@ function App() {
         <Box component="section" id="home_buttons" sx={{ mx: 4, my: 2}}>
             <HomepageButton variant="contained" color="secondary" disableElevation>
                 <Typography>Enter CS Portfolio</Typography>
-                <Icon>
-                    <DoubleArrowIcon />
-                </Icon>
+                <StyledDoubleArrowIcon className="doubleArrowIcon" />
             </HomepageButton>
             <HomepageButton variant="contained" color="secondary" disableElevation>
                 <Typography>Enter Photography Portfolio</Typography>
-                <Icon>
-                    <DoubleArrowIcon />
-                </Icon>
+                <StyledDoubleArrowIcon className="doubleArrowIcon" />
             </HomepageButton>
             <HomepageButton variant="contained" color="secondary" disableElevation>
                 <Typography>Enter D&DoWolf Wiki</Typography>
-                <Icon>
-                    <DoubleArrowIcon />
-                </Icon>
+                <StyledDoubleArrowIcon className="doubleArrowIcon"/>
             </HomepageButton>
             <HomepageButton variant="contained" color="secondary" disableElevation>
                 <Typography>Enter Music Database</Typography>
-                <Icon>
-                    <DoubleArrowIcon />
-                </Icon>
+                <StyledDoubleArrowIcon className="doubleArrowIcon"/>
             </HomepageButton>
         </Box> {/* end of homepage buttons */}
     </Container>
