@@ -5,9 +5,12 @@ export const HomepageButton = styled(MuiButton)(( ) => ({
     flexDirection: "column",
     justifyContent: "flex-start",
     size: "large",
+    padding: "extra-large",
+    margin: "medium",
     fontSize: "medium",
     ':hover': {
-        fontSize: "large"
+        fontSize: "large",
+        padding: "large"
     },
 }));
 
