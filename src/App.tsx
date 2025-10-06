@@ -8,10 +8,11 @@ import CardActions from '@mui/material/CardActions';
 import Button from '@mui/material/Button';
 import Box from '@mui/system/Box';
 import homepageTheme from './theme';
-import { CssBaseline, IconButton, ThemeProvider } from '@mui/material';
+import { CssBaseline, Icon, IconButton, ThemeProvider } from '@mui/material';
 import Container from '@mui/system/Container';
 
 import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
+
 import HomepageButton from './custom_components/homepage_button';
 
 
@@ -31,22 +32,21 @@ function App() {
                 </Typography>
             </CardContent>
         </Card>
-        <Box component="section" id="home_buttons" sx={{ display: "flex", flexWrap: "wrap", justifyContent: "space-around", mx: 4, my: 2}}>
-            <Button className="homepage_button" variant="contained" color="secondary" size="large"
-                sx={{
-                    padding: 4,
-                    fontSize: "medium",
-                    maxWidth: 0.45,
-                    ':hover': { fontSize: "large", borderColor: "primary.dark" },
-                }}>
+        <Box component="section" id="home_buttons" sx={{ mx: 4, my: 2}}>
+            <HomepageButton variant="contained" color="secondary">
                 <Typography>Enter CS Portfolio</Typography>
-                <IconButton color="primary">
+                <Icon color="primary">
                     <DoubleArrowIcon />
-                </IconButton>
-            </Button>
-            <Button className="homepage_button" variant="contained" color="secondary" size="large">Enter Photography Portfolio</Button>
-            <Button className="homepage_button" variant="contained" color="secondary" size="large">Enter D&DoWolf Wiki</Button>
-            <Button className="homepage_button" variant="contained" color="secondary" size="large">Enter Music Database</Button>
+                </Icon>
+            </HomepageButton>
+            <HomepageButton variant="contained" color="secondary">
+                <Typography>Enter Photography Portfolio</Typography>
+                <Icon color="primary">
+                    <DoubleArrowIcon />
+                </Icon>
+            </HomepageButton>
+            <HomepageButton variant="contained" color="secondary">Enter D&DoWolf Wiki</HomepageButton>
+            <HomepageButton variant="contained" color="secondary">Enter Music Database</HomepageButton>
         </Box>
     </Container>
     </ThemeProvider>

@@ -64,7 +64,10 @@ Box#home_buttons {
     }
 }
 
-Box#home_buttons > .homepage_button {
-    margin: 2;
-    padding: 3;
+HomepageButton * {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "flex-start",
+    alignItems: "stretch",
+    alignContent: "center",
 }
