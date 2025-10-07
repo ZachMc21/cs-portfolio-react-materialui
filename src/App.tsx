@@ -34,23 +34,34 @@ function App() {
                 </Typography>
             </CardContent>
         </Card>
-        <Grid container id="home_buttons" spacing={4} sx={{ placeItems: "center", placeContent: "center", gridTemplateColumns: "repeat(3, minmax(10px, 1fr))" }}>
-            <HomepageButton variant="contained" color="secondary" disableElevation>
-                <Typography>Enter CS Portfolio </Typography>
-                <StyledDoubleArrowIcon className="expand_on_hover"/>
-            </HomepageButton>
-            <HomepageButton variant="contained" color="secondary" disableElevation>
-                <Typography>Enter Photography Portfolio</Typography>
-                <StyledDoubleArrowIcon className="expand_on_hover"/>
-            </HomepageButton>
-            <HomepageButton variant="contained" color="secondary" disableElevation>
-                <Typography>Enter D&DoWolf Wiki </Typography>
-                <StyledDoubleArrowIcon className="expand_on_hover"/>
-            </HomepageButton>
-            <HomepageButton variant="contained" color="secondary" disableElevation>
-                <Typography>Enter Music Database </Typography>
-                <StyledDoubleArrowIcon className="expand_on_hover"/>
-            </HomepageButton>
+        <Box sx={{ flexGrow: 1 }}>
+
+        </Box>
+        <Grid container id="home_buttons" spacing={4} sx={{ placeItems: "center", placeContent: "center" }}>
+            <Grid size={{ mobile: 12, tablet: 6, laptop: 3, desktop: 3 }}>
+                <HomepageButton variant="contained" color="secondary" disableElevation style={{ flexGrow: 1 }}>
+                    <Typography>Enter CS Portfolio </Typography>
+                    <StyledDoubleArrowIcon className="expand_on_hover"/>
+                </HomepageButton>
+            </Grid>
+            <Grid size={{ mobile: 12, tablet: 6, laptop: 3, desktop: 3 }}>
+                <HomepageButton variant="contained" color="secondary" disableElevation style={{ flexGrow: 1 }}>
+                    <Typography>Enter Photography Portfolio</Typography>
+                    <StyledDoubleArrowIcon className="expand_on_hover"/>
+                </HomepageButton>
+            </Grid>
+            <Grid size={{ mobile: 12, tablet: 6, laptop: 3, desktop: 3 }}>
+                <HomepageButton variant="contained" color="secondary" disableElevation style={{ flexGrow: 1 }}>
+                    <Typography>Enter D&DoWolf Wiki </Typography>
+                    <StyledDoubleArrowIcon className="expand_on_hover"/>
+                </HomepageButton>
+            </Grid>
+            <Grid size={{ mobile: 12, tablet: 6, laptop: 3, desktop: 3 }}>
+                <HomepageButton variant="contained" color="secondary" disableElevation style={{ flexGrow: 1 }}>
+                    <Typography>Enter Music Database </Typography>
+                    <StyledDoubleArrowIcon className="expand_on_hover"/>
+                </HomepageButton>
+            </Grid>
         </Grid> {/* end of homepage buttons */}
     </Container>
     </ThemeProvider>

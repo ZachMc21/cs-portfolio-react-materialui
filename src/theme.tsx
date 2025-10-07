@@ -3,15 +3,15 @@ import { grey, blueGrey, blue, indigo, cyan } from '@mui/material/colors';
 
 declare module '@mui/material/styles' {
   interface BreakpointOverrides {
-    xs: false; // removes the default breakpoint
-    sm: false;
-    md: false;
-    lg: false;
-    xl: false;
     mobile: true; // adds custom breakpoints
     tablet: true;
     laptop: true;
     desktop: true;
+    xs: false; // removes the default breakpoints
+    sm: false;
+    md: false;
+    lg: false;
+    xl: false;
   }
 }
 

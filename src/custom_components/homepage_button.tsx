@@ -7,7 +7,7 @@ export const HomepageButton = styled(MuiButton)(( ) => ({
     flexDirection: "column",
     justifyContent: "flex-start",
     fontSize: "large",
-    "&:hover": { transform: "scale3d(1.05, 1.05, 1)" },
+    "&:hover": { transform: "scale3d(1.075, 1.075, 1)" },
     /*"&:hover": {
         "&.expand_on_hover": {
             fontSize: "large",
