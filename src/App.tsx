@@ -34,29 +34,29 @@ function App() {
                     </Typography>
                 </CardContent>
             </Card>
-            <Grid container id="home_buttons" spacing={4} sx={{ placeItems: "center", placeContent: "center" }}>
+            <Grid container id="home_buttons" spacing={4}>
                 <Grid size={{ mobile: 12, tablet: 6, laptop: 3, desktop: 3 }}>
-                    <HomepageButton variant="contained" color="secondary" disableElevation style={{ flexGrow: 1 }}>
+                    <HomepageButton variant="contained" color="secondary" disableElevation>
                         <Typography>Enter CS Portfolio </Typography>
-                        <StyledDoubleArrowIcon className="expand_on_hover"/>
+                        <StyledDoubleArrowIcon />
                     </HomepageButton>
                 </Grid>
                 <Grid size={{ mobile: 12, tablet: 6, laptop: 3, desktop: 3 }}>
-                    <HomepageButton variant="contained" color="secondary" disableElevation style={{ flexGrow: 1 }}>
+                    <HomepageButton variant="contained" color="secondary" disableElevation>
                         <Typography>Enter Photography Portfolio</Typography>
-                        <StyledDoubleArrowIcon className="expand_on_hover"/>
+                        <StyledDoubleArrowIcon />
                     </HomepageButton>
                 </Grid>
                 <Grid size={{ mobile: 12, tablet: 6, laptop: 3, desktop: 3 }}>
-                    <HomepageButton variant="contained" color="secondary" disableElevation style={{ flexGrow: 1 }}>
+                    <HomepageButton variant="contained" color="secondary" disableElevation>
                         <Typography>Enter D&DoWolf Wiki </Typography>
-                        <StyledDoubleArrowIcon className="expand_on_hover"/>
+                        <StyledDoubleArrowIcon />
                     </HomepageButton>
                 </Grid>
                 <Grid size={{ mobile: 12, tablet: 6, laptop: 3, desktop: 3 }}>
-                    <HomepageButton variant="contained" color="secondary" disableElevation style={{ flexGrow: 1 }}>
+                    <HomepageButton variant="contained" color="secondary" disableElevation>
                         <Typography>Enter Music Database </Typography>
-                        <StyledDoubleArrowIcon className="expand_on_hover"/>
+                        <StyledDoubleArrowIcon />
                     </HomepageButton>
                 </Grid>
             </Grid> {/* end of homepage buttons */}

@@ -3,19 +3,13 @@ import MuiButton from "@mui/material/Button";
 //import StyledDoubleArrowIcon from "../custom_components/double_arrow_icon";
 
 export const HomepageButton = styled(MuiButton)(( ) => ({
-    padding: 36,
+    padding: '2rem',
     flexDirection: "column",
-    justifyContent: "flex-start",
+    justifyContent: "center",
     fontSize: "large",
-    "&:hover": { transform: "scale3d(1.075, 1.075, 1)" },
-    /*"&:hover": {
-        "&.expand_on_hover": {
-            fontSize: "large",
-            ['${StyledDoubleArrowIcon}']: {
-                fontSize: "large"
-            }
-        }
-    }*/
+    width: '100%',
+    height: "8rem",
+    "&:hover": { transform: "scale3d(1.06, 1.06, 1)" },
 }));
 
 export default HomepageButton;

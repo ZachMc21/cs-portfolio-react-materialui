@@ -41,3 +41,43 @@ HomepageButton * {
     alignContent: "center",
 }
 */
+
+Container#homepage {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: stretch;
+}
+@media (mobile) {
+    Container#homepage {
+        flex-direction: column;
+    }
+}
+@media (tablet) {
+    Container#homepage {
+        flex: 50%,
+    }
+}
+@media (laptop) and (min-width:laptop)  {
+    Container#homepage {
+        flex: 25%,
+    }
+}
+/* mobile default
+@media (mobile) {
+    Grid#home_button {
+        width: 100%
+    }
+}
+@media (tablet) {
+    Grid#home_button {
+        width: 50%
+    }
+}
+@media (laptop) {
+
+}
+    Grid#home_button {
+        width: 50%
+    }
+        */
