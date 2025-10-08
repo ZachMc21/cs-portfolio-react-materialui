@@ -1,6 +1,5 @@
 import { styled } from "@mui/material/styles";
 import MuiButton from "@mui/material/Button";
-//import StyledDoubleArrowIcon from "../custom_components/double_arrow_icon";
 
 export const HomepageButton = styled(MuiButton)(( ) => ({
     padding: '2rem',

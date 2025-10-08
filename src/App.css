@@ -4,44 +4,7 @@
   text-align: center;
 }
 
-/* 
-Mobile-first default: 1 column
-Grid#home_buttons {
-    display: grid;
-    grid-template-columns: repeat(1, minmax(1fr, 1rem))
-    gap: 1rem;
-    justify-content: space-between;
-    justify-items: stretch;
-}
-Tablet displays: 2 columns
-@media (tablet) {
-    Grid#home_buttons {
-        grid-template-columns: repeat(2, minmax(1rem, 1fr));
-    }
-}
-Laptop displays: 4 columns
-@media (laptop) {
-    Grid#home_buttons {
-        grid-template-columns: repeat(4, minmax(1rem, 1fr));
-    }
-}
-Widescreen displays: 4 columns
-@media (desktop) {
-    Grid#home_buttons {
-        max-width: 0.25;
-        grid-template-columns: repeat(4, minmax(1rem, 1fr));
-    }
-}
-
-HomepageButton * {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "flex-start",
-    alignItems: "stretch",
-    alignContent: "center",
-}
-*/
-
+/* Media queries for container of HomepageButtons */
 Container#homepage {
     display: flex;
     flex-wrap: nowrap;
@@ -63,21 +26,3 @@ Container#homepage {
         flex: 25%,
     }
 }
-/* mobile default
-@media (mobile) {
-    Grid#home_button {
-        width: 100%
-    }
-}
-@media (tablet) {
-    Grid#home_button {
-        width: 50%
-    }
-}
-@media (laptop) {
-
-}
-    Grid#home_button {
-        width: 50%
-    }
-        */

@@ -38,25 +38,25 @@ function App() {
                 <Grid size={{ mobile: 12, tablet: 6, laptop: 3, desktop: 3 }}>
                     <HomepageButton variant="contained" color="secondary" disableElevation>
                         <Typography>Enter CS Portfolio </Typography>
-                        <StyledDoubleArrowIcon />
+                        <DoubleArrowIcon />
                     </HomepageButton>
                 </Grid>
                 <Grid size={{ mobile: 12, tablet: 6, laptop: 3, desktop: 3 }}>
                     <HomepageButton variant="contained" color="secondary" disableElevation>
                         <Typography>Enter Photography Portfolio</Typography>
-                        <StyledDoubleArrowIcon />
+                        <DoubleArrowIcon />
                     </HomepageButton>
                 </Grid>
                 <Grid size={{ mobile: 12, tablet: 6, laptop: 3, desktop: 3 }}>
                     <HomepageButton variant="contained" color="secondary" disableElevation>
                         <Typography>Enter D&DoWolf Wiki </Typography>
-                        <StyledDoubleArrowIcon />
+                        <DoubleArrowIcon />
                     </HomepageButton>
                 </Grid>
                 <Grid size={{ mobile: 12, tablet: 6, laptop: 3, desktop: 3 }}>
                     <HomepageButton variant="contained" color="secondary" disableElevation>
                         <Typography>Enter Music Database </Typography>
-                        <StyledDoubleArrowIcon />
+                        <DoubleArrowIcon />
                     </HomepageButton>
                 </Grid>
             </Grid> {/* end of homepage buttons */}

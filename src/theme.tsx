@@ -8,18 +8,18 @@ const homepageTheme = createTheme({
         light: {
             palette: {
                 background: {
-                default: cyan[50],
+                    default: cyan[50],
                 },
                 primary: {
-                main: '#3b4e6b',
-                dark: '#212b3bff',
-                contrastText: blueGrey[100],
+                    main: '#3b4e6b',
+                    dark: '#212b3bff',
+                    contrastText: blueGrey[100],
                 },
                 secondary: {
-                light: cyan[50],
-                main: '#c3e8ed',
-                dark: '#afd6db',
-                contrastText: grey[800],
+                    light: cyan[50],
+                    main: '#c3e8ed',
+                    dark: '#afd6db',
+                    contrastText: grey[800],
                 }
             },
         },
@@ -29,12 +29,12 @@ const homepageTheme = createTheme({
                     
                 },
                 primary: {
-                main: blue[900],
-                contrastText: blue[200],
+                    main: blue[900],
+                    contrastText: blue[200],
                 },
                 secondary: {
-                main: indigo[500],
-                contrastText: indigo[100],
+                    main: indigo[500],
+                    contrastText: indigo[100],
                 }
             },
         },
