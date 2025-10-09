@@ -4,20 +4,25 @@ import './App.css'
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import CardActions from '@mui/material/CardActions';
-import Button from '@mui/material/Button';
-import Box from '@mui/system/Box';
 import homepageTheme from './theme';
-import { CssBaseline, Icon, IconButton, ThemeProvider } from '@mui/material';
+import { ThemeProvider } from '@mui/material/styles';
+import { ThemeProvider as Emotion10ThemeProvider } from '@emotion/react';
 import Container from '@mui/system/Container';
 import Grid from '@mui/system/Grid';
 
 import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
 
 import HomepageButton from './custom_components/homepage_button';
+import { CssBaseline } from '@mui/material';
+
+
 
 function App() {
     return (
+        <div>
+            
+        <CssBaseline />
+        <Emotion10ThemeProvider theme={homepageTheme}>
         <ThemeProvider theme={homepageTheme}>
 
         <Container id="homepage" maxWidth={false} disableGutters>
@@ -57,6 +62,8 @@ function App() {
         </Container>
 
         </ThemeProvider>
+        </Emotion10ThemeProvider>
+        </div>
     )
 }
 

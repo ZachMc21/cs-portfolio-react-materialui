@@ -1,7 +1,9 @@
 import { styled } from "@mui/material/styles";
 import MuiButton from "@mui/material/Button";
+import homepageTheme from "../theme";
 
-export const HomepageButton = styled(MuiButton)(( ) => ({
+export const HomepageButton = styled(MuiButton)(({ }) => ({
+    color: homepageTheme.palette.primary.main,
     padding: '2rem',
     flexDirection: "column",
     justifyContent: "center",
