@@ -2,15 +2,22 @@ import { createTheme } from '@mui/material/styles';
 import { grey, blueGrey, blue, indigo, cyan } from '@mui/material/colors';
 import globalTheme from './global_theme';
 
+declare module '@mui/material/styles' {
+    interface Palette {
+        custom: Palette['primary'];
+    }
+
+    interface PaletteOptions {
+        custom?: PaletteOptions['primary'];
+    }
+}
+
 const homepageTheme = createTheme({
     ...globalTheme,
     cssVariables: true,
     colorSchemes: {
         light: {
             palette: {
-                background: {
-                    default: cyan[50],
-                },
                 primary: {
                     main: '#3b4e6b',
                     dark: '#212b3bff',

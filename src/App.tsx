@@ -15,13 +15,8 @@ import Grid from '@mui/system/Grid';
 import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
 
 import HomepageButton from './custom_components/homepage_button';
-import StyledDoubleArrowIcon from './custom_components/double_arrow_icon';
-
 
 function App() {
-    const [count, setCount] = useState(0)
-    const homeTheme = homepageTheme;
-
     return (
         <ThemeProvider theme={homepageTheme}>
 
