@@ -4,6 +4,7 @@ import globalTheme from './global_theme';
 
 const homepageTheme = createTheme({
     ...globalTheme,
+    cssVariables: true,
     colorSchemes: {
         light: {
             palette: {
@@ -16,8 +17,8 @@ const homepageTheme = createTheme({
                     contrastText: blueGrey[100],
                 },
                 secondary: {
-                    light: cyan[50],
                     main: '#c3e8ed',
+                    light: cyan[50],
                     dark: '#afd6db',
                     contrastText: grey[800],
                 }

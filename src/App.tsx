@@ -23,38 +23,37 @@ function App() {
     const homeTheme = homepageTheme;
 
     return (
-        <ThemeProvider theme={homeTheme}>
-        <CssBaseline />
+        <ThemeProvider theme={homepageTheme}>
 
         <Container id="homepage" maxWidth={false} disableGutters>
             <Card sx={{ p: 5, mb: 10 }}>
-                <CardContent color="secondary" sx={{ }}>
-                    <Typography color="primary" sx={{ fontSize: 52 }}>
+                <CardContent>
+                    <Typography sx={{ fontSize: 52 }}>
                         Zach Magloughlin
                     </Typography>
                 </CardContent>
             </Card>
             <Grid container id="home_buttons" spacing={4}>
                 <Grid size={{ mobile: 12, tablet: 6, laptop: 3, desktop: 3 }}>
-                    <HomepageButton variant="contained" color="secondary" disableElevation>
+                    <HomepageButton variant="contained" disableElevation>
                         <Typography>Enter CS Portfolio </Typography>
                         <DoubleArrowIcon />
                     </HomepageButton>
                 </Grid>
                 <Grid size={{ mobile: 12, tablet: 6, laptop: 3, desktop: 3 }}>
-                    <HomepageButton variant="contained" color="secondary" disableElevation>
+                    <HomepageButton variant="contained" disableElevation>
                         <Typography>Enter Photography Portfolio</Typography>
                         <DoubleArrowIcon />
                     </HomepageButton>
                 </Grid>
                 <Grid size={{ mobile: 12, tablet: 6, laptop: 3, desktop: 3 }}>
-                    <HomepageButton variant="contained" color="secondary" disableElevation>
+                    <HomepageButton variant="contained" disableElevation>
                         <Typography>Enter D&DoWolf Wiki </Typography>
                         <DoubleArrowIcon />
                     </HomepageButton>
                 </Grid>
                 <Grid size={{ mobile: 12, tablet: 6, laptop: 3, desktop: 3 }}>
-                    <HomepageButton variant="contained" color="secondary" disableElevation>
+                    <HomepageButton variant="contained" disableElevation>
                         <Typography>Enter Music Database </Typography>
                         <DoubleArrowIcon />
                     </HomepageButton>
