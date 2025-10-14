@@ -1,7 +1,7 @@
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import { Box, CssBaseline } from '@mui/material';
+import { Box, CssBaseline, Link } from '@mui/material';
 import Grid from '@mui/system/Grid';
 
 import { ThemeProvider } from '@mui/material/styles';
@@ -15,6 +15,13 @@ import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
 
 import HomepageButton from './custom_components/homepage_button';
 
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import Enter from './Enter';
+import CSPortfolio from './CSPortfolio';
+{ /*
+import DnDoWolfWiki from './DnDoWolfWiki';
+import MusicDatabase from './MusicDatabase';
+*/ }
 
 
 function App() {
@@ -39,25 +46,25 @@ function App() {
             </Card>
             <Grid container id="home_buttons" spacing={4}>
                 <Grid size={{ mobile: 12, tablet: 6, laptop: 3, desktop: 3 }}>
-                    <HomepageButton variant="contained" disableElevation >
+                    <HomepageButton variant="contained" disableElevation href="/cs-portfolio">
                         <Typography>Enter CS Portfolio </Typography>
                         <DoubleArrowIcon />
                     </HomepageButton>
                 </Grid>
                 <Grid size={{ mobile: 12, tablet: 6, laptop: 3, desktop: 3 }}>
-                    <HomepageButton variant="contained" disableElevation>
+                    <HomepageButton variant="contained" disableElevation href="/photography-portfolio">
                         <Typography>Enter Photography Portfolio</Typography>
                         <DoubleArrowIcon />
                     </HomepageButton>
                 </Grid>
                 <Grid size={{ mobile: 12, tablet: 6, laptop: 3, desktop: 3 }}>
-                    <HomepageButton variant="contained" disableElevation>
+                    <HomepageButton variant="contained" disableElevation href="/dndowolf-wiki">
                         <Typography>Enter D&DoWolf Wiki </Typography>
                         <DoubleArrowIcon />
                     </HomepageButton>
                 </Grid>
                 <Grid size={{ mobile: 12, tablet: 6, laptop: 3, desktop: 3 }}>
-                    <HomepageButton variant="contained" disableElevation>
+                    <HomepageButton variant="contained" disableElevation href="/music-database">
                         <Typography>Enter Music Database </Typography>
                         <DoubleArrowIcon />
                     </HomepageButton>
@@ -68,6 +75,18 @@ function App() {
         </StyledEngineProvider>
         </Emotion10ThemeProvider>
         </ThemeProvider>
+
+        <Router>
+            <Routes>
+                <Route path='/' element={<Enter />} />
+                <Route path="/cs-portfolio" element={<CSPortfolio />} />
+                { /*
+                <Route path="/photography-portfolio" element={<PhotographyPortfolio />} />
+                <Route path="/dndowolf-wiki" element={<DnDoWolfWiki />} />
+                <Route path="/music-database" element={<MusicDatabase />} />
+                */ }
+            </Routes>
+        </Router>
         </div>
     )
 }
