@@ -3,7 +3,8 @@ import MuiButton from "@mui/material/Button";
 import homepageTheme from "../theme";
 
 export const HomepageButton = styled(MuiButton)(({ }) => ({
-    color: homepageTheme.palette.primary.main,
+    color: homepageTheme.palette.primary.dark,
+    backgroundColor: homepageTheme.palette.primary.light,
     padding: '2rem',
     flexDirection: "column",
     justifyContent: "center",

@@ -8,7 +8,6 @@ declare module '@mui/material/styles' {
     interface Palette {
         custom: Palette['primary'];
     }
-
     interface PaletteOptions {
         custom?: PaletteOptions['primary'];
     }
@@ -20,19 +19,19 @@ const homepageTheme = createTheme({
         light: {
             palette: {
                 background: {
-                    default: cyan[50],
+                    default: '#b8f0f2',
                 },
                 primary: {
-                    main: '#3b4e6b',
-                    dark: '#212b3bff',
-                    /*contrastText: blueGrey[100],*/
-                    contrastText: red[500]
+                    main: '#4d858aff',
+                    dark: '#203840ff',
+                    light: '#7dbec4ff',
+                    contrastText: '#0b1d23ff',
                 },
                 secondary: {
                     main: '#c3e8ed',
-                    /*light: cyan[50],
+                    light: cyan[50],
                     dark: '#afd6db',
-                    contrastText: grey[800],*/
+                    contrastText: grey[800],
                 }
             },
         },
