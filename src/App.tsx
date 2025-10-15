@@ -35,11 +35,10 @@ function App() {
         <Emotion10ThemeProvider theme={homeTheme}>
         <StyledEngineProvider>
 
-        <Box id="homepage" sx={{ backgroundColor: homeTheme.palette.background.default }}>
-            <Card sx={{ p: 5, mb: 10, backgroundColor: homeTheme.palette.primary.light }}>
+        <Box id="homepage" sx={{ backgroundColor: homeTheme.palette.background.default }}> {/* Pale light blue */}
+            <Card sx={{ p: 5, mb: 10, backgroundColor: homeTheme.palette.primary.light }}> {/* Less pale light blue */}
                 <CardContent>
-                    { /* This text color should be very dark blue */ }
-                    <Typography id="page-title" sx={{ fontSize: 52, color: homeTheme.palette.primary.contrastText }}>
+                    <Typography id="page-title" sx={{ fontSize: 52, color: homeTheme.palette.primary.contrastText }}> {/* Very dark blue */}
                         Zach Magloughlin
                     </Typography>
                 </CardContent>
@@ -76,17 +75,17 @@ function App() {
         </Emotion10ThemeProvider>
         </ThemeProvider>
 
+        { /*
         <Router>
             <Routes>
                 <Route path='/' element={<Enter />} />
                 <Route path="/cs-portfolio" element={<CSPortfolio />} />
-                { /*
                 <Route path="/photography-portfolio" element={<PhotographyPortfolio />} />
                 <Route path="/dndowolf-wiki" element={<DnDoWolfWiki />} />
                 <Route path="/music-database" element={<MusicDatabase />} />
-                */ }
             </Routes>
         </Router>
+        */ }
         </div>
     )
 }
