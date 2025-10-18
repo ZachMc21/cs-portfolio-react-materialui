@@ -34,7 +34,7 @@ function App() {
         <ThemeProvider theme={homeTheme}>
         <Emotion10ThemeProvider theme={homeTheme}>
         <StyledEngineProvider>
-
+        
         <Box id="homepage" sx={{ backgroundColor: homeTheme.palette.background.default }}> {/* Pale light blue */}
             <Card sx={{ p: 5, mb: 10, backgroundColor: homeTheme.palette.primary.light }}> {/* Less pale light blue */}
                 <CardContent>
