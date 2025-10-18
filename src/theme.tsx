@@ -1,8 +1,6 @@
 import { createTheme } from '@mui/material/styles';
-import { grey, blueGrey, blue, indigo, cyan, red } from '@mui/material/colors';
+import { grey, blue, indigo, cyan, red, purple } from '@mui/material/colors';
 import globalTheme from './global_theme';
-import type { Color } from '@mui/material/styles';
-import type { ButtonProps } from '@mui/material';
 
 declare module '@mui/material/styles' {
     interface Palette {
@@ -19,12 +17,12 @@ const homepageTheme = createTheme({
         light: {
             palette: {
                 background: {
-                    default: '#b8f0f2',
+                    default: purple[100],
                 },
                 primary: {
                     main: '#4d858aff',
                     dark: '#203840ff',
-                    light: '#7dbec4ff',
+                    light: red[500],
                     contrastText: '#0b1d23ff',
                 },
                 secondary: {

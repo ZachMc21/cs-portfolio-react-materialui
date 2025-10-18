@@ -2,90 +2,46 @@ import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import { Box, CssBaseline, Link } from '@mui/material';
-import Grid from '@mui/system/Grid';
 
-import { ThemeProvider } from '@mui/material/styles';
-import { ThemeProvider as Emotion10ThemeProvider } from '@emotion/react';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { CacheProvider, ThemeProvider as Emotion10ThemeProvider } from '@emotion/react';
 import { StyledEngineProvider } from "@mui/material";
 
 import './App.css'
 import homepageTheme from './theme';
-
-import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
-
-import HomepageButton from './custom_components/homepage_button';
-
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import Enter from './Enter';
-import CSPortfolio from './CSPortfolio';
-{ /*
-import DnDoWolfWiki from './DnDoWolfWiki';
-import MusicDatabase from './MusicDatabase';
-*/ }
-
+import CreateEmotionCache from './emotion_cache';
 
 function App() {
-    const homeTheme = homepageTheme;
+    const clientSideEmotionCache = CreateEmotionCache();
+    const lightTheme = createTheme(homepageTheme);
+    console.log(lightTheme);
 
     return (
         <div>
             
-        <CssBaseline />
-        <ThemeProvider theme={homeTheme}>
-        <Emotion10ThemeProvider theme={homeTheme}>
-        <StyledEngineProvider>
+        <CacheProvider value={clientSideEmotionCache}>
+            <CssBaseline />
+            <ThemeProvider theme={lightTheme}>
+                <Box id="homepage" sx={{ backgroundColor: lightTheme.palette.background.default }}> {/* Pale light blue */}
+                    <Card sx={{ p: 5, mb: 10, backgroundColor: lightTheme.palette.primary.light }}> {/* Less pale light blue */}
+                        <CardContent>
+                            <Typography id="page-title" sx={{ fontSize: 52, color: lightTheme.palette.primary.contrastText }}> {/* Very dark blue */}
+                                Zach M
+                            </Typography>
+                        </CardContent>
+                    </Card>
+                </Box>
+            </ThemeProvider>
+        </CacheProvider>
+        { /* <Emotion10ThemeProvider theme={lightTheme}>
+        <StyledEngineProvider> */}
 
-        <Box id="homepage" sx={{ backgroundColor: homeTheme.palette.background.default }}> {/* Pale light blue */}
-            <Card sx={{ p: 5, mb: 10, backgroundColor: homeTheme.palette.primary.light }}> {/* Less pale light blue */}
-                <CardContent>
-                    <Typography id="page-title" sx={{ fontSize: 52, color: homeTheme.palette.primary.contrastText }}> {/* Very dark blue */}
-                        Zach Magloughlin
-                    </Typography>
-                </CardContent>
-            </Card>
-            <Grid container id="home_buttons" spacing={4}>
-                <Grid size={{ mobile: 12, tablet: 6, laptop: 3, desktop: 3 }}>
-                    <HomepageButton variant="contained" disableElevation href="/cs-portfolio">
-                        <Typography>Enter CS Portfolio </Typography>
-                        <DoubleArrowIcon />
-                    </HomepageButton>
-                </Grid>
-                <Grid size={{ mobile: 12, tablet: 6, laptop: 3, desktop: 3 }}>
-                    <HomepageButton variant="contained" disableElevation href="/photography-portfolio">
-                        <Typography>Enter Photography Portfolio</Typography>
-                        <DoubleArrowIcon />
-                    </HomepageButton>
-                </Grid>
-                <Grid size={{ mobile: 12, tablet: 6, laptop: 3, desktop: 3 }}>
-                    <HomepageButton variant="contained" disableElevation href="/dndowolf-wiki">
-                        <Typography>Enter D&DoWolf Wiki </Typography>
-                        <DoubleArrowIcon />
-                    </HomepageButton>
-                </Grid>
-                <Grid size={{ mobile: 12, tablet: 6, laptop: 3, desktop: 3 }}>
-                    <HomepageButton variant="contained" disableElevation href="/music-database">
-                        <Typography>Enter Music Database </Typography>
-                        <DoubleArrowIcon />
-                    </HomepageButton>
-                </Grid>
-            </Grid> {/* end of homepage buttons */}
-        </Box>
-
-        </StyledEngineProvider>
-        </Emotion10ThemeProvider>
-        </ThemeProvider>
 
         { /*
-        <Router>
-            <Routes>
-                <Route path='/' element={<Enter />} />
-                <Route path="/cs-portfolio" element={<CSPortfolio />} />
-                <Route path="/photography-portfolio" element={<PhotographyPortfolio />} />
-                <Route path="/dndowolf-wiki" element={<DnDoWolfWiki />} />
-                <Route path="/music-database" element={<MusicDatabase />} />
-            </Routes>
-        </Router>
-        */ }
+        </StyledEngineProvider>
+        </Emotion10ThemeProvider>
+        </ThemeProvider> */ }
+
         </div>
     )
 }
