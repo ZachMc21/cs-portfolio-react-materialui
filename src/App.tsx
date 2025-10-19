@@ -9,31 +9,27 @@ import { StyledEngineProvider } from "@mui/material";
 
 import './App.css'
 import homepageTheme from './theme';
-import CreateEmotionCache from './emotion_cache';
 
 function App() {
-    const clientSideEmotionCache = CreateEmotionCache();
-    const lightTheme = createTheme(homepageTheme);
-    console.log(lightTheme);
+    const homeTheme = createTheme(homepageTheme);
+    console.log(homeTheme);
 
     return (
         <div>
             
-        <CacheProvider value={clientSideEmotionCache}>
             <CssBaseline />
-            <ThemeProvider theme={lightTheme}>
-                <Box id="homepage" sx={{ backgroundColor: lightTheme.palette.background.default }}> {/* Pale light blue */}
-                    <Card sx={{ p: 5, mb: 10, backgroundColor: lightTheme.palette.primary.light }}> {/* Less pale light blue */}
+            <ThemeProvider theme={homeTheme}>
+                <Box id="homepage" sx={{ backgroundColor: homeTheme.palette.background.default }}> {/* Pale light blue */}
+                    <Card sx={{ p: 5, mb: 10, backgroundColor: homeTheme.palette.primary.light }}> {/* Less pale light blue */}
                         <CardContent>
-                            <Typography id="page-title" sx={{ fontSize: 52, color: lightTheme.palette.primary.contrastText }}> {/* Very dark blue */}
-                                Zach M
+                            <Typography id="page-title" sx={{ fontSize: 52, color: homeTheme.palette.primary.contrastText }}> {/* Very dark blue */}
+                                Maximus's Portfolio
                             </Typography>
                         </CardContent>
                     </Card>
                 </Box>
             </ThemeProvider>
-        </CacheProvider>
-        { /* <Emotion10ThemeProvider theme={lightTheme}>
+        { /* <Emotion10ThemeProvider theme={homeTheme}>
         <StyledEngineProvider> */}
 
 
