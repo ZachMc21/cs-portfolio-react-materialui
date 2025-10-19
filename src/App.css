@@ -1,7 +1,8 @@
-#root {
+:root {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-image: none;
 }
 
 /* Media queries for the layout of the HomepageButtons */
@@ -25,4 +26,9 @@ Grid#home_buttons {
   Grid#home_buttons {
     flex: 25%;
   }
+}
+
+/* TODO use this instead of MUI's light and dark schemes? that seems wrong though */
+@media (prefers-color-scheme: light) {
+
 }
