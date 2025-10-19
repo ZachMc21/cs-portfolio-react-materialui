@@ -26,11 +26,11 @@ import MusicDatabase from './MusicDatabase';
 function App() {
 
     return (
-        <Container disableGutters sx={{ mx: 0, my: "auto" }}>
+        <Container>
         <ThemeProvider theme={homepageTheme}>
             <CssBaseline />
             
-            <Box id="homepage" sx={{ backgroundColor: homepageTheme.palette.background.default }}> {/* Pale light blue */}
+            <Box id="homepage" sx={{ backgroundColor: homepageTheme.palette.background.default }} display="flex" flexDirection="column" justifyContent="center" > {/* Pale light blue */}
                 <Card sx={{ p: 5, mb: 10, backgroundColor: homepageTheme.palette.primary.light }}> {/* Less pale light blue */}
                     <CardContent>
                         <Typography id="page-title" sx={{ fontSize: 52, color: homepageTheme.palette.primary.contrastText }}> {/* Very dark blue */}

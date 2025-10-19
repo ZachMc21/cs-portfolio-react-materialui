@@ -56,22 +56,35 @@ const homepageTheme = createTheme({
 export default { globalTheme, homepageTheme };*/
 
 const lightThemeSettings = createTheme({
-    palette: {
-      background: {
-        default: '#dff6f7ff',
-      },
-      primary: {
-        main: '#4d858aff',
-        dark: '#203840ff',
-        light: '#7dbec4ff',
-        contrastText: '#0b1d23ff',
-      },
-      secondary: {
-        main: '#c3e8ed',
-        light: cyan[50],
-        dark: '#afd6db',
-        contrastText: grey[800],
-      }
+  //Copied from theme_global, because trying to include theme_global in this file isn't working
+  breakpoints: {
+    values: {
+      mobile: 0,
+      tablet: 640,
+      laptop: 1024,
+      desktop: 1200,
+    },
+  },
+  cssVariables: true,
+  colorSchemes: {
+    dark: true,
+  },
+  palette: {
+    background: {
+      default: '#dff6f7ff',
+    },
+    primary: {
+      main: '#4d858aff',
+      dark: '#203840ff',
+      light: '#7dc6c3ff',
+      contrastText: '#0b1d23ff',
+    },
+    secondary: {
+      main: '#c3e8ed',
+      light: cyan[50],
+      dark: '#afd6db',
+      contrastText: grey[800],
+    }
   }
 }); /*, globalTheme); */
 
