@@ -9,7 +9,7 @@ import { ThemeProvider as Emotion10ThemeProvider } from '@emotion/react';
 import { StyledEngineProvider } from "@mui/material";
 
 import './App.css'
-import homepageTheme from './theme';
+import homepageTheme from './themes/theme';
 
 import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
 

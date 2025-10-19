@@ -23,10 +23,6 @@ const globalTheme = createTheme({
             desktop: 1200,
         },
     },
-    colorSchemes: {
-        light: true,
-        dark: true,
-    },
     cssVariables: true,
 });
 

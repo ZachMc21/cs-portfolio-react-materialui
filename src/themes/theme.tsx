@@ -1,6 +1,6 @@
 import { createTheme } from '@mui/material/styles';
 import { grey, blueGrey, blue, indigo, cyan, red } from '@mui/material/colors';
-import globalTheme from './global_theme';
+import globalTheme from './global_theme.tsx';
 import type { Color } from '@mui/material/styles';
 import type { ButtonProps } from '@mui/material';
 
