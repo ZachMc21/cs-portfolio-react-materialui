@@ -26,4 +26,12 @@ div.home-buttons-row {
 @media (tablet) {
 }
 @media (min-width:laptop)  {
+  div#home-buttons-container {
+    display: flex;
+    flex-direction: row;
+  }
+  div.home-buttons-row {
+    display: flex;
+    flex-direction: row;
+  }
 }

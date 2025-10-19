@@ -13,7 +13,7 @@ declare module '@mui/material/styles' {
     }
 }
 
-
+/*
 const homepageTheme = createTheme({
     colorSchemes: {
         light: {
@@ -46,11 +46,52 @@ const homepageTheme = createTheme({
                 },
                 secondary: {
                     main: indigo[500],
-                    /*contrastText: indigo[100],*/
+                    /*contrastText: indigo[100],
                 }
             },
         },
     },
 });
 
-export default homepageTheme;
+export default { globalTheme, homepageTheme };*/
+
+const lightThemeSettings = createTheme({
+    palette: {
+      background: {
+        default: '#dff6f7ff',
+      },
+      primary: {
+        main: '#4d858aff',
+        dark: '#203840ff',
+        light: '#7dbec4ff',
+        contrastText: '#0b1d23ff',
+      },
+      secondary: {
+        main: '#c3e8ed',
+        light: cyan[50],
+        dark: '#afd6db',
+        contrastText: grey[800],
+      }
+  }
+}); /*, globalTheme); */
+
+/*
+const darkThemeSettings = createTheme({
+  palette: {
+    background: {
+      default: blue[900]
+    },
+    primary: {
+      main: blue[900],
+      contrastText: blue[200],
+    },
+    secondary: {
+      main: indigo[500],
+      /*contrastText: indigo[100], 
+    }
+  },
+}, globalTheme);
+
+export default { lightThemeSettings , darkThemeSettings };
+*/
+export default lightThemeSettings;

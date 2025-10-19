@@ -4,7 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import { Box, Container, CssBaseline, Link } from '@mui/material';
 import Grid from '@mui/system/Grid';
 
-import { ThemeProvider } from '@mui/material/styles';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 import './App.css'
 import homepageTheme from './themes/theme_home';
@@ -16,6 +16,7 @@ import HomepageButton from './custom_components/homepage_button';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Enter from './Enter';
 import CSPortfolio from './CSPortfolio';
+import globalTheme from './themes/theme_global';
 { /*
 import DnDoWolfWiki from './DnDoWolfWiki';
 import MusicDatabase from './MusicDatabase';
@@ -23,17 +24,16 @@ import MusicDatabase from './MusicDatabase';
 
 
 function App() {
-    const homeTheme = homepageTheme;
 
     return (
         <Container disableGutters sx={{ mx: 0, my: "auto" }}>
-        <ThemeProvider theme={homeTheme}>
+        <ThemeProvider theme={homepageTheme}>
             <CssBaseline />
             
-            <Box id="homepage" sx={{ backgroundColor: homeTheme.palette.background.default }}> {/* Pale light blue */}
-                <Card sx={{ p: 5, mb: 10, backgroundColor: homeTheme.palette.primary.light }}> {/* Less pale light blue */}
+            <Box id="homepage" sx={{ backgroundColor: homepageTheme.palette.background.default }}> {/* Pale light blue */}
+                <Card sx={{ p: 5, mb: 10, backgroundColor: homepageTheme.palette.primary.light }}> {/* Less pale light blue */}
                     <CardContent>
-                        <Typography id="page-title" sx={{ fontSize: 52, color: homeTheme.palette.primary.contrastText }}> {/* Very dark blue */}
+                        <Typography id="page-title" sx={{ fontSize: 52, color: homepageTheme.palette.primary.contrastText }}> {/* Very dark blue */}
                             Zach Magloughlin
                         </Typography>
                     </CardContent>
