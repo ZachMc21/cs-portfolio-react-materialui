@@ -5,8 +5,6 @@ import { Box, CssBaseline, Link } from '@mui/material';
 import Grid from '@mui/system/Grid';
 
 import { ThemeProvider } from '@mui/material/styles';
-import { ThemeProvider as Emotion10ThemeProvider } from '@emotion/react';
-import { StyledEngineProvider } from "@mui/material";
 
 import './App.css'
 import homepageTheme from './themes/theme';
@@ -32,8 +30,6 @@ function App() {
             
         <CssBaseline />
         <ThemeProvider theme={homeTheme}>
-        <Emotion10ThemeProvider theme={homeTheme}>
-        <StyledEngineProvider>
         
         <Box id="homepage" sx={{ backgroundColor: homeTheme.palette.background.default }}> {/* Pale light blue */}
             <Card sx={{ p: 5, mb: 10, backgroundColor: homeTheme.palette.primary.light }}> {/* Less pale light blue */}
@@ -71,8 +67,6 @@ function App() {
             </Grid> {/* end of homepage buttons */}
         </Box>
 
-        </StyledEngineProvider>
-        </Emotion10ThemeProvider>
         </ThemeProvider>
 
         { /*

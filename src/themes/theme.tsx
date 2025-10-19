@@ -14,12 +14,11 @@ declare module '@mui/material/styles' {
 }
 
 const homepageTheme = createTheme({
-    ...globalTheme,
     colorSchemes: {
         light: {
             palette: {
                 background: {
-                    default: '#b8f0f2',
+                    default: '#dff6f7ff',
                 },
                 primary: {
                     main: '#4d858aff',

@@ -1,6 +1,5 @@
 :root {
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
   background-image: none;
 }
@@ -30,5 +29,8 @@ Grid#home_buttons {
 
 /* TODO use this instead of MUI's light and dark schemes? that seems wrong though */
 @media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--mui-palette-light-background-default);
+  }
 
 }
