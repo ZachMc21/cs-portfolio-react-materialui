@@ -1,11 +1,5 @@
 :root {
   margin: 0 auto;
-  text-align: center;
-  background-image: none;
-}
-body {
-  display: block;
-  align-self: center;
 }
 
 /* HomepageButtons - mobile-first */
