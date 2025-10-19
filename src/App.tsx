@@ -1,13 +1,13 @@
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import { Box, CssBaseline, Link } from '@mui/material';
+import { Box, Container, CssBaseline, Link } from '@mui/material';
 import Grid from '@mui/system/Grid';
 
 import { ThemeProvider } from '@mui/material/styles';
 
 import './App.css'
-import homepageTheme from './themes/theme';
+import homepageTheme from './themes/theme_home';
 
 import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
 
@@ -26,50 +26,50 @@ function App() {
     const homeTheme = homepageTheme;
 
     return (
-        <div>
-            
-        <CssBaseline />
+        <Container disableGutters>
         <ThemeProvider theme={homeTheme}>
-        
-        <Box id="homepage" sx={{ backgroundColor: homeTheme.palette.background.default }}> {/* Pale light blue */}
-            <Card sx={{ p: 5, mb: 10, backgroundColor: homeTheme.palette.primary.light }}> {/* Less pale light blue */}
-                <CardContent>
-                    <Typography id="page-title" sx={{ fontSize: 52, color: homeTheme.palette.primary.contrastText }}> {/* Very dark blue */}
-                        Zach Magloughlin
-                    </Typography>
-                </CardContent>
-            </Card>
-            <Grid container id="home_buttons" spacing={4}>
-                <Grid size={{ mobile: 12, tablet: 6, laptop: 3, desktop: 3 }}>
-                    <HomepageButton variant="contained" disableElevation href="/cs-portfolio">
-                        <Typography>Enter CS Portfolio </Typography>
-                        <DoubleArrowIcon />
-                    </HomepageButton>
-                </Grid>
-                <Grid size={{ mobile: 12, tablet: 6, laptop: 3, desktop: 3 }}>
-                    <HomepageButton variant="contained" disableElevation href="/photography-portfolio">
-                        <Typography>Enter Photography Portfolio</Typography>
-                        <DoubleArrowIcon />
-                    </HomepageButton>
-                </Grid>
-                <Grid size={{ mobile: 12, tablet: 6, laptop: 3, desktop: 3 }}>
-                    <HomepageButton variant="contained" disableElevation href="/dndowolf-wiki">
-                        <Typography>Enter D&DoWolf Wiki </Typography>
-                        <DoubleArrowIcon />
-                    </HomepageButton>
-                </Grid>
-                <Grid size={{ mobile: 12, tablet: 6, laptop: 3, desktop: 3 }}>
-                    <HomepageButton variant="contained" disableElevation href="/music-database">
-                        <Typography>Enter Music Database </Typography>
-                        <DoubleArrowIcon />
-                    </HomepageButton>
-                </Grid>
-            </Grid> {/* end of homepage buttons */}
-        </Box>
+            <CssBaseline />
+            
+            <Box id="homepage" sx={{ backgroundColor: homeTheme.palette.background.default }}> {/* Pale light blue */}
+                <Card sx={{ p: 5, mb: 10, backgroundColor: homeTheme.palette.primary.light }}> {/* Less pale light blue */}
+                    <CardContent>
+                        <Typography id="page-title" sx={{ fontSize: 52, color: homeTheme.palette.primary.contrastText }}> {/* Very dark blue */}
+                            Zach Magloughlin
+                        </Typography>
+                    </CardContent>
+                </Card>
+                <Grid container id="home_buttons_container" spacing={4}>
+                    <Grid className="home-button" size={{ mobile: 12, tablet: 6, laptop: 3, desktop: 3 }}>
+                        <HomepageButton variant="contained" disableElevation href="/cs-portfolio">
+                            <Typography>Enter CS Portfolio </Typography>
+                            <DoubleArrowIcon />
+                        </HomepageButton>
+                    </Grid>
+                    <Grid className="home-button" size={{ mobile: 12, tablet: 6, laptop: 3, desktop: 3 }}>
+                        <HomepageButton variant="contained" disableElevation href="/photography-portfolio">
+                            <Typography>Enter Photography Portfolio</Typography>
+                            <DoubleArrowIcon />
+                        </HomepageButton>
+                    </Grid>
+                    <Grid className="home-button" size={{ mobile: 12, tablet: 6, laptop: 3, desktop: 3 }}>
+                        <HomepageButton variant="contained" disableElevation href="/dndowolf-wiki">
+                            <Typography>Enter D&DoWolf Wiki </Typography>
+                            <DoubleArrowIcon />
+                        </HomepageButton>
+                    </Grid>
+                    <Grid className="home-button" size={{ mobile: 12, tablet: 6, laptop: 3, desktop: 3 }}>
+                        <HomepageButton variant="contained" disableElevation href="/music-database">
+                            <Typography>Enter Music Database </Typography>
+                            <DoubleArrowIcon />
+                        </HomepageButton>
+                    </Grid>
+                </Grid> {/* end of homepage buttons */}
+            </Box>
 
         </ThemeProvider>
+        </Container>
 
-        { /*
+        /*
         <Router>
             <Routes>
                 <Route path='/' element={<Enter />} />
@@ -79,8 +79,7 @@ function App() {
                 <Route path="/music-database" element={<MusicDatabase />} />
             </Routes>
         </Router>
-        */ }
-        </div>
+        */
     )
 }
 

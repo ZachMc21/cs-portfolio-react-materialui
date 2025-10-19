@@ -1,8 +1,8 @@
 import { createTheme } from '@mui/material/styles';
 import { grey, blueGrey, blue, indigo, cyan, red } from '@mui/material/colors';
-import globalTheme from './global_theme.tsx';
 import type { Color } from '@mui/material/styles';
 import type { ButtonProps } from '@mui/material';
+import globalTheme from './theme_global';
 
 declare module '@mui/material/styles' {
     interface Palette {
@@ -12,6 +12,7 @@ declare module '@mui/material/styles' {
         custom?: PaletteOptions['primary'];
     }
 }
+
 
 const homepageTheme = createTheme({
     colorSchemes: {

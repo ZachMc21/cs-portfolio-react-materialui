@@ -1,3 +1,7 @@
+Container {
+  margin: 0 auto;
+}
+
 :root {
   margin: 0 auto;
   text-align: center;
@@ -5,32 +9,23 @@
 }
 
 /* Media queries for the layout of the HomepageButtons */
+Grid#home_buttons_container {
+  display: grid;
+}
 Grid#home_buttons {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  align-items: stretch;
 }
 @media (mobile) {
-  Grid#home_buttons {
+  Grid.home_button {
     flex-direction: column;
   }
 }
 @media (tablet) {
-  Grid#home_buttons {
+  Grid.home-button {
     flex: 50%,
   }
 }
 @media (min-width:laptop)  {
-  Grid#home_buttons {
+  Grid.home-button {
     flex: 25%;
   }
-}
-
-/* TODO use this instead of MUI's light and dark schemes? that seems wrong though */
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: var(--mui-palette-light-background-default);
-  }
-
 }
