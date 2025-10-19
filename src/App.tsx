@@ -39,27 +39,23 @@ function App() {
                     </CardContent>
                 </Card>
                 <div id="home-buttons-container">
-                    <div className="home-buttons-row">
-                        <HomepageButton href="/cs-portfolio" variant="contained" disableElevation>
-                            <Typography>Enter CS Portfolio</Typography>
-                            <DoubleArrowIcon />
-                        </HomepageButton>
-                        <HomepageButton href="/photography-portfolio" variant="contained" disableElevation>
-                            <Typography>Enter Photography Portfolio</Typography>
-                            <DoubleArrowIcon />
-                        </HomepageButton>
+                    <HomepageButton href="/cs-portfolio" className="home-column" variant="contained" disableElevation>
+                        <Typography sx={{ textWrap: 'balance', mb: "0.5rem" }}>Enter CS Portfolio</Typography>
+                        <DoubleArrowIcon />
+                    </HomepageButton>
+                    <HomepageButton href="/photography-portfolio" className="home-column" variant="contained" disableElevation>
+                        <Typography sx={{ textWrap: 'balance', mb: "0.5rem" }}>Enter Photography Portfolio</Typography>
+                        <DoubleArrowIcon />
+                    </HomepageButton>
 
-                    </div>
-                    <div className="home-buttons-row">
-                        <HomepageButton href="/dndowolf-wiki" variant="contained" disableElevation>
-                            <Typography>Enter D&DoWolf Wiki </Typography>
-                            <DoubleArrowIcon />
-                        </HomepageButton>
-                        <HomepageButton href="/music-database" variant="contained" disableElevation>
-                            <Typography>Enter Music Database </Typography>
-                            <DoubleArrowIcon />
-                        </HomepageButton>
-                    </div>
+                    <HomepageButton href="/dndowolf-wiki" className="home-column" variant="contained" disableElevation>
+                        <Typography sx={{ textWrap: 'balance', mb: "0.5rem" }}>Enter D&DoWolf Wiki </Typography>
+                        <DoubleArrowIcon />
+                    </HomepageButton>
+                    <HomepageButton href="/music-database" className="home-column" variant="contained" disableElevation>
+                        <Typography sx={{ textWrap: 'balance', mb: "0.5rem" }}>Enter Music Database </Typography>
+                        <DoubleArrowIcon />
+                    </HomepageButton>
                 </div>
             </Box>
 
