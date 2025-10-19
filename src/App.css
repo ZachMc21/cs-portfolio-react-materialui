@@ -8,22 +8,22 @@ Container {
   background-image: none;
 }
 
-/* Media queries for the layout of the HomepageButtons */
-Grid#home-buttons-container {
-  display: grid;
+/* HomepageButtons - mobile-first */
+div#home-buttons-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 90%;
 }
+div.home-buttons-row {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem auto;
+}
+/* HomepageButtons - media queries*/
 @media (mobile) {
-  Grid.home-button {
-    flex-direction: column;
-  }
 }
 @media (tablet) {
-  Grid.home-button {
-    flex: 50%;
-  }
 }
 @media (min-width:laptop)  {
-  Grid.home-button {
-    flex: 25%;
-  }
 }

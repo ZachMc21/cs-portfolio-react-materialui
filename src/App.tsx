@@ -26,7 +26,7 @@ function App() {
     const homeTheme = homepageTheme;
 
     return (
-        <Container disableGutters>
+        <Container disableGutters sx={{ mx: 0, my: "auto" }}>
         <ThemeProvider theme={homeTheme}>
             <CssBaseline />
             
@@ -38,32 +38,29 @@ function App() {
                         </Typography>
                     </CardContent>
                 </Card>
-                <Grid container id="home-buttons-container" spacing={4}>
-                    <Grid className="home-button" size={{ mobile: 12, tablet: 6, laptop: 3, desktop: 3 }}>
-                        <HomepageButton variant="contained" disableElevation href="/cs-portfolio">
-                            <Typography>Enter CS Portfolio </Typography>
+                <div id="home-buttons-container">
+                    <div className="home-buttons-row">
+                        <HomepageButton href="/cs-portfolio" variant="contained" disableElevation>
+                            <Typography>Enter CS Portfolio</Typography>
                             <DoubleArrowIcon />
                         </HomepageButton>
-                    </Grid>
-                    <Grid className="home-button" size={{ mobile: 12, tablet: 6, laptop: 3, desktop: 3 }}>
-                        <HomepageButton variant="contained" disableElevation href="/photography-portfolio">
+                        <HomepageButton href="/photography-portfolio" variant="contained" disableElevation>
                             <Typography>Enter Photography Portfolio</Typography>
                             <DoubleArrowIcon />
                         </HomepageButton>
-                    </Grid>
-                    <Grid className="home-button" size={{ mobile: 12, tablet: 6, laptop: 3, desktop: 3 }}>
-                        <HomepageButton variant="contained" disableElevation href="/dndowolf-wiki">
+
+                    </div>
+                    <div className="home-buttons-row">
+                        <HomepageButton href="/dndowolf-wiki" variant="contained" disableElevation>
                             <Typography>Enter D&DoWolf Wiki </Typography>
                             <DoubleArrowIcon />
                         </HomepageButton>
-                    </Grid>
-                    <Grid className="home-button" size={{ mobile: 12, tablet: 6, laptop: 3, desktop: 3 }}>
-                        <HomepageButton variant="contained" disableElevation href="/music-database">
+                        <HomepageButton href="/music-database" variant="contained" disableElevation>
                             <Typography>Enter Music Database </Typography>
                             <DoubleArrowIcon />
                         </HomepageButton>
-                    </Grid>
-                </Grid> {/* end of homepage buttons */}
+                    </div>
+                </div>
             </Box>
 
         </ThemeProvider>

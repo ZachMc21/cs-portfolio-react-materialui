@@ -9,8 +9,8 @@ export const HomepageButton = styled(MuiButton)(({ }) => ({
     flexDirection: "column",
     justifyContent: "center",
     fontSize: "large",
-    width: '100%',
     height: "8rem",
+    margin: "1rem",
     "&:hover": { transform: "scale3d(1.06, 1.06, 1)" },
 }));
 
