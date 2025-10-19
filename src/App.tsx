@@ -38,7 +38,7 @@ function App() {
                         </Typography>
                     </CardContent>
                 </Card>
-                <Grid container id="home_buttons_container" spacing={4}>
+                <Grid container id="home-buttons-container" spacing={4}>
                     <Grid className="home-button" size={{ mobile: 12, tablet: 6, laptop: 3, desktop: 3 }}>
                         <HomepageButton variant="contained" disableElevation href="/cs-portfolio">
                             <Typography>Enter CS Portfolio </Typography>

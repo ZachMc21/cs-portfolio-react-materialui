@@ -9,19 +9,17 @@ Container {
 }
 
 /* Media queries for the layout of the HomepageButtons */
-Grid#home_buttons_container {
+Grid#home-buttons-container {
   display: grid;
 }
-Grid#home_buttons {
-}
 @media (mobile) {
-  Grid.home_button {
+  Grid.home-button {
     flex-direction: column;
   }
 }
 @media (tablet) {
   Grid.home-button {
-    flex: 50%,
+    flex: 50%;
   }
 }
 @media (min-width:laptop)  {
