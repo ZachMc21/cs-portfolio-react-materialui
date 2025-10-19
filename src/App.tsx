@@ -30,7 +30,7 @@ function App() {
         <ThemeProvider theme={homepageTheme}>
             <CssBaseline />
             
-            <Box id="homepage" sx={{ backgroundColor: homepageTheme.palette.background.default }} display="flex" flexDirection="column" justifyContent="center" > {/* Pale light blue */}
+            <Box id="homepage-content" sx={{ backgroundColor: homepageTheme.palette.background.default, mb: "5rem" }} display="flex" flexDirection="column" justifyContent="center" > {/* Pale light blue */}
                 <Card sx={{ p: 5, mb: 10, backgroundColor: homepageTheme.palette.primary.light }}> {/* Less pale light blue */}
                     <CardContent>
                         <Typography id="page-title" sx={{ fontSize: 52, color: homepageTheme.palette.primary.contrastText }}> {/* Very dark blue */}
@@ -58,6 +58,11 @@ function App() {
                     </HomepageButton>
                 </div>
             </Box>
+            <footer>
+                <Box id="footer-text" sx={{ mb: 0, fontSize: "0.75rem" }}>
+                    <p>© 2025 Zach Magloughlin. All rights reserved.</p>
+                </Box>
+            </footer>
 
         </ThemeProvider>
         </Container>
