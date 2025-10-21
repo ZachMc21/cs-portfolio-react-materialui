@@ -16,11 +16,11 @@ import HomepageButton from './custom_components/homepage_button';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Enter from './Enter';
 import CSPortfolio from './CSPortfolio';
-import globalTheme from './themes/theme_global';
-{ /*
+import PhotographyPortfolio from './PhotographyPortfolio';
 import DnDoWolfWiki from './DnDoWolfWiki';
 import MusicDatabase from './MusicDatabase';
-*/ }
+
+import globalTheme from './themes/theme_global';
 
 
 function App() {
@@ -64,20 +64,18 @@ function App() {
                 </Box>
             </footer>
 
+
+            <Router>
+                <Routes>
+                    <Route path='/' element={<Enter />} />
+                    <Route path="/cs-portfolio" element={<CSPortfolio />} />
+                    <Route path="/photography-portfolio" element={<PhotographyPortfolio />} />
+                    <Route path="/dndowolf-wiki" element={<DnDoWolfWiki />} />
+                    <Route path="/music-database" element={<MusicDatabase />} />
+                </Routes>
+            </Router>
         </ThemeProvider>
         </Container>
-
-        /*
-        <Router>
-            <Routes>
-                <Route path='/' element={<Enter />} />
-                <Route path="/cs-portfolio" element={<CSPortfolio />} />
-                <Route path="/photography-portfolio" element={<PhotographyPortfolio />} />
-                <Route path="/dndowolf-wiki" element={<DnDoWolfWiki />} />
-                <Route path="/music-database" element={<MusicDatabase />} />
-            </Routes>
-        </Router>
-        */
     )
 }
 
