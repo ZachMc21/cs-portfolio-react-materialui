@@ -1,11 +1,17 @@
 
 import UnderConstruction from './custom_components/under_construction';
 
-export default function CSPortfolio() {
+var csPortfolio = document.createElement('div');
+csPortfolio.setAttribute('id', 'cs-portfolio-parent');
 
-    return(
-        <div id="cs-portfolio-parent">
-            <UnderConstruction pageName={"Computer Science Portfolio"} />
-        </div>
-    )
+function CSPortfolio() {
+    var title: string = "Computer Science Portfolio";
+    var constructionNotice = UnderConstruction(title: string): HtmlDivElement;
+
+    <div id="cs-portfolio-parent">
+        {() => <div className="under-construction">UnderConstruction(title);</div>}
+    </div> 
+        
 }
+
+export default csPortfolio;

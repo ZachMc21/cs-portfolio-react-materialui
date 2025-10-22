@@ -1,7 +1,7 @@
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import { Box, Container, CssBaseline, Link } from '@mui/material';
+import { Box, Container, CssBaseline } from '@mui/material';
 
 import { ThemeProvider } from '@mui/material/styles';
 
@@ -18,8 +18,6 @@ import CSPortfolio from './CSPortfolio';
 import PhotographyPortfolio from './PhotographyPortfolio';
 import DnDoWolfWiki from './DnDoWolfWiki';
 import MusicDatabase from './MusicDatabase';
-
-import globalTheme from './themes/theme_global';
 
 
 function App() {
@@ -73,7 +71,7 @@ function App() {
                     <Route path="/music-database" element={<MusicDatabase />} />
                 </Routes>
             </Router>
-            
+
         </ThemeProvider>
         </Container>
     )
