@@ -1,0 +1,16 @@
+
+div.construction-notice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2em;
+}
+div.construction-notice#container {
+  margin: 3rem auto;
+}
+button.construction-notice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+}

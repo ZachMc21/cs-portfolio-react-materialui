@@ -10,7 +10,7 @@ import homepageTheme from './themes/theme_home';
 
 import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
 
-import HomepageButton from './custom_components/homepage_button';
+import HomepageButton from './custom_components/HomepageButton';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Enter from './Enter';
@@ -18,6 +18,7 @@ import CSPortfolio from './CSPortfolio';
 import PhotographyPortfolio from './PhotographyPortfolio';
 import DnDoWolfWiki from './DnDoWolfWiki';
 import MusicDatabase from './MusicDatabase';
+import Footer from './custom_components/Footer';
 
 
 function App() {
@@ -55,12 +56,7 @@ function App() {
                     </HomepageButton>
                 </div>
             </Box>
-            <footer>
-                <Box id="footer-text" sx={{ mb: 0, fontSize: "0.75rem" }}>
-                    <p>© 2025 Zach Magloughlin. All rights reserved.</p>
-                </Box>
-            </footer>
-
+            <Footer></Footer>
 
             <Router>
                 <Routes>
