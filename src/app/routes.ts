@@ -1,1 +1,0 @@
-import { type RouteCnofig, route } from "@react-router-dom/dev/routes";

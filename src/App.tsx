@@ -6,28 +6,24 @@ import { Box, Container, CssBaseline } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 
 import './App.css'
-import homepageTheme from '../themes/theme_home';
+import homepageTheme from './themes/theme_home';
 
 import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
 
-import HomepageButton from '../custom_components/HomepageButton';
+import HomepageButton from './custom_components/HomepageButton';
 
-{ /*
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Enter from './Enter';
 import CSPortfolio from './CSPortfolio';
 import PhotographyPortfolio from './PhotographyPortfolio';
 import DnDoWolfWiki from './DnDoWolfWiki';
 import MusicDatabase from './MusicDatabase';
-*/ }
-import Footer from '../custom_components/Footer';
-import React from 'react';
+import Footer from './custom_components/Footer';
 
 
 function App() {
 
     return (
-        <React.StrictMode>
         <Container>
         <ThemeProvider theme={homepageTheme}>
             <CssBaseline />
@@ -60,9 +56,8 @@ function App() {
                     </HomepageButton>
                 </div>
             </Box>
-            <Footer />
+            <Footer></Footer>
 
-            { /* 
             <Router>
                 <Routes>
                     <Route path='/' element={<Enter />} />
@@ -72,11 +67,9 @@ function App() {
                     <Route path="/music-database" element={<MusicDatabase />} />
                 </Routes>
             </Router>
-            */ }
 
         </ThemeProvider>
         </Container>
-        </React.StrictMode>
     )
 }
 
