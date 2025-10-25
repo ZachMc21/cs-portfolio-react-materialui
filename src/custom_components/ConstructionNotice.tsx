@@ -23,10 +23,10 @@ const ConstructionNotice = ({ title }: ConstructionProps) => {
             <CssBaseline />
 
             <div className="construction-notice" id="container">
-                <ConstructionIcon sx={{ fontSize: "6rem", margin: "1rem", marginTop: "3rem" }}/>
+                <ConstructionIcon sx={{ fontSize: "8rem", margin: "1rem", marginTop: "3rem" }}/>
                 <h1>{title}</h1>
-                <p>This page is under construction. <br /> Check back later!</p>
-                <BackButton className="construction-notice" sx={{ fontSize: "2em", color: csTheme.palette.primary.dark, backgroundColor: "inherit", borderColor: csTheme.palette.primary.dark }}>
+                <p style={{marginBottom: "3rem"}}>This page is under construction. <br /> Check back later!</p>
+                <BackButton className="construction-notice" sx={{ fontSize: "2em", color: csTheme.palette.primary.dark, backgroundColor: csTheme.palette.primary.light }}>
                     <Typography sx={{ fontStyle: "italic" }} onClick={() => navigate(-1)}> Go back </Typography>
                     <ArrowBackIcon />
                 </BackButton>
