@@ -3,10 +3,10 @@ div.construction-notice {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 div.construction-notice#container {
-  margin: 3rem auto;
+  margin-bottom: 3rem;
 }
 button.construction-notice {
   display: flex;
