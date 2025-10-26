@@ -1,32 +1,32 @@
 import { createTheme } from "@mui/material/styles";
 
 declare module '@mui/material/styles' {
-  interface BreakpointOverrides {
-    mobile: true; // adds custom breakpoints
-    tablet: true;
-    laptop: true;
-    desktop: true;
-    xs: false; // removes the default breakpoints
-    sm: false;
-    md: false;
-    lg: false;
-    xl: false;
-  }
+	interface BreakpointOverrides {
+		mobile: true; // adds custom breakpoints
+		tablet: true;
+		laptop: true;
+		desktop: true;
+		xs: false; // removes the default breakpoints
+		sm: false;
+		md: false;
+		lg: false;
+		xl: false;
+	}
 }
 
 const globalTheme = createTheme({
-  breakpoints: {
-    values: {
-      mobile: 0,
-      tablet: 640,
-      laptop: 1024,
-      desktop: 1200,
-    },
-  },
-  cssVariables: true,
-  colorSchemes: {
-    dark: true,
-  },
+	breakpoints: {
+		values: {
+			mobile: 0,
+			tablet: 640,
+			laptop: 1024,
+			desktop: 1200,
+		},
+	},
+	cssVariables: true,
+	colorSchemes: {
+		dark: true,
+	},
 });
 
 export default globalTheme;

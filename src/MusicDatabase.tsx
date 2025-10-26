@@ -2,11 +2,11 @@
 
 function MusicDatabase() {
 
-    return(
-        <div id="music-database-parent">
+	return (
+		<div id="music-database-parent">
 
-        </div>
-    )
+		</div>
+	)
 }
 
 export default MusicDatabase

@@ -2,11 +2,11 @@
 
 function PhotographyPortfolio() {
 
-    return(
-        <div id="photography-portfolio-parent">
+	return (
+		<div id="photography-portfolio-parent">
 
-        </div>
-    )
+		</div>
+	)
 }
 
 export default PhotographyPortfolio

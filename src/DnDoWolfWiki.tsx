@@ -2,11 +2,11 @@
 
 function DnDoWolfWiki() {
 
-    return(
-        <div id="dndowolf-wiki-parent">
+	return (
+		<div id="dndowolf-wiki-parent">
 
-        </div>
-    )
+		</div>
+	)
 }
 
 export default DnDoWolfWiki
