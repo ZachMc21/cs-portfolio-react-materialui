@@ -1,16 +1,9 @@
-import Typography from '@mui/material/Typography';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import { Box, Container, CssBaseline } from '@mui/material';
+import { Container } from '@mui/material';
 
 import { ThemeProvider } from '@mui/material/styles';
 
 import './App.css'
 import homepageTheme from './themes/theme_home';
-
-import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
-
-import HomepageButton from './custom_components/HomepageButton';
 
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Enter from './Enter';
@@ -18,7 +11,6 @@ import CSPortfolio from './CSPortfolio';
 import PhotographyPortfolio from './PhotographyPortfolio';
 import DnDoWolfWiki from './DnDoWolfWiki';
 import MusicDatabase from './MusicDatabase';
-import Footer from './custom_components/Footer';
 
 
 function App() {

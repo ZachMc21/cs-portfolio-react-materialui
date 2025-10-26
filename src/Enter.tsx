@@ -8,44 +8,44 @@ import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
 
 function Enter() {
 
-  return (
-    <Container id="enter-site">
-      <ThemeProvider theme={homepageTheme}>
-        <CssBaseline />
+	return (
+		<Container id="enter-site" sx={{ height: "100vh", display: "flex", flexDirection: "column", mt: "5rem" }}>
+			<ThemeProvider theme={homepageTheme}>
+				<CssBaseline />
 
-        <Box id="homepage-content" sx={{ backgroundColor: homepageTheme.palette.background.default, mb: "5rem" }} display="flex" flexDirection="column" justifyContent="center" > {/* Pale light blue */}
-          <Card sx={{ p: 5, mb: 10, backgroundColor: homepageTheme.palette.primary.light }}> {/* Less pale light blue */}
-            <CardContent>
-              <Typography id="page-title" sx={{ fontSize: 52, color: homepageTheme.palette.primary.contrastText }}> {/* Very dark blue */}
-                Zach Magloughlin
-              </Typography>
-            </CardContent>
-          </Card>
-          <div id="home-buttons-container">
-            <HomepageButton href="/cs-portfolio" className="home-column" variant="contained" disableElevation>
-              <Typography sx={{ textWrap: 'balance', mb: "0.5rem" }}>Enter CS Portfolio</Typography>
-              <DoubleArrowIcon />
-            </HomepageButton>
-            <HomepageButton href="/photography-portfolio" className="home-column" variant="contained" disableElevation>
-              <Typography sx={{ textWrap: 'balance', mb: "0.5rem" }}>Enter Photography Portfolio</Typography>
-              <DoubleArrowIcon />
-            </HomepageButton>
+				<Box id="homepage-content" sx={{ backgroundColor: homepageTheme.palette.background.default, mb: "2rem",  display: "flex", flexDirection: "column", alignContent: "center" }}> {/* Pale light blue */}
+					<Card sx={{ p: 5, mb: 10, backgroundColor: homepageTheme.palette.primary.light }}> {/* Less pale light blue */}
+						<CardContent>
+							<Typography id="page-title" sx={{ fontSize: 52, color: homepageTheme.palette.primary.contrastText }}> {/* Very dark blue */}
+								Zach Magloughlin
+							</Typography>
+						</CardContent>
+					</Card>
+					<Container id="home-buttons-container" sx={{ mb: "1rem" }}>
+						<HomepageButton href="/cs-portfolio" className="home-column" variant="contained" disableElevation>
+							<Typography sx={{ textWrap: 'balance', mb: "0.5rem" }}>Enter CS Portfolio</Typography>
+							<DoubleArrowIcon />
+						</HomepageButton>
+						<HomepageButton href="/photography-portfolio" className="home-column" variant="contained" disableElevation>
+							<Typography sx={{ textWrap: 'balance', mb: "0.5rem" }}>Enter Photography Portfolio</Typography>
+							<DoubleArrowIcon />
+						</HomepageButton>
 
-            <HomepageButton href="/dndowolf-wiki" className="home-column" variant="contained" disableElevation>
-              <Typography sx={{ textWrap: 'balance', mb: "0.5rem" }}>Enter D&DoWolf Wiki </Typography>
-              <DoubleArrowIcon />
-            </HomepageButton>
-            <HomepageButton href="/music-database" className="home-column" variant="contained" disableElevation>
-              <Typography sx={{ textWrap: 'balance', mb: "0.5rem" }}>Enter Music Database </Typography>
-              <DoubleArrowIcon />
-            </HomepageButton>
-          </div>
-        </Box>
-        <Footer />
+						<HomepageButton href="/dndowolf-wiki" className="home-column" variant="contained" disableElevation>
+							<Typography sx={{ textWrap: 'balance', mb: "0.5rem" }}>Enter D&DoWolf Wiki </Typography>
+							<DoubleArrowIcon />
+						</HomepageButton>
+						<HomepageButton href="/music-database" className="home-column" variant="contained" disableElevation>
+							<Typography sx={{ textWrap: 'balance', mb: "0.5rem" }}>Enter Music Database </Typography>
+							<DoubleArrowIcon />
+						</HomepageButton>
+					</Container>
+				</Box>
+				<Footer />
 
-      </ThemeProvider>
-    </Container>
-  )
+			</ThemeProvider>
+		</Container>
+	)
 }
 
 export default Enter;

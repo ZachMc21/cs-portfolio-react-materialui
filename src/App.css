@@ -2,7 +2,7 @@
   margin: 0 auto;
 }
 
-/* HomepageButtons - mobile-first */
+/* HomepageButtons - mobile-first (1-wide) */
 div#home-buttons-container {
   display: flex;
   flex-direction: column;
@@ -10,6 +10,7 @@ div#home-buttons-container {
   align-content: center;
   margin: auto 10%;
 }
+
 /* HomepageButtons layout - tablet (2-wide) */
 @media screen and (min-width: 640px) {
   div#home-buttons-container {
@@ -22,6 +23,7 @@ div#home-buttons-container {
     max-width: 38%;
   }
 }
+
 /* HomepageButtons layout - laptops & desktops (4-wide) */
 @media screen and (min-width: 1024px) {
   div#home-buttons-container {
