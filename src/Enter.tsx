@@ -31,12 +31,12 @@ function Enter() {
 							<DoubleArrowIcon />
 						</HomepageButton>
 
-						<HomepageButton href="/dndowolf-wiki" className="home-column" variant="contained" disableElevation>
-							<Typography sx={{ textWrap: 'balance', mb: "0.5rem" }}>Enter D&DoWolf Wiki </Typography>
-							<DoubleArrowIcon />
-						</HomepageButton>
 						<HomepageButton href="/music-database" className="home-column" variant="contained" disableElevation>
 							<Typography sx={{ textWrap: 'balance', mb: "0.5rem" }}>Enter Music Database </Typography>
+							<DoubleArrowIcon />
+						</HomepageButton>
+						<HomepageButton href="/text-rpg-game" className="home-column" variant="contained" disableElevation>
+							<Typography sx={{ textWrap: 'balance', mb: "0.5rem" }}>Enter Text RPG Game </Typography>
 							<DoubleArrowIcon />
 						</HomepageButton>
 					</Container>
