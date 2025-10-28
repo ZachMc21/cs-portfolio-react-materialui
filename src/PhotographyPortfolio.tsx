@@ -1,12 +1,16 @@
 
+import ConstructionNotice from './custom_components/ConstructionNotice';
+import Footer from './custom_components/Footer';
 
 function PhotographyPortfolio() {
 
 	return (
-		<div id="photography-portfolio-parent">
-
+		<div id="photo-portfolio-parent">
+			<ConstructionNotice title={"Photography Portfolio"} />
+			<Footer />
 		</div>
-	)
+	);
+
 }
 
-export default PhotographyPortfolio
+export default PhotographyPortfolio;

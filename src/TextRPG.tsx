@@ -1,16 +1,15 @@
-
 import ConstructionNotice from './custom_components/ConstructionNotice';
 import Footer from './custom_components/Footer';
 
-function MusicDatabase() {
+function TextRPG() {
 
 	return (
-		<div id="music-database">
-			<ConstructionNotice title={"Music Database"} />
+		<div id="text-rpg-parent">
+			<ConstructionNotice title={"Text RPG"} />
 			<Footer />
 		</div>
 	);
 
 }
 
-export default MusicDatabase;
+export default TextRPG;

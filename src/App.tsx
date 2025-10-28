@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Enter from './Enter';
 import CSPortfolio from './CSPortfolio';
 import PhotographyPortfolio from './PhotographyPortfolio';
-import TextRPGGame from './TextRPGGame';
+import TextRPG from './TextRPG';
 import MusicDatabase from './MusicDatabase';
 
 
@@ -22,8 +22,8 @@ function App() {
 					<Route path='/' element={<Enter />} />
 					<Route path="/cs-portfolio" element={<CSPortfolio />} />
 					<Route path="/photography-portfolio" element={<PhotographyPortfolio />} />
-					<Route path="/dndowolf-wiki" element={<TextRPGGame />} />
 					<Route path="/music-database" element={<MusicDatabase />} />
+					<Route path="/text-rpg" element={<TextRPG />} />
 				</Routes>
 
 			</ThemeProvider>

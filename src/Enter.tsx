@@ -35,7 +35,7 @@ function Enter() {
 							<Typography sx={{ textWrap: 'balance', mb: "0.5rem" }}>Enter Music Database </Typography>
 							<DoubleArrowIcon />
 						</HomepageButton>
-						<HomepageButton href="/text-rpg-game" className="home-column" variant="contained" disableElevation>
+						<HomepageButton href="/text-rpg" className="home-column" variant="contained" disableElevation>
 							<Typography sx={{ textWrap: 'balance', mb: "0.5rem" }}>Enter Text RPG Game </Typography>
 							<DoubleArrowIcon />
 						</HomepageButton>
