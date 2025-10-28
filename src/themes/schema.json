@@ -1,0 +1,40 @@
+{
+    "data": {
+        "homepageLight": {
+            "id": "Theme-02",
+            "name": "Homepage Light",
+            "colors": {
+                "Box": {
+                    "background": "#dff6f7ff"
+                },
+                "Card": {
+                    "background": "#7dc6c3ff",
+                    "text": "#203840ff"
+                },
+                "HomepageButton": {
+                    "background": "#7dc6c3ff",
+                    "text": "#203840ff"
+                }
+            },
+            "font": "AllerBold"
+        },
+        "homepageDark": {
+            "id": "Theme-01",
+            "name": "Homepage Dark",
+            "colors": {
+                "Box": {
+                    "background": "#0b1d23ff"
+                },
+                "Card": {
+                    "background": "#4d858aff",
+                    "text": "#0b1d23ff"
+                },
+                "HomepageButton": {
+                    "background": "#4d858aff",
+                    "text": "#0b1d23ff"
+                }
+            },
+            "font": "AllerBold"
+        }
+    }
+}
