@@ -1,6 +1,6 @@
 import { CssBaseline, Box, Card, CardContent, Typography, ThemeProvider, Container } from "@mui/material";
 import Footer from "./custom_components/Footer";
-import homepageTheme from './themes/theme_home';
+import homepageTheme from './themes/theme-home';
 import HomepageButton from "./custom_components/HomepageButton";
 import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
 

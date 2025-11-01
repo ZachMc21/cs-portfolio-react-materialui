@@ -2,7 +2,7 @@ import { Container, CssBaseline } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import ConstructionIcon from '@mui/icons-material/Construction';
 import BackButton from './BackButton.tsx';
-import csTheme from '../themes/theme_cs';
+import csTheme from '../themes/theme-cs-portfolio.tsx';
 import './construction-notice.css';
 
 
