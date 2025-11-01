@@ -4,7 +4,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 import ConstructionIcon from '@mui/icons-material/Construction';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import BackButton from './BackButton';
+import BackButton from './BackButton.tsx';
 import csTheme from '../themes/theme_cs';
 import './construction-notice.css';
 
@@ -26,10 +26,7 @@ const ConstructionNotice = ({ title }: ConstructionProps) => {
 				<ConstructionIcon sx={{ fontSize: "6rem", marginTop: "2rem", marginBottom: "1rem" }} />
 				<h1>{title}</h1>
 				<p style={{ marginBottom: "2rem" }}>This page is under construction. <br /> Check back later!</p>
-				<BackButton className="construction-notice" sx={{ fontSize: "2em", color: csTheme.palette.primary.dark, backgroundColor: csTheme.palette.primary.light }}>
-					<Typography sx={{ fontStyle: "italic" }} onClick={() => navigate(-1)}> Go back </Typography>
-					<ArrowBackIcon />
-				</BackButton>
+				<BackButton />
 			</div>
 
 			</ThemeProvider>
