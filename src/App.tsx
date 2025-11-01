@@ -1,9 +1,9 @@
-import { Container, CssBaseline } from '@mui/material';
+import { Container } from '@mui/material';
 
 import { ThemeProvider } from '@mui/material/styles';
 
 import './App.css'
-import homepageTheme from './themes/theme-home';
+import homepageTheme from './themes/theme_home';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Enter from './Enter';
@@ -15,13 +15,13 @@ import CSPortfolioDev from './CSPortfolioDev';
 
 
 function App() {
+
 	return (
 		<Container>
 			<ThemeProvider theme={homepageTheme}>
-                <CssBaseline />
 				<Routes>
-					<Route path='/' element={<Enter />} />
-                    {/* <Route path='/' element={<CSPortfolioDev />} /> */}
+					{/* <Route path='/' element={<Enter />} /> */}
+                    <Route path='/' element={<CSPortfolioDev />} />
 					<Route path="/cs-portfolio" element={<CSPortfolio />} />
 					<Route path="/photography-portfolio" element={<PhotographyPortfolio />} />
 					<Route path="/music-database" element={<MusicDatabase />} />

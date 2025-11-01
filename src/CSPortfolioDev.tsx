@@ -1,16 +1,15 @@
 
 import { Container, ThemeProvider } from '@mui/material';
 import Footer from './custom_components/Footer';
-import homepageTheme from "./themes/theme-cs-portfolio";
-import ThemeProviderWrapper from './ThemeProviderWrapper';
+import homepageTheme from "./themes/theme_cs";
 
 function CSPortfolioDev() {
 
 	return (
 		<Container id="cs-portfolio">
-		<ThemeProviderWrapper>
+			<ThemeProvider theme={homepageTheme}>
 			<Footer />
-		</ThemeProviderWrapper>
+			</ThemeProvider>
 		</Container>
 	);
 
