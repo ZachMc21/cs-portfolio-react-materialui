@@ -9,11 +9,11 @@ import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
 function Enter() {
 
 	return (
-		<Container id="enter-site" sx={{ height: "100vh", display: "flex", flexDirection: "column", mt: "5rem" }}>
+		<Container id="enter-site" sx={{ display: "flex", flexDirection: "column" }}>
 			<ThemeProvider theme={homepageTheme}>
 				<CssBaseline />
 
-				<Box id="homepage-content" sx={{ backgroundColor: homepageTheme.palette.background.default, mb: "2rem",  display: "flex", flexDirection: "column", alignContent: "center" }}> {/* Pale light blue */}
+				<Box id="homepage-content" sx={{ backgroundColor: homepageTheme.palette.background.default, mb: "2rem", minHeight: "95vh", display: "flex", flexDirection: "column", justifyContent: "center", alignContent: "center" }}> {/* Pale light blue */}
 					<Card sx={{ p: 5, mb: 10, backgroundColor: homepageTheme.palette.primary.light }}> {/* Less pale light blue */}
 						<CardContent>
 							<Typography id="page-title" sx={{ fontSize: 52, color: homepageTheme.palette.primary.contrastText }}> {/* Very dark blue */}
