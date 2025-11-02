@@ -11,7 +11,6 @@ import CSPortfolio from './CSPortfolio';
 import PhotographyPortfolio from './PhotographyPortfolio';
 import TextRPG from './TextRPG';
 import MusicDatabase from './MusicDatabase';
-import CSPortfolioDev from './CSPortfolioDev';
 
 
 function App() {
@@ -21,7 +20,6 @@ function App() {
 			<ThemeProvider theme={homepageTheme}>
 				<Routes>
 					<Route path='/' element={<Enter />} />
-                    {/* <Route path='/' element={<CSPortfolioDev />} /> */}
 					<Route path="/cs-portfolio" element={<CSPortfolio />} />
 					<Route path="/photography-portfolio" element={<PhotographyPortfolio />} />
 					<Route path="/music-database" element={<MusicDatabase />} />

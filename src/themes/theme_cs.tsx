@@ -66,18 +66,15 @@ const lightThemeSettings = createTheme({
 		},
 	},
 	cssVariables: true,
-	colorSchemes: {
-		dark: true,
-	},
 	palette: {
 		background: {
 			default: '#dff6f7ff',
 		},
 		primary: {
-			main: '#4d858aff',
-			dark: '#203840ff',
-			light: '#7dc6c3ff',
-			contrastText: '#0b1d23ff',
+			main: '#6C7EDA',
+			dark: '#373e71ff',
+			light: '#c4ccf7ff',
+			contrastText: '#5f34d6ff',
 		},
 		secondary: {
 			main: '#c3e8ed',
