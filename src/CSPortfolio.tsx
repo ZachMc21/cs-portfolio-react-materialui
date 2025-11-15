@@ -7,6 +7,7 @@ import csThemeLight from "./themes/theme_cs";
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import { FormatItalic } from '@mui/icons-material';
 
 function CSPortfolio() {
 	
@@ -16,7 +17,9 @@ function CSPortfolio() {
 			<ThemeProvider theme={csThemeLight}>
 
 				<Box id="name"
-                    sx = {{ backgroundColor: csThemeLight.palette.primary.light, width: "100vw", margin: 0 }}>
+                    sx = {{
+                        backgroundColor: csThemeLight.palette.primary.light,
+                        py: "4rem", mb: "2rem" }}>
 					<Typography variant="h1" id="first-name">
 						Zach
 					</Typography>
@@ -26,7 +29,14 @@ function CSPortfolio() {
 				</Box> {/* End header */}
 
 				<Box id="section-links">
-					<Typography>Jump to section...</Typography>
+					<Typography id="section-jump-text"
+                        sx = {{
+                            color: csThemeLight.palette.primary.main,
+                            fontStyle: "italic", fontSize: "1.25rem",
+                            textAlign: "left",
+                        }}>
+                        Jump to...
+                    </Typography>
 					{/* Text color: palette.primary.dark 
 					Background color: palette.primary.light*/}
 					<Link href="#contact-socials" className="cs-link">Contact Me</Link>
@@ -39,7 +49,8 @@ function CSPortfolio() {
 				<Box id="contact-socials">
 					<h1>Contact Me</h1>
 					{ /* Text & link color: palette.primary.dark
-					When link has been clicked, change it to contrastText */}
+					When link has been clicked, change it to contrastText
+                    Or flip those two colors*/}
 					<Link href="mailto:magloughlin.zach@gmail.com" className="contact-socials" id="email">
 						<MailOutlineIcon/>
 						<Typography>Email</Typography>
