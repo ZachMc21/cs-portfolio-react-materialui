@@ -18,12 +18,12 @@ function Enter() {
 						mb: "2rem", minHeight: "95vh",
 						display: "flex", flexDirection: "column", justifyContent: "center", alignContent: "center", 
 						backgroundColor: homepageTheme.palette.background.default
-					}}> {/* Pale light blue */}
+					}}>
 					<Card
 						sx={{
 							p: 5, mb: 10,
 							backgroundColor: homepageTheme.palette.primary.light
-							}}> {/* Less pale light blue */}
+							}}>
 						<CardContent>
 							<Typography id="page-title"
 								sx={{ fontSize: 52, color: homepageTheme.palette.primary.contrastText }}> {/* Very dark blue */}

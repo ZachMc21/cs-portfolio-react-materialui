@@ -3,7 +3,7 @@ import { Container } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 
 import './App.css'
-import homepageTheme from './themes/theme_home';
+import homepageThemeLight from './themes/theme_home';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Enter from './Enter';
@@ -17,7 +17,7 @@ function App() {
 
 	return (
 		<Container>
-			<ThemeProvider theme={homepageTheme}>
+			<ThemeProvider theme={homepageThemeLight}>
 				<Routes>
 					<Route path='/' element={<Enter />} />
 					<Route path="/cs-portfolio" element={<CSPortfolio />} />

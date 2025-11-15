@@ -55,7 +55,7 @@ const homepageTheme = createTheme({
 
 export default { globalTheme, homepageTheme };*/
 
-const lightThemeSettings = createTheme({
+const homepageThemeLight = createTheme({
 	//Copied from theme_global, because trying to include theme_global in this file isn't working
 	breakpoints: {
 		values: {
@@ -107,4 +107,4 @@ const darkThemeSettings = createTheme({
 
 export default { lightThemeSettings , darkThemeSettings };
 */
-export default lightThemeSettings;
+export default homepageThemeLight;
