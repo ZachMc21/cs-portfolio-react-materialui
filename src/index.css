@@ -13,11 +13,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
+html {
   margin: 0;
-  padding: 2rem 2rem 0 2rem;
-  display: flex;
-  justify-content: center;
-  width: 100vw;
-  min-height: 100vh;
+  padding: 0;
 }

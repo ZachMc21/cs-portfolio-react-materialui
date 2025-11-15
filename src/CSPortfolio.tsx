@@ -2,7 +2,7 @@
 import { Box, Container, Link, ThemeProvider, Typography } from '@mui/material';
 import Footer from './custom_components/Footer';
 
-import csLightTheme from "./themes/theme_cs";
+import csThemeLight from "./themes/theme_cs";
 
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -13,13 +13,14 @@ function CSPortfolio() {
 	return (
 		<Container id="cs-portfolio">
 
-			<ThemeProvider theme={csLightTheme}>
+			<ThemeProvider theme={csThemeLight}>
 
-				<Box id="name">
-					<Typography id="first-name">
+				<Box id="name"
+                    sx = {{ backgroundColor: csThemeLight.palette.primary.light, width: "100vw", margin: 0 }}>
+					<Typography variant="h1" id="first-name">
 						Zach
 					</Typography>
-					<Typography id="last-name">
+					<Typography variant="h1" id="last-name">
 						Magloughlin
 					</Typography>
 				</Box> {/* End header */}

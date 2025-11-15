@@ -9,7 +9,11 @@ import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
 function Enter() {
 
 	return (
-		<Container id="enter-site" sx={{ display: "flex", flexDirection: "column" }}>
+		<Container id="enter-site"
+            sx={{ display: "flex", flexDirection: "column", justifyContent: "center",
+                maxWidth: "100vw", maxHeight: "100vh",
+                m: 0, px: "2rem", pt: "2rem",
+             }}>
 			<ThemeProvider theme={homepageTheme}>
 				<CssBaseline />
 

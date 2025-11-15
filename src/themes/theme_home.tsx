@@ -11,6 +11,7 @@ declare module '@mui/material/styles' {
 }
 
 const homeThemeLight = createTheme({
+    spacing: 8,
 	breakpoints: {
 		values: {
 			mobile: 0,
