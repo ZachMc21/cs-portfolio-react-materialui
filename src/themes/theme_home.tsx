@@ -1,8 +1,5 @@
 import { createTheme } from '@mui/material/styles';
-import { grey, blueGrey, blue, indigo, cyan, red } from '@mui/material/colors';
-import type { Color } from '@mui/material/styles';
-import type { ButtonProps } from '@mui/material';
-import globalTheme from './theme_global';
+import { grey, cyan } from '@mui/material/colors';
 
 declare module '@mui/material/styles' {
 	interface Palette {
@@ -13,50 +10,7 @@ declare module '@mui/material/styles' {
 	}
 }
 
-/*
-const homepageTheme = createTheme({
-		colorSchemes: {
-				light: {
-						palette: {
-								background: {
-										default: '#dff6f7ff',
-								},
-								primary: {
-										main: '#4d858aff',
-										dark: '#203840ff',
-										light: '#7dbec4ff',
-										contrastText: '#0b1d23ff',
-								},
-								secondary: {
-										main: '#c3e8ed',
-										light: cyan[50],
-										dark: '#afd6db',
-										contrastText: grey[800],
-								}
-						},
-				},
-				dark: {
-						palette: {
-								background: {
-										default: blue[900]
-								},
-								primary: {
-										main: blue[900],
-										contrastText: blue[200],
-								},
-								secondary: {
-										main: indigo[500],
-										/*contrastText: indigo[100],
-								}
-						},
-				},
-		},
-});
-
-export default { globalTheme, homepageTheme };*/
-
-const homepageThemeLight = createTheme({
-	//Copied from theme_global, because trying to include theme_global in this file isn't working
+const homeThemeLight = createTheme({
 	breakpoints: {
 		values: {
 			mobile: 0,
@@ -86,7 +40,7 @@ const homepageThemeLight = createTheme({
 			contrastText: grey[800],
 		}
 	}
-}); /*, globalTheme); */
+});
 
 /*
 const darkThemeSettings = createTheme({
@@ -107,4 +61,4 @@ const darkThemeSettings = createTheme({
 
 export default { lightThemeSettings , darkThemeSettings };
 */
-export default homepageThemeLight;
+export default homeThemeLight;

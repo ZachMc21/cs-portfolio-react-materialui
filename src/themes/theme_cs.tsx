@@ -1,8 +1,5 @@
 import { createTheme } from '@mui/material/styles';
-import { grey, blueGrey, blue, indigo, cyan, red } from '@mui/material/colors';
-import type { Color } from '@mui/material/styles';
-import type { ButtonProps } from '@mui/material';
-import globalTheme from './theme_global';
+import { grey, cyan } from '@mui/material/colors';
 
 declare module '@mui/material/styles' {
 	interface Palette {
@@ -13,7 +10,7 @@ declare module '@mui/material/styles' {
 	}
 }
 
-const lightThemeSettings = createTheme({
+const csLightTheme = createTheme({
 	breakpoints: {
 		values: {
 			mobile: 0,
@@ -61,4 +58,4 @@ const darkThemeSettings = createTheme({
 
 export default { lightThemeSettings , darkThemeSettings };
 */
-export default lightThemeSettings;
+export default csLightTheme;

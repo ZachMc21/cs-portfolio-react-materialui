@@ -1,9 +1,8 @@
 
-import { Box, Container, Link, Switch, ThemeProvider, Typography } from '@mui/material';
-import { Route, Router, Routes } from 'react-router-dom';
+import { Box, Container, Link, ThemeProvider, Typography } from '@mui/material';
 import Footer from './custom_components/Footer';
 
-import lightThemeSettings from "./themes/theme_cs";
+import csLightTheme from "./themes/theme_cs";
 
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -14,7 +13,7 @@ function CSPortfolio() {
 	return (
 		<Container id="cs-portfolio">
 
-			<ThemeProvider theme={lightThemeSettings}>
+			<ThemeProvider theme={csLightTheme}>
 
 				<Box id="name">
 					<Typography id="first-name">
