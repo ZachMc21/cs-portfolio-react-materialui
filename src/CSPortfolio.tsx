@@ -8,6 +8,7 @@ import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { FormatItalic } from '@mui/icons-material';
+import CSLink from './custom_components/csLink';
 
 function CSPortfolio() {
 	
@@ -19,7 +20,7 @@ function CSPortfolio() {
 				<Box id="name"
                     sx = {{
                         backgroundColor: csThemeLight.palette.primary.light,
-                        py: "4rem", mb: "2rem" }}>
+                        py: "4rem", mt: "5rem", mb: "2rem" }}>
 					<Typography variant="h1" id="first-name">
 						Zach
 					</Typography>
@@ -39,11 +40,14 @@ function CSPortfolio() {
                     </Typography>
 					{/* Text color: palette.primary.dark 
 					Background color: palette.primary.light*/}
-					<Link href="#contact-socials" className="cs-link">Contact Me</Link>
-					<Link href="#overview" className="cs-link">Overview</Link>
-					<Link href="#skills" className="cs-link">Skills</Link>
-					<Link href="#projects" className="cs-link">Projects</Link>
-					<Link href="#extras" className="cs-link">Other Info</Link>
+                    <Box id="section-links-container"
+                    sx = {{flex: 1, flexDirection: "row"}}>
+                        <CSLink text={'Contact Me'} link={'#contact'}></CSLink>
+                        <CSLink text={'Overview'} link={'#overview'}></CSLink>
+                        <CSLink text={'Skills'} link={'#skills'}></CSLink>
+                        <CSLink text={'Projects'} link={'#projects'}></CSLink>
+                        <CSLink text={'Extras'} link={'#extra'}></CSLink>
+                    </Box>
 				</Box> {/* End section for page jumping */}
 
 				<Box id="contact-socials">

@@ -8,7 +8,7 @@ interface LinkProps {
 	link: string;
 }
 
-const ConstructionNotice = ({ text, link }: LinkProps) => {
+const CSLink = ({ text, link }: LinkProps) => {
     const path: string = useResolvedPath("").pathname;
 
 
@@ -17,11 +17,11 @@ const ConstructionNotice = ({ text, link }: LinkProps) => {
 			<ThemeProvider theme={csLightTheme}>
 			    <CssBaseline />
 
-			    <Box className="cs-link-container">
+			    <Box className="cs-link-container"
+                    sx = {{color: csLightTheme.palette.primary.dark, backgroundColor: csLightTheme.palette.primary.light}}>
                     <Link href={`${path}/${link}`}>
                         {text}
                     </Link>
-                
                 </Box>
 
 			</ThemeProvider>
@@ -29,4 +29,4 @@ const ConstructionNotice = ({ text, link }: LinkProps) => {
 	);
 }
 
-export default ConstructionNotice;
+export default CSLink;
