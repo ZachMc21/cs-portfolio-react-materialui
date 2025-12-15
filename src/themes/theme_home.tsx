@@ -40,7 +40,13 @@ const homeThemeLight = createTheme({
 			dark: '#afd6db',
 			contrastText: grey[800],
 		}
-	}
+	},
+    typography: {
+        allVariants: {
+            fontFamily: "'aller', sans-serif",
+            fontWeight: "regular",
+        },
+    },
 });
 
 /*

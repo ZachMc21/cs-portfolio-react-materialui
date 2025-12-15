@@ -8,6 +8,8 @@ Customizing element CSS:
 - https://mui.com/material-ui/customization/how-to-customize/#2-reusable-component
 
 Research assets\fonts\index.ts, assets\images\index.ts
+https://stackoverflow.com/questions/69448783/export-all-files-in-index-ts#69449770
+
 
 File organization:
 - https://medium.com/@yashsisodiya/creating-a-well-organized-react-typescript-project-structure-with-atomic-design-principles-72c5c2e0a8e8
