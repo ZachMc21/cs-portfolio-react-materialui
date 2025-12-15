@@ -1,5 +1,5 @@
-import ConstructionNotice from './custom_components/ConstructionNotice';
-import Footer from './custom_components/Footer';
+import ConstructionNotice from './components/ConstructionNotice';
+import Footer from './components/Footer';
 import './EmptyPageStyle.css';
 
 function TextRPG() {

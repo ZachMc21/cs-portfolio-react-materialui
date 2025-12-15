@@ -1,6 +1,6 @@
 
 import { Box, Container, Link, ThemeProvider, Typography } from '@mui/material';
-import Footer from './custom_components/Footer';
+import Footer from './components/Footer';
 
 import csThemeLight from "./themes/theme_cs";
 
@@ -8,7 +8,7 @@ import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { FormatItalic } from '@mui/icons-material';
-import CSLink from './custom_components/csLink';
+import CSLink from './components/csLink';
 
 function CSPortfolio() {
 	
