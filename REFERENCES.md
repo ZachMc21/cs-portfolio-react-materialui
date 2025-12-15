@@ -6,3 +6,9 @@ Using multiple styles
 
 Customizing element CSS:
 - https://mui.com/material-ui/customization/how-to-customize/#2-reusable-component
+
+File organization:
+- https://medium.com/@yashsisodiya/creating-a-well-organized-react-typescript-project-structure-with-atomic-design-principles-72c5c2e0a8e8
+
+Vite & command line reference:
+- https://medium.com/@robinviktorsson/complete-guide-to-setting-up-react-with-typescript-and-vite-2025-468f6556aaf2
