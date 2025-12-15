@@ -29,7 +29,7 @@ function Enter() {
 							backgroundColor: homepageTheme.palette.primary.light
 							}}>
 						<CardContent>
-							<Typography id="page-title"
+							<Typography variant="title" id="page-title"
 								sx={{ fontSize: 52, color: homepageTheme.palette.primary.contrastText }}> {/* Very dark blue */}
 								Zach Magloughlin
 							</Typography>

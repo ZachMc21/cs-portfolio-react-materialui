@@ -3,6 +3,15 @@
   font-family: aller;
   src: url(./assets/fonts/aller.regular.ttf);
 }
+@font-face {
+  font-family: toerks;
+  src: url(./assets/fonts/toreks.regular.ttf);
+}
+@font-face {
+  font-family: eightgon;
+  src: url(./assets/fonts/eightgon.regular.ttf);
+}
+
 
 :root {
   text-align: center;

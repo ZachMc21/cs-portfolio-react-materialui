@@ -42,10 +42,14 @@ const homeThemeLight = createTheme({
 		}
 	},
     typography: {
+        fontFamily: ['aller', 'sans-serif'].join(','),
         allVariants: {
-            fontFamily: "'aller', sans-serif",
             fontWeight: "regular",
         },
+        title: {
+            fontFamily: ['eightgon', 'sans-serif'].join(','),
+            fontWeight: "regular",
+        }
     },
 });
 
