@@ -1,4 +1,4 @@
-import { CssBaseline, Box, Card, CardContent, Typography, ThemeProvider, Container, FormGroup, FormControlLabel, Switch, createTheme, Button } from "@mui/material";
+import { CssBaseline, Box, Card, CardContent, Typography, ThemeProvider, Container, FormGroup, FormControlLabel, Switch, createTheme, Button, alpha } from "@mui/material";
 import Footer from "./components/Footer";
 import homeThemeLight from "./styles/homeLight";
 import homeThemeDark from "./styles/homeDark";
@@ -10,7 +10,7 @@ function Enter() {
 	return (
 		<Container id="enter-site"
             sx={{ display: "flex", flexDirection: "column", justifyContent: "center",
-                maxWidth: "100vw", maxHeight: "100vh",
+                maxWidth: "100vw", minHeight: "100vh",
                 mt: 10,
              }}>
 			<ThemeProvider theme={homeThemeLight}>
@@ -51,18 +51,18 @@ function Enter() {
 						</HomepageButton>
 					</Box>
 
-                    <Box sx={{ my: 3 }}>
-                        <Typography sx={{ mt: 5, fontStyle: 'italic' }}>You will experience this site in light mode.</Typography>
+                    <Box sx={{ mb: 6 }}>
+                        <Typography sx={{ mt: 5, fontStyle: "italic", color: alpha("#000", 0.6) }}>You will experience this site in light mode.</Typography>
                         <Button>
                             <ThemeProvider theme={homeThemeDark}>
-                                <Typography sx={{ textTransform: "uppercase", fontSize: 16,
+                                <Typography sx={{ textTransform: "uppercase", fontSize: "1rem",
                                     backgroundColor: homeThemeDark.background.default, color: homeThemeDark.primary.main,
                                     py: 1, px: 3 }}>Switch to dark mode</Typography>
                             </ThemeProvider>
                         </Button>
                     </Box>
-				</Box>
 				<Footer />
+				</Box>
 
 			</ThemeProvider>
 		</Container>
