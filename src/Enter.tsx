@@ -1,4 +1,4 @@
-import { CssBaseline, Box, Card, CardContent, Typography, ThemeProvider, Container, FormGroup, FormControlLabel, Switch, createTheme, Button, alpha } from "@mui/material";
+import { CssBaseline, Box, Typography, ThemeProvider, Container, FormGroup, FormControlLabel, Switch, createTheme, Button, alpha } from "@mui/material";
 import Footer from "./components/Footer";
 import homeThemeLight from "./styles/homeLight";
 import homeThemeDark from "./styles/homeDark";
@@ -10,15 +10,14 @@ function Enter() {
 	return (
 		<Container id="enter-site"
             sx={{ display: "flex", flexDirection: "column", justifyContent: "center",
-                maxWidth: "100vw", minHeight: "100vh",
-                mt: 10,
-             }}>
+                maxWidth: "100vw",
+                mt: 10
+                }}>
 			<ThemeProvider theme={homeThemeLight}>
 				<CssBaseline />
 
 				<Box id="homepage-content"
 					sx={{
-						mb: 1, minHeight: "95vh",
 						display: "flex", flexDirection: "column", justifyContent: "center", alignContent: "center", 
 						backgroundColor: homeThemeLight.background.default
 					    }}>
@@ -31,7 +30,7 @@ function Enter() {
                             Zach Magloughlin
                         </Typography>
 					</Box>
-					<Box id="home-buttons-container" sx={{ mx: 0 }}>
+					<Box id="home-buttons-container" sx={{ mx: 0, mb: "4rem" }}>
 						<HomepageButton href="/cs-portfolio" className="home-column" variant="contained" disableElevation>
 							<Typography sx={{ textWrap: 'balance', mb: "0.5rem" }}>Enter CS Portfolio</Typography>
 							<DoubleArrowIcon />
@@ -52,17 +51,19 @@ function Enter() {
 					</Box>
 
                     <Box sx={{ mb: 6 }}>
-                        <Typography sx={{ mt: 5, fontStyle: "italic", color: alpha("#000", 0.6) }}>You will experience this site in light mode.</Typography>
-                        <Button>
-                            <ThemeProvider theme={homeThemeDark}>
-                                <Typography sx={{ textTransform: "uppercase", fontSize: "1rem",
-                                    backgroundColor: homeThemeDark.background.default, color: homeThemeDark.primary.main,
-                                    py: 1, px: 3 }}>Switch to dark mode</Typography>
-                            </ThemeProvider>
-                        </Button>
+                        <Typography sx={{ fontStyle: "italic", color: alpha("#000", 0.8) }}>You will experience this site in light mode.</Typography>
+                        
+                        <ThemeProvider theme={homeThemeDark}>
+                            <Button sx={{ border: 2, borderColor: homeThemeDark.background.default, my: 1 }}>
+                                <Typography sx={{ textTransform: "uppercase", fontSize: "0.8rem",
+                                    color: homeThemeLight.primary.contrastText}}>
+                                        Switch to dark mode
+                                </Typography>
+                            </Button>
+                        </ThemeProvider>
                     </Box>
-				<Footer />
 				</Box>
+				<Footer />
 
 			</ThemeProvider>
 		</Container>
