@@ -11,7 +11,6 @@ declare module '@mui/material/styles' {
 }
 
 const csLightTheme = createTheme({
-    spacing: 8,
 	breakpoints: {
 		values: {
 			mobile: 0,

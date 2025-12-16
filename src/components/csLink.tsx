@@ -1,6 +1,6 @@
 import { Box, Container, CssBaseline, Link } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
-import csLightTheme from '../themes/theme_cs';
+import csLight from '../styles/csLight';
 import { useResolvedPath } from 'react-router-dom';
 
 interface LinkProps {
@@ -14,11 +14,11 @@ const CSLink = ({ text, link }: LinkProps) => {
 
 	return (
 		<Container>
-			<ThemeProvider theme={csLightTheme}>
+			<ThemeProvider theme={csLight}>
 			    <CssBaseline />
 
 			    <Box className="cs-link-container"
-                    sx = {{color: csLightTheme.palette.primary.dark, backgroundColor: csLightTheme.palette.primary.light}}>
+                    sx = {{color: csLight.primary.dark, backgroundColor: csLight.primary.light}}>
                     <Link href={`${path}/${link}`}>
                         {text}
                     </Link>

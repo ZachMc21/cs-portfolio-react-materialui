@@ -11,7 +11,6 @@ declare module '@mui/material/styles' {
 }
 
 const homeThemeLight = createTheme({
-    spacing: 8,
 	breakpoints: {
 		values: {
 			mobile: 0,
@@ -39,7 +38,7 @@ const homeThemeLight = createTheme({
 			light: cyan[50],
 			dark: '#afd6db',
 			contrastText: grey[800],
-		}
+		},
 	},
     typography: {
         fontFamily: ['aller', 'sans-serif'].join(','),
@@ -49,7 +48,7 @@ const homeThemeLight = createTheme({
         title: {
             fontFamily: ['eightgon', 'sans-serif'].join(','),
             fontWeight: "regular",
-        }
+        },
     },
 });
 

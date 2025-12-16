@@ -3,8 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { Container, ThemeProvider, Typography } from '@mui/material';
-import csTheme from '../themes/theme_cs';
-import homeThemeLight from '../themes/theme_home';
 import { alpha } from "@mui/material"; 
 
 

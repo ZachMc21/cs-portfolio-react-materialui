@@ -4,12 +4,12 @@
   src: url(./assets/fonts/aller.regular.ttf);
 }
 @font-face {
-  font-family: toerks;
-  src: url(./assets/fonts/toreks.regular.ttf);
-}
-@font-face {
   font-family: eightgon;
   src: url(./assets/fonts/eightgon.regular.ttf);
+}
+@font-face {
+  font-family: rollbox;
+  src: url(./assets/fonts/rollbox.regular.ttf);
 }
 
 

@@ -2,7 +2,7 @@
 import { Box, Container, Link, ThemeProvider, Typography } from '@mui/material';
 import Footer from './components/Footer';
 
-import csThemeLight from "./themes/theme_cs";
+import csLight from './styles/csLight';
 
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -15,11 +15,11 @@ function CSPortfolio() {
 	return (
 		<Container id="cs-portfolio">
 
-			<ThemeProvider theme={csThemeLight}>
+			<ThemeProvider theme={csLight}>
 
 				<Box id="name"
                     sx = {{
-                        backgroundColor: csThemeLight.palette.primary.light,
+                        backgroundColor: csLight.primary.light,
                         py: "4rem", mt: "5rem", mb: "2rem" }}>
 					<Typography variant="h1" id="first-name">
 						Zach
@@ -32,7 +32,7 @@ function CSPortfolio() {
 				<Box id="section-links">
 					<Typography id="section-jump-text"
                         sx = {{
-                            color: csThemeLight.palette.primary.main,
+                            color: csLight.primary.main,
                             fontStyle: "italic", fontSize: "1.25rem",
                             textAlign: "left",
                         }}>

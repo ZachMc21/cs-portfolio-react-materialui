@@ -25,6 +25,7 @@ const globalTheme = createTheme({
 	},
 	cssVariables: true,
 	colorSchemes: {
+        light: true,
 		dark: true,
 	},
 });

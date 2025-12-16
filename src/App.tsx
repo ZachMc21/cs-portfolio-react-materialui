@@ -1,9 +1,10 @@
 import { Container } from '@mui/material';
 
-import { ThemeProvider } from '@mui/material/styles';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 import './App.css'
-import homeThemeLight from './themes/theme_home';
+import homeTheme from "./styles/homeTheme";
+
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Enter from './Enter';
@@ -16,8 +17,8 @@ import MusicDatabase from './MusicDatabase';
 function App() {
 
 	return (
-		<Container>
-			<ThemeProvider theme={homeThemeLight}>
+        <ThemeProvider theme={homeTheme}>
+		    <Container>
 				<Routes>
 					<Route path='/' element={<Enter />} />
 					<Route path="/cs-portfolio" element={<CSPortfolio />} />
@@ -26,8 +27,8 @@ function App() {
 					<Route path="/text-rpg" element={<TextRPG />} />
 				</Routes>
 
-			</ThemeProvider>
-		</Container>
+		    </Container>
+        </ThemeProvider>
 	)
 }
 

@@ -2,7 +2,8 @@ import { Container, CssBaseline } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import ConstructionIcon from '@mui/icons-material/Construction';
 import BackButton from './BackButton.tsx';
-import csTheme from '../themes/theme_cs';
+import csTheme from '../styles/csTheme';
+
 import './construction-notice.css';
 
 
@@ -22,7 +23,7 @@ const ConstructionNotice = ({ title }: ConstructionProps) => {
 				<ConstructionIcon sx={{ fontSize: "6rem", marginTop: "2rem", marginBottom: "1rem" }} />
 				<h1>{title}</h1>
 				<p style={{ marginBottom: "2rem" }}>This page is under construction. <br /> Check back later!</p>
-				<BackButton />
+				{/* <BackButton /> */}
 			</div>
 
 			</ThemeProvider>
