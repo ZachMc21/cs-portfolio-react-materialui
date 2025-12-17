@@ -2,7 +2,7 @@ import { CssBaseline, Box, Typography, ThemeProvider, Container, FormGroup, Form
 import Footer from "./components/Footer";
 import homeThemeLight from "./styles/homeLight";
 import homeThemeDark from "./styles/homeDark";
-import HomepageButton from "./pages/Home/components/HomepageButton";
+import HomepageButton from "./components/HomepageButton";
 import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
 
 function Enter() {
