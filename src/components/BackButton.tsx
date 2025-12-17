@@ -30,7 +30,7 @@ const BackButton: React.FC = () => {
                     color: homeThemeLight.primary.dark,
                     backgroundColor: alpha(homeThemeLight.primary.light, 0.8),
                     display: "flex", flexDirection: "column", justifyContent: "center", justifySelf: "center",
-                    '&:hover': { transform: "scale3d(1.1, 1.1, 1)" }
+                    '&:hover': { transform: "scale3d(1.05, 1.05, 1)" }
                 }}>
 				<Typography sx={{ fontStyle: "italic" }}> Go back </Typography>
 				<ArrowBackIcon />

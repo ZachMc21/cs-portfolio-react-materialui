@@ -1,6 +1,6 @@
 import { styled } from "@mui/material/styles";
 import MuiButton from "@mui/material/Button";
-import homeLight from "../styles/homeLight";
+import homeLight from "../../../styles/homeLight";
 
 export const HomepageButton = styled(MuiButton)(({ }) => ({
 	color: homeLight.primary.contrastText,
