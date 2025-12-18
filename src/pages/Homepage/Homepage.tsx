@@ -1,11 +1,11 @@
-import { CssBaseline, Box, Typography, ThemeProvider, Container, FormGroup, FormControlLabel, Switch, createTheme, Button, alpha } from "@mui/material";
-import Footer from "./components/Footer";
-import homeThemeLight from "./styles/homeLight";
-import homeThemeDark from "./styles/homeDark";
-import HomepageButton from "./components/HomepageButton";
+import { CssBaseline, Box, Typography, ThemeProvider, Container, Button, alpha } from "@mui/material";
+import Footer from "../../components/Footer";
+import homeThemeLight from "../../styles/homeLight";
+import homeThemeDark from "../../styles/homeDark";
+import HomepageButton from "../../components/HomepageButton";
 import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
 
-function Enter() {
+function Homepage() {
 
 	return (
 		<Container id="enter-site"
@@ -70,4 +70,4 @@ function Enter() {
 	)
 }
 
-export default Enter;
+export default Homepage;

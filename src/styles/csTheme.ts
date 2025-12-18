@@ -1,6 +1,6 @@
 
 import { createTheme } from "@mui/material/styles";
-import { blue, cyan, grey, indigo } from '@mui/material/colors';
+import { cyan, grey, indigo } from '@mui/material/colors';
 import typography from './typography.ts';
 
 const csTheme = createTheme({
