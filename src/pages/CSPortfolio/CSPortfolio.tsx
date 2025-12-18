@@ -8,6 +8,7 @@ import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import CSLink from '../../components/csLink';
+import { Outlet } from 'react-router-dom';
 
 function CSPortfolio() {
 	
@@ -40,16 +41,26 @@ function CSPortfolio() {
 					{/* Text color: palette.primary.dark 
 					Background color: palette.primary.light*/}
                     <Box id="section-links-container"
-                    sx = {{flex: 1, flexDirection: "row"}}>
-                        <CSLink text={'Contact Me'} link={'#contact'}></CSLink>
-                        <CSLink text={'Overview'} link={'#overview'}></CSLink>
-                        <CSLink text={'Skills'} link={'#skills'}></CSLink>
-                        <CSLink text={'Projects'} link={'#projects'}></CSLink>
-                        <CSLink text={'Extras'} link={'#extra'}></CSLink>
+                        sx = {{flex: 1, flexDirection: "row"}}>
+                        <Link href="#contact">
+                            <Typography>Contact</Typography>
+                        </Link>
+                        <Link href="#about">
+                            <Typography>About Me</Typography>
+                        </Link>
+                        <Link href="skills">
+                            <Typography>Skills</Typography>
+                        </Link>
+                        <Link href="projects">
+                            <Typography>Projects</Typography>
+                        </Link>
+                        <Link href="extras">
+                            <Typography>Extras</Typography>
+                        </Link>
                     </Box>
 				</Box> {/* End section for page jumping */}
 
-				<Box id="contact-socials">
+				<Box id="contact">
 					<h1>Contact Me</h1>
 					{ /* Text & link color: palette.primary.dark
 					When link has been clicked, change it to contrastText
@@ -68,7 +79,7 @@ function CSPortfolio() {
 					</Link>
 				</Box> {/* End contact & socials */}
 
-				<Box id="overview">
+				<Box id="about">
 					<Typography>TODO About Me blurb goes here.</Typography>
 				</Box>
 
@@ -86,6 +97,7 @@ function CSPortfolio() {
 
 				<Footer />
 			</ThemeProvider>
+            <Outlet />
 		</Container>
 	);
 

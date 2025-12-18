@@ -1,7 +1,10 @@
 // src/routes/Routes.js
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, Outlet } from "react-router-dom";
 import Homepage from "../pages/Homepage/Homepage";
 import CSPortfolio from "../pages/CSPortfolio/CSPortfolio";
+import Skills from "../pages/CSPortfolio/Skills";
+import Projects from "../pages/CSPortfolio/Projects";
+import Extras from "../pages/CSPortfolio/Extras";
 import PhotographyPortfolio from "../pages/PhotographyPortfolio/PhotographyPortfolio";
 import MusicDatabase from "../pages/MusicDatabase/MusicDatabase";
 import TextRPG from "../pages/TextRPG/TextRPG";
@@ -20,11 +23,26 @@ const router = createBrowserRouter([
   },
   {
     path: "/cs-portfolio",
-    element: <CSPortfolio />,
+		element: <Outlet />,
     errorElement: <NotFound />, // Handles errors in this route/children
-    children: [
-        { }
-    ]
+		children: [
+			{
+				index: true,
+				element: <CSPortfolio />,
+			},
+			{
+				path: "/cs-portfolio/skills",
+				element: <Skills />,
+			},
+			{
+				path: "/cs-portfolio/projects",
+				element: <Projects />,
+			},
+			{
+				path: "/cs-portfolio/extras",
+				element: <Extras />,
+			}
+		]
   },
   {
     path: "/photography-portfolio",

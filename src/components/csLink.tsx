@@ -19,7 +19,7 @@ const CSLink = ({ text, link }: LinkProps) => {
 
 			    <Box className="cs-link-container"
                     sx = {{color: csLight.primary.dark, backgroundColor: csLight.primary.light}}>
-                    <Link href={`${path}/${link}`}>
+                    <Link href={`${link}`}>
                         {text}
                     </Link>
                 </Box>
