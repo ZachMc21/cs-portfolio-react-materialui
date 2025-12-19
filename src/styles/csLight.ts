@@ -6,9 +6,9 @@ const csLight = {
     },
     primary: {
         main: '#6C7EDA',
-        dark: '#373e71ff',
-        light: '#c4ccf7ff',
-        contrastText: '#5f34d6ff',
+        dark: '#292f56ff',
+        light: '#c4ccf7',
+        contrastText: '#5f34d6',
     },
     secondary: {
         main: '#c3e8ed',

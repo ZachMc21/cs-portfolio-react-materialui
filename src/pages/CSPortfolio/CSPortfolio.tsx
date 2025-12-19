@@ -14,17 +14,16 @@ function CSPortfolio() {
 	
 	return (
 		<Container id="cs-portfolio">
-
 			<ThemeProvider theme={csLight}>
 
 				<Box id="name"
                     sx = {{
                         backgroundColor: csLight.primary.light,
-                        py: "4rem", mt: "5rem", mb: "2rem" }}>
-					<Typography variant="h1" id="first-name">
+                        py: "4rem", mt: "1rem" }}>
+					<Typography variant="h1" id="first-name" sx = {{ color: csLight.primary.dark }}>
 						Zach
 					</Typography>
-					<Typography variant="h1" id="last-name">
+					<Typography variant="h1" id="last-name" sx = {{ color: csLight.primary.dark }}>
 						Magloughlin
 					</Typography>
 				</Box> {/* End header */}
@@ -32,7 +31,7 @@ function CSPortfolio() {
 				<Box id="section-links">
 					<Typography id="section-jump-text"
                         sx = {{
-                            color: csLight.primary.main,
+                            color: csLight.primary.contrastText,
                             fontStyle: "italic", fontSize: "1.25rem",
                             textAlign: "left",
                         }}>

@@ -11,7 +11,7 @@ function Homepage() {
 		<Container id="enter-site"
             sx={{ display: "flex", flexDirection: "column", justifyContent: "center",
                 maxWidth: "100vw",
-                mt: 10
+                mt: 5
                 }}>
 			<ThemeProvider theme={homeThemeLight}>
 				<CssBaseline />
@@ -23,7 +23,8 @@ function Homepage() {
 					    }}>
 					<Box
                         sx={{ p: 5, py: 8, mb: 8,
-							backgroundColor: homeThemeLight.primary.light
+                             mx: "auto", width: "90vw",
+							backgroundColor: "#7DC6DD"
                             }}>
                         <Typography variant="title" id="page-title"
                             sx={{ fontSize: 52, color: homeThemeLight.primary.contrastText }}>

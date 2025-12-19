@@ -8,19 +8,15 @@ const csTheme = createTheme({
         light: {
             palette: {
                 background: {
-                    default: '#dff6f7ff',
+                    default: '#F0EAC5',
                 },
                 primary: {
-                    main: '#6C7EDA',
-                    dark: '#373e71ff',
-                    light: '#c4ccf7ff',
+                    main: '#ACACDE',
                     contrastText: '#5f34d6ff',
                 },
                 secondary: {
-                    main: '#c3e8ed',
-                    light: cyan[50],
-                    dark: '#afd6db',
-                    contrastText: grey[800],
+                    main: '#ABDAFC',
+                    light: "#E5FCFF",
                 },
             }
         },

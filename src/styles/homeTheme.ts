@@ -11,12 +11,12 @@ const homeTheme = createTheme({
                     default: "#dff6f7",
                 },
                 primary: {
-                    main: blue[900],
-                    contrastText: blue[200],
+                    main: "#7DC6C3",
+                    contrastText: "#0B1D23",
                 },
                 secondary: {
-                    main: indigo[500],
-                    contrastText: indigo[100], 
+                    main: "#E3ACA0",
+                    contrastText: "#0B1D23", 
                 }
             }
         },

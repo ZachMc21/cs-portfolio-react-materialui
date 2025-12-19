@@ -27,8 +27,8 @@ const BackButton: React.FC = () => {
 			<Button onClick={handleBack} variant="contained" className="construction-notice"
                 sx={{
                     mx: "auto", mt: 3, p: 3, fontSize: 2,
-                    color: homeThemeLight.primary.dark,
-                    backgroundColor: alpha(homeThemeLight.primary.light, 0.8),
+                    color: homeThemeLight.primary.contrastText,
+                    backgroundColor: alpha(homeThemeLight.primary.main, 0.8),
                     display: "flex", flexDirection: "column", justifyContent: "center", justifySelf: "center",
                     '&:hover': { transform: "scale3d(1.05, 1.05, 1)" }
                 }}>

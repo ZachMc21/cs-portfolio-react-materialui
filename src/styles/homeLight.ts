@@ -1,21 +1,17 @@
-import { grey, cyan } from '@mui/material/colors';
 
 const homeLight = {
     background: {
-        default: '#dff6f7ff',
+        default: "#dff6f7",
     },
     primary: {
-        main: '#4d858aff',
-        dark: '#203840ff',
-        light: '#7dc6c3ff',
-        contrastText: '#0b1d23ff',
+        main: "#7DC6C3",
+        dark: "#55B4B1",
+        contrastText: "#0B1D23",
     },
     secondary: {
-        main: '#c3e8ed',
-        light: cyan[50],
-        dark: '#afd6db',
-        contrastText: grey[800],
-    },
+        main: "#E3ACA0",
+        contrastText: "#0B1D23", 
+    }
 }
 
 export default homeLight
