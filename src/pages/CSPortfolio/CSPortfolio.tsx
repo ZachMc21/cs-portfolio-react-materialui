@@ -7,7 +7,6 @@ import csLight from '../../styles/csLight';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import CSLink from '../../components/csLink';
 import { Outlet } from 'react-router-dom';
 
 function CSPortfolio() {
@@ -47,13 +46,13 @@ function CSPortfolio() {
                         <Link href="#about">
                             <Typography>About Me</Typography>
                         </Link>
-                        <Link href="skills">
+                        <Link href="cs-portfolio/skills">
                             <Typography>Skills</Typography>
                         </Link>
-                        <Link href="projects">
+                        <Link href="cs-portfolio/projects">
                             <Typography>Projects</Typography>
                         </Link>
-                        <Link href="extras">
+                        <Link href="cs-portfolio/extras">
                             <Typography>Extras</Typography>
                         </Link>
                     </Box>
