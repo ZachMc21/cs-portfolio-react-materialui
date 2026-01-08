@@ -10,8 +10,8 @@ div#home-buttons-container {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  margin: auto 10%;
-  margin-bottom: 3rem;
+  /* margin: auto 10%; */
+  /* margin-bottom: 3rem; */
 }
 
 /* HomepageButtons layout - tablet (2-wide) */
@@ -19,7 +19,7 @@ div#home-buttons-container {
   div#home-buttons-container {
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 0 auto 3rem auto;
+    /* margin: 0 auto 3rem auto; */
   }
   .home-column {
     flex-basis: 38%;
@@ -31,7 +31,7 @@ div#home-buttons-container {
 @media screen and (min-width: 1024px) {
   div#home-buttons-container {
     flex-direction: row;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
   }
   .home-column {
     flex-basis: 20%;

@@ -10,8 +10,7 @@ function Homepage() {
 	return (
 		<Container id="enter-site"
             sx={{ display: "flex", flexDirection: "column", justifyContent: "center",
-                maxWidth: "100vw",
-                mt: 5
+                maxWidth: "100vw", p: 5, pb: 0
                 }}>
 			<ThemeProvider theme={homeThemeLight}>
 				<CssBaseline />
@@ -23,7 +22,6 @@ function Homepage() {
 					    }}>
 					<Box
                         sx={{ p: 5, py: 8, mb: 8,
-                             mx: "auto", width: "90vw",
 							backgroundColor: "#7DC6DD"
                             }}>
                         <Typography variant="title" id="page-title"
@@ -31,7 +29,7 @@ function Homepage() {
                             Zach Magloughlin
                         </Typography>
 					</Box>
-					<Box id="home-buttons-container" sx={{ mx: 0, mb: "4rem" }}>
+					<Box id="home-buttons-container" sx={{ mx: 0, mb: 12 }}>
 						<HomepageButton href="/cs-portfolio" className="home-column" variant="contained" disableElevation>
 							<Typography sx={{ textWrap: 'balance', mb: "0.5rem" }}>Enter CS Portfolio</Typography>
 							<DoubleArrowIcon />
@@ -51,7 +49,7 @@ function Homepage() {
 						</HomepageButton>
 					</Box>
 
-                    <Box sx={{ mb: 6 }}>
+                    <Box sx={{ mb: 12 }}>
                         <Typography sx={{ fontStyle: "italic", color: alpha("#000", 0.8) }}>You will experience this site in light mode.</Typography>
                         
                         <ThemeProvider theme={homeThemeDark}>
