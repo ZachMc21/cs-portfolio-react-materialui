@@ -17,53 +17,60 @@ function CSPortfolio() {
 		<Container id="cs-portfolio">
 			<ThemeProvider theme={csLight}>
 
+                {/* Header box */}
 				<Box sx = {{ display: "flex", flexDirection: "column", justifyContent: "space-around", alignItems: "center", 
                         backgroundColor: csLight.primary.light,
-                        py: "4rem", mt: "1.5rem" }}>
-                    <Box sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", gap: "16rem", mb: "3rem" }}>
-                        <Box sx = {{ display: "flex", flexDirection: "column", alignContent: "left" }}>
-                            <Typography variant="title" sx = {{ fontSize: "4rem", color: csLight.primary.dark, textAlign: "left", lineHeight: "3.85rem" }}>
+                        pt: "4rem", py: "3rem", mt: "1.5rem" }}>
+
+                    <Box sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", gap: "16rem", mt: "0.5rem", mb: "3rem" }}>
+                        <Box sx = {{ display: "flex", flexDirection: "column", alignContent: "left", gap: "1rem" }}>
+                            <Typography variant="title" sx = {{ fontSize: "5rem", color: csLight.primary.dark, textAlign: "left", lineHeight: "3.85rem" }}>
                                 Zach
                             </Typography>
-                            <Typography variant="title" sx = {{ fontSize: "4rem", color: csLight.primary.dark, textAlign: "left", lineHeight: "3.85rem" }}>
+                            <Typography variant="title" sx = {{ fontSize: "5rem", color: csLight.primary.dark, textAlign: "left", lineHeight: "3.85rem" }}>
                                 Magloughlin
                             </Typography>
                         </Box>
-                        <List sx= {{ display: "flex", flexDirection: "column", gap: 0 }}>
-                            <ListItem sx = {{ p: 0 }}>
-                                <ListItemButton sx = {{ p: 0, display: "flex", alignItems: "flex-start", gap: "0.25rem" }}>
-                                    <Icon> <MailOutlineIcon /> </Icon>
-                                    <ListItemText> Email</ListItemText>
-                                </ListItemButton>
-                            </ListItem>
-                            <ListItem sx = {{ p: 0 }}>
-                                <ListItemButton sx = {{ p: 0, display: "flex", alignItems: "flex-start", gap: "0.25rem"  }}>
-                                    <Icon> <LinkedInIcon /> </Icon>
-                                    <ListItemText> LinkedIn</ListItemText>
-                                </ListItemButton>
-                            </ListItem>
-                            <ListItem sx = {{ p: 0 }}>
-                                <ListItemButton sx = {{ p: 0, display: "flex", alignItems: "flex-start", gap: "0.25rem"  }}>
-                                    <Icon> <GitHubIcon /> </Icon>
-                                    <ListItemText> GitHub</ListItemText>
-                                </ListItemButton>
-                            </ListItem>
-                        </List>
+                        <Box sx = {{ display: "flex", flexDirection: "column", gap: 0 }}>
+                            <Typography sx = {{ fontSize: "2rem", lineHeight: "2.25rem", color: csLight.primary.dark, textAlign: "right" }}>front-end</Typography>
+                            <Typography sx = {{ fontSize: "2rem", lineHeight: "2.25rem", color: csLight.primary.dark, textAlign: "right" }}>full-stack</Typography>
+                            <Typography sx = {{ fontSize: "2rem", lineHeight: "2.25rem", color: csLight.primary.dark, textAlign: "right" }}>software</Typography>
+                            <Typography sx = {{ fontSize: "2rem", lineHeight: "2.25rem", color: csLight.primary.dark, textAlign: "right" }}>design</Typography>
+                        </Box>
                     </Box> {/* End header row 1 */}
-                    <Box sx = {{ display: "flex", flexDirection: "row", justifyContent: "space-between", gap: "2rem" }}>
-                        <Typography sx = {{ fontSize: "2rem", lineHeight: "2.25rem", color: csLight.primary.dark, textAlign: "right" }}>front-end</Typography>
-                        <Typography sx = {{ fontSize: "2rem", lineHeight: "2.25rem", color: csLight.primary.dark, textAlign: "right" }}>full-stack</Typography>
-                        <Typography sx = {{ fontSize: "2rem", lineHeight: "2.25rem", color: csLight.primary.dark, textAlign: "right" }}>software</Typography>
-                        <Typography sx = {{ fontSize: "2rem", lineHeight: "2.25rem", color: csLight.primary.dark, textAlign: "right" }}>design</Typography>
-                    </Box>
+
+                    <List sx= {{ display: "flex", flexDirection: "row", justifyContent: "space-between", gap: "3rem", pb: 0 }} id="contact">
+                        <ListItem sx = {{ px: 0 }}>
+                            <ListItemButton sx = {{ px: 1, py: 0.5, display: "flex", alignItems: "center", justifyContent: "center", gap: "0.25rem" }}
+                                href="mailto:magloughlin.zach@gmail.com" target="_blank" rel="noopener noreferrer">
+                                <MailOutlineIcon fontSize="large" />
+                                <ListItemText sx = {{ fontSize: "3rem", lineHeight: "2.25rem"}}> Email</ListItemText>
+                            </ListItemButton>
+                        </ListItem>
+                        <ListItem sx = {{ p: 0 }}>
+                            <ListItemButton sx = {{ px: 1, py: 0.5, display: "flex", alignItems: "center", justifyContent: "center", gap: "0.25rem" }}
+                                href="https://www.linkedin.com/in/zach-magloughlin/" target="_blank" rel="noopener noreferrer">
+                                <LinkedInIcon fontSize="large" > </LinkedInIcon>
+                                <ListItemText sx = {{ fontSize: "3rem", lineHeight: "2.25rem"}}> LinkedIn</ListItemText>
+                            </ListItemButton>
+                        </ListItem>
+                        <ListItem sx = {{ p: 0 }}>
+                            <ListItemButton sx = {{ px: 1, py: 0.5, display: "flex", alignItems: "center", justifyContent: "center", gap: "0.25rem" }}
+                                href="https://github.com/ZachMc21" target="_blank" rel="noopener noreferrer" >
+                                <GitHubIcon  fontSize="large" />
+                                <ListItemText sx = {{ fontSize: "3rem", lineHeight: "2.25rem"}}> GitHub</ListItemText>
+                            </ListItemButton>
+                        </ListItem>
+                    </List> {/* End header row 2*/}
+
 				</Box> {/* End header box*/}
 
 				<Box id="section-links">
 					<Typography id="section-jump-text"
                         sx = {{
                             color: csLight.primary.contrastText,
-                            fontStyle: "italic", fontSize: "1.25rem",
-                            textAlign: "left",
+                            fontStyle: "italic", fontSize: "1.25rem", textAlign: "left",
+                            mx: "1rem", mt: "2rem"
                         }}>
                         Jump to...
                     </Typography>
@@ -88,25 +95,6 @@ function CSPortfolio() {
                         </Link>
                     </Box>
 				</Box> {/* End section for page jumping */}
-
-				<Box id="contact">
-					<h1>Contact Me</h1>
-					{ /* Text & link color: palette.primary.dark
-					When link has been clicked, change it to contrastText
-                    Or flip those two colors*/}
-					<Link href="mailto:magloughlin.zach@gmail.com" className="contact-socials" id="email">
-						<MailOutlineIcon/>
-						<Typography>Email</Typography>
-					</Link>
-					<Link href="https://www.linkedin.com/in/zach-magloughlin/" className="contact-socials" id="linked-in">
-						<LinkedInIcon/>
-						<Typography>LinkedIn</Typography>
-					</Link>
-					<Link href="https://github.com/ZachMc21" className="contact-socials" id="git-hub">
-						<GitHubIcon/>
-						<Typography>GitHub</Typography>
-					</Link>
-				</Box> {/* End contact & socials */}
 
 				<Box id="about">
 					<Typography>TODO About Me blurb goes here.</Typography>
