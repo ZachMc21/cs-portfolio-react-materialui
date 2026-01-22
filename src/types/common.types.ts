@@ -10,11 +10,13 @@ declare namespace JSX {
 declare module '@mui/material/styles' {
   interface TypographyVariants {
     title: React.CSSProperties;
+    body1: React.CSSProperties;
   }
 
   // allow configuration using `createTheme()`
   interface TypographyVariantsOptions {
     title?: React.CSSProperties;
+    body1?: React.CSSProperties;
   }
 }
 
@@ -22,5 +24,6 @@ declare module '@mui/material/styles' {
 declare module '@mui/material/Typography' {
   interface TypographyPropsVariantOverrides {
     title: true;
+    body1: true;
   }
 }

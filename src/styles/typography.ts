@@ -12,6 +12,12 @@ const typography = {
         fontFamily: ['eightgon', 'sans-serif'].join(','),
         fontWeight: "regular",
         fontStyle: "italic",
+    },
+    body1: {
+        fontFamily: ['aller', 'sans-serif'].join(','),
+        fontWeight: "regular",
+        fontSize: "1.15rem",
+        textAlign: "left",
     }
 }
 
