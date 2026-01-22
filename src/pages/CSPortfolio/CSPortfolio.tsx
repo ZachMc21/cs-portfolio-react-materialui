@@ -7,8 +7,9 @@ import csLight from '../../styles/csLight';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import { Outlet } from 'react-router-dom';
-import { LinkedIn } from '@mui/icons-material';
 
 
 function CSPortfolio() {
@@ -69,29 +70,34 @@ function CSPortfolio() {
 					<Typography id="section-jump-text"
                         sx = {{
                             color: csLight.primary.contrastText,
-                            fontStyle: "italic", fontSize: "1.25rem", textAlign: "left",
+                            fontStyle: "italic", fontSize: "1.25rem", textAlign: "left", 
                             mx: "1rem", mt: "2rem"
                         }}>
-                        Jump to...
+                        Go to...
                     </Typography>
 					{/* Text color: palette.primary.dark 
 					Background color: palette.primary.light*/}
                     <Box id="section-links-container"
-                        sx = {{flex: 1, flexDirection: "row"}}>
-                        <Link href="#contact">
-                            <Typography>Contact</Typography>
+                        sx = {{ display: "flex", flex: 1, flexDirection: "row", justifyContent: "space-around", py: 2 }}>
+                        <Link href="#contact" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
+                            <KeyboardArrowDownIcon sx = {{ fontSize: "1.5rem" }} />
+                            <Typography sx = {{ fontSize: "1.5rem" }}>Contact</Typography>
                         </Link>
-                        <Link href="#about">
-                            <Typography>About Me</Typography>
+                        <Link href="#about" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
+                            <KeyboardArrowDownIcon sx = {{ fontSize: "1.5rem" }} />
+                            <Typography sx = {{ fontSize: "1.5rem" }} >About Me</Typography>
                         </Link>
-                        <Link href="cs-portfolio/skills">
-                            <Typography>Skills</Typography>
+                        <Link href="cs-portfolio/skills" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
+                            <KeyboardArrowRightIcon sx = {{ fontSize: "1.5rem" }} />
+                            <Typography sx = {{ fontSize: "1.5rem" }} >Skills</Typography>
                         </Link>
-                        <Link href="cs-portfolio/projects">
-                            <Typography>Projects</Typography>
+                        <Link href="cs-portfolio/projects" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
+                            <KeyboardArrowRightIcon sx = {{ fontSize: "1.5rem" }} />
+                            <Typography sx = {{ fontSize: "1.5rem" }} >Projects</Typography>
                         </Link>
-                        <Link href="cs-portfolio/extras">
-                            <Typography>Extras</Typography>
+                        <Link href="cs-portfolio/extras" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
+                            <KeyboardArrowRightIcon sx = {{ fontSize: "1.5rem" }} />
+                            <Typography sx = {{ fontSize: "1.5rem" }} >Extras</Typography>
                         </Link>
                     </Box>
 				</Box> {/* End section for page jumping */}
