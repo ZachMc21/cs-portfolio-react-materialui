@@ -124,29 +124,38 @@ function CSPortfolio() {
                     </Box>
 				</Box>
 
-				<Box id="skills" sx = {{ display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center", columnGap: "12rem" }}>
-                    <Box sx = {{ display: "flex", flexDirection: "row", alignItems: "center" }}>
-                        <Typography variant="title" sx = {{ fontSize: "3rem", py: "1rem" }}>Skills</Typography>
-                        <KeyboardArrowRightIcon sx = {{ fontSize: "4rem" }} />
+                {/*TODO: Convert this to a grid layout (2wide or 1wide)*/}
+                <Box sx = {{ display: "flex", flexDirection: "column" }}>
+                    <Box id="skills" sx = {{ display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center", columnGap: "4rem" }}>
+                        <Link href="cs-portfolio/skills" sx = {{ display: "flex", flexDirection: "row", alignItems: "center", color: csLight.primary.dark, textDecoration: "none", flexShrink: 1 }}>
+                            <Typography variant="title" sx = {{ fontSize: "3em" }}>Skills</Typography>
+                            <KeyboardArrowRightIcon sx = {{ fontSize: "4em" }} />
+                        </Link>
+                        <Box sx = {{ display: "flex", flexDirection: "column" }} >
+                            <Typography variant="bodyRight" sx = {{ }}>A look at my technical and non-technical skills,</Typography>
+                            <Typography variant="bodyRight" sx = {{ }}>learned through education, work, and personal projects.</Typography>
+                        </Box>
                     </Box>
-					<Typography variant="bodyRight">A look at my technical and non-technical skills, learned through education, work, and personal projects.</Typography>
-				</Box>
 
-				<Box id="projects" sx = {{ display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center", columnGap: "12rem" }}>
-                    <Box sx = {{ display: "flex", flexDirection: "row", alignItems: "center" }}>
-                        <Typography variant="title" sx = {{ fontSize: "3rem", py: "1rem" }}>Projects</Typography>
-                        <KeyboardArrowRightIcon sx = {{ fontSize: "4rem" }} />
+                    <Box id="projects" sx = {{ display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center", columnGap: "4rem" }}>
+                        <Link href="cs-portfolio/projects" sx = {{ display: "flex", flexDirection: "row", alignItems: "center", color: csLight.primary.dark, textDecoration: "none", flexShrink: 1 }}>
+                            <Typography variant="title" sx = {{ fontSize: "3em" }}>Projects</Typography>
+                            <KeyboardArrowRightIcon sx = {{ fontSize: "4em" }} />
+                        </Link>
+                        <Box sx = {{ display: "flex", flexDirection: "column" }} >
+                            <Typography variant="bodyRight" sx = {{ }}>A description of school, work, and personal projects I've worked on.</Typography>
+                            <Typography variant="bodyRight" sx = {{ }}>Includes screenshots, code snippets, and retrospectives.</Typography>
+                        </Box>
                     </Box>
-					<Typography variant="bodyRight" >A description of school, work, and personal projects I've worked on. Includes screenshots, code snippets, and retrospectives.</Typography>
-				</Box>
 
-				<Box id="extras" sx = {{ display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center", columnGap: "12rem" }}>
-                    <Box sx = {{ display: "flex", flexDirection: "row", alignItems: "center" }}>
-                        <Typography variant="title" sx = {{ fontSize: "3rem", py: "1rem" }}>Extras</Typography>
-                        <KeyboardArrowRightIcon sx = {{ fontSize: "4rem" }} />
+                    <Box id="extras" sx = {{ display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center", columnGap: "4rem" }}>
+                        <Link href="cs-portfolio/extras" sx = {{ display: "flex", flexDirection: "row", alignItems: "center", color: csLight.primary.dark, textDecoration: "none", flexShrink: 1 }}>
+                            <Typography variant="title" sx = {{ fontSize: "3em" }}>Extras</Typography>
+                            <KeyboardArrowRightIcon sx = {{ fontSize: "4em" }} />
+                        </Link>
+                        <Typography variant="bodyRight" sx = {{ display: "flex"}}>Odds and ends - extracurriculars, volunteer work, and hobbies.</Typography>
                     </Box>
-					<Typography variant="bodyRight" sx = {{ textAlign: "right" }}>Odds and ends - extracurriculars, volunteer work, and hobbies.</Typography>
-				</Box>
+                </Box>
 
 				<Footer />
 			</ThemeProvider>
