@@ -103,22 +103,24 @@ function CSPortfolio() {
 				</Box> {/* End section for page jumping */}
 
 				<Box id="about" sx = {{ display: "flex", flexDirection: "column", justifyContent: "flex-start" }}>
-                    <Box id="about-blurb" sx = {{ pb: "2rem" }}>
-                        <Typography variant="title" sx = {{ fontSize: "3rem", p: "1rem" }}>About Me</Typography>
-                        <Typography variant="body1" sx = {{ marginBottom: "0.5rem", lineHeight: "1.25rem" }}>
-                            Hello hello! Thanks for stopping by.</Typography>
-                        <Typography variant="body1" sx = {{ marginBottom: "0.5rem", lineHeight: "1.25rem" }}>
-                            Zach is a jack-of-all-trades when it comes to computer science.
-                            Although he has a preference for front-end development, he has experience and interest in
-                            back-end development, database management, and data science.</Typography>
-                        <Typography variant="body1" sx = {{ marginBottom: "0.5rem", lineHeight: "1.25rem" }}>
-                            He has lived in Colorado his whole life. He grew up in Fort Collins,
-                            moved to Golden for college, and now lives in Denver.</Typography>
-                    </Box>
-                    <Box id="about-education">
-                        <Typography variant="body1" >B.S. Computer Science</Typography>
-                        <Typography variant="body1" >Colorado School of Mines</Typography>
-                        <Typography variant="body1" >2021 - 2025</Typography>
+                    <Typography variant="title" sx = {{ fontSize: "3rem", p: "1rem" }}>About Me</Typography>
+                    <Box id="about-content" sx = {{ display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center", gap: "3rem", pb: "2rem" }}>
+                        <Box id="about-blurb" sx = {{ display: "flex", flexDirection: "column", justifyContent: "flex-start", flexShrink: 1 }}>
+                            <Typography variant="bodyLeft" sx = {{ marginBottom: "0.5rem", lineHeight: "1.25rem" }}>
+                                Hello hello! Thanks for stopping by.</Typography>
+                            <Typography variant="bodyLeft" sx = {{ marginBottom: "0.5rem", lineHeight: "1.25rem" }}>
+                                Zach is a jack-of-all-trades when it comes to computer science.
+                                Although he has a preference for front-end development, he has experience and interest in
+                                back-end development, database management, and data science.</Typography>
+                            <Typography variant="bodyLeft" sx = {{ marginBottom: "0.5rem", lineHeight: "1.25rem" }}>
+                                He has lived in Colorado his whole life. He grew up in Fort Collins,
+                                moved to Golden for college, and now lives in Denver.</Typography>
+                        </Box>
+                        <Box id="about-education" sx = {{ display: "flex", flexDirection: "column", justifyContent: "flex-start" }}>
+                            <Typography variant="bodyRight" sx = {{ textWrap: "nowrap", marginBottom: "0.5rem", lineHeight: "1.25rem" }}>B.S. Computer Science</Typography>
+                            <Typography variant="bodyRight" sx = {{ textWrap: "nowrap", marginBottom: "0.5rem", lineHeight: "1.25rem" }}>Colorado School of Mines</Typography>
+                            <Typography variant="bodyRight" sx = {{ textWrap: "nowrap", marginBottom: "0.5rem", lineHeight: "1.25rem" }}>2021 - 2025</Typography>
+                        </Box>
                     </Box>
 				</Box>
 
@@ -127,7 +129,7 @@ function CSPortfolio() {
                         <Typography variant="title" sx = {{ fontSize: "3rem", py: "1rem" }}>Skills</Typography>
                         <KeyboardArrowRightIcon sx = {{ fontSize: "4rem" }} />
                     </Box>
-					<Typography variant="body1" sx = {{ textAlign: "right" }}>A look at my technical and non-technical skills, learned through education, work, and personal projects.</Typography>
+					<Typography variant="bodyRight">A look at my technical and non-technical skills, learned through education, work, and personal projects.</Typography>
 				</Box>
 
 				<Box id="projects" sx = {{ display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center", columnGap: "12rem" }}>
@@ -135,7 +137,7 @@ function CSPortfolio() {
                         <Typography variant="title" sx = {{ fontSize: "3rem", py: "1rem" }}>Projects</Typography>
                         <KeyboardArrowRightIcon sx = {{ fontSize: "4rem" }} />
                     </Box>
-					<Typography variant="body1" sx = {{ textAlign: "right" }}>A description of school, work, and personal projects I've worked on. Includes screenshots, code snippets, and retrospectives.</Typography>
+					<Typography variant="bodyRight" >A description of school, work, and personal projects I've worked on. Includes screenshots, code snippets, and retrospectives.</Typography>
 				</Box>
 
 				<Box id="extras" sx = {{ display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center", columnGap: "12rem" }}>
@@ -143,7 +145,7 @@ function CSPortfolio() {
                         <Typography variant="title" sx = {{ fontSize: "3rem", py: "1rem" }}>Extras</Typography>
                         <KeyboardArrowRightIcon sx = {{ fontSize: "4rem" }} />
                     </Box>
-					<Typography variant="body1" sx = {{ textAlign: "right" }}>Odds and ends - extracurriculars, volunteer work, and hobbies.</Typography>
+					<Typography variant="bodyRight" sx = {{ textAlign: "right" }}>Odds and ends - extracurriculars, volunteer work, and hobbies.</Typography>
 				</Box>
 
 				<Footer />
