@@ -10,17 +10,13 @@ declare namespace JSX {
 declare module '@mui/material/styles' {
   interface TypographyVariants {
     title: React.CSSProperties;
-    bodyLeft: React.CSSProperties;
-    bodyRight: React.CSSProperties;
-    bodyCenter: React.CSSProperties;
+    h1: React.CSSProperties;
   }
 
   // allow configuration using `createTheme()`
   interface TypographyVariantsOptions {
     title?: React.CSSProperties;
-    bodyLeft?: React.CSSProperties;
-    bodyRight?: React.CSSProperties;
-    bodyCenter?: React.CSSProperties;
+    h1?: React.CSSProperties;
   }
 }
 
@@ -28,8 +24,6 @@ declare module '@mui/material/styles' {
 declare module '@mui/material/Typography' {
   interface TypographyPropsVariantOverrides {
     title: true;
-    bodyLeft: true;
-    bodyRight: true;
-    bodyCenter: true;
+    h1: true;
   }
 }

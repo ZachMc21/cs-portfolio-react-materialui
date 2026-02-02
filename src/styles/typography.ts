@@ -8,6 +8,7 @@ const typography = {
         fontFamily: ['eightgon', 'sans-serif'].join(','),
         fontWeight: "regular",
         textAlign: "center",
+        fontSize: "3rem",
     },
     subtitle: {
         fontFamily: ['eightgon', 'sans-serif'].join(','),
@@ -15,11 +16,10 @@ const typography = {
         fontStyle: "italic",
         textAlign: "center",
     },
-    bodyLeft: {
-        fontFamily: ['aller', 'sans-serif'].join(','),
+    h1: {
+        fontFamily: ['eightgon', 'sans-serif'].join(','),
         fontWeight: "regular",
-        fontSize: "1.15rem",
-        textAlign: "left",
+        fontSize: "2rem",
     },
     bodyRight: {
         fontFamily: ['aller', 'sans-serif'].join(','),

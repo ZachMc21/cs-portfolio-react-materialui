@@ -1,0 +1,90 @@
+/* GENERAL STYLING */
+:root {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* MOBILE VIEW - STACK ITEMS */
+
+/* General About me section */
+div#about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+div#about-education {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+div#about-education > p {
+  text-wrap: nowrap;
+  text-align: left;
+  margin-bottom: 0.25rem;
+  line-height: 1.25rem;
+}
+div#about-education > p:last-child {
+  margin-bottom: 0;
+}
+
+/* Skills, Projects, and Extras section */
+div#pages-overview {
+  display: flex;
+  flex-direction: column;
+}
+div.pages-overview-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+a.pages-link {
+  font-size: 2em;
+}
+a.pages-link > svg {
+  font-size: 3rem;
+}
+
+/* TABLET & DESKTOP (SIDE-BY-SIDE COLUMNS) */
+@media screen and (min-width: 640px) {
+  /* General About Me section */
+  div#about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;    
+  }
+
+  h1#education-header {
+    display: none;
+  }
+
+  /* Skills, Projects, and Extras */
+  div#pages-overview {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 1rem;
+    padding-bottom: 3rem;
+  }
+
+  div.pages-overview-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  a.pages-link {
+    text-decoration: none;
+    font-size: 3em;
+    width: 40%;
+  }
+
+  p.pages-text {
+    width: 60%;
+    text-align: right;
+  }
+}
