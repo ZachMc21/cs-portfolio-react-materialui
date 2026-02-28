@@ -24,16 +24,16 @@ function CSPortfolio() {
                         backgroundColor: csLight.primary.light,
                         pt: "5rem", pb: "3rem", mt: "3rem" }}>
 
-                    <Box sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", gap: "20rem", mt: "0.5rem", mb: "4rem" }}>
-                        <Box sx = {{ display: "flex", flexDirection: "column", alignContent: "left", gap: "1rem" }}>
-                            <Typography variant="title" sx = {{ fontSize: "5rem", color: csLight.primary.dark, textAlign: "left", lineHeight: "3.85rem" }}>
+                    <Box id="header-top" sx = {{ mb: "2rem" }}>
+                        <Box id="header-name" sx = {{ display: "flex", flexDirection: "column", alignContent: "left", gap: "1rem", py: "2rem" }}>
+                            <Typography variant="title" sx = {{ fontSize: "5rem", color: csLight.primary.dark, lineHeight: "3.85rem" }}>
                                 Zach
                             </Typography>
-                            <Typography variant="title" sx = {{ fontSize: "5rem", color: csLight.primary.dark, textAlign: "left", lineHeight: "3.85rem" }}>
+                            <Typography variant="title" sx = {{ fontSize: "5rem", color: csLight.primary.dark, lineHeight: "3.85rem" }}>
                                 Magloughlin
                             </Typography>
                         </Box>
-                        <Box sx = {{ display: "flex", flexDirection: "column", gap: 0 }}>
+                        <Box id="header-skill-areas">
                             <Typography sx = {{ fontSize: "2rem", lineHeight: "2.25rem", color: csLight.primary.dark, textAlign: "right" }}>front-end</Typography>
                             <Typography sx = {{ fontSize: "2rem", lineHeight: "2.25rem", color: csLight.primary.dark, textAlign: "right" }}>full-stack</Typography>
                             <Typography sx = {{ fontSize: "2rem", lineHeight: "2.25rem", color: csLight.primary.dark, textAlign: "right" }}>software</Typography>
@@ -41,29 +41,23 @@ function CSPortfolio() {
                         </Box>
                     </Box> {/* End header row 1 */}
 
-                    <List sx= {{ display: "flex", flexDirection: "row", justifyContent: "space-between", gap: "3rem", pb: 0 }} id="contact">
-                        <ListItem sx = {{ px: 0 }}>
-                            <ListItemButton sx = {{ px: 1, py: 0.5, display: "flex", alignItems: "center", justifyContent: "center", gap: "0.25rem" }}
-                                href="mailto:magloughlin.zach@gmail.com" target="_blank" rel="noopener noreferrer">
-                                <MailOutlineIcon fontSize="large" />
-                                <ListItemText sx = {{ fontSize: "3rem", lineHeight: "2.25rem"}}> Email</ListItemText>
-                            </ListItemButton>
-                        </ListItem>
-                        <ListItem sx = {{ p: 0 }}>
-                            <ListItemButton sx = {{ px: 1, py: 0.5, display: "flex", alignItems: "center", justifyContent: "center", gap: "0.25rem" }}
-                                href="https://www.linkedin.com/in/zach-magloughlin/" target="_blank" rel="noopener noreferrer">
-                                <LinkedInIcon fontSize="large" > </LinkedInIcon>
-                                <ListItemText sx = {{ fontSize: "3rem", lineHeight: "2.25rem"}}> LinkedIn</ListItemText>
-                            </ListItemButton>
-                        </ListItem>
-                        <ListItem sx = {{ p: 0 }}>
-                            <ListItemButton sx = {{ px: 1, py: 0.5, display: "flex", alignItems: "center", justifyContent: "center", gap: "0.25rem" }}
-                                href="https://github.com/ZachMc21" target="_blank" rel="noopener noreferrer" >
-                                <GitHubIcon  fontSize="large" />
-                                <ListItemText sx = {{ fontSize: "3rem", lineHeight: "2.25rem"}}> GitHub</ListItemText>
-                            </ListItemButton>
-                        </ListItem>
-                    </List> {/* End header row 2*/}
+                    <Box id="header-links" sx= {{ display: "flex", flexDirection: "row", justifyContent: "space-between", gap: "4rem", pb: 0, mb: "1rem" }}>
+                        <Link className="header-link" sx = {{ fontSize: "2rem", textDecoration: "none", color: csLight.primary.dark, p: 0, display: "flex", alignItems: "center", justifyContent: "center", gap: "0.5rem" }}
+                            href="mailto:magloughlin.zach@gmail.com" target="_blank" rel="noopener noreferrer">
+                            <MailOutlineIcon sx = {{ fontSize: "inherit" }} />
+                            <Typography sx = {{ fontSize: "inherit" }} > Email</Typography>
+                        </Link>
+                        <Link sx = {{ fontSize: "2rem", textDecoration: "none", color: csLight.primary.dark, p: 0, display: "flex", alignItems: "center", justifyContent: "center", gap: "0.25rem" }}
+                            href="https://www.linkedin.com/in/zach-magloughlin/" target="_blank" rel="noopener noreferrer">
+                            <LinkedInIcon sx = {{ fontSize: "inherit" }} />
+                            <Typography sx = {{ fontSize: "inherit" }}> LinkedIn</Typography>
+                        </Link>
+                        <Link sx = {{ fontSize: "2rem", textDecoration: "none", color: csLight.primary.dark, p: 0, display: "flex", alignItems: "center", justifyContent: "center", gap: "0.25rem" }}
+                            href="https://github.com/ZachMc21" target="_blank" rel="noopener noreferrer" >
+                            <GitHubIcon sx = {{ fontSize: "inherit" }} />
+                            <Typography sx = {{ fontSize: "inherit" }}> GitHub</Typography>
+                        </Link>
+                    </Box> {/* End header row 2*/}
 
 				</Box> {/* End header box*/}
 

@@ -4,8 +4,25 @@
   padding: 0;
 }
 
-
 /* MOBILE VIEW - STACK ITEMS */
+/* Header box */
+div#header-top {
+  display: flex;
+  flex-direction: column;
+}
+div#header-name {
+  display: flex;
+  flex-direction: row;
+}
+div#header-name > * {
+  text-align: center;
+}
+div#header-skill-areas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+}
 
 /* General About me section */
 div#about-content {
@@ -48,6 +65,27 @@ a.pages-link > svg {
 
 /* TABLET & DESKTOP (SIDE-BY-SIDE COLUMNS) */
 @media screen and (min-width: 640px) {
+  /* Header box */
+  div#header-top {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20rem;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+  }
+  div#header-name {
+    flex-direction: column;
+  }
+  div#header-name > * {
+    text-align: left;
+  }
+  div#header-skill-areas {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  
   /* General About Me section */
   div#about-content {
     display: flex;
