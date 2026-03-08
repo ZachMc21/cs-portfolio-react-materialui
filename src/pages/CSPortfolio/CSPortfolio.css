@@ -2,42 +2,93 @@
 :root {
   margin: 0;
   padding: 0;
+  font-size: 16px;
+  box-sizing: border-box;
 }
 
 /* MOBILE VIEW - STACK ITEMS */
+br.line-break {
+  display: none;
+}
+
 /* Header box */
+div#header-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+}
 div#header-top {
   display: flex;
   flex-direction: column;
 }
 div#header-name {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  gap: 0;
 }
 div#header-name > * {
   text-align: center;
+  font-size: 3em;
 }
 div#header-skill-areas {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  margin: 0 1rem;
+  gap: 2rem;
+}
+div.header-skills-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+div.header-skills-row > * {
+  font-size: 1.5rem;
+  text-align: center;
+}
+div#header-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+a.header-link {
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+div#section-links-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 1rem;
+}
+div.section-links-row {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
 }
 
 /* General About me section */
 div#about-content {
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: left;
+  justify-content: center;
+}
+div#about-blurb {
+  border: none;
+  padding-right: 0;
 }
 div#about-education {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
 }
 div#about-education > p {
   text-wrap: nowrap;
-  text-align: left;
   margin-bottom: 0.25rem;
   line-height: 1.25rem;
 }
@@ -56,34 +107,56 @@ div.pages-overview-child {
   justify-content: space-between;
   margin-bottom: 1.5rem;
 }
-a.pages-link {
-  font-size: 2em;
-}
-a.pages-link > svg {
-  font-size: 3rem;
+a.pages-link > * {
+  font-size: 2rem;
 }
 
 /* TABLET & DESKTOP (SIDE-BY-SIDE COLUMNS) */
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
+  :root {
+    font-size: 18px;
+  }
+  br.line-break {
+    display: block;
+  }
+
   /* Header box */
+  div#header-container {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
   div#header-top {
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 20rem;
-    margin-top: 0.5rem;
-    margin-bottom: 3rem;
+    gap: 2rem;
+    margin-bottom: 2rem;
   }
   div#header-name {
     flex-direction: column;
+    margin-bottom: 1rem;
+    margin-right: 2rem;
   }
   div#header-name > * {
+    font-size: 4em;
     text-align: left;
   }
   div#header-skill-areas {
     flex-direction: column;
-    justify-content: space-between;
-    gap: 0.5rem;
+    justify-content: flex-start;
+    gap: 0;
+  }
+  div.header-skills-row {
+    gap: 0;
+  }
+  div#header-links {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90%;
+  }
+  a.header-link {
+    font-size: 2rem;
   }
   
   /* General About Me section */
@@ -92,7 +165,13 @@ a.pages-link > svg {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 1rem;    
+  }
+  div#about-blurb {
+    padding-right: 0.5rem;
+    border-right: 0.1rem solid black;
+  }
+  div#about-education {
+    padding-left: 0.5rem;
   }
 
   h1#education-header {
@@ -101,6 +180,8 @@ a.pages-link > svg {
 
   /* Skills, Projects, and Extras */
   div#pages-overview {
+    max-width: 90%;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -115,10 +196,9 @@ a.pages-link > svg {
     align-items: center;
   }
 
-  a.pages-link {
+  a.pages-link > * {
     text-decoration: none;
-    font-size: 3em;
-    width: 40%;
+    font-size: 3rem;
   }
 
   p.pages-text {

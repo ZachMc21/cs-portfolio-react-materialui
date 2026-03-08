@@ -20,39 +20,43 @@ function CSPortfolio() {
 			<ThemeProvider theme={csLight}>
 
                 {/* Header box */}
-				<Box sx = {{ display: "flex", flexDirection: "column", justifyContent: "space-around", alignItems: "center",
-                        backgroundColor: csLight.primary.light,
-                        pt: "5rem", pb: "3rem", mt: "3rem" }}>
+				<Box id="header-container" sx = {{backgroundColor: csLight.primary.light,
+                    pt: "5rem", pb: "3rem", mt: "3rem", mx: 0 }}>
 
                     <Box id="header-top" sx = {{ mb: "2rem" }}>
                         <Box id="header-name" sx = {{ display: "flex", flexDirection: "column", alignContent: "left", gap: "1rem", py: "2rem" }}>
-                            <Typography variant="title" sx = {{ fontSize: "5rem", color: csLight.primary.dark, lineHeight: "3.85rem" }}>
+                            <Typography variant="title" sx = {{ color: csLight.primary.dark, lineHeight: "3.85rem" }}>
                                 Zach
                             </Typography>
-                            <Typography variant="title" sx = {{ fontSize: "5rem", color: csLight.primary.dark, lineHeight: "3.85rem" }}>
+                            <Typography variant="title" sx = {{ color: csLight.primary.dark, lineHeight: "3.85rem" }}>
                                 Magloughlin
                             </Typography>
                         </Box>
                         <Box id="header-skill-areas">
-                            <Typography sx = {{ fontSize: "2rem", lineHeight: "2.25rem", color: csLight.primary.dark, textAlign: "right" }}>front-end</Typography>
-                            <Typography sx = {{ fontSize: "2rem", lineHeight: "2.25rem", color: csLight.primary.dark, textAlign: "right" }}>full-stack</Typography>
-                            <Typography sx = {{ fontSize: "2rem", lineHeight: "2.25rem", color: csLight.primary.dark, textAlign: "right" }}>software</Typography>
-                            <Typography sx = {{ fontSize: "2rem", lineHeight: "2.25rem", color: csLight.primary.dark, textAlign: "right" }}>design</Typography>
+                            <Box className="header-skills-row">
+                                <Typography variant="cs_subtitle">front-end</Typography>
+                                <Typography variant="cs_subtitle">full-stack</Typography>
+                            </Box>
+                        
+                            <Box className="header-skills-row">
+                                <Typography variant="cs_subtitle">software</Typography>
+                                <Typography variant="cs_subtitle">design</Typography>
+                            </Box>
                         </Box>
-                    </Box> {/* End header row 1 */}
+                    </Box> {/* End header-top */}
 
                     <Box id="header-links" sx= {{ display: "flex", flexDirection: "row", justifyContent: "space-between", gap: "4rem", pb: 0, mb: "1rem" }}>
-                        <Link className="header-link" sx = {{ fontSize: "2rem", textDecoration: "none", color: csLight.primary.dark, p: 0, display: "flex", alignItems: "center", justifyContent: "center", gap: "0.5rem" }}
+                        <Link className="header-link" sx = {{ textDecoration: "none", color: csLight.primary.dark, p: 0, display: "flex", alignItems: "center", justifyContent: "center", gap: "0.5rem" }}
                             href="mailto:magloughlin.zach@gmail.com" target="_blank" rel="noopener noreferrer">
                             <MailOutlineIcon sx = {{ fontSize: "inherit" }} />
                             <Typography sx = {{ fontSize: "inherit" }} > Email</Typography>
                         </Link>
-                        <Link sx = {{ fontSize: "2rem", textDecoration: "none", color: csLight.primary.dark, p: 0, display: "flex", alignItems: "center", justifyContent: "center", gap: "0.25rem" }}
+                        <Link className="header-link" sx = {{ textDecoration: "none", color: csLight.primary.dark, p: 0, display: "flex", alignItems: "center", justifyContent: "center", gap: "0.25rem" }}
                             href="https://www.linkedin.com/in/zach-magloughlin/" target="_blank" rel="noopener noreferrer">
                             <LinkedInIcon sx = {{ fontSize: "inherit" }} />
                             <Typography sx = {{ fontSize: "inherit" }}> LinkedIn</Typography>
                         </Link>
-                        <Link sx = {{ fontSize: "2rem", textDecoration: "none", color: csLight.primary.dark, p: 0, display: "flex", alignItems: "center", justifyContent: "center", gap: "0.25rem" }}
+                        <Link className="header-link" sx = {{ textDecoration: "none", color: csLight.primary.dark, p: 0, display: "flex", alignItems: "center", justifyContent: "center", gap: "0.25rem" }}
                             href="https://github.com/ZachMc21" target="_blank" rel="noopener noreferrer" >
                             <GitHubIcon sx = {{ fontSize: "inherit" }} />
                             <Typography sx = {{ fontSize: "inherit" }}> GitHub</Typography>
@@ -62,6 +66,7 @@ function CSPortfolio() {
 				</Box> {/* End header box*/}
 
 				<Box id="section-links">
+                    {/*
 					<Typography id="section-jump-text"
                         sx = {{
                             color: csLight.primary.contrastText,
@@ -70,52 +75,62 @@ function CSPortfolio() {
                         }}>
                         Go to...
                     </Typography>
+                    */}
 					{/* Text color: palette.primary.dark 
 					Background color: palette.primary.light*/}
                     <Box id="section-links-container"
-                        sx = {{ display: "flex", flex: 1, flexDirection: "row", justifyContent: "space-around", py: 2 }}>
-                        <Link href="#contact" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
-                            <KeyboardArrowDownIcon sx = {{ fontSize: "1.5rem" }} />
-                            <Typography sx = {{ fontSize: "1.5rem" }}>Contact</Typography>
-                        </Link>
-                        <Link href="#about" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
-                            <KeyboardArrowDownIcon sx = {{ fontSize: "1.5rem" }} />
-                            <Typography sx = {{ fontSize: "1.5rem" }} >About Me</Typography>
-                        </Link>
-                        <Link href="cs-portfolio/skills" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
-                            <KeyboardArrowRightIcon sx = {{ fontSize: "1.5rem" }} />
-                            <Typography sx = {{ fontSize: "1.5rem" }} >Skills</Typography>
-                        </Link>
-                        <Link href="cs-portfolio/projects" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
-                            <KeyboardArrowRightIcon sx = {{ fontSize: "1.5rem" }} />
-                            <Typography sx = {{ fontSize: "1.5rem" }} >Projects</Typography>
-                        </Link>
-                        <Link href="cs-portfolio/extras" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
-                            <KeyboardArrowRightIcon sx = {{ fontSize: "1.5rem" }} />
-                            <Typography sx = {{ fontSize: "1.5rem" }} >Extras</Typography>
-                        </Link>
+                        sx = {{ display: "flex", flex: 1, flexDirection: "row", justifyContent: "space-around", pt: 5, pb: 2 }}>
+                        <Box className="section-links-row">
+                            <Link href="#contact" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
+                                <KeyboardArrowDownIcon sx = {{ fontSize: "1.5rem" }} />
+                                <Typography sx = {{ fontSize: "1.5rem" }}>Contact</Typography>
+                            </Link>
+                            <Link href="#about" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
+                                <KeyboardArrowDownIcon sx = {{ fontSize: "1.5rem" }} />
+                                <Typography sx = {{ fontSize: "1.5rem" }} >About Me</Typography>
+                            </Link>
+                        </Box>
+                        <Box className="section-links-row">
+                            <Link href="cs-portfolio/skills" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
+                                <KeyboardArrowRightIcon sx = {{ fontSize: "1.5rem" }} />
+                                <Typography sx = {{ fontSize: "1.5rem" }} >Skills</Typography>
+                            </Link>
+                            <Link href="cs-portfolio/projects" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
+                                <KeyboardArrowRightIcon sx = {{ fontSize: "1.5rem" }} />
+                                <Typography sx = {{ fontSize: "1.5rem" }} >Projects</Typography>
+                            </Link>
+                            <Link href="cs-portfolio/extras" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
+                                <KeyboardArrowRightIcon sx = {{ fontSize: "1.5rem" }} />
+                                <Typography sx = {{ fontSize: "1.5rem" }} >Extras</Typography>
+                            </Link>
+                        </Box>
                     </Box>
 				</Box> {/* End section for page jumping */}
 
 				<Box id="about">
-                    <Typography variant="title" sx = {{ p: "1rem" }}>About Me</Typography>
-                    <Box id="about-content" sx = {{ pb: "2rem" }}>
-                        <Box id="about-blurb" sx = {{ display: "flex", flexDirection: "column", alignContent: "flex-start", flexShrink: 1, mb: "1rem", }}>
+                    <Box id="about-title" sx = {{ p: "1rem" }}>
+                        <Typography variant="title">About Me</Typography>
+                    </Box>
+                    <Box id="about-content" sx = {{ display: "flex", flexDirection: "row", gap: 0, pb: "2rem" }}>
+                        <Box id="about-blurb" sx = {{ display: "flex", flexDirection: "column", alignContent: "flex-start", flexShrink: 1, pb: "1rem",
+                            pr: "2rem", borderRight: 2, borderColor: csLight.primary.dark 
+                        }}>
                             <Typography sx = {{ marginBottom: "0.5rem", lineHeight: "1.25rem" }}>
                                 Hello hello! Thanks for stopping by.</Typography>
                             <Typography sx = {{ marginBottom: "0.5rem", lineHeight: "1.25rem" }}>
-                                Zach is a jack-of-all-trades when it comes to computer science.
-                                Although he has a preference for front-end development, he has experience and interest in
+                                Zach is a jack-of-all-trades when it comes to computer science. He has experience and interest in
                                 back-end development, database management, and data science.</Typography>
                             <Typography sx = {{ marginBottom: "0.5rem", lineHeight: "1.25rem" }}>
                                 He has lived in Colorado his whole life. He grew up in Fort Collins,
                                 moved to Golden for college, and now lives in Denver.</Typography>
                         </Box>
-                        <Typography id="education-header" variant="h1" sx={{ display: "flex", justifySelf: "left", pb: "0.5rem" }}>Education</Typography>
-                        <Box id="about-education" sx = {{ ml: "1rem", pl: "1rem", borderLeft: 2, borderColor: csLight.primary.dark }}>
-                            <Typography>B.S. Computer Science</Typography>
-                            <Typography>Colorado School of Mines</Typography>
-                            <Typography>2021 - 2025</Typography>
+                        <Box id="about-education" sx = {{ pl: "2rem", ml: 0 }}>
+                            <Typography id="education-header" variant="h1" sx={{ display: "flex", justifySelf: "left", pb: "0.5rem" }}>Education</Typography>
+                            <Box id="about-education" sx = {{ pr: "1rem" }}>
+                                <Typography>B.S. Computer Science</Typography>
+                                <Typography>Colorado School of Mines</Typography>
+                                <Typography>2021 - 2025</Typography>
+                            </Box>
                         </Box>
                     </Box>
 				</Box>
@@ -124,23 +139,23 @@ function CSPortfolio() {
                 <Box id="pages-overview">
                     <Box id="skills" className="pages-overview-child">
                         <Link className="pages-link" href="cs-portfolio/skills" sx = {{ display: "flex", flexDirection: "row", alignItems: "center", color: csLight.primary.dark, flexShrink: 1, textDecorationColor: csLight.primary.dark }}>
-                            <Typography variant="title">Skills</Typography>
+                            <Typography>Skills</Typography>
                             <KeyboardArrowRightIcon />
                         </Link>
-                        <Typography className="pages-text">A look at my technical and non-technical skills, learned through education, work, and personal projects.</Typography>
+                        <Typography className="pages-text">A look at my technical and non-technical skills, <br className="line-break"/> learned through education, work, and personal projects.</Typography>
                     </Box>
 
                     <Box id="projects" className="pages-overview-child">
                         <Link className="pages-link" href="cs-portfolio/projects" sx = {{ display: "flex", flexDirection: "row", alignItems: "center", color: csLight.primary.dark, flexShrink: 1, textDecorationColor: csLight.primary.dark }}>
-                            <Typography variant="title">Projects</Typography>
+                            <Typography>Projects</Typography>
                             <KeyboardArrowRightIcon />
                         </Link>
-                            <Typography className="pages-text">A description of school, work, and personal projects I've worked on. Includes screenshots, code snippets, and retrospectives.</Typography>
+                            <Typography className="pages-text">A description of school, work, and personal projects I've worked on. <br className="line-break"/> Includes screenshots, code snippets, and retrospectives.</Typography>
                     </Box>
 
                     <Box id="extras" className="pages-overview-child">
                         <Link className="pages-link" href="cs-portfolio/extras" sx = {{ display: "flex", flexDirection: "row", alignItems: "center", color: csLight.primary.dark, flexShrink: 1, textDecorationColor: csLight.primary.dark }}>
-                            <Typography variant="title">Extras</Typography>
+                            <Typography>Extras</Typography>
                             <KeyboardArrowRightIcon />
                         </Link>
                         <Typography className="pages-text">Odds and ends - extracurriculars, volunteer work, and hobbies.</Typography>

@@ -1,4 +1,6 @@
 
+/* This code is non-functional. It has been copied into csTheme.ts */
+
 const typography = {
     fontFamily: ['aller', 'sans-serif'].join(','),
     allVariants: {
