@@ -48,18 +48,18 @@ function CSPortfolio() {
                     <Box id="header-links" sx= {{ display: "flex", flexDirection: "row", justifyContent: "space-between", gap: "4rem", pb: 0, mb: "1rem" }}>
                         <Link className="header-link" sx = {{ textDecoration: "none", color: csLight.primary.dark, p: 0, display: "flex", alignItems: "center", justifyContent: "center", gap: "0.5rem" }}
                             href="mailto:magloughlin.zach@gmail.com" target="_blank" rel="noopener noreferrer">
-                            <MailOutlineIcon sx = {{ fontSize: "inherit" }} />
-                            <Typography sx = {{ fontSize: "inherit" }} > Email</Typography>
+                            <MailOutlineIcon sx = {{ fontSize: "1.75rem" }} />
+                            <Typography sx = {{ fontSize: "1.75rem" }}> Email</Typography>
                         </Link>
                         <Link className="header-link" sx = {{ textDecoration: "none", color: csLight.primary.dark, p: 0, display: "flex", alignItems: "center", justifyContent: "center", gap: "0.25rem" }}
                             href="https://www.linkedin.com/in/zach-magloughlin/" target="_blank" rel="noopener noreferrer">
-                            <LinkedInIcon sx = {{ fontSize: "inherit" }} />
-                            <Typography sx = {{ fontSize: "inherit" }}> LinkedIn</Typography>
+                            <LinkedInIcon sx = {{ fontSize: "1.75rem" }} />
+                            <Typography sx = {{ fontSize: "1.75rem" }}> LinkedIn</Typography>
                         </Link>
                         <Link className="header-link" sx = {{ textDecoration: "none", color: csLight.primary.dark, p: 0, display: "flex", alignItems: "center", justifyContent: "center", gap: "0.25rem" }}
                             href="https://github.com/ZachMc21" target="_blank" rel="noopener noreferrer" >
-                            <GitHubIcon sx = {{ fontSize: "inherit" }} />
-                            <Typography sx = {{ fontSize: "inherit" }}> GitHub</Typography>
+                            <GitHubIcon sx = {{ fontSize: "1.75rem" }} />
+                            <Typography sx = {{ fontSize: "1.75rem" }}> GitHub</Typography>
                         </Link>
                     </Box> {/* End header row 2*/}
 
@@ -138,7 +138,7 @@ function CSPortfolio() {
                 {/*TODO: Convert this to a grid layout (2wide or 1wide)*/}
                 <Box id="pages-overview">
                     <Box id="skills" className="pages-overview-child">
-                        <Link className="pages-link" href="cs-portfolio/skills" sx = {{ display: "flex", flexDirection: "row", alignItems: "center", color: csLight.primary.dark, flexShrink: 1, textDecorationColor: csLight.primary.dark }}>
+                        <Link className="pages-link" href="cs-portfolio/skills" sx = {{ color: csLight.primary.dark, textDecorationColor: csLight.primary.dark }}>
                             <Typography>Skills</Typography>
                             <KeyboardArrowRightIcon />
                         </Link>
@@ -146,7 +146,7 @@ function CSPortfolio() {
                     </Box>
 
                     <Box id="projects" className="pages-overview-child">
-                        <Link className="pages-link" href="cs-portfolio/projects" sx = {{ display: "flex", flexDirection: "row", alignItems: "center", color: csLight.primary.dark, flexShrink: 1, textDecorationColor: csLight.primary.dark }}>
+                        <Link className="pages-link" href="cs-portfolio/projects" sx = {{ color: csLight.primary.dark, textDecorationColor: csLight.primary.dark }}>
                             <Typography>Projects</Typography>
                             <KeyboardArrowRightIcon />
                         </Link>
@@ -154,7 +154,7 @@ function CSPortfolio() {
                     </Box>
 
                     <Box id="extras" className="pages-overview-child">
-                        <Link className="pages-link" href="cs-portfolio/extras" sx = {{ display: "flex", flexDirection: "row", alignItems: "center", color: csLight.primary.dark, flexShrink: 1, textDecorationColor: csLight.primary.dark }}>
+                        <Link className="pages-link" href="cs-portfolio/extras" sx = {{ color: csLight.primary.dark, textDecorationColor: csLight.primary.dark }}>
                             <Typography>Extras</Typography>
                             <KeyboardArrowRightIcon />
                         </Link>

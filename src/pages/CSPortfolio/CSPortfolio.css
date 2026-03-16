@@ -52,7 +52,6 @@ div#header-links {
   gap: 0;
 }
 a.header-link {
-  font-size: 1.5rem;
   text-decoration: none;
 }
 
@@ -95,6 +94,17 @@ div#about-education > p {
 div#about-education > p:last-child {
   margin-bottom: 0;
 }
+a.pages-link {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  align-items: center;
+  text-decoration: none;
+}
+/* TODO */
+a.pages-link :hover {
+  text-decoration: 0.2rem solid black;
+}
 
 /* Skills, Projects, and Extras section */
 div#pages-overview {
@@ -103,12 +113,19 @@ div#pages-overview {
 }
 div.pages-overview-child {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.75rem 1rem;
+  background-color: #dff6f7;
 }
+
 a.pages-link > * {
   font-size: 2rem;
+}
+p.pages-text {
+  width: 60%;
+  text-align: right;
 }
 
 /* TABLET & DESKTOP (SIDE-BY-SIDE COLUMNS) */
@@ -167,11 +184,11 @@ a.pages-link > * {
     align-items: center;
   }
   div#about-blurb {
-    padding-right: 0.5rem;
+    padding-right: 1rem;
     border-right: 0.1rem solid black;
   }
   div#about-education {
-    padding-left: 0.5rem;
+    padding-left: 1rem;
   }
 
   h1#education-header {
@@ -202,7 +219,6 @@ a.pages-link > * {
   }
 
   p.pages-text {
-    width: 60%;
     text-align: right;
   }
 }
