@@ -12,9 +12,12 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import { Outlet } from 'react-router-dom';
 import Navbar from '../../components/navbar/Navbar';
+import DocumentTitle from '../../utils/documentTitle';
 
 
 function CSPortfolio() {
+
+    DocumentTitle("Zach's CS Portfolio");
 	
 	return (
 		<Container disableGutters id="cs-portfolio">
