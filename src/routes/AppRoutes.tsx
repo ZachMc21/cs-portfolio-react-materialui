@@ -8,13 +8,17 @@ import Extras from "../pages/CSPortfolio/Extras";
 import PhotographyPortfolio from "../pages/PhotographyPortfolio/PhotographyPortfolio";
 import MusicDatabase from "../pages/MusicDatabase/MusicDatabase";
 import TextRPG from "../pages/TextRPG/TextRPG";
-import NotFound from "../pages/NotFound/NotFound";
+import NotFound from "../components/NotFound";
+import App from "../App";
+
+//Best react-router-dom tutorial I've found so far:
+// https://blog.logrocket.com/react-router-dom-tutorial-examples/
  
 // Define your routes here
 // Format:
 // {
-// path: "/",
-// element: <PageHere />,
+//      path: "/",
+//      element: <PageHere />,
 // }
 const router = createBrowserRouter([
   {
@@ -23,26 +27,26 @@ const router = createBrowserRouter([
   },
   {
     path: "/cs-portfolio",
-		element: <Outlet />,
+    element: <Outlet />,
     errorElement: <NotFound />, // Handles errors in this route/children
-		children: [
-			{
-				index: true,
-				element: <CSPortfolio />,
-			},
-			{
-				path: "/cs-portfolio/skills",
-				element: <Skills />,
-			},
-			{
-				path: "/cs-portfolio/projects",
-				element: <Projects />,
-			},
-			{
-				path: "/cs-portfolio/extras",
-				element: <Extras />,
-			}
-		]
+    children: [
+        {
+            index: true,
+            element: <CSPortfolio />,
+        },
+        {
+            path: "/cs-portfolio/skills",
+            element: <Skills />,
+        },
+        {
+            path: "/cs-portfolio/projects",
+            element: <Projects />,
+        },
+        {
+            path: "/cs-portfolio/extras",
+            element: <Extras />,
+        }
+    ]
   },
   {
     path: "/photography-portfolio",

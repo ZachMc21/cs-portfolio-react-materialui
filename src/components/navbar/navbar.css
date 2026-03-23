@@ -1,0 +1,16 @@
+
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar-link-active {
+  text-emphasis: bold;
+}
+
+.navbar-link-home {
+  justify-self: last;
+  font-size: 0.9rem;
+}

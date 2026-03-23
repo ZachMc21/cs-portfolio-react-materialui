@@ -1,5 +1,5 @@
-import ConstructionNotice from '../../components/ConstructionNotice';
-import Footer from '../../components/Footer';
+import ConstructionNotice from './ConstructionNotice';
+import Footer from './Footer';
 
 function NotFound() {
 

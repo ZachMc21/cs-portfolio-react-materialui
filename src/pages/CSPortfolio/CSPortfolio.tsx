@@ -1,5 +1,5 @@
 
-import { Box, Container, Icon, IconButton, Link, List, ListItem, ListItemButton, ListItemIcon, ListItemText, ThemeProvider, Typography } from '@mui/material';
+import { Box, Container, Link, ThemeProvider, Typography } from '@mui/material';
 import Footer from '../../components/Footer';
 
 import csLight from '../../styles/csLight';
@@ -11,19 +11,22 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import { Outlet } from 'react-router-dom';
+import Navbar from '../../components/navbar/Navbar';
 
 
 function CSPortfolio() {
 	
 	return (
-		<Container id="cs-portfolio">
+		<Container disableGutters id="cs-portfolio">
 			<ThemeProvider theme={csLight}>
+
+                <Navbar currentPage="cs" />
 
                 {/* Header box */}
 				<Box id="header-container" sx = {{backgroundColor: csLight.primary.light,
-                    pt: "5rem", pb: "3rem", mt: "3rem", mx: 0 }}>
+                    pt: "5rem", pb: "3rem", mt: "3rem", mx: "3rem" }}>
 
-                    <Box id="header-top" sx = {{ mb: "2rem" }}>
+                    <Box id="header-top">
                         <Box id="header-name" sx = {{ display: "flex", flexDirection: "column", alignContent: "left", gap: "1rem", py: "2rem" }}>
                             <Typography variant="title" sx = {{ color: csLight.primary.dark, lineHeight: "3.85rem" }}>
                                 Zach
@@ -45,7 +48,7 @@ function CSPortfolio() {
                         </Box>
                     </Box> {/* End header-top */}
 
-                    <Box id="header-links" sx= {{ display: "flex", flexDirection: "row", justifyContent: "space-between", gap: "4rem", pb: 0, mb: "1rem" }}>
+                    <Box id="header-links" sx= {{ display: "flex", flexDirection: "row", justifyContent: "space-between", gap: "4rem", py: "1rem" }}>
                         <Link className="header-link" sx = {{ textDecoration: "none", color: csLight.primary.dark, p: 0, display: "flex", alignItems: "center", justifyContent: "center", gap: "0.5rem" }}
                             href="mailto:magloughlin.zach@gmail.com" target="_blank" rel="noopener noreferrer">
                             <MailOutlineIcon sx = {{ fontSize: "1.75rem" }} />
@@ -81,7 +84,7 @@ function CSPortfolio() {
                     <Box id="section-links-container"
                         sx = {{ display: "flex", flex: 1, flexDirection: "row", justifyContent: "space-around", pt: 5, pb: 2 }}>
                         <Box className="section-links-row">
-                            <Link href="#contact" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
+                            <Link href="#header-links" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
                                 <KeyboardArrowDownIcon sx = {{ fontSize: "1.5rem" }} />
                                 <Typography sx = {{ fontSize: "1.5rem" }}>Contact</Typography>
                             </Link>

@@ -101,8 +101,8 @@ a.pages-link {
   align-items: center;
   text-decoration: none;
 }
-/* TODO */
-a.pages-link :hover {
+/* TODO this doesn't do anything */
+a.pages-link:hover {
   text-decoration: 0.2rem solid black;
 }
 
