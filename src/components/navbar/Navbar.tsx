@@ -20,10 +20,10 @@ const Navbar = ({ currentPage }: NavbarProps) => {
 			<CssBaseline />
 
             <Box id="pages-container" sx = {{ display: "flex", flexDirection: "row", justifyContent: "flex-start", alignItems: "center", gap: "2em" }}>
-                <Link to="#" replace className="navbar-link navbar-link-active">CS Portfolio</Link>
-                <Link to="/photography-portfolio" replace className="navbar-link">Photography Portfolio</Link>
-                <Link to="/music-database" replace className="navbar-link">Music Database</Link>
-                <Link to="/text-rpg" replace className="navbar-link">Text RPG</Link>
+                <Link to="#" className="navbar-link navbar-link-active">CS Portfolio</Link>
+                <Link to="/photography-portfolio" className="navbar-link">Photography Portfolio</Link>
+                <Link to="/music-database" className="navbar-link">Music Database</Link>
+                <Link to="/text-rpg" className="navbar-link">Text RPG</Link>
             </Box>
 
             <Link to="/" replace className="navbar-link navbar-link-home">Return to <br /> Landing Page</Link>

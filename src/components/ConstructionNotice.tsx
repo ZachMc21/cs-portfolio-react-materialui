@@ -1,4 +1,4 @@
-import { Container, CssBaseline } from '@mui/material';
+import { Container, CssBaseline, Typography } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import ConstructionIcon from '@mui/icons-material/Construction';
 import BackButton from './BackButton.tsx';
@@ -18,9 +18,9 @@ const ConstructionNotice = ({ title }: ConstructionProps) => {
 			<CssBaseline />
 
 			<Container className="construction-notice" id="container" sx = {{ mb: "3rem" }}>
-				<ConstructionIcon sx={{ fontSize: "6rem", marginTop: "2rem", marginBottom: "1rem" }} />
+				<ConstructionIcon sx={{ fontSize: "6rem", mt: "2rem", mb: "1rem" }} />
 				<h1>{title}</h1>
-				<p style={{ marginBottom: "2rem" }}>This page is under construction. <br /> Check back later!</p>
+				<Typography sx={{ mb: "3rem", fontSize: "1.5rem" }}>This page is under construction. <br /> Check back later!</Typography>
 				<BackButton />
 			</Container>
 

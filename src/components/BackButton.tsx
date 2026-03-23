@@ -13,11 +13,11 @@ const BackButton: React.FC = () => {
   const handleBack = () => {
     //If there's history to go back to, go back
     if (window.history.length > 1) {
-      navigate(-1);
+        navigate(-1);
     }
     //Otherwise, go to homepage
     else {
-      navigate('/');
+        navigate('/' as const);
     }
   };
 
