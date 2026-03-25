@@ -4,8 +4,11 @@ import homeThemeLight from "../../styles/homeLight";
 import homeThemeDark from "../../styles/homeDark";
 import HomepageButton from "../../components/HomepageButton";
 import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
+import DocumentTitle from "../../utils/DocumentTitle";
 
 function Homepage() {
+    
+    DocumentTitle("Home");
 
 	return (
 		<Container id="enter-site"

@@ -12,12 +12,14 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import { Outlet } from 'react-router-dom';
 import Navbar from "../../components/navbar/Navbar";
-import DocumentTitle from '../../utils/documentTitle';
+import DocumentTitle from "../../utils/DocumentTitle";
 import homeTheme from '../../styles/homeTheme';
 
 
 function CSPortfolio() {
 	
+    DocumentTitle("Computer Science Portfolio");
+
 	return (
 		<Container id="cs-portfolio">
 			<ThemeProvider theme={csLight}>
