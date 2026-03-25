@@ -6,6 +6,13 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: #578a88 solid 0.1rem;
+}
+
 /* MOBILE VIEW - STACK ITEMS */
 br.line-break {
   display: none;
@@ -50,9 +57,6 @@ div#header-links {
   display: flex;
   flex-direction: column;
   gap: 0;
-}
-a.header-link {
-  text-decoration: none;
 }
 
 div#section-links-container {

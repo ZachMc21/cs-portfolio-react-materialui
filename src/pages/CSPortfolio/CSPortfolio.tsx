@@ -11,6 +11,9 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import { Outlet } from 'react-router-dom';
+import Navbar from "../../components/navbar/Navbar";
+import DocumentTitle from '../../utils/documentTitle';
+import homeTheme from '../../styles/homeTheme';
 
 
 function CSPortfolio() {
@@ -18,10 +21,13 @@ function CSPortfolio() {
 	return (
 		<Container id="cs-portfolio">
 			<ThemeProvider theme={csLight}>
+            <ThemeProvider theme={homeTheme}>
+
+                <Navbar currentPage="cs" />
 
                 {/* Header box */}
 				<Box id="header-container" sx = {{backgroundColor: csLight.primary.light,
-                    pt: "5rem", pb: "3rem", mt: "3rem", mx: 0 }}>
+                    pt: "5rem", pb: "3rem", mt: "7rem", mx: "3rem" }}>
 
                     <Box id="header-top" sx = {{ mb: "2rem" }}>
                         <Box id="header-name" sx = {{ display: "flex", flexDirection: "column", alignContent: "left", gap: "1rem", py: "2rem" }}>
@@ -81,25 +87,25 @@ function CSPortfolio() {
                     <Box id="section-links-container"
                         sx = {{ display: "flex", flex: 1, flexDirection: "row", justifyContent: "space-around", pt: 5, pb: 2 }}>
                         <Box className="section-links-row">
-                            <Link href="#contact" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
+                            <Link href="#header-links" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", color: homeTheme.palette.primary.dark }}>
                                 <KeyboardArrowDownIcon sx = {{ fontSize: "1.5rem" }} />
                                 <Typography sx = {{ fontSize: "1.5rem" }}>Contact</Typography>
                             </Link>
-                            <Link href="#about" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
+                            <Link href="#about" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", color: homeTheme.palette.primary.dark }}>
                                 <KeyboardArrowDownIcon sx = {{ fontSize: "1.5rem" }} />
                                 <Typography sx = {{ fontSize: "1.5rem" }} >About Me</Typography>
                             </Link>
                         </Box>
                         <Box className="section-links-row">
-                            <Link href="cs-portfolio/skills" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
+                            <Link href="cs-portfolio/skills" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", color: homeTheme.palette.primary.dark }}>
                                 <KeyboardArrowRightIcon sx = {{ fontSize: "1.5rem" }} />
                                 <Typography sx = {{ fontSize: "1.5rem" }} >Skills</Typography>
                             </Link>
-                            <Link href="cs-portfolio/projects" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
+                            <Link href="cs-portfolio/projects" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", color: homeTheme.palette.primary.dark }}>
                                 <KeyboardArrowRightIcon sx = {{ fontSize: "1.5rem" }} />
                                 <Typography sx = {{ fontSize: "1.5rem" }} >Projects</Typography>
                             </Link>
-                            <Link href="cs-portfolio/extras" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
+                            <Link href="cs-portfolio/extras" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", color: homeTheme.palette.primary.dark }}>
                                 <KeyboardArrowRightIcon sx = {{ fontSize: "1.5rem" }} />
                                 <Typography sx = {{ fontSize: "1.5rem" }} >Extras</Typography>
                             </Link>
@@ -164,6 +170,7 @@ function CSPortfolio() {
 
 				<Footer />
 			</ThemeProvider>
+            </ThemeProvider>
             <Outlet />
 		</Container>
 	);
