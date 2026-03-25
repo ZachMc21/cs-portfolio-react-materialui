@@ -1,5 +1,5 @@
 
-import { Box, Container, Icon, IconButton, Link, List, ListItem, ListItemButton, ListItemIcon, ListItemText, ThemeProvider, Typography } from '@mui/material';
+import { Box, Container, Link, ThemeProvider, Typography } from '@mui/material';
 import Footer from '../../components/Footer';
 
 import csLight from '../../styles/csLight';
@@ -25,7 +25,7 @@ function CSPortfolio() {
 			<ThemeProvider theme={csLight}>
             <ThemeProvider theme={homeTheme}>
 
-                <Navbar currentPage="cs" />
+                <Navbar />
 
                 {/* Header box */}
 				<Box id="header-container" sx = {{backgroundColor: csLight.primary.light,
@@ -73,7 +73,7 @@ function CSPortfolio() {
 
 				</Box> {/* End header box*/}
 
-				<Box id="section-links">
+				<Box id="section-links" sx = {{ mb: 3 }}>
                     {/*
 					<Typography id="section-jump-text"
                         sx = {{
@@ -89,25 +89,25 @@ function CSPortfolio() {
                     <Box id="section-links-container"
                         sx = {{ display: "flex", flex: 1, flexDirection: "row", justifyContent: "space-around", pt: 5, pb: 2 }}>
                         <Box className="section-links-row">
-                            <Link href="#header-links" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", color: homeTheme.palette.primary.dark }}>
+                            <Link className="section-link" href="#header-links" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", color: homeTheme.palette.primary.dark }}>
                                 <KeyboardArrowDownIcon sx = {{ fontSize: "1.5rem" }} />
                                 <Typography sx = {{ fontSize: "1.5rem" }}>Contact</Typography>
                             </Link>
-                            <Link href="#about" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", color: homeTheme.palette.primary.dark }}>
+                            <Link className="section-link" href="#about" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", color: homeTheme.palette.primary.dark }}>
                                 <KeyboardArrowDownIcon sx = {{ fontSize: "1.5rem" }} />
                                 <Typography sx = {{ fontSize: "1.5rem" }} >About Me</Typography>
                             </Link>
                         </Box>
                         <Box className="section-links-row">
-                            <Link href="cs-portfolio/skills" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", color: homeTheme.palette.primary.dark }}>
+                            <Link className="section-link" href="cs-portfolio/skills" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", color: homeTheme.palette.primary.dark }}>
                                 <KeyboardArrowRightIcon sx = {{ fontSize: "1.5rem" }} />
                                 <Typography sx = {{ fontSize: "1.5rem" }} >Skills</Typography>
                             </Link>
-                            <Link href="cs-portfolio/projects" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", color: homeTheme.palette.primary.dark }}>
+                            <Link className="section-link" href="cs-portfolio/projects" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", color: homeTheme.palette.primary.dark }}>
                                 <KeyboardArrowRightIcon sx = {{ fontSize: "1.5rem" }} />
                                 <Typography sx = {{ fontSize: "1.5rem" }} >Projects</Typography>
                             </Link>
-                            <Link href="cs-portfolio/extras" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", color: homeTheme.palette.primary.dark }}>
+                            <Link className="section-link" href="cs-portfolio/extras" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", color: homeTheme.palette.primary.dark }}>
                                 <KeyboardArrowRightIcon sx = {{ fontSize: "1.5rem" }} />
                                 <Typography sx = {{ fontSize: "1.5rem" }} >Extras</Typography>
                             </Link>

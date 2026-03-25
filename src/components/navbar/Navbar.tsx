@@ -1,16 +1,23 @@
-import { AppBar, Box, Container, CssBaseline, ThemeProvider, Toolbar, Typography } from "@mui/material";
+import { Box, Container, CssBaseline, ThemeProvider } from "@mui/material";
 import homeTheme from "../../styles/homeTheme"
 import { Link } from "react-router";
 import "./navbar.css";
+//import classnames from "classnames";
+//import type { NavbarLink } from "../../types/navbar.types";
+import "./navbar_script";
 
-//const navbarTextList: string[] = ["CS Portfolio", "Photography Portfolio", "Music Database", "Text RPG"];
-//const navbarLinksList: string[] = ["cs-portfolio", "photography-portfolio", "music-database", "text-rpg"];
+// interface NavbarProps {
+//     listOfLinks: Array<NavbarLink>;
+// 	currentPage: string;
+// }
 
-interface NavbarProps {
-	currentPage: string;
-}
+const Navbar = (/* args: NavbarProps */) => {
 
-const Navbar = ({ currentPage }: NavbarProps) => {
+    // const location = useLocation();
+    // let active = false;
+    // if (location.pathname.includes("cs-portfolio")) {
+    //     active = true;
+    // }
 
 	return (
 
@@ -23,7 +30,15 @@ const Navbar = ({ currentPage }: NavbarProps) => {
 			<CssBaseline />
 
             <Box id="pages-container" sx = {{ display: "flex", flexDirection: "row", justifyContent: "flex-start", alignItems: "center", gap: "2em" }}>
-                <Link to="#" className="navbar-link navbar-link-active">CS Portfolio</Link>
+                {/*This is where the links go, added via navbar.ts*/}
+                {/* const parent: HTMLDivElement = document.getElementbyId("pages-container");
+                listOfLinks.array.forEach(elem => {
+                    parent
+                }); */}
+                {/* For each item: 
+                  - set `to=` to # if on current page
+                  - set navbar-link-active to true if on that page*/}
+                <Link to="#" className="navbar-link">CS Portfolio</Link>
                 <Link to="/photography-portfolio" className="navbar-link">Photography Portfolio</Link>
                 <Link to="/music-database" className="navbar-link">Music Database</Link>
                 <Link to="/text-rpg" className="navbar-link">Text RPG</Link>
@@ -32,31 +47,10 @@ const Navbar = ({ currentPage }: NavbarProps) => {
             <Link to="/" replace className="navbar-link navbar-link-home">Return to <br /> Landing Page</Link>
 
             </ThemeProvider>
+            
         </Container>
+
     )
 };
-
-// const pagesContainer = document.getElementById("pages-container");
-
-// function buildNavbarChild(text: string, link: string): HTMLElement {
-//     const item = document.createElement("a");
-//     item.textContent = text;
-//     item.href = "/" + link;
-//     item.className = "navbar-link";
-//     // if(currentPage) {
-//     //     item.href = "#";
-//     //     item.classList.add("navbar-link-active");
-//     // }
-//     return item;
-// }
-
-// if(pagesContainer == null) {
-//     console.log("Could not load navbar");
-// }
-// else {
-//     for(let i=0; i<4; i++) {
-//         pagesContainer!.appendChild(buildNavbarChild(navbarTextList[i], navbarLinksList[i]));
-//     }
-// }
 
 export default Navbar;

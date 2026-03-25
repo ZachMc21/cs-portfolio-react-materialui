@@ -6,11 +6,11 @@
   box-sizing: border-box;
 }
 
-a {
+a.section-link {
   text-decoration: none;
 }
-a:hover {
-  text-decoration: #578a88 solid 0.1rem;
+.section-link:hover {
+  text-decoration: #578a88 underline 0.1rem;
 }
 
 /* MOBILE VIEW - STACK ITEMS */
