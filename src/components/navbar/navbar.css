@@ -1,4 +1,5 @@
 div#navbar {
+  width: 100vw;
   position: fixed;
   top: 0;
   left: 0;
@@ -16,6 +17,22 @@ a.navbar-link-active {
 }
 
 a.navbar-link-home {
-  justify-self: last;
-  font-size: 0.9rem;
+  display: none;
+}
+a.navbar-icon-home {
+  height: 1rem;
+  width: auto;
+  color: white;
+  align-self: center;
+}
+
+@media screen and (min-width:768px) {
+  a.navbar-link-home {
+    display: block;
+    font-size: 0.9rem;
+  }
+
+  a.navbar-icon-home {
+    display: none;
+  }
 }

@@ -1,9 +1,11 @@
-import { Box, Container, CssBaseline, ThemeProvider, Link } from "@mui/material";
+import { Box, Container, CssBaseline, ThemeProvider, Link, SvgIcon, Icon } from "@mui/material";
 import homeTheme from "../../styles/homeTheme"
 import "./navbar.css";
 //import classnames from "classnames";
 //import type { NavbarLink } from "../../types/navbar.types";
 import "./navbar_script";
+
+import HomeFilledIcon from '@mui/icons-material/HomeFilled';
 
 // interface NavbarProps {
 //     listOfLinks: Array<NavbarLink>;
@@ -20,7 +22,7 @@ const NavbarCS = (/* args: NavbarProps */) => {
 
 	return (
 
-		<Container id="navbar" disableGutters sx = {{ height: "4em", width: "100%",
+		<Container maxWidth={false} id="navbar" disableGutters sx = {{ height: "4em", width: "100%",
             display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center",
             p: 3,
             backgroundColor: homeTheme.palette.primary.dark, color: homeTheme.palette.primary.contrastText }}>
@@ -34,7 +36,11 @@ const NavbarCS = (/* args: NavbarProps */) => {
                 <Link href="/cs-portfolio/extras" className="navbar-link">Extras</Link>
             </Box>
 
+            {/* Icon on mobile, text on desktop */}
             <Link href="/cs-portfolio" className="navbar-link navbar-link-home">Return to <br /> Portfolio Homepage</Link>
+            <Link href="/" className="navbar-link navbar-icon-home">
+                <HomeFilledIcon></HomeFilledIcon>
+            </Link>
 
             </ThemeProvider>
 

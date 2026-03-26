@@ -21,34 +21,32 @@ function CSPortfolio() {
     DocumentTitle("Zach Magloughlin | Computer Science Portfolio");
 
 	return (
-		<Container id="cs-portfolio">
+		<Container maxWidth={false} id="cs-portfolio">
 			<ThemeProvider theme={csLight}>
             <ThemeProvider theme={homeTheme}>
 
                 <NavbarCS />
 
                 {/* Header box */}
-				<Box id="header-container" sx = {{backgroundColor: csLight.primary.light,
-                    pt: "5rem", pb: "3rem", mt: "7rem", mx: "3rem" }}>
+				<Box id="header-container" sx = {{backgroundColor: csLight.primary.light, mt: "7rem" }}>
 
                     <Box id="header-top" sx = {{ mb: "2rem" }}>
                         <Box id="header-name" sx = {{ display: "flex", flexDirection: "column", alignContent: "left", gap: "1rem", py: "2rem" }}>
-                            <Typography variant="title" sx = {{ color: csLight.primary.dark, lineHeight: "3.85rem" }}>
+                            <Typography className="cs-title" sx = {{ color: csLight.primary.dark, lineHeight: "3.85rem" }}>
                                 Zach
                             </Typography>
-                            <Typography variant="title" sx = {{ color: csLight.primary.dark, lineHeight: "3.85rem" }}>
+                            <Typography className="cs-title" sx = {{ color: csLight.primary.dark, lineHeight: "3.85rem" }}>
                                 Magloughlin
                             </Typography>
                         </Box>
                         <Box id="header-skill-areas">
                             <Box className="header-skills-row">
-                                <Typography variant="cs_subtitle">front-end</Typography>
-                                <Typography variant="cs_subtitle">full-stack</Typography>
+                                <Typography className="cs-subtitle">front-end</Typography>
+                                <Typography className="cs-subtitle">full-stack</Typography>
                             </Box>
-                        
                             <Box className="header-skills-row">
-                                <Typography variant="cs_subtitle">software</Typography>
-                                <Typography variant="cs_subtitle">design</Typography>
+                                <Typography className="cs-subtitle">software</Typography>
+                                <Typography className="cs-subtitle">design</Typography>
                             </Box>
                         </Box>
                     </Box> {/* End header-top */}
@@ -56,21 +54,20 @@ function CSPortfolio() {
                     <Box id="header-links" sx= {{ display: "flex", flexDirection: "row", justifyContent: "space-between", gap: "4rem", pb: 0, mb: "1rem" }}>
                         <Link className="header-link" sx = {{ textDecoration: "none", color: csLight.primary.dark, p: 0, display: "flex", alignItems: "center", justifyContent: "center", gap: "0.5rem" }}
                             href="mailto:magloughlin.zach@gmail.com" target="_blank" rel="noopener noreferrer">
-                            <MailOutlineIcon sx = {{ fontSize: "1.75rem" }} />
-                            <Typography sx = {{ fontSize: "1.75rem" }}> Email</Typography>
+                            <MailOutlineIcon sx = {{ fontSize: "1.25rem" }} />
+                            <Typography sx = {{ fontSize: "1.25rem" }}> Email</Typography>
                         </Link>
                         <Link className="header-link" sx = {{ textDecoration: "none", color: csLight.primary.dark, p: 0, display: "flex", alignItems: "center", justifyContent: "center", gap: "0.25rem" }}
                             href="https://www.linkedin.com/in/zach-magloughlin/" target="_blank" rel="noopener noreferrer">
-                            <LinkedInIcon sx = {{ fontSize: "1.75rem" }} />
-                            <Typography sx = {{ fontSize: "1.75rem" }}> LinkedIn</Typography>
+                            <LinkedInIcon sx = {{ fontSize: "1.25rem" }} />
+                            <Typography sx = {{ fontSize: "1.25rem" }}> LinkedIn</Typography>
                         </Link>
                         <Link className="header-link" sx = {{ textDecoration: "none", color: csLight.primary.dark, p: 0, display: "flex", alignItems: "center", justifyContent: "center", gap: "0.25rem" }}
                             href="https://github.com/ZachMc21" target="_blank" rel="noopener noreferrer" >
-                            <GitHubIcon sx = {{ fontSize: "1.75rem" }} />
-                            <Typography sx = {{ fontSize: "1.75rem" }}> GitHub</Typography>
+                            <GitHubIcon sx = {{ fontSize: "1.25rem" }} />
+                            <Typography sx = {{ fontSize: "1.25rem" }}> GitHub</Typography>
                         </Link>
                     </Box> {/* End header row 2*/}
-
 				</Box> {/* End header box*/}
 
                 {/* Text color: palette.primary.dark 

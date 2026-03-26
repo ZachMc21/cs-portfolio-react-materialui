@@ -1,8 +1,14 @@
 :root {
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
+  line-height: 1.15rem;
 }
 
-
+div.App {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 
 /* HomepageButtons - mobile-first (1-wide) */
 div#home-buttons-container {

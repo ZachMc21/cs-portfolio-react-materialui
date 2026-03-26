@@ -57,7 +57,7 @@ const csTheme = createTheme({
         cs_subtitle: {
             fontFamily: ['eightgon', 'sans-serif'].join(','),
             fontWeight: 300,
-            fontSize: "3rem",
+            fontSize: "3em",
             textAlign: "center",
             color: "#2024457F"
         },
