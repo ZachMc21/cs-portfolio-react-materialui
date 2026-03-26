@@ -20,8 +20,8 @@ const ConstructionNotice = ({ title }: ConstructionProps) => {
 			<CssBaseline />
 
 			<div className="construction-notice" id="container">
-				<ConstructionIcon sx={{ fontSize: "6rem", marginTop: "2rem", marginBottom: "1rem" }} />
-				<h1>{title}</h1>
+				<ConstructionIcon sx={{ fontSize: "6rem", marginTop: "4rem", marginBottom: "1rem" }} />
+				<h1 style = {{ marginBottom: 0 }}>{title}</h1>
 				<p style={{ marginBottom: "2rem" }}>This page is under construction. <br /> Check back later!</p>
 				<BackButton />
 			</div>

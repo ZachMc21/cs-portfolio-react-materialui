@@ -4,17 +4,18 @@ div#navbar {
   left: 0;
 }
 
-.navbar-link {
+a.navbar-link {
+  font-size: 1.2rem;
   color: white;
   text-decoration: none;
 }
 
-.navbar-link-active {
-  font-size: 1.25rem;
+a.navbar-link-active {
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
-.navbar-link-home {
+a.navbar-link-home {
   justify-self: last;
   font-size: 0.9rem;
 }

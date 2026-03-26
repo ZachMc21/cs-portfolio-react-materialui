@@ -11,21 +11,21 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import { Outlet } from 'react-router-dom';
-import Navbar from "../../components/navbar/Navbar";
+import NavbarCS from "../../components/navbar/NavbarCS";
 import DocumentTitle from "../../utils/DocumentTitle";
 import homeTheme from '../../styles/homeTheme';
 
 
 function CSPortfolio() {
 	
-    DocumentTitle("Computer Science Portfolio");
+    DocumentTitle("Zach Magloughlin | Computer Science Portfolio");
 
 	return (
 		<Container id="cs-portfolio">
 			<ThemeProvider theme={csLight}>
             <ThemeProvider theme={homeTheme}>
 
-                <Navbar />
+                <NavbarCS />
 
                 {/* Header box */}
 				<Box id="header-container" sx = {{backgroundColor: csLight.primary.light,
@@ -73,45 +73,33 @@ function CSPortfolio() {
 
 				</Box> {/* End header box*/}
 
-				<Box id="section-links" sx = {{ mb: 3 }}>
-                    {/*
-					<Typography id="section-jump-text"
-                        sx = {{
-                            color: csLight.primary.contrastText,
-                            fontStyle: "italic", fontSize: "1.25rem", textAlign: "left", 
-                            mx: "1rem", mt: "2rem"
-                        }}>
-                        Go to...
-                    </Typography>
-                    */}
-					{/* Text color: palette.primary.dark 
-					Background color: palette.primary.light*/}
-                    <Box id="section-links-container"
-                        sx = {{ display: "flex", flex: 1, flexDirection: "row", justifyContent: "space-around", pt: 5, pb: 2 }}>
-                        <Box className="section-links-row">
-                            <Link className="section-link" href="#header-links" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", color: homeTheme.palette.primary.dark }}>
-                                <KeyboardArrowDownIcon sx = {{ fontSize: "1.5rem" }} />
-                                <Typography sx = {{ fontSize: "1.5rem" }}>Contact</Typography>
-                            </Link>
-                            <Link className="section-link" href="#about" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", color: homeTheme.palette.primary.dark }}>
-                                <KeyboardArrowDownIcon sx = {{ fontSize: "1.5rem" }} />
-                                <Typography sx = {{ fontSize: "1.5rem" }} >About Me</Typography>
-                            </Link>
-                        </Box>
-                        <Box className="section-links-row">
-                            <Link className="section-link" href="cs-portfolio/skills" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", color: homeTheme.palette.primary.dark }}>
-                                <KeyboardArrowRightIcon sx = {{ fontSize: "1.5rem" }} />
-                                <Typography sx = {{ fontSize: "1.5rem" }} >Skills</Typography>
-                            </Link>
-                            <Link className="section-link" href="cs-portfolio/projects" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", color: homeTheme.palette.primary.dark }}>
-                                <KeyboardArrowRightIcon sx = {{ fontSize: "1.5rem" }} />
-                                <Typography sx = {{ fontSize: "1.5rem" }} >Projects</Typography>
-                            </Link>
-                            <Link className="section-link" href="cs-portfolio/extras" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", color: homeTheme.palette.primary.dark }}>
-                                <KeyboardArrowRightIcon sx = {{ fontSize: "1.5rem" }} />
-                                <Typography sx = {{ fontSize: "1.5rem" }} >Extras</Typography>
-                            </Link>
-                        </Box>
+                {/* Text color: palette.primary.dark 
+                Background color: palette.primary.light*/}
+                <Box id="section-links-container"
+                    sx = {{ display: "flex", flex: 1, flexDirection: "row", justifyContent: "space-around", pt: 5 }}>
+                    <Box className="section-links-row">
+                        <Link className="section-link" href="#header-links" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", color: homeTheme.palette.primary.dark }}>
+                            <KeyboardArrowDownIcon sx = {{ fontSize: "1.5rem" }} />
+                            <Typography sx = {{ fontSize: "1.5rem" }}>Contact</Typography>
+                        </Link>
+                        <Link className="section-link" href="#about" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", color: homeTheme.palette.primary.dark }}>
+                            <KeyboardArrowDownIcon sx = {{ fontSize: "1.5rem" }} />
+                            <Typography sx = {{ fontSize: "1.5rem" }} >About Me</Typography>
+                        </Link>
+                    </Box>
+                    <Box className="section-links-row">
+                        <Link className="section-link nav-link" href="cs-portfolio/skills" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", color: homeTheme.palette.primary.dark }}>
+                            <KeyboardArrowRightIcon sx = {{ fontSize: "1.5rem" }} />
+                            <Typography sx = {{ fontSize: "1.5rem" }} >Skills</Typography>
+                        </Link>
+                        <Link className="section-link nav-link" href="cs-portfolio/projects" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", color: homeTheme.palette.primary.dark }}>
+                            <KeyboardArrowRightIcon sx = {{ fontSize: "1.5rem" }} />
+                            <Typography sx = {{ fontSize: "1.5rem" }} >Projects</Typography>
+                        </Link>
+                        <Link className="section-link nav-link" href="cs-portfolio/extras" sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", color: homeTheme.palette.primary.dark }}>
+                            <KeyboardArrowRightIcon sx = {{ fontSize: "1.5rem" }} />
+                            <Typography sx = {{ fontSize: "1.5rem" }} >Extras</Typography>
+                        </Link>
                     </Box>
 				</Box> {/* End section for page jumping */}
 
@@ -132,9 +120,9 @@ function CSPortfolio() {
                                 He has lived in Colorado his whole life. He grew up in Fort Collins,
                                 moved to Golden for college, and now lives in Denver.</Typography>
                         </Box>
-                        <Box id="about-education" sx = {{ pl: "2rem", ml: 0 }}>
+                        <Box id="about-education-container" sx = {{ pl: "2rem", ml: 0 }}>
                             <Typography id="education-header" variant="h1" sx={{ display: "flex", justifySelf: "left", pb: "0.5rem" }}>Education</Typography>
-                            <Box id="about-education" sx = {{ pr: "1rem" }}>
+                            <Box id="about-education-text" sx = {{ pr: "1rem" }}>
                                 <Typography>B.S. Computer Science</Typography>
                                 <Typography>Colorado School of Mines</Typography>
                                 <Typography>2021 - 2025</Typography>

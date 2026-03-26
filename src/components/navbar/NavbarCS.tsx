@@ -1,6 +1,5 @@
-import { Box, Container, CssBaseline, ThemeProvider } from "@mui/material";
+import { Box, Container, CssBaseline, ThemeProvider, Link } from "@mui/material";
 import homeTheme from "../../styles/homeTheme"
-import { Link } from "react-router";
 import "./navbar.css";
 //import classnames from "classnames";
 //import type { NavbarLink } from "../../types/navbar.types";
@@ -11,7 +10,7 @@ import "./navbar_script";
 // 	currentPage: string;
 // }
 
-const Navbar = (/* args: NavbarProps */) => {
+const NavbarCS = (/* args: NavbarProps */) => {
 
     // const location = useLocation();
     // let active = false;
@@ -30,27 +29,20 @@ const Navbar = (/* args: NavbarProps */) => {
 			<CssBaseline />
 
             <Box id="pages-container" sx = {{ display: "flex", flexDirection: "row", justifyContent: "flex-start", alignItems: "center", gap: "2em" }}>
-                {/*This is where the links go, added via navbar.ts*/}
-                {/* const parent: HTMLDivElement = document.getElementbyId("pages-container");
-                listOfLinks.array.forEach(elem => {
-                    parent
-                }); */}
-                {/* For each item: 
-                  - set `to=` to # if on current page
-                  - set navbar-link-active to true if on that page*/}
-                <Link to="#" className="navbar-link">CS Portfolio</Link>
-                <Link to="/photography-portfolio" className="navbar-link">Photography Portfolio</Link>
-                <Link to="/music-database" className="navbar-link">Music Database</Link>
-                <Link to="/text-rpg" className="navbar-link">Text RPG</Link>
+                <Link href="/cs-portfolio/skills" className="navbar-link">Skills</Link>
+                <Link href="/cs-portfolio/projects" className="navbar-link">Projects</Link>
+                <Link href="/cs-portfolio/extras" className="navbar-link">Extras</Link>
             </Box>
 
-            <Link to="/" replace className="navbar-link navbar-link-home">Return to <br /> Landing Page</Link>
+            <Link href="/cs-portfolio" className="navbar-link navbar-link-home">Return to <br /> Portfolio Homepage</Link>
 
             </ThemeProvider>
+
+            <script src="navbar_script.ts"></script>
             
         </Container>
 
     )
 };
 
-export default Navbar;
+export default NavbarCS;

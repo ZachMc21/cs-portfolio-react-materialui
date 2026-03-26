@@ -63,7 +63,8 @@ div#section-links-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
 }
 div.section-links-row {
   display: flex;
@@ -83,19 +84,19 @@ div#about-blurb {
   border: none;
   padding-right: 0;
 }
-div#about-education {
+div#about-education-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-left: 0;
 }
-div#about-education > p {
+div#about-education-text > p {
   text-wrap: nowrap;
   margin-bottom: 0.25rem;
   line-height: 1.25rem;
 }
-div#about-education > p:last-child {
+div#about-education-text > p:last-child {
   margin-bottom: 0;
 }
 a.pages-link {
@@ -156,7 +157,6 @@ p.pages-text {
   }
   div#header-name {
     flex-direction: column;
-    margin-bottom: 1rem;
     margin-right: 2rem;
   }
   div#header-name > * {
@@ -190,9 +190,14 @@ p.pages-text {
   div#about-blurb {
     padding-right: 1rem;
     border-right: 0.1rem solid black;
+    flex-grow: 2;
   }
-  div#about-education {
+  div#about-education-container {
     padding-left: 1rem;
+  }
+  div#about-education-text {
+    text-wrap: nowrap;
+    flex: 0 0 4em;
   }
 
   h1#education-header {
