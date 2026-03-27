@@ -28,7 +28,7 @@ function CSPortfolio() {
                 <NavbarCS />
 
                 {/* Header box */}
-				<Box id="header-container" sx = {{backgroundColor: csLight.primary.light, mt: "7rem" }}>
+				<Box id="header-container" sx = {{backgroundColor: csLight.primary.light }}>
 
                     <Box id="header-top" sx = {{ mb: "2rem" }}>
                         <Box id="header-name" sx = {{ display: "flex", flexDirection: "column", alignContent: "left", gap: "1rem", py: "2rem" }}>

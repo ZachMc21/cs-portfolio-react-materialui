@@ -2,10 +2,9 @@ import { Container, CssBaseline } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import ConstructionIcon from '@mui/icons-material/Construction';
 import BackButton from './BackButton.tsx';
-import homeThemeLight from "../styles/homeLight";
+import csLight from '../styles/csLight.ts';
 
 import './construction-notice.css';
-
 
 
 interface ConstructionProps {
@@ -16,7 +15,7 @@ const ConstructionNotice = ({ title }: ConstructionProps) => {
 
 	return (
 		<Container>
-			<ThemeProvider theme={homeThemeLight}>
+			<ThemeProvider theme={csLight}>
 			<CssBaseline />
 
 			<div className="construction-notice" id="container">

@@ -52,16 +52,19 @@ function Homepage() {
 						</HomepageButton>
 					</Box>
 
-                    <Box sx={{ mb: 12 }}>
+                    <Box sx={{ display: "flex", flexDirection: "column", justifyContent: "center", mb: 12 }}>
                         <Typography sx={{ fontStyle: "italic", color: alpha("#000", 0.8) }}>You will experience this site in light mode.</Typography>
                         
                         <ThemeProvider theme={homeThemeDark}>
-                            <Button sx={{ border: 2, borderColor: homeThemeDark.background.default, my: 1 }}>
-                                <Typography sx={{ textTransform: "uppercase", fontSize: "0.8rem",
-                                    color: homeThemeLight.primary.contrastText}}>
-                                        Switch to dark mode
-                                </Typography>
-                            </Button>
+                        <Button sx={{ display: "flex", flexDirection: "column", mx: "auto", border: 2, borderColor: homeThemeDark.background.default, my: 1 }}>
+                            <Typography sx={{ textTransform: "uppercase", fontSize: "0.8rem",
+                                color: homeThemeLight.primary.contrastText}}>
+                                    Switch to dark mode
+                            </Typography>
+                            <Typography sx={{ textTransform: "lowercase", fontSize: "0.75rem", color: homeThemeLight.primary.contrastText }}>
+                                (under construction)
+                            </Typography>
+                        </Button>
                         </ThemeProvider>
                     </Box>
 				</Box>

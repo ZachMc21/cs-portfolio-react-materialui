@@ -1,24 +1,12 @@
-import { Box, Container, CssBaseline, ThemeProvider, Link, SvgIcon, Icon } from "@mui/material";
+import { Box, Container, CssBaseline, ThemeProvider, Link  } from "@mui/material";
 import homeTheme from "../../styles/homeTheme"
+import csLight from '../../styles/csLight';
 import "./navbar.css";
-//import classnames from "classnames";
-//import type { NavbarLink } from "../../types/navbar.types";
 import "./navbar_script";
 
 import HomeFilledIcon from '@mui/icons-material/HomeFilled';
 
-// interface NavbarProps {
-//     listOfLinks: Array<NavbarLink>;
-// 	currentPage: string;
-// }
-
-const NavbarCS = (/* args: NavbarProps */) => {
-
-    // const location = useLocation();
-    // let active = false;
-    // if (location.pathname.includes("cs-portfolio")) {
-    //     active = true;
-    // }
+const NavbarCS = () => {
 
 	return (
 
@@ -27,7 +15,7 @@ const NavbarCS = (/* args: NavbarProps */) => {
             p: 3,
             backgroundColor: homeTheme.palette.primary.dark, color: homeTheme.palette.primary.contrastText }}>
 
-			<ThemeProvider theme={homeTheme}>
+			<ThemeProvider theme={csLight}>
 			<CssBaseline />
 
             <Box id="pages-container" sx = {{ display: "flex", flexDirection: "row", justifyContent: "flex-start", alignItems: "center", gap: "2em" }}>
