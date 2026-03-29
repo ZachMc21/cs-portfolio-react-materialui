@@ -15,7 +15,6 @@ const ConstructionNotice = ({ title }: ConstructionProps) => {
 
 	return (
 		<Container>
-			<ThemeProvider theme={csLight}>
 			<CssBaseline />
 
 			<div className="construction-notice" id="container">
@@ -24,8 +23,6 @@ const ConstructionNotice = ({ title }: ConstructionProps) => {
 				<p style={{ marginBottom: "2rem" }}>This page is under construction. <br /> Check back later!</p>
 				<BackButton />
 			</div>
-
-			</ThemeProvider>
 		</Container>
 	);
 }

@@ -5,16 +5,16 @@ const csLight = {
         default: '#dff6f7ff',
     },
     primary: {
+        main: '#c3e8ed',
+        light: cyan[50],
+        dark: '#7ca6abff',
+        contrastText: '#165057ff',
+    },
+    secondary: {
         main: '#6C7EDA',
         dark: '#292f56ff',
         light: '#c4ccf7',
-        contrastText: '#5f34d6',
-    },
-    secondary: {
-        main: '#c3e8ed',
-        light: cyan[50],
-        dark: '#afd6db',
-        contrastText: grey[800],
+        contrastText: '#4d1aabff',
     },
 }
 

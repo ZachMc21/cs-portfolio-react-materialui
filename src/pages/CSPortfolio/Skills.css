@@ -1,0 +1,86 @@
+:root {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+p {
+  font-family: 'aller', 'sans-serif';
+  font-size: 2rem;
+}
+p.title {
+  font-family: 'eightgon', 'sans-serif';
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+p.h1 {
+  font-family: 'eightgon', 'sans-serif';
+  align-self: center;
+  text-transform: uppercase;
+  writing-mode: tb-rl;
+  font-size: 2rem;
+}
+p.h2 {
+  font-family: 'eightgon', 'sans-serif';
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-wrap: nowrap;
+}
+
+.rotated {
+  rotate: -180deg;
+  text-wrap: nowrap;
+}
+
+div#skills {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+div#skills > * {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.skill-section-parent {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 1rem;
+  gap: 1.5rem;
+}
+.skill-section-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.tech-stack-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+.tech-stack-container.two-rows {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.tech-stack-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    font-size: 18px;
+  }
+}

@@ -1,12 +1,12 @@
 import Box from "@mui/material/Box";
+import "./footer.css";
 
 const currentDate = new Date();
 
-
 const Footer = () => {
 	return (
-		<Box id="footer-copyright" sx={{ psition: "absolute", mx: 0, mb: 0, fontSize: "0.75rem" }}>
-			<p>© {currentDate.getFullYear()} Zach Magloughlin. All rights reserved.</p>
+		<Box id="footer-copyright">
+			<p className="footer">© {currentDate.getFullYear()} Zach Magloughlin. All rights reserved.</p>
 		</Box>
 	)
 }
