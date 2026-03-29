@@ -114,12 +114,11 @@ function Skills() {
                         </Box> {/* end #version-control */}
                         <Box id="data-science" className="skill-section-child">
                             <Typography className="h2" sx={{ textAlign: "left", color: csLight.secondary.contrastText }}>
-                                Data <br /> Science
+                                Data Science
                             </Typography>
                             <Box className="tech-stack-container">
                                 <img src="https://matplotlib.org/3.6.0/_images/sphx_glr_logos2_002_2_0x.png" height="40" width="auto" />
                                 <img src="https://pandas.pydata.org/static/img/pandas_secondary.svg" height="40" width="auto" />
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/SQLite370.svg" height="40" width="auto" />
                             </Box>
                         </Box> {/* end #data-science */}
                         <Box id="project-management" className="skill-section-child">

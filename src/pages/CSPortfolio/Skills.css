@@ -37,6 +37,7 @@ div#skills {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin-bottom: 3rem;
 }
 div#skills > * {
   display: flex;
