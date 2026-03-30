@@ -144,7 +144,6 @@ a.pages-link > * {
   font-size: 2rem;
 }
 p.pages-text {
-  width: 60%;
   text-align: right;
 }
 
@@ -249,6 +248,7 @@ p.pages-text {
   }
 
   p.pages-text {
+    width: 60%;
     text-align: right;
   }
 }

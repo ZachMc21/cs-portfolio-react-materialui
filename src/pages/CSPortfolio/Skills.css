@@ -33,13 +33,13 @@ p.h2 {
   text-wrap: nowrap;
 }
 
-div#skills {
+div#skills-page {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   margin-bottom: 3rem;
 }
-div#skills > * {
+div#skills-page > * {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -70,7 +70,7 @@ div#skills > * {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 .tech-stack-row {
   display: flex;
@@ -83,5 +83,31 @@ div#skills > * {
 @media screen and (min-width: 768px) {
   :root {
     font-size: 18px;
+  }
+
+  br {
+    display: none;
+  }
+
+  p.h2 {
+    font-size: 2rem;
+  }
+
+  .skill-section-parent {
+    padding-right: 3rem;
+    padding-left: 2rem;
+  }
+
+  .tech-stack-container {
+    gap: 1.5rem;
+  }
+
+  .tech-logo {
+    height: 60px;
+    width: auto;
+  }
+
+  .tech-stack-container.two-rows {
+    flex-direction: row;
   }
 }

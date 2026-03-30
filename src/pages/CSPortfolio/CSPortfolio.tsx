@@ -140,7 +140,7 @@ function CSPortfolio() {
 
                 {/*TODO: Convert this to a grid layout (2wide or 1wide)*/}
                 <Box id="pages-overview">
-                    <Box id="skills" className="pages-overview-child">
+                    <Box id="skills-link" className="pages-overview-child">
                         <Link className="pages-link" href="cs-portfolio/skills" sx = {{ color: csLight.primary.contrastText, textDecorationColor: csLight.primary.contrastText }}>
                             <Typography>Skills</Typography>
                             <KeyboardArrowRightIcon />
@@ -148,7 +148,7 @@ function CSPortfolio() {
                         <Typography className="pages-text">A look at my technical and non-technical skills, <br className="line-break"/> learned through education, work, and personal projects.</Typography>
                     </Box>
 
-                    <Box id="projects" className="pages-overview-child">
+                    <Box id="projects-link" className="pages-overview-child">
                         <Link className="pages-link" href="cs-portfolio/projects" sx = {{ color: csLight.primary.contrastText, textDecorationColor: csLight.primary.contrastText }}>
                             <Typography>Projects</Typography>
                             <KeyboardArrowRightIcon />
@@ -156,7 +156,7 @@ function CSPortfolio() {
                             <Typography className="pages-text">A description of school, work, and personal projects I've worked on. <br className="line-break"/> Includes screenshots, code snippets, and retrospectives.</Typography>
                     </Box>
 
-                    <Box id="extras" className="pages-overview-child">
+                    <Box id="extras-link" className="pages-overview-child">
                         <Link className="pages-link" href="cs-portfolio/extras" sx = {{ color: csLight.primary.contrastText, textDecorationColor: csLight.primary.contrastText }}>
                             <Typography>Extras</Typography>
                             <KeyboardArrowRightIcon />
