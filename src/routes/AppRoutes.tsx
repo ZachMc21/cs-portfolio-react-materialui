@@ -23,7 +23,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/cs-portfolio",
-		element: <Outlet />,
+    element: <Outlet />,
     errorElement: <NotFound />, // Handles errors in this route/children
 		children: [
 			{

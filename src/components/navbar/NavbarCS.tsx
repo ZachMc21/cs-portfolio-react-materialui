@@ -1,5 +1,5 @@
 import { Box, Container, CssBaseline, ThemeProvider, Link  } from "@mui/material";
-import homeTheme from "../../styles/homeTheme"
+import homeLight from "../../styles/homeLight";
 import csLight from '../../styles/csLight';
 import "./navbar.css";
 import "./navbar_script";
@@ -13,7 +13,7 @@ const NavbarCS = () => {
 		<Container maxWidth={false} id="navbar" disableGutters sx = {{ height: "4em", width: "100%",
             display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center",
             p: 3,
-            backgroundColor: homeTheme.palette.primary.dark, color: homeTheme.palette.primary.contrastText }}>
+            backgroundColor: homeLight.palette.primary.dark, color: homeLight.palette.primary.contrastText }}>
 
 			<ThemeProvider theme={csLight}>
 			<CssBaseline />

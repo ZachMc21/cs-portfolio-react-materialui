@@ -9,7 +9,7 @@ function TextRPG() {
 	return (
 		<div id="text-rpg-parent">
 			<ConstructionNotice title={"Text RPG"} />
-			<Footer />
+            <Footer bgColor="" tColor="black"/>
 		</div>
 	);
 

@@ -14,7 +14,7 @@ function Extras() {
 		<Container id="cs-portfolio-extras">
             <NavbarCS />
 			<ConstructionNotice title={"CS Portfolio: Extras"} />
-			<Footer />
+            <Footer bgColor="" tColor="white" />
 		</Container>
 	);
 

@@ -2,7 +2,7 @@ import { ThemeProvider } from '@emotion/react';
 import ConstructionNotice from '../../components/ConstructionNotice';
 import Footer from '../../components/Footer';
 import DocumentTitle from '../../utils/DocumentTitle';
-import csLight from '../../styles/csLight';
+import HomeLight from "../../styles/homeLight";
 
 function NotFound() {
 
@@ -10,9 +10,9 @@ function NotFound() {
 
 	return (
 		<div id="page-not-found-parent">
-            <ThemeProvider theme={csLight}>
+            <ThemeProvider theme={HomeLight}>
                 <ConstructionNotice title={"Page Not Found"} />
-                <Footer />
+                <Footer bgColor="" tColor="white" />
             </ThemeProvider>
 		</div>
 	);

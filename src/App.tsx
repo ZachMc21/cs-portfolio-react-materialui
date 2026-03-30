@@ -1,18 +1,18 @@
 import { ThemeProvider } from '@mui/material/styles';
 
 import './App.css'
-import homeTheme from "./styles/homeTheme";
+import homeLight from "./styles/homeLight";
 
 import { RouterProvider } from "react-router-dom";
 import router from "./routes/AppRoutes";
-import { Container } from '@mui/material';
+import { Box } from '@mui/material';
 
 function App() {
   return (
-    <ThemeProvider theme={homeTheme}>
-        <Container maxWidth={false} className="App">
+    <ThemeProvider theme={homeLight}>
+        <Box className="App">
             <RouterProvider router={router} />
-        </Container>
+        </Box>
         
     </ThemeProvider>
   );

@@ -1,4 +1,4 @@
-import { CssBaseline, Box, Typography, ThemeProvider, Container, Button, alpha } from "@mui/material";
+import { CssBaseline, Box, Typography, ThemeProvider, Button, alpha } from "@mui/material";
 import Footer from "../../components/Footer";
 import homeThemeLight from "../../styles/homeLight";
 import homeThemeDark from "../../styles/homeDark";
@@ -6,33 +6,34 @@ import HomepageButton from "../../components/HomepageButton";
 import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
 import DocumentTitle from "../../utils/DocumentTitle";
 
+import "./homepage.css";
+
 function Homepage() {
     
     DocumentTitle("Home");
 
 	return (
-		<Container id="enter-site"
+		<Box id="enter-site"
             sx={{ display: "flex", flexDirection: "column", justifyContent: "center",
-                maxWidth: "100vw", p: 5, pb: 0
+                maxWidth: "100vw", p: 0, m: 0
                 }}>
 			<ThemeProvider theme={homeThemeLight}>
 				<CssBaseline />
 
 				<Box id="homepage-content"
 					sx={{
-						display: "flex", flexDirection: "column", justifyContent: "center", alignContent: "center", 
-						backgroundColor: homeThemeLight.background.default
+						display: "flex", flexDirection: "column", justifyContent: "center", alignContent: "center"
 					    }}>
 					<Box
-                        sx={{ p: 5, py: 8, mb: 8,
-							backgroundColor: "#7DC6DD"
+                        sx={{ p: 5, py: 10, mb: 8, mt: 6, mx: 4,
+							backgroundColor: homeThemeLight.palette.primary.contrastText, opacity: 0.8,
                             }}>
                         <Typography variant="title" id="page-title"
-                            sx={{ fontSize: 52, color: homeThemeLight.primary.contrastText }}>
+                            sx={{ fontSize: 52, color: "white" }}>
                             Zach Magloughlin
                         </Typography>
 					</Box>
-					<Box id="home-buttons-container" sx={{ mx: 0, mb: 12 }}>
+					<Box id="home-buttons-container" sx={{ mx: 0, mb: 10 }}>
 						<HomepageButton href="/cs-portfolio" className="home-column" variant="contained" disableElevation>
 							<Typography sx={{ textWrap: 'balance', mb: "0.5rem" }}>Enter CS Portfolio</Typography>
 							<DoubleArrowIcon />
@@ -53,25 +54,26 @@ function Homepage() {
 					</Box>
 
                     <Box sx={{ display: "flex", flexDirection: "column", justifyContent: "center", mb: 12 }}>
-                        <Typography sx={{ fontStyle: "italic", color: alpha("#000", 0.8) }}>You will experience this site in light mode.</Typography>
+                        <Typography sx={{ fontStyle: "italic", color: alpha("#FFF", 0.8) }}>You will experience this site in light mode.</Typography>
                         
                         <ThemeProvider theme={homeThemeDark}>
-                        <Button sx={{ display: "flex", flexDirection: "column", mx: "auto", border: 2, borderColor: homeThemeDark.background.default, my: 1 }}>
+                        <Button sx={{ display: "flex", flexDirection: "column", mx: "auto", border: 2, borderColor: alpha("#FFF", 0.8), my: 1 }}>
                             <Typography sx={{ textTransform: "uppercase", fontSize: "0.8rem",
-                                color: homeThemeLight.primary.contrastText}}>
+                                color: alpha("#FFF", 0.8)}}>
                                     Switch to dark mode
                             </Typography>
-                            <Typography sx={{ textTransform: "lowercase", fontSize: "0.75rem", color: homeThemeLight.primary.contrastText }}>
+                            <Typography sx={{ textTransform: "lowercase", fontSize: "0.75rem", color: alpha("#FFF", 0.8)
+                             }}>
                                 (under construction)
                             </Typography>
                         </Button>
                         </ThemeProvider>
                     </Box>
 				</Box>
-				<Footer />
 
+                <Footer bgColor="" tColor="white"/>
 			</ThemeProvider>
-		</Container>
+		</Box>
 	)
 }
 

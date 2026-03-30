@@ -4,43 +4,12 @@
   line-height: 1.15rem;
 }
 
-div.App {
+html, body {
+  overscroll-behavior-y: none;
+}
+
+.App {
   width: 100%;
   margin: 0;
   padding: 0;
-}
-
-/* HomepageButtons - mobile-first (1-wide) */
-div#home-buttons-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  /* margin: auto 10%; */
-  /* margin-bottom: 3rem; */
-}
-
-/* HomepageButtons layout - tablet (2-wide) */
-@media screen and (min-width: 640px) {
-  div#home-buttons-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    /* margin: 0 auto 3rem auto; */
-  }
-  .home-column {
-    flex-basis: 38%;
-    max-width: 38%;
-  }
-}
-
-/* HomepageButtons layout - laptops & desktops (4-wide) */
-@media screen and (min-width: 1024px) {
-  div#home-buttons-container {
-    flex-direction: row;
-    /* margin-bottom: 3rem; */
-  }
-  .home-column {
-    flex-basis: 20%;
-    max-width: 20%;
-  }
 }

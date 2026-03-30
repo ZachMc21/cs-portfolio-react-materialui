@@ -21,48 +21,48 @@ function CSPortfolio() {
     DocumentTitle("Zach Magloughlin | Computer Science Portfolio");
 
 	return (
-		<Container maxWidth={false} id="cs-portfolio">
+		<Box id="cs-portfolio">
 			<ThemeProvider theme={csLight}>
             <ThemeProvider theme={homeTheme}>
 
                 <NavbarCS />
 
                 {/* Header box */}
-				<Box id="header-container" sx = {{backgroundColor: csLight.secondary.light }}>
+				<Box id="header-container" sx = {{backgroundColor: csLight.palette.secondary.light }}>
 
                     <Box id="header-top" sx = {{ mb: "2rem" }}>
                         <Box id="header-name" sx = {{ display: "flex", flexDirection: "column", alignContent: "left", gap: "1rem", py: "2rem" }}>
-                            <Typography className="cs-title" sx = {{ color: csLight.secondary.contrastText, lineHeight: "3.85rem" }}>
+                            <Typography className="cs-title" sx = {{ color: csLight.palette.secondary.contrastText, lineHeight: "3.85rem" }}>
                                 Zach
                             </Typography>
-                            <Typography className="cs-title" sx = {{ color: csLight.secondary.contrastText, lineHeight: "3.85rem" }}>
+                            <Typography className="cs-title" sx = {{ color: csLight.palette.secondary.contrastText, lineHeight: "3.85rem" }}>
                                 Magloughlin
                             </Typography>
                         </Box>
                         <Box id="header-skill-areas">
                             <Box className="header-skills-row">
-                                <Typography className="cs-subtitle">front-end</Typography>
-                                <Typography className="cs-subtitle">full-stack</Typography>
+                                <Typography className="cs-header-subtitle">front-end</Typography>
+                                <Typography className="cs-header-subtitle">full-stack</Typography>
                             </Box>
                             <Box className="header-skills-row">
-                                <Typography className="cs-subtitle">software</Typography>
-                                <Typography className="cs-subtitle">design</Typography>
+                                <Typography className="cs-header-subtitle">software</Typography>
+                                <Typography className="cs-header-subtitle">design</Typography>
                             </Box>
                         </Box>
                     </Box> {/* End header-top */}
 
                     <Box id="header-links" sx= {{ display: "flex", flexDirection: "row", justifyContent: "space-between", gap: "4rem", pb: 0, mb: "1rem" }}>
-                        <Link className="header-link" sx = {{ textDecoration: "none", color: csLight.secondary.contrastText, p: 0, display: "flex", alignItems: "center", justifyContent: "center", gap: "0.5rem" }}
+                        <Link className="header-link" sx = {{ textDecoration: "none", color: csLight.palette.secondary.contrastText, p: 0, display: "flex", alignItems: "center", justifyContent: "center", gap: "0.5rem" }}
                             href="mailto:magloughlin.zach@gmail.com" target="_blank" rel="noopener noreferrer">
                             <MailOutlineIcon sx = {{ fontSize: "1.25rem" }} />
                             <Typography sx = {{ fontSize: "1.25rem" }}> Email</Typography>
                         </Link>
-                        <Link className="header-link" sx = {{ textDecoration: "none", color: csLight.secondary.contrastText, p: 0, display: "flex", alignItems: "center", justifyContent: "center", gap: "0.25rem" }}
+                        <Link className="header-link" sx = {{ textDecoration: "none", color: csLight.palette.secondary.contrastText, p: 0, display: "flex", alignItems: "center", justifyContent: "center", gap: "0.25rem" }}
                             href="https://www.linkedin.com/in/zach-magloughlin/" target="_blank" rel="noopener noreferrer">
                             <LinkedInIcon sx = {{ fontSize: "1.25rem" }} />
                             <Typography sx = {{ fontSize: "1.25rem" }}> LinkedIn</Typography>
                         </Link>
-                        <Link className="header-link" sx = {{ textDecoration: "none", color: csLight.secondary.contrastText, p: 0, display: "flex", alignItems: "center", justifyContent: "center", gap: "0.25rem" }}
+                        <Link className="header-link" sx = {{ textDecoration: "none", color: csLight.palette.secondary.contrastText, p: 0, display: "flex", alignItems: "center", justifyContent: "center", gap: "0.25rem" }}
                             href="https://github.com/ZachMc21" target="_blank" rel="noopener noreferrer" >
                             <GitHubIcon sx = {{ fontSize: "1.25rem" }} />
                             <Typography sx = {{ fontSize: "1.25rem" }}> GitHub</Typography>
@@ -73,17 +73,17 @@ function CSPortfolio() {
                 {/* Text color: palette.primary.dark 
                 Background color: palette.primary.light*/}
                 <Box id="section-links-container"
-                    sx = {{ display: "flex", flex: 1, flexDirection: "row", justifyContent: "space-around", pt: 5 }}>
+                    sx = {{ display: "flex", flex: 1, flexDirection: "row", justifyContent: "space-around", pt: 5, mb: 5 }}>
                     <Box className="section-links-row">
                         <Link className="section-link" href="#header-links"
                             sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center",
-                            color: csLight.primary.contrastText }}>
+                            color: csLight.palette.primary.contrastText }}>
                             <KeyboardArrowDownIcon sx = {{ fontSize: "1.5rem" }} />
                             <Typography sx = {{ fontSize: "1.5rem" }}>Contact</Typography>
                         </Link>
                         <Link className="section-link" href="#about"
                             sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center",
-                            color: csLight.primary.contrastText }}>
+                            color: csLight.palette.primary.contrastText }}>
                             <KeyboardArrowDownIcon sx = {{ fontSize: "1.5rem" }} />
                             <Typography sx = {{ fontSize: "1.5rem" }} >About Me</Typography>
                         </Link>
@@ -91,19 +91,19 @@ function CSPortfolio() {
                     <Box className="section-links-row">
                         <Link className="section-link nav-link" href="cs-portfolio/skills"
                             sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center",
-                            color: csLight.primary.contrastText }}>
+                            color: csLight.palette.primary.contrastText }}>
                             <KeyboardArrowRightIcon sx = {{ fontSize: "1.5rem" }} />
                             <Typography sx = {{ fontSize: "1.5rem" }} >Skills</Typography>
                         </Link>
                         <Link className="section-link nav-link" href="cs-portfolio/projects"
                             sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center",
-                            color: csLight.primary.contrastText }}>
+                            color: csLight.palette.primary.contrastText }}>
                             <KeyboardArrowRightIcon sx = {{ fontSize: "1.5rem" }} />
                             <Typography sx = {{ fontSize: "1.5rem" }} >Projects</Typography>
                         </Link>
                         <Link className="section-link nav-link" href="cs-portfolio/extras"
                             sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center",
-                            color: csLight.primary.contrastText }}>
+                            color: csLight.palette.primary.contrastText }}>
                             <KeyboardArrowRightIcon sx = {{ fontSize: "1.5rem" }} />
                             <Typography sx = {{ fontSize: "1.5rem" }} >Extras</Typography>
                         </Link>
@@ -111,12 +111,12 @@ function CSPortfolio() {
 				</Box> {/* End section for page jumping */}
 
 				<Box id="about">
-                    <Box id="about-title" sx = {{ p: "1rem" }}>
-                        <Typography variant="title">About Me</Typography>
+                    <Box>
+                        <Typography id="about-header" sx={{ color: csLight.palette.primary.contrastText }}>About Me</Typography>
                     </Box>
                     <Box id="about-content" sx = {{ display: "flex", flexDirection: "row", gap: 0, pb: "2rem" }}>
                         <Box id="about-blurb" sx = {{ display: "flex", flexDirection: "column", alignContent: "flex-start", flexShrink: 1, pb: "1rem",
-                            pr: "2rem", borderRight: 2, borderColor: csLight.primary.dark 
+                            pr: "2rem", borderRight: 2, borderColor: csLight.palette.primary.dark 
                         }}>
                             <Typography sx = {{ marginBottom: "0.5rem", lineHeight: "1.25rem" }}>
                                 Hello hello! Thanks for stopping by.</Typography>
@@ -128,7 +128,7 @@ function CSPortfolio() {
                                 moved to Golden for college, and now lives in Denver.</Typography>
                         </Box>
                         <Box id="about-education-container" sx = {{ pl: "2rem", ml: 0 }}>
-                            <Typography id="education-header" variant="h1" sx={{ display: "flex", justifySelf: "left", pb: "0.5rem" }}>Education</Typography>
+                            <Typography id="education-header" sx={{ display: "flex", justifySelf: "left", pb: "0.5rem", color: csLight.palette.primary.contrastText }}>Education</Typography>
                             <Box id="about-education-text" sx = {{ pr: "1rem" }}>
                                 <Typography>B.S. Computer Science</Typography>
                                 <Typography>Colorado School of Mines</Typography>
@@ -141,7 +141,7 @@ function CSPortfolio() {
                 {/*TODO: Convert this to a grid layout (2wide or 1wide)*/}
                 <Box id="pages-overview">
                     <Box id="skills-link" className="pages-overview-child">
-                        <Link className="pages-link" href="cs-portfolio/skills" sx = {{ color: csLight.primary.contrastText, textDecorationColor: csLight.primary.contrastText }}>
+                        <Link className="pages-link" href="cs-portfolio/skills" sx = {{ color: csLight.palette.primary.contrastText, textDecorationColor: csLight.palette.primary.contrastText }}>
                             <Typography>Skills</Typography>
                             <KeyboardArrowRightIcon />
                         </Link>
@@ -149,7 +149,7 @@ function CSPortfolio() {
                     </Box>
 
                     <Box id="projects-link" className="pages-overview-child">
-                        <Link className="pages-link" href="cs-portfolio/projects" sx = {{ color: csLight.primary.contrastText, textDecorationColor: csLight.primary.contrastText }}>
+                        <Link className="pages-link" href="cs-portfolio/projects" sx = {{ color: csLight.palette.primary.contrastText, textDecorationColor: csLight.palette.primary.contrastText }}>
                             <Typography>Projects</Typography>
                             <KeyboardArrowRightIcon />
                         </Link>
@@ -157,7 +157,7 @@ function CSPortfolio() {
                     </Box>
 
                     <Box id="extras-link" className="pages-overview-child">
-                        <Link className="pages-link" href="cs-portfolio/extras" sx = {{ color: csLight.primary.contrastText, textDecorationColor: csLight.primary.contrastText }}>
+                        <Link className="pages-link" href="cs-portfolio/extras" sx = {{ color: csLight.palette.primary.contrastText, textDecorationColor: csLight.palette.primary.contrastText }}>
                             <Typography>Extras</Typography>
                             <KeyboardArrowRightIcon />
                         </Link>
@@ -165,13 +165,12 @@ function CSPortfolio() {
                     </Box>
                 </Box>
 
-				<Footer />
+                <Footer bgColor="" tColor="csLight.palette.primary.contrastText" />
 			</ThemeProvider>
             </ThemeProvider>
             <Outlet />
-		</Container>
+		</Box>
 	);
-
 }
 
 export default CSPortfolio;

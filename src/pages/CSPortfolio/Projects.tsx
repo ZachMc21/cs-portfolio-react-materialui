@@ -14,7 +14,7 @@ function Projects() {
 		<Container id="cs-portfolio-projects">
             <NavbarCS />
 			<ConstructionNotice title={"CS Portfolio: Projects"} />
-			<Footer />
+            <Footer bgColor="" tColor="white" />
 		</Container>
 	);
 
