@@ -50,7 +50,7 @@ div#skills-page > * {
   flex-direction: column;
   flex-grow: 1;
   padding: 1rem;
-  gap: 1.5rem;
+  gap: 1.75rem;
 }
 .skill-section-child {
   display: flex;
@@ -63,21 +63,42 @@ div#skills-page > * {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 .tech-stack-container.two-rows {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 .tech-stack-row {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
+}
+
+/*
+div#mui-logo {
+  position: relative;
+  height: 0; 
+  width: 100%; 
+  padding: 0;
+  padding-bottom: 100%;
+}
+div#mui-logo > svg {
+  position: absolute; 
+  height: 100%; 
+  width: 100%; 
+  right: 0; 
+  top: 0;
+}
+  */
+div#mui-logo > img {
+  height: 40px;
+  width: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -94,8 +115,7 @@ div#skills-page > * {
   }
 
   .skill-section-parent {
-    padding-right: 3rem;
-    padding-left: 2rem;
+    padding: 2rem 3rem 2rem 2rem;
   }
 
   .tech-stack-container {
@@ -110,5 +130,10 @@ div#skills-page > * {
   .tech-stack-container.two-rows {
     flex-direction: row;
     gap: 2rem;
+  }
+
+  div#mui-logo > img {
+    height: 60px;
+    width: auto;
   }
 }
