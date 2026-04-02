@@ -11,15 +11,17 @@ interface FooterProps {
 const Footer = ( {bgColor, tColor}: FooterProps ) => {
     if(bgColor=="") {
         return (
-            <Box id="footer-copyright" sx={{ color: tColor }}>
-                <p className="footer">© {currentDate.getFullYear()} Zach Magloughlin. All rights reserved.</p>
+            <Box id="footer" sx={{ color: tColor }}>
+                <a className="footer-nav" href="/">Return to Portfolio Homepage</a>
+                <p className="footer-attribution">© {currentDate.getFullYear()} Zach Magloughlin. All rights reserved.</p>
             </Box>
         )
     }
     else {
         return (
-            <Box id="footer-copyright" sx={{ backgroundColor: bgColor, color: tColor }}>
-                <p className="footer">© {currentDate.getFullYear()} Zach Magloughlin. All rights reserved.</p>
+            <Box id="footer" sx={{ color: tColor }}>
+                <a className="footer-nav" href="/">Return to Portfolio Homepage</a>
+                <p className="footer-attribution">© {currentDate.getFullYear()} Zach Magloughlin. All rights reserved.</p>
             </Box>
         )
 

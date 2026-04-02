@@ -25,7 +25,7 @@ const NavbarCS = () => {
             </Box>
 
             {/* Icon on mobile, text on desktop */}
-            <Link href="/cs-portfolio" className="navbar-link navbar-link-home">Return to <br /> Portfolio Homepage</Link>
+            <Link href="/cs-portfolio" className="navbar-link navbar-link-home">Return to <br /> CS Homepage</Link>
             <Link href="/" className="navbar-link navbar-icon-home">
                 <HomeFilledIcon></HomeFilledIcon>
             </Link>
