@@ -2,12 +2,12 @@
 import { Box, Container, ThemeProvider, Typography } from '@mui/material';
 import Footer from '../../components/Footer';
 
-import ConstructionNotice from '../../components/ConstructionNotice';
 import DocumentTitle from '../../utils/DocumentTitle';
 import NavbarCS from "../../components/navbar/NavbarCS";
 
 import csLight from '../../styles/csLight';
 import "./Skills.css";
+import "../../styles/animations.css";
 
 function Skills() {
 
@@ -22,7 +22,7 @@ function Skills() {
             </Typography>
 
             <Box id="skills-page">
-                <Box>
+                <Box id="front-end-container">
                     <Typography className="h1 large rotated" sx={{ color: csLight.palette.secondary.contrastText }}>
                         Front-end
                     </Typography>
@@ -68,7 +68,7 @@ function Skills() {
                         </Box> {/* end #design-languages */}
                     </Box>
                 </Box> {/* end #front-end */}
-                <Box>
+                <Box id="back-end-container">
                     <Typography className="h1 large rotated" sx={{ color: csLight.palette.secondary.contrastText }}>
                         Back-end
                     </Typography>
@@ -101,9 +101,9 @@ function Skills() {
                         </Box> {/* end #back-end-databses */}
                     </Box>
                 </Box> {/* end #back-end */}
-                <Box>
+                <Box id="other-tech-container">
                     <Typography className="h1 large rotated" sx={{ color: csLight.palette.secondary.contrastText }}>
-                        Other
+                        Other Technologies
                     </Typography>
                     <Box className="skill-section-parent" id="back-end" sx={{ backgroundColor: csLight.palette.secondary.light }}>
                         <Box id="version-control" className="skill-section-child">
@@ -115,15 +115,6 @@ function Skills() {
                                 <img className="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg" height="40" width="auto" />
                             </Box>
                         </Box> {/* end #version-control */}
-                        <Box id="data-science" className="skill-section-child">
-                            <Typography className="h2" sx={{ textAlign: "left", color: csLight.palette.secondary.contrastText }}>
-                                Data Science
-                            </Typography>
-                            <Box className="tech-stack-container">
-                                <img className="tech-logo" src="https://matplotlib.org/3.6.0/_images/sphx_glr_logos2_002_2_0x.png" height="40" width="auto" />
-                                <img className="tech-logo" src="https://pandas.pydata.org/static/img/pandas_mark.svg" height="40" width="auto" />
-                            </Box>
-                        </Box> {/* end #data-science */}
                         <Box id="project-management" className="skill-section-child">
                             <Typography className="h2" sx={{ textAlign: "left", color: csLight.palette.secondary.contrastText }}>
                                 Project <br /> Management
@@ -142,7 +133,7 @@ function Skills() {
                             <Box className="tech-stack-container">
                                 <img className="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Linux_mascot_tux.png" height="40" width="auto" />
                                 <img className="tech-logo" src="/src/assets/logos/docker.svg" height="40" width="auto" />
-                                <img className="tech-logo" src="https://raw.githubusercontent.com/vitejs/vite/6daa10ff1e8d15a90f49d8dd909ff208da85d6d8/docs/images/vite.svg" height="40" width="auto" />
+                                <img className="tech-logo" src="/src/assets/logos/bash.png" height="40" width="auto" />
                             </Box>
                         </Box> {/* end #deployment */}
                         <Box id="ides" className="skill-section-child">
@@ -155,6 +146,15 @@ function Skills() {
                                 <img className="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Eclipse-SVG.svg" height="40" width="auto" />
                             </Box>
                         </Box> {/* end #ides */}
+                        <Box id="data-science" className="skill-section-child">
+                            <Typography className="h2" sx={{ textAlign: "left", color: csLight.palette.secondary.contrastText }}>
+                                Data Science
+                            </Typography>
+                            <Box className="tech-stack-container">
+                                <img className="tech-logo" src="https://matplotlib.org/3.6.0/_images/sphx_glr_logos2_002_2_0x.png" height="40" width="auto" />
+                                <img className="tech-logo" src="https://pandas.pydata.org/static/img/pandas_mark.svg" height="40" width="auto" />
+                            </Box>
+                        </Box> {/* end #data-science */}
                         <Box id="design" className="skill-section-child">
                             <Typography className="h2" sx={{ color: csLight.palette.secondary.contrastText }}>
                                 Design
@@ -164,7 +164,46 @@ function Skills() {
                             </Box>
                         </Box> {/* end #design */}
                     </Box>
-                </Box>
+                </Box> {/* end other technologies */}
+                <Box id="other-skills-container">
+                    <Typography className="h1 large rotated" sx={{ color: csLight.palette.secondary.contrastText }}>
+                        Other Skills
+                    </Typography>
+                    <Box className="skill-section-parent broad-skills" sx={{ backgroundColor: csLight.palette.secondary.light }}>
+                        <Box className="broad-skill-container">
+                            <Typography className="other-skill" sx={{ color: csLight.palette.secondary.contrastText }}>
+                                Responsive design
+                            </Typography>
+                            <Typography className="other-skill" sx={{ color: csLight.palette.secondary.contrastText }}>
+                                Mobile-first design
+                            </Typography>
+                            <Typography className="other-skill" sx={{ color: csLight.palette.secondary.contrastText }}>
+                                RESTful APIs
+                            </Typography>
+                            <Typography className="other-skill" sx={{ color: csLight.palette.secondary.contrastText }}>
+                                Relational database design
+                            </Typography>
+                            <Typography className="other-skill" sx={{ color: csLight.palette.secondary.contrastText }}>
+                                Agile software development
+                            </Typography>
+                            <Typography className="other-skill" sx={{ color: csLight.palette.secondary.contrastText }}>
+                                Object-oriented programming
+                            </Typography>
+                            <Typography className="other-skill" sx={{ color: csLight.palette.secondary.contrastText }}>
+                                Debugging
+                            </Typography>
+                            <Typography className="other-skill" sx={{ color: csLight.palette.secondary.contrastText }}>
+                                Problem solving
+                            </Typography>
+                            <Typography className="other-skill" sx={{ color: csLight.palette.secondary.contrastText }}>
+                                Technical documentation
+                            </Typography>
+                            <Typography className="other-skill" sx={{ color: csLight.palette.secondary.contrastText }}>
+                                Communication and teamwork
+                            </Typography>
+                        </Box>
+                    </Box>
+                </Box> {/* end other skills */}
             </Box>
 
             <Footer bgColor="" tColor="csLight.palette.secondary.contrastText" />

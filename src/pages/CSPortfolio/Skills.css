@@ -5,6 +5,8 @@
   box-sizing: border-box;
 }
 
+
+/* General styling */
 p {
   font-family: 'aller', 'sans-serif';
   font-size: 2rem;
@@ -33,6 +35,7 @@ p.h2 {
   text-wrap: nowrap;
 }
 
+/* Full-page styles */
 div#skills-page {
   display: flex;
   flex-direction: column;
@@ -75,43 +78,38 @@ div#skills-page > * {
 .tech-stack-row {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 1rem;
 }
 
-/*
-div#mui-logo {
-  position: relative;
-  height: 0; 
-  width: 100%; 
-  padding: 0;
-  padding-bottom: 100%;
-}
-div#mui-logo > svg {
-  position: absolute; 
-  height: 100%; 
-  width: 100%; 
-  right: 0; 
-  top: 0;
-}
-  */
 div#mui-logo > img {
   height: 40px;
   width: auto;
 }
 
+p.other-skill {
+  font-size: 1.25rem;
+}
+
+div.broad-skill-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+  row-gap: 1rem;
+}
+
+
+/* Tablets and desktop */
 @media screen and (min-width: 768px) {
   :root {
     font-size: 18px;
   }
 
-  br {
-    display: none;
-  }
-
   p.h2 {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   .skill-section-parent {
@@ -135,5 +133,16 @@ div#mui-logo > img {
   div#mui-logo > img {
     height: 60px;
     width: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  br {
+    display: none;
+  }
+
+  .broad-skills {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 }
