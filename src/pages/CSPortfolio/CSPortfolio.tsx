@@ -12,13 +12,16 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import { Outlet } from 'react-router-dom';
 import NavbarCS from "../../components/navbar/NavbarCS";
-import DocumentTitle from "../../utils/DocumentTitle";
 import homeTheme from '../../styles/homeTheme';
+
+import DocumentTitle from "../../utils/DocumentTitle";
+import EmailNewTab from "../../utils/EmailNewTab";
 
 
 function CSPortfolio() {
 	
     DocumentTitle("Zach Magloughlin | Computer Science Portfolio");
+    EmailNewTab();
 
 	return (
 		<Box id="cs-portfolio">
@@ -52,7 +55,7 @@ function CSPortfolio() {
                     </Box> {/* End header-top */}
 
                     <Box id="header-links" sx= {{ display: "flex", flexDirection: "row", justifyContent: "space-between", gap: "4rem", pb: 0, mb: "1rem" }}>
-                        <Link className="header-link" sx = {{ textDecoration: "none", color: csLight.palette.secondary.contrastText, p: 0, display: "flex", alignItems: "center", justifyContent: "center", gap: "0.5rem" }}
+                        <Link className="header-link" id="email-link" sx = {{ textDecoration: "none", color: csLight.palette.secondary.contrastText, p: 0, display: "flex", alignItems: "center", justifyContent: "center", gap: "0.5rem" }}
                             href="mailto:magloughlin.zach@gmail.com" target="_blank" rel="noopener noreferrer">
                             <MailOutlineIcon sx = {{ fontSize: "1.25rem" }} />
                             <Typography sx = {{ fontSize: "1.25rem" }}> Email</Typography>
