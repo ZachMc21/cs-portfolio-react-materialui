@@ -102,7 +102,7 @@ div.broad-skill-container {
 }
 
 /* Animations */
-.tech-stack-container:hover {
+.tech-logo-container:hover {
   .tech-logo {
     -webkit-animation: flip-in-ver-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
             animation: flip-in-ver-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
