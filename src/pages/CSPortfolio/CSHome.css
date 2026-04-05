@@ -1,25 +1,4 @@
-/* GENERAL STYLING */
-:root {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  box-sizing: border-box;
-}
 
-div#cs-portfolio {
-  margin: 0;
-  padding: 0;
-}
-
-a.section-link {
-  text-decoration: none;
-}
-a.section-link p {
-  font-family: 'eightgon', 'sans-serif';
-}
-.section-link:hover {
-  text-decoration: #578a88 underline 0.1rem;
-}
 
 /* MOBILE VIEW - STACK ITEMS */
 br.line-break {

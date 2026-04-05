@@ -1,9 +1,11 @@
 
-import { Box, Container, Link, ThemeProvider, Typography } from '@mui/material';
+import { Box, Link, ThemeProvider, Typography } from '@mui/material';
 import Footer from '../../components/Footer';
 
 import csLight from '../../styles/csLight';
-import './CSPortfolio.css'
+import homeTheme from '../../styles/homeTheme';
+import "./CSGeneral.css";
+import './CSHome.css'
 
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -12,7 +14,6 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import { Outlet } from 'react-router-dom';
 import NavbarCS from "../../components/navbar/NavbarCS";
-import homeTheme from '../../styles/homeTheme';
 
 import DocumentTitle from "../../utils/DocumentTitle";
 import EmailNewTab from "../../utils/EmailNewTab";
@@ -24,7 +25,7 @@ function CSPortfolio() {
     EmailNewTab();
 
 	return (
-		<Box id="cs-portfolio">
+		<Box className="cs-page" id="cs-portfolio">
 			<ThemeProvider theme={csLight}>
             <ThemeProvider theme={homeTheme}>
 

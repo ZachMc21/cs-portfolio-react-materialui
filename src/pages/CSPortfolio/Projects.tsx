@@ -1,23 +1,31 @@
 
-import { Container } from '@mui/material';
+import { Box, Container, ThemeProvider, Typography } from '@mui/material';
 import Footer from '../../components/Footer';
 
 import ConstructionNotice from '../../components/ConstructionNotice';
 import DocumentTitle from '../../utils/DocumentTitle';
 import NavbarCS from "../../components/navbar/NavbarCS";
+import csLight from "../../styles/csLight";
 
 function Projects() {
 	
     DocumentTitle("Projects | CS Portfolio");
 
 	return (
-		<Container id="cs-portfolio-projects">
-            <NavbarCS />
-			<ConstructionNotice title={"CS Portfolio: Projects"} />
-            <Footer bgColor="" tColor="csLight.palette.secondary.contrastText" />
-		</Container>
-	);
+		<Container maxWidth={false} id="cs-portfolio-projects" sx={{ mt: 12 }} >
+        <NavbarCS />
+        <ThemeProvider theme={csLight}>
 
-}
+            <Typography className="title" sx={{ py: 0, color: csLight.palette.primary.contrastText }}>
+                Projects
+            </Typography>
+
+            <Box id="skills-page">
+            </Box>
+            <Footer bgColor="" tColor="csLight.palette.secondary.contrastText" />
+        </ThemeProvider>
+		</Container>
+	)
+};
 
 export default Projects;

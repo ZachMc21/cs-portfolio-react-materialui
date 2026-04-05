@@ -1,7 +1,7 @@
 // src/routes/Routes.js
 import { createBrowserRouter, Outlet } from "react-router-dom";
 import Homepage from "../pages/Homepage/Homepage";
-import CSPortfolio from "../pages/CSPortfolio/CSPortfolio";
+import CSPortfolio from "../pages/CSPortfolio/CSHome";
 import Skills from "../pages/CSPortfolio/Skills";
 import Projects from "../pages/CSPortfolio/Projects";
 import Extras from "../pages/CSPortfolio/Extras";

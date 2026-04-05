@@ -4,7 +4,7 @@ import Button from '@mui/material/Button';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { Container, ThemeProvider, Typography } from '@mui/material';
 import { alpha } from "@mui/material"; 
-import homeLight from "../styles/homeLight";
+import csLight from "../styles/csLight";
 
 
 const BackButton: React.FC = () => {
@@ -23,12 +23,12 @@ const BackButton: React.FC = () => {
 
   return (
 		<Container>
-			<ThemeProvider theme={homeLight}>
+			<ThemeProvider theme={csLight}>
 			<Button onClick={handleBack} variant="contained" className="construction-notice"
                 sx={{
                     mx: "auto", mt: 3, p: 3, fontSize: 2,
-                    color: homeLight.palette.primary.contrastText,
-                    backgroundColor: alpha(homeLight.palette.primary.main, 0.8),
+                    color: csLight.palette.secondary.contrastText,
+                    backgroundColor: alpha(csLight.palette.secondary.light, 0.8),
                     display: "flex", flexDirection: "column", justifyContent: "center", justifySelf: "center",
                     '&:hover': { transform: "scale3d(1.05, 1.05, 1)" }
                 }}>

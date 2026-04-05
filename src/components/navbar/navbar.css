@@ -17,6 +17,13 @@ a.navbar-link-active {
   font-weight: bold;
 }
 
+div#navbar {
+  background-image: url("../../assets/fillers/cs-navbar.png");
+  background-position: left 40%;
+  background-attachment: fixed;
+  background-position-x: center;
+}
+
 a.navbar-link-home {
   display: none;
 }

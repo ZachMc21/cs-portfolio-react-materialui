@@ -101,6 +101,11 @@ div.broad-skill-container {
   row-gap: 1rem;
 }
 
+/* Animations */
+.tech-logo {
+  -webkit-animation: flip-in-ver-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          animation: flip-in-ver-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
 
 /* Tablets and desktop */
 @media screen and (min-width: 768px) {
@@ -127,7 +132,7 @@ div.broad-skill-container {
 
   .tech-stack-container.two-rows {
     flex-direction: row;
-    gap: 2rem;
+    gap: 1.5rem;
   }
 
   div#mui-logo > img {

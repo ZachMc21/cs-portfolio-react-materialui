@@ -14,7 +14,7 @@ function Skills() {
     DocumentTitle("Skills | CS Portfolio");
 	
 	return (
-		<Container maxWidth={false} id="cs-portfolio-skills" sx={{ mt: 12 }}>
+		<Container sx={{ mt: 12 }}>
         <NavbarCS />
         <ThemeProvider theme={csLight}>
 			<Typography className="title" sx={{ py: 0, color: csLight.palette.primary.contrastText }}>
@@ -31,7 +31,7 @@ function Skills() {
                             <Typography className="h2" sx={{ color: csLight.palette.secondary.contrastText }}>
                                 Core
                             </Typography>
-                            <Box className="tech-stack-container">
+                            <Box className="tech-stack-container flip-in-ver-left">
                                 <img className="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/8/80/HTML5_logo_resized.svg" height="40" width="auto" />
                                 <img className="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" height="40" width="auto" />
                                 <img className="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Javascript-shield.svg" height="40" width="auto" />
@@ -66,6 +66,14 @@ function Skills() {
                                  */}
                             </Box>
                         </Box> {/* end #design-languages */}
+                        <Box id="build-tools" className="skill-section-child">
+                            <Typography className="h2" sx={{ color: csLight.palette.secondary.contrastText }}>
+                                Build Tools
+                            </Typography>
+                            <Box className="tech-stack-container">
+                                <img className="tech-logo" src="/src/assets/logos/vite.svg" height="40" width="auto" />
+                            </Box>
+                        </Box> {/* end #build0tools */}
                     </Box>
                 </Box> {/* end #front-end */}
                 <Box id="back-end-container">
