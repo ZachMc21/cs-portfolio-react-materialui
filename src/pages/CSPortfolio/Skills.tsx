@@ -3,15 +3,18 @@ import { Box, Container, ThemeProvider, Typography } from '@mui/material';
 import Footer from '../../components/Footer';
 
 import DocumentTitle from '../../utils/DocumentTitle';
+import ScrollAnimate from "../../utils/ScrollAnimate";
 import NavbarCS from "../../components/navbar/NavbarCS";
 
 import csLight from '../../styles/csLight';
 import "./Skills.css";
 import "../../styles/animations.css";
+import "../../styles/scss/agency.scss";
 
 function Skills() {
 
     DocumentTitle("Skills | CS Portfolio");
+    ScrollAnimate();
 	
 	return (
 		<Container sx={{ mt: 12 }}>
@@ -21,27 +24,27 @@ function Skills() {
                 Skills
             </Typography>
 
-            <Box id="skills-page">
+            <Box id="skills-page" className="animista">
                 <Box id="front-end-container">
                     <Typography className="h1 large rotated" sx={{ color: csLight.palette.secondary.contrastText }}>
                         Front-end
                     </Typography>
                     <Box className="skill-section-parent" id="front-end" sx={{ backgroundColor: csLight.palette.secondary.light }}>
-                        <Box id="front-end-core" className="skill-section-child">
+                        <Box id="front-end-core" className="skill-section-child animista flip-in-ver-left">
                             <Typography className="h2" sx={{ color: csLight.palette.secondary.contrastText }}>
                                 Core
                             </Typography>
-                            <Box className="tech-stack-container flip-in-ver-left">
+                            <Box className="tech-stack-container anim-delay-0">
                                 <img className="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/8/80/HTML5_logo_resized.svg" height="40" width="auto" />
                                 <img className="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" height="40" width="auto" />
                                 <img className="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Javascript-shield.svg" height="40" width="auto" />
                             </Box>
                         </Box> {/* end #front-end-core */}
-                        <Box id="front-end-frameworks" className="skill-section-child">
+                        <Box id="front-end-frameworks" className="skill-section-child animista flip-in-ver-left">
                             <Typography className="h2" sx={{ color: csLight.palette.secondary.contrastText }}>
                                 Frameworks
                             </Typography>
-                            <Box className="tech-stack-container">
+                            <Box className="tech-stack-container anim-delay-1">
                                 <img className="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" height="40" width="auto" />
                                 <img className="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" height="40" width="auto" />
                             </Box>
@@ -73,7 +76,7 @@ function Skills() {
                             <Box className="tech-stack-container">
                                 <img className="tech-logo" src="/src/assets/logos/vite.svg" height="40" width="auto" />
                             </Box>
-                        </Box> {/* end #build0tools */}
+                        </Box> {/* end #build-tools */}
                     </Box>
                 </Box> {/* end #front-end */}
                 <Box id="back-end-container">
@@ -215,6 +218,7 @@ function Skills() {
             </Box>
 
             <Footer bgColor="" tColor="csLight.palette.secondary.contrastText" />
+
         </ThemeProvider>
 		</Container>
 	);
