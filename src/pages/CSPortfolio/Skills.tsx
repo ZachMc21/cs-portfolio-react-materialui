@@ -12,7 +12,7 @@ import "../../styles/animations.css";
 function Skills() {
 
     DocumentTitle("Skills | CS Portfolio");
-	
+    
 	return (
 		<Container sx={{ mt: 12 }}>
         <NavbarCS />
