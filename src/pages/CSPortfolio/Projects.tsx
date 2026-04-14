@@ -1,12 +1,12 @@
 
 import { Box, Container, FormControl, InputLabel, MenuItem, Select, ThemeProvider, Typography } from '@mui/material';
-import Footer from '../../components/Footer';
+import Footer from '../../components/molecules/Footer';
 
-import ConstructionNotice from '../../components/ConstructionNotice';
+import ConstructionNotice from '../../components/molecules/ConstructionNotice';
 import DocumentTitle from '../../utils/DocumentTitle';
-import NavbarCS from "../../components/navbar/NavbarCS";
+import NavbarCS from "../../components/organisms/navbar/NavbarCS";
 import csLight from "../../styles/csLight";
-import ProjectDropdownSelect from '../../components/ProjectDropdownSelect';
+import ProjectDropdownSelect from '../../components/organisms/ProjectDropdownSelect';
 
 function Projects() {
 	

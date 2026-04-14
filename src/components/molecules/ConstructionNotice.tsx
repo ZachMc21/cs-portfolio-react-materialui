@@ -1,8 +1,8 @@
 import { Container, CssBaseline } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import ConstructionIcon from '@mui/icons-material/Construction';
-import BackButton from './BackButton.tsx';
-import csLight from '../styles/csLight.ts';
+import BackButton from '../atoms/BackButton.tsx';
+import csLight from '../../styles/csLight.ts';
 
 import './construction-notice.css';
 

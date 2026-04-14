@@ -1,9 +1,9 @@
 
 import { Box, Container, ThemeProvider, Typography } from '@mui/material';
-import Footer from '../../components/Footer';
+import Footer from '../../components/molecules/Footer';
 
 import DocumentTitle from '../../utils/DocumentTitle';
-import NavbarCS from "../../components/navbar/NavbarCS";
+import NavbarCS from "../../components/organisms/navbar/NavbarCS";
 
 import csLight from '../../styles/csLight';
 import "./Skills.css";

@@ -1,5 +1,5 @@
-import ConstructionNotice from '../../components/ConstructionNotice';
-import Footer from '../../components/Footer';
+import ConstructionNotice from '../../components/molecules/ConstructionNotice';
+import Footer from '../../components/molecules/Footer';
 import DocumentTitle from '../../utils/DocumentTitle';
 
 function TextRPG() {

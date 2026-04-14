@@ -4,7 +4,7 @@ import Button from '@mui/material/Button';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { Container, ThemeProvider, Typography } from '@mui/material';
 import { alpha } from "@mui/material"; 
-import csLight from "../styles/csLight";
+import csLight from "../../styles/csLight";
 
 
 const BackButton: React.FC = () => {
@@ -13,7 +13,7 @@ const BackButton: React.FC = () => {
   const handleBack = () => {
     //If there's history to go back to, go back
     if (window.history.length > 1) {
-      navigate('/cs-portfolio');
+      navigate(-1);
     }
     //Otherwise, go home.
     else {

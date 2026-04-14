@@ -1,6 +1,6 @@
 
 import { Box, Link, ThemeProvider, Typography } from '@mui/material';
-import Footer from '../../components/Footer';
+import Footer from '../../components/molecules/Footer';
 
 import csLight from '../../styles/csLight';
 import homeTheme from '../../styles/homeTheme';
@@ -13,7 +13,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import { Outlet } from 'react-router-dom';
-import NavbarCS from "../../components/navbar/NavbarCS";
+import NavbarCS from "../../components/organisms/navbar/NavbarCS";
 
 import DocumentTitle from "../../utils/DocumentTitle";
 import EmailNewTab from "../../utils/EmailNewTab";

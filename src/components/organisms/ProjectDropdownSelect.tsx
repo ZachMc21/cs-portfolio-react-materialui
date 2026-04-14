@@ -1,10 +1,10 @@
 import { Box, FormControl, InputLabel, MenuItem, Select, Typography, type SelectChangeEvent } from "@mui/material";
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import React from "react";
-import csLight from "../styles/csLight";
-import "../components/project-dropdown-select.css";
-import ConstructionNotice from "./ConstructionNotice";
-import NotFound from "../pages/NotFound/NotFound";
+import csLight from "../../styles/csLight";
+import "./project-dropdown-select.css";
+import ConstructionNotice from "../molecules/ConstructionNotice";
+import NotFound from "../../pages/NotFound/NotFound";
 
 export default function ProjectDropdownSelect() {
   const [selectedField, setSelectedField] = React.useState('');
