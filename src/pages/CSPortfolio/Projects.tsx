@@ -6,7 +6,11 @@ import ConstructionNotice from '../../components/molecules/ConstructionNotice';
 import DocumentTitle from '../../utils/DocumentTitle';
 import NavbarCS from "../../components/organisms/navbar/NavbarCS";
 import csLight from "../../styles/csLight";
-import ProjectDropdownSelect from '../../components/organisms/ProjectDropdownSelect';
+import ProjectDropdownSelect from '../../components/molecules/ProjectDropdownSelect';
+import ProjectsWebdev from '../../components/organisms/cs-projects/ProjectsWebdev';
+import ProjectsSwe from '../../components/organisms/cs-projects/ProjectsSwe';
+import ProjectsData from '../../components/organisms/cs-projects/ProjectsData';
+import ProjectsGamedev from '../../components/organisms/cs-projects/ProjectsGamedev';
 
 function Projects() {
 	
@@ -25,6 +29,12 @@ function Projects() {
                 {ProjectDropdownSelect()}
             </Box>
 
+            <ProjectsWebdev />
+            <ProjectsSwe />
+            <ProjectsData />
+            <ProjectsGamedev />
+      
+            <ConstructionNotice title={""} />
             <Footer bgColor="" tColor="csLight.palette.secondary.contrastText" />
         </ThemeProvider>
 		</Container>

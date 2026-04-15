@@ -19,7 +19,7 @@ const Footer = ( {bgColor, tColor}: FooterProps ) => {
     }
     else {
         return (
-            <Box id="footer" sx={{ color: tColor }}>
+            <Box id="footer" sx={{ color: tColor, backgroundColor: bgColor }}>
                 <a className="footer-nav" href="/">Return to Portfolio Homepage</a>
                 <p className="footer-attribution">© {currentDate.getFullYear()} Zach Magloughlin. All rights reserved.</p>
             </Box>
