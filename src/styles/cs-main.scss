@@ -1,3 +1,6 @@
+@forward 'cs-navbar';
+@forward 'cs-footer';
+
 /* GENERAL STYLING */
 :root {
   margin: 0;
@@ -7,7 +10,7 @@
 }
 
 html, body {
-  background-image: url("../../assets/backgrounds/cs-bg.svg");
+  background-image: url("/src/assets/backgrounds/cs-bg.svg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;

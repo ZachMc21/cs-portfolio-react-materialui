@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import "./footer.css";
+import "../../styles/cs-main.scss";
 
 const currentDate = new Date();
 

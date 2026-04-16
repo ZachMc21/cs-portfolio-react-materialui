@@ -4,8 +4,7 @@ import Footer from '../../components/molecules/Footer';
 
 import csLight from '../../styles/csLight';
 import homeTheme from '../../styles/homeTheme';
-import "./CSGeneral.css";
-import './CSHome.css'
+import '../../styles/cs-home.scss';
 
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -25,7 +24,7 @@ function CSPortfolio() {
     EmailNewTab();
 
 	return (
-		<Box className="cs-page" id="cs-portfolio">
+		<Box className="cs-page" id="cs-page">
 			<ThemeProvider theme={csLight}>
             <ThemeProvider theme={homeTheme}>
 

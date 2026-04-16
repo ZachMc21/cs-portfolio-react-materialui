@@ -6,7 +6,7 @@ import HomepageButton from "../../components/atoms/HomepageButton";
 import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
 import DocumentTitle from "../../utils/DocumentTitle";
 
-import "./homepage.css";
+import "../../styles/homepage.scss";
 
 function Homepage() {
     

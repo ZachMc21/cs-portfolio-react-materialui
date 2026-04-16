@@ -1,20 +1,21 @@
 
-import { Box, Container, ThemeProvider, Typography } from '@mui/material';
+import { Box, ThemeProvider, Typography } from '@mui/material';
 import Footer from '../../components/molecules/Footer';
 
 import DocumentTitle from '../../utils/DocumentTitle';
 import NavbarCS from "../../components/organisms/navbar/NavbarCS";
 
 import csLight from '../../styles/csLight';
-import "./Skills.css";
-import "../../styles/animations.css";
+import "../../styles/cs-skills.scss";
+import "../../styles/animations.scss";
+import "../../styles/cs-main.scss";
 
 function Skills() {
 
     DocumentTitle("Skills | CS Portfolio");
     
 	return (
-		<Container sx={{ mt: 12 }}>
+		<Box sx={{ mt: 12 }}>
         <NavbarCS />
         <ThemeProvider theme={csLight}>
 			<Typography className="title" sx={{ py: 0, color: csLight.palette.primary.contrastText }}>
@@ -214,7 +215,7 @@ function Skills() {
             <Footer bgColor="" tColor="csLight.palette.secondary.contrastText" />
 
         </ThemeProvider>
-		</Container>
+		</Box>
 	);
 
 }
