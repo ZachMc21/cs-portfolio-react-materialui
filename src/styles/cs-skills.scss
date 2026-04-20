@@ -85,7 +85,7 @@ div#skills-page > * {
   gap: 1rem;
 }
 
-div#mui-logo > img {
+img.tech-logo {
   height: 40px;
   width: auto;
 }
@@ -102,11 +102,13 @@ div.broad-skill-container {
   row-gap: 1rem;
 }
 
-/* Animations */
-.tech-logo-container:hover {
-  .tech-logo {
-    -webkit-animation: flip-in-ver-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-            animation: flip-in-ver-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+div#skills-page {
+  /* Animations */
+  .tech-logo-container:hover {
+    .tech-logo {
+      -webkit-animation: flip-in-ver-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+              animation: flip-in-ver-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
   }
 }
 
@@ -138,7 +140,7 @@ div.broad-skill-container {
     gap: 1.5rem;
   }
 
-  div#mui-logo > img {
+  img.tech-logo {
     height: 60px;
     width: auto;
   }
@@ -177,13 +179,3 @@ div.broad-skill-container {
     opacity: 1;
   }
 }
-
-.anim-delay-1 { animation-delay: 0.1s; }
-.anim-delay-2 { animation-delay: 0.2s; }
-.anim-delay-3 { animation-delay: 0.3s; }
-.anim-delay-4 { animation-delay: 0.4s; }
-.anim-delay-5 { animation-delay: 0.5s; }
-.anim-delay-6 { animation-delay: 0.6s; }
-.anim-delay-7 { animation-delay: 0.7s; }
-.anim-delay-8 { animation-delay: 0.8s; }
-.anim-delay-9 { animation-delay: 0.9s; }

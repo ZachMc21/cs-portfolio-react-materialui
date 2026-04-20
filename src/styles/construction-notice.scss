@@ -4,12 +4,8 @@ div.construction-notice {
   flex-direction: column;
   align-items: center;
   font-size: 1.5em;
-  margin-top: 3rem;
+  margin: 3rem auto;
   height: 100vh;
-}
-
-div.construction-notice#container {
-  margin-bottom: 3rem;
 }
 
 button.construction-notice {

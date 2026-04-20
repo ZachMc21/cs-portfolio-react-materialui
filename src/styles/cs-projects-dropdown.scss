@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+#project-select-label {
+  z-index: -1;
+}
+
 #project-dropdown-container {
   display: flex;
   flex-direction: row;

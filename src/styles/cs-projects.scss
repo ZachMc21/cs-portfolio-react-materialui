@@ -1,20 +1,9 @@
-@use "cs-variables" as cs-vars;
+@use "cs-variables" as cs;
+
+#project-dropdown-formcontrol {
+  margin-bottom: 2rem;
+}
 
 .projects-category {
-  margin-top: 2rem;
-  
-  .project-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 2rem;
-    padding: 1rem;
-    background: cs-vars.$bg-color;
-  }
-
-  p.project-item-title {
-    font-family: 'eightgon', 'sans-serif';
-    font-size: 2rem;
-  }
+  margin-bottom: 2rem;
 }

@@ -1,0 +1,148 @@
+@use "cs-variables" as cs;
+@use "animations" as anim;
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-image: url("/src/assets/backgrounds/project-item-blurred.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.75;
+}
+
+.project-item-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1rem;
+}
+
+p.project-item-title {
+  font-family: 'eightgon', 'sans-serif';
+  font-size: 1.75rem;
+  text-align: left;
+}
+
+.project-item-link > svg {
+  color: cs.$primary-text;
+  font-size: 1.75rem;
+}
+
+.project-desc-container {
+  margin-bottom: 1rem;
+}
+p.project-desc {
+  font-size: 1rem;
+  line-height: 1.15rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.lg-container {
+  flex-direction: row;
+  width: 100%;
+}
+.project-skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 0.75rem;
+  row-gap: 0;
+  flex-wrap: wrap;
+  opacity: 0.8;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+.project-skills p {
+  font-size: 0.9rem;
+}
+
+.project-stack {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: baseline;
+  width: 100%;
+
+  .tech-logo-container {
+    padding: 0.75rem 0.75rem 0.5rem 0.75rem;
+    border: 0.15rem solid rgb(20, 7, 44);
+    border-radius: 0.5rem;
+    background-color: rgb(20, 7, 44);
+    margin-bottom: 1.5rem;
+  }
+  .tech-logo-container:hover {
+    background-color: black;
+    border-color: cs.$bg-color;
+  }
+  .tech-logo {
+    height: 1.5rem;
+    min-width: 1.5rem;
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .project-item {
+    flex-direction: column;
+  }
+  .project-desc-container {
+    width: 100%;
+  }
+  .lg-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .project-skills {
+    flex-direction: column;
+    width: 30%;
+  }
+  .project-stack {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 30%;
+  }
+  .project-stack {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+
+    .tech-logo {
+      height: 1.5rem;
+      min-width: 1.5rem;
+      width: auto;
+    }
+  }
+  .project-screenshots {
+    display: flex;
+    flex-grow: 1;
+  }
+}
+
+/* Animations */
+.slide-left {
+	-webkit-animation: slide-left 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.slide-bck-center {
+	-webkit-animation: slide-bck-center 0.55s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: slide-bck-center 0.55s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+.anim-delay-1 { animation-delay: 0.1s; }
+.anim-delay-2 { animation-delay: 0.2s; }
+.anim-delay-3 { animation-delay: 0.3s; }
+.anim-delay-4 { animation-delay: 0.4s; }
+.anim-delay-5 { animation-delay: 0.5s; }
+.anim-delay-6 { animation-delay: 0.6s; }
+.anim-delay-7 { animation-delay: 0.7s; }
+.anim-delay-8 { animation-delay: 0.8s; }
+.anim-delay-9 { animation-delay: 0.9s; }

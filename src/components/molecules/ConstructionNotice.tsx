@@ -1,10 +1,8 @@
 import { Container, CssBaseline } from '@mui/material';
-import { ThemeProvider } from '@mui/material/styles';
 import ConstructionIcon from '@mui/icons-material/Construction';
 import BackButton from '../atoms/BackButton.tsx';
-import csLight from '../../styles/csLight.ts';
 
-import './construction-notice.css';
+import '../../styles/construction-notice.scss';
 
 
 interface ConstructionProps {
@@ -17,7 +15,7 @@ const ConstructionNotice = ({ title }: ConstructionProps) => {
 		<Container>
 			<CssBaseline />
 
-			<div className="construction-notice" id="container">
+			<div className="construction-notice">
 				<ConstructionIcon sx={{ fontSize: "6rem", marginTop: "4rem", marginBottom: "1rem" }} />
 				<h1 style = {{ marginBottom: 0 }}>{title}</h1>
 				<p style={{ marginBottom: "2rem" }}>This page is under construction. <br /> Check back later!</p>

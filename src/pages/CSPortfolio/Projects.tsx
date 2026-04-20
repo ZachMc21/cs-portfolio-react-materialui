@@ -1,5 +1,5 @@
 
-import { Box, Container, FormControl, InputLabel, MenuItem, Select, ThemeProvider, Typography } from '@mui/material';
+import { Box, Container, ThemeProvider, Typography } from '@mui/material';
 import Footer from '../../components/molecules/Footer';
 
 import ConstructionNotice from '../../components/molecules/ConstructionNotice';
@@ -26,7 +26,7 @@ function Projects() {
                 Projects
             </Typography>
 
-            <Box id="projects-page" sx={{ display: "flex", flexDirection: "column" }}>
+            <Box sx={{ display: "flex", flexDirection: "column" }}>
                 {ProjectDropdownSelect()}
             </Box>
 

@@ -22,7 +22,7 @@ function Skills() {
                 Skills
             </Typography>
 
-            <Box id="skills-page" className="animista">
+            <Box id="skills-page">
                 <Box id="front-end-container">
                     <Typography className="h1 large rotated" sx={{ color: csLight.palette.secondary.contrastText }}>
                         Front-end
@@ -36,6 +36,7 @@ function Skills() {
                                 <Box className="tech-logo-container"><img className="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/8/80/HTML5_logo_resized.svg" height="40" width="auto" /></Box>
                                 <Box className="tech-logo-container"><img className="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" height="40" width="auto" /></Box>
                                 <Box className="tech-logo-container"><img className="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Javascript-shield.svg" height="40" width="auto" /></Box>
+                                <Box className="tech-logo-container"><img className="tech-logo" src="/src/assets/logos/typescript-128.png" /></Box>
                             </Box>
                         </Box> {/* end #front-end-core */}
                         <Box id="front-end-frameworks" className="skill-section-child">
