@@ -39,6 +39,7 @@ p.h2 {
 div#skills-page {
   display: flex;
   flex-direction: column;
+  margin: 0 1rem;
   gap: 1rem;
   margin-bottom: 3rem;
 }
@@ -52,6 +53,7 @@ div#skills-page > * {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  flex-shrink: 1;
   padding: 1rem;
   gap: 1.75rem;
   margin-right: 1rem;
@@ -67,6 +69,7 @@ div#skills-page > * {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 .tech-stack-container.two-rows {

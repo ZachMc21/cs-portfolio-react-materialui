@@ -25,3 +25,30 @@ a.section-link p {
 .section-link:hover {
   text-decoration: #578a88 underline 0.1rem;
 }
+
+/* Regular */
+@font-face {
+  font-family: "aller";
+  src: url("../assets/fonts/aller.regular.ttf") format("tff");
+  font-weight: 400; /* Regular weight (numeric value) */
+  font-style: normal; /* Normal style */
+  font-display: swap; /* Optional: Improves loading behavior */
+}
+ 
+/* Bold */
+@font-face {
+  font-family: "aller"; /* Same family name */
+  src: url("../assets/fonts/aller.bold.ttf") format("tff");
+  font-weight: 700; /* Bold weight (numeric value) */
+  font-style: normal;
+  font-display: swap;
+}
+ 
+/* Italic */
+@font-face {
+  font-family: "aller"; /* Same family name */
+  src: url("../assets/fonts/aller.italic.ttf") format("tff");
+  font-weight: 400; /* Regular weight */
+  font-style: italic; /* Italic style */
+  font-display: swap;
+}

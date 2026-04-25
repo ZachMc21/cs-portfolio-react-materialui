@@ -53,8 +53,8 @@ function Skills() {
                                 Libraries
                             </Typography>
                             <Box className="tech-stack-container">
-                                <Box className="tech-logo-container"><img className="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/8/81/JQuery_logo_text.svg" height="40" width="auto" /></Box>
                                 <Box className="tech-logo-container"><img className="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg" height="40" width="auto" /></Box>
+                                <Box className="tech-logo-container"><img className="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/8/81/JQuery_logo_text.svg" height="40" width="auto" /></Box>
                             </Box>
                         </Box> {/* end #front-end-libraries */}
                         <Box id="design-languages" className="skill-section-child">
@@ -104,6 +104,7 @@ function Skills() {
                                 <Box className="tech-logo-container"><img className="tech-logo" src="/src/assets/logos/mysql.png" height="40" width="auto" /></Box>
                                 <Box className="tech-logo-container"><img className="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg" height="40" width="auto" /></Box>
                                 <Box className="tech-logo-container"><img className="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/3/38/SQLite370.svg" height="40" width="auto" /></Box>
+                                <Box className="tech-logo-container"><img className="tech-logo" src="/src/assets/logos/supabase.png" height="40" width="auto" /></Box>
                             </Box>
                         </Box> {/* end #back-end-databses */}
                     </Box>

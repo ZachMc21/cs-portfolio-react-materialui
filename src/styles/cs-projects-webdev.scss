@@ -1,5 +1,6 @@
 @use "cs-variables" as cs;
 @use "animations" as anim;
+@forward "cs-main";
 
 .project-item {
   display: flex;
@@ -65,62 +66,125 @@ p.project-desc {
 .project-stack {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  row-gap: 0.75rem;
   align-content: baseline;
-  width: 100%;
+  padding: 0 3rem;
+  margin-bottom: 1rem;
 
+  .tech-logo-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .tech-logo-container {
-    padding: 0.75rem 0.75rem 0.5rem 0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
     border: 0.15rem solid rgb(20, 7, 44);
     border-radius: 0.5rem;
     background-color: rgb(20, 7, 44);
-    margin-bottom: 1.5rem;
   }
   .tech-logo-container:hover {
     background-color: black;
     border-color: cs.$bg-color;
   }
-  .tech-logo {
+
+  .tech-logo-hz {
+    width: 1.5rem;
+    height: auto;
+  }
+  .tech-logo-vt {
     height: 1.5rem;
-    min-width: 1.5rem;
     width: auto;
   }
+}
+
+.project-stack-gallery {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.tech-logo-name {
+  p.subtitle {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    font-style: italic;
+    font-size: 0.9rem;
+    text-wrap: wrap;
+    line-height: 0.85rem;
+  }
+}
+
+div.react-photo-album {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 100%;
+  height: auto;
+}
+div.react-photo-album, div.react-photo-album > * {
+  display: flex;
+  gap: 2rem;
 }
 
 @media screen and (min-width: 768px) {
   .project-item {
     flex-direction: column;
+    padding-bottom: 2rem;
   }
   .project-desc-container {
     width: 100%;
   }
-  .lg-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
-  }
   .project-skills {
-    flex-direction: column;
-    width: 30%;
-  }
-  .project-stack {
     flex-direction: row;
-    flex-wrap: wrap;
-    width: 30%;
-  }
-  .project-stack {
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-
-    .tech-logo {
-      height: 1.5rem;
-      min-width: 1.5rem;
-      width: auto;
+    gap: 2rem;
+    p {
+      font-size: 1.25rem;
+      font-style: italic;
     }
   }
-  .project-screenshots {
+  .project-stack {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 0;
+    gap: 0.75rem;
+
+
+    .tech-logo-container {
+      width: 5rem;
+      height: 5rem;
+    }
+
+    .tech-logo-hz {
+      width: 3rem;
+      height: auto;
+    }
+    .tech-logo-vt {
+      height: 3rem;
+      width: auto;
+    }
+    p.subtitle {
+      font-size: 1.15rem;
+      line-height: 1.25rem;
+    }
+  }
+  .project-stack-gallery {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .project-gallery {
     display: flex;
     flex-grow: 1;
   }
