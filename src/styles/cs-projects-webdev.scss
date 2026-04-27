@@ -89,10 +89,10 @@ p.project-desc {
     border-radius: 0.5rem;
     background-color: rgb(20, 7, 44);
   }
-  .tech-logo-container:hover {
-    background-color: black;
-    border-color: cs.$bg-color;
-  }
+  // .tech-logo-container:hover {
+  //   background-color: black;
+  //   border-color: cs.$bg-color;
+  // }
 
   .tech-logo-hz {
     width: 1.5rem;
@@ -121,7 +121,8 @@ p.project-desc {
   }
 }
 
-div.react-photo-album {
+/* react-photo-album */
+div.react-photo-album  {
   display: flex;
   flex-grow: 1;
   flex-shrink: 1;
@@ -129,8 +130,18 @@ div.react-photo-album {
   height: auto;
 }
 div.react-photo-album, div.react-photo-album > * {
+  gap: 1.5rem;
+}
+
+/* Custom photo album (2 images stacked) */
+div.photo-album {
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+div.photo-album img {
+  width: 100%;
+  height: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -140,6 +151,10 @@ div.react-photo-album, div.react-photo-album > * {
   }
   .project-desc-container {
     width: 100%;
+  }
+  p.project-desc {
+    font-size: 1.25rem;
+    line-height: 1.45rem;
   }
   .project-skills {
     flex-direction: row;
@@ -173,7 +188,7 @@ div.react-photo-album, div.react-photo-album > * {
       width: auto;
     }
     p.subtitle {
-      font-size: 1.15rem;
+      font-size: 1.25rem;
       line-height: 1.25rem;
     }
   }
@@ -187,6 +202,9 @@ div.react-photo-album, div.react-photo-album > * {
   .project-gallery {
     display: flex;
     flex-grow: 1;
+  }
+  div.react-photo-album, div.react-photo-album > * {
+    gap: 2rem;
   }
 }
 
