@@ -30,9 +30,26 @@ p.project-item-title {
   text-align: left;
 }
 
-.project-item-link > svg {
+.project-item-link svg {
   color: cs.$primary-text;
   font-size: 1.75rem;
+}
+
+.link-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+}
+.project-item-link {
+  max-width: 3rem;
+  p.subtitle {
+    margin-bottom: 0.25rem;
+    color: cs.$primary-text;
+    font-style: italic;
+    font-size: 0.8rem;
+    line-height: 0.75rem;
+    text-wrap: wrap;
+  }
 }
 
 .project-desc-container {
@@ -85,14 +102,9 @@ p.project-desc {
     align-items: center;
     width: 3rem;
     height: 3rem;
-    border: 0.15rem solid rgb(20, 7, 44);
     border-radius: 0.5rem;
-    background-color: rgb(20, 7, 44);
+    background-color: rgba(20, 7, 44, 0.7);
   }
-  // .tech-logo-container:hover {
-  //   background-color: black;
-  //   border-color: cs.$bg-color;
-  // }
 
   .tech-logo-hz {
     width: 1.5rem;

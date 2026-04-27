@@ -5,7 +5,7 @@ import { ColumnsPhotoAlbum, RowsPhotoAlbum } from "react-photo-album";
 import "react-photo-album/rows.css";
 
 const photosPath: string = "/src/assets/projects/";
-const webdevPhotos = [
+const portfolio2Photos = [
   { src: photosPath + "webdev-cs-portfolio_01.png", width: 1263, height: 579 },
   { src: photosPath + "webdev-cs-portfolio_02.png", width: 658, height: 520 },
   { src: photosPath + "webdev-cs-portfolio_03.png", width: 658, height: 739 },
@@ -15,7 +15,13 @@ const omniaPhotos = [
   { src: photosPath + "webdev-omnia_01.png", width: 1267, height: 577 },
   { src: photosPath + "webdev-omnia_02.gif", width: 1266, height: 573 },
   { src: photosPath + "webdev-omnia_03.gif", width: 529, height: 820 },
-]
+];
+
+const highgradePhotos = [
+  { src: photosPath + "webdev-highgrade_01.png", width: 1148, height: 526 },
+  { src: photosPath + "webdev-highgrade_02.png", width: 701, height: 702 },
+  { src: photosPath + "webdev-highgrade_03.png", width: 1146, height: 527 },
+];
 
 function ProjectsWebdev() {
 
@@ -63,7 +69,7 @@ function ProjectsWebdev() {
                                 <Typography className="subtitle">Animista</Typography>
                             </Box>
                         </Box>
-                        <RowsPhotoAlbum photos={webdevPhotos} targetRowHeight={400} rowConstraints={{ singleRowMaxHeight: 700 }}></RowsPhotoAlbum>
+                        <RowsPhotoAlbum photos={portfolio2Photos} targetRowHeight={400} rowConstraints={{ singleRowMaxHeight: 700 }}></RowsPhotoAlbum>
                     </Box> {/* End project-stack-gallery */}
                 </Box>
             </Box> {/* End CS Portfolio v2 */}
@@ -113,8 +119,48 @@ function ProjectsWebdev() {
 
 
             <Box className="project-item">
-                <Box>
+                <Box className="project-item-header">
                     <Typography className="project-item-title">High Grade Website Maintenance</Typography>
+                    <Box className="link-container">
+                        <Link className="project-item-link" href="https://highgrade.mines.edu/" target="_blank" rel="noopener noreferrer">
+                            <OpenInNewIcon></OpenInNewIcon>
+                            <Typography className="subtitle">Current Site</Typography>
+                        </Link>
+                        <Link className="project-item-link" href="https://web.archive.org/web/20250818214615/https://highgrade.mines.edu/" target="_blank" rel="noopener noreferrer">
+                            <OpenInNewIcon></OpenInNewIcon>
+                            <Typography className="subtitle">Site Archive</Typography>
+                        </Link>
+                    </Box>
+                </Box>
+                <Box className="project-desc-container">
+                    <Typography className="project-desc">I inherited this project from a long line of previous developers.</Typography>
+                    <Typography className="project-desc">I quickly learned Ruby, Jekyll, and Linux server deployment, to launch the 2025 journal webpage on time with the physical release.</Typography>
+                    <Typography className="project-desc">I made design decisions and communicated with non-technical staff to get the files I needed to follow the existing format of the site.</Typography>
+                    <Typography className="project-desc">After the release, I wrote extensive documentation detailing the installation process and what to edit, so that future developers with less experience than me could pick up work quickly.</Typography>
+                </Box>
+                <Box className="project-skills-gallery-container">
+                    <Box className="project-skills">
+                        <Typography>working with a large existing project</Typography>
+                        <Typography>learning new languages quickly</Typography>
+                        <Typography>writing technical documentation</Typography>
+                    </Box>
+                    <Box className="project-stack-gallery">
+                        <Box className="project-stack">
+                            <Box className="tech-logo-name">
+                                <Box className="tech-logo-container"><img className="tech-logo-vt slide-bck-center anim-delay-1" src="/src/assets/logos/ruby.png" height="40" width="auto" /></Box>
+                                <Typography className="subtitle">Ruby 2.8</Typography>
+                            </Box>
+                            <Box className="tech-logo-name">
+                                <Box className="tech-logo-container"><img className="tech-logo-hz slide-bck-center anim-delay-3" src="/src/assets/logos/jekyll.png" height="40" width="auto" /></Box>
+                                <Typography className="subtitle">Jekyll 3</Typography>
+                            </Box>
+                            <Box className="tech-logo-name">
+                                <Box className="tech-logo-container"><img className="tech-logo-vt slide-bck-center anim-delay-5" src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Linux_mascot_tux.png" height="40" width="auto" /></Box>
+                                <Typography className="subtitle">Linux deployment</Typography>
+                            </Box>
+                        </Box>
+                        <RowsPhotoAlbum photos={highgradePhotos} targetRowHeight={400} rowConstraints={{ singleRowMaxHeight: 700 }}></RowsPhotoAlbum>
+                    </Box> {/* End project-stack-gallery */}
                 </Box>
             </Box> {/* End HG Website */}
 

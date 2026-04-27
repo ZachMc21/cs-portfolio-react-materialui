@@ -67,14 +67,16 @@ function Skills() {
                         </Box> {/* end #design-languages */}
                         <Box id="build-tools" className="skill-section-child">
                             <Typography className="h2" sx={{ color: csLight.palette.secondary.contrastText }}>
-                                Build Tools
+                                Build Tools & Site Generators
                             </Typography>
                             <Box className="tech-stack-container">
                                 <Box className="tech-logo-container"><img className="tech-logo" src="/src/assets/logos/vite.svg" height="40" width="auto" /></Box>
+                                <Box className="tech-logo-container"><img className="tech-logo" src="/src/assets/logos/jekyll.png" height="40" width="auto" /></Box>
                             </Box>
                         </Box> {/* end #build-tools */}
                     </Box>
                 </Box> {/* end #front-end */}
+
                 <Box id="back-end-container">
                     <Typography className="h1 large rotated" sx={{ color: csLight.palette.secondary.contrastText }}>
                         Back-end
