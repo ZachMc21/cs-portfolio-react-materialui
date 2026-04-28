@@ -23,6 +23,11 @@ const highgradePhotos = [
   { src: photosPath + "webdev-highgrade_03.png", width: 1146, height: 527 },
 ];
 
+const portfolio1Photos = [
+  { src: photosPath + "webdev-cs-portfolio-old_01.png", width: 840, height: 529 },
+  { src: photosPath + "webdev-cs-portfolio-old_02.gif", width: 525, height: 799 },
+]
+
 function ProjectsWebdev() {
 
     return (
@@ -164,10 +169,39 @@ function ProjectsWebdev() {
                 </Box>
             </Box> {/* End HG Website */}
 
-
             <Box className="project-item">
-                <Box>
+                <Box className="project-item-header">
                     <Typography className="project-item-title">CS Portfolio v1</Typography>
+                    <Link className="project-item-link" href="https://zachmc21.github.io" target="_blank" rel="noopener noreferrer"><OpenInNewIcon></OpenInNewIcon></Link>
+                </Box>
+                <Box className="project-desc-container">
+                    <Typography className="project-desc">I put together a quick-and-dirty website to complement my resume.</Typography>
+                    <Typography className="project-desc">This project is written entirely in raw HTML, CSS, and JavaScript. I wrote custom JavaScript instead of using a framework/library.</Typography>
+                </Box>
+                <Box className="project-skills-gallery-container">
+                    <Box className="project-skills">
+                        <Typography>mobile-first development</Typography>
+                        <Typography>responsive design</Typography>
+                        <Typography>css flexbox</Typography>
+                        <Typography>custom javascript</Typography>
+                    </Box>
+                    <Box className="project-stack-gallery">
+                        <Box className="project-stack">
+                            <Box className="tech-logo-name">
+                                <Box className="tech-logo-container"><img className="tech-logo-vt slide-bck-center anim-delay-1" src="https://upload.wikimedia.org/wikipedia/commons/8/80/HTML5_logo_resized.svg" height="40" width="auto" /></Box>
+                                <Typography className="subtitle">HTML5</Typography>
+                            </Box>
+                            <Box className="tech-logo-name">
+                                <Box className="tech-logo-container"><img className="tech-logo-vt slide-bck-center anim-delay-3" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" height="40" width="auto" /></Box>
+                                <Typography className="subtitle">CSS3</Typography>
+                            </Box>
+                            <Box className="tech-logo-name">
+                                <Box className="tech-logo-container"><img className="tech-logo-vt slide-bck-center anim-delay-5" src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Javascript-shield.svg" height="40" width="auto" /></Box>
+                                <Typography className="subtitle">JavaScript</Typography>
+                            </Box>
+                        </Box>
+                        <RowsPhotoAlbum photos={portfolio1Photos} targetRowHeight={400} rowConstraints={{ singleRowMaxHeight: 700 }}></RowsPhotoAlbum>
+                    </Box> {/* End project-stack-gallery */}
                 </Box>
             </Box> {/* End CS Portfolio v1 */}
         </Box>
