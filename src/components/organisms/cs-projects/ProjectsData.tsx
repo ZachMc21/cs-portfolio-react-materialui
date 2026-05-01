@@ -1,10 +1,11 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
+import ConstructionNotice from "../../molecules/ConstructionNotice";
 
 function ProjectsData() {
 
     return (
         <Box className="projects-category" id="data-container" sx={{display: "none"}}>
-            <Typography sx={{fontSize: "3rem"}}>Data Science</Typography>
+            <ConstructionNotice title={"Data Science Projects"} />
         </Box>
     )
 }

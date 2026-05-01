@@ -26,7 +26,7 @@ function Projects() {
                 Projects
             </Typography>
 
-            <Box sx={{ display: "flex", flexDirection: "column" }}>
+            <Box sx={{ display: "flex", flexDirection: "column"}}>
                 {ProjectDropdownSelect()}
             </Box>
 
@@ -35,7 +35,6 @@ function Projects() {
             <ProjectsData />
             <ProjectsGamedev />
       
-            <ConstructionNotice title={""} />
             <Footer bgColor="" tColor="csLight.palette.secondary.contrastText" />
         </ThemeProvider>
 		</Container>

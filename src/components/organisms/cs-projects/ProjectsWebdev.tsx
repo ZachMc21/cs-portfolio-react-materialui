@@ -1,10 +1,11 @@
 import { Box, Link, Typography } from "@mui/material";
 import "../../../styles/cs-projects-webdev.scss";
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
-import { ColumnsPhotoAlbum, RowsPhotoAlbum } from "react-photo-album";
+import { RowsPhotoAlbum } from "react-photo-album";
 import "react-photo-album/rows.css";
 
 const photosPath: string = "/src/assets/projects/";
+
 const portfolio2Photos = [
   { src: photosPath + "webdev-cs-portfolio_01.png", width: 1263, height: 579 },
   { src: photosPath + "webdev-cs-portfolio_02.png", width: 658, height: 520 },
@@ -148,6 +149,7 @@ function ProjectsWebdev() {
                         <Typography>working with a large existing project</Typography>
                         <Typography>learning new languages quickly</Typography>
                         <Typography>writing technical documentation</Typography>
+                        <Typography>deployment to a live linux server</Typography>
                     </Box>
                     <Box className="project-stack-gallery">
                         <Box className="project-stack">
@@ -204,6 +206,40 @@ function ProjectsWebdev() {
                     </Box> {/* End project-stack-gallery */}
                 </Box>
             </Box> {/* End CS Portfolio v1 */}
+
+            <Box className="project-item">
+                <Box className="project-item-header">
+                    <Typography className="project-item-title">Modyfi Web Print</Typography>
+                </Box>
+                <Box className="project-desc-container">
+                    <Typography className="project-desc">As part of summer field session (CSCI370), myself and three others worked to develop a web store for Modyfi Print.</Typography>
+                    <Typography className="project-desc">The project used Modyfi's custom image format, allowed shoppers to make certain modifications to the projects, then took them through the ordering and checkout system.</Typography>
+                </Box>
+                <Box className="project-skills-gallery-container">
+                    <Box className="project-skills">
+                        <Typography>designing from a Figma document</Typography>
+                        <Typography>database design</Typography>
+                        <Typography>database buckets</Typography>
+                        <Typography>api integration</Typography>
+                        <Typography>agile & scrum</Typography>
+                        <Typography>technical presentations</Typography>
+                    </Box>
+                        <Box className="project-stack project-stack-hz">
+                            <Box className="tech-logo-name">
+                                <Box className="tech-logo-container"><img className="tech-logo-vt slide-bck-center anim-delay-5" src="/src/assets/logos/typescript-128.png" height="40" width="auto" /></Box>
+                                <Typography className="subtitle">TypeScript</Typography>
+                            </Box>
+                            <Box className="tech-logo-name">
+                                <Box className="tech-logo-container"><img className="tech-logo-hz slide-bck-center anim-delay-3" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" height="40" width="auto" /></Box>
+                                <Typography className="subtitle">Tailwind CSS</Typography>
+                            </Box>
+                            <Box className="tech-logo-name">
+                                <Box className="tech-logo-container"><img className="tech-logo-vt slide-bck-center anim-delay-5" src="/src/assets/logos/supabase.png" height="40" width="auto" /></Box>
+                                <Typography className="subtitle">Supabase</Typography>
+                            </Box>
+                        </Box>
+                </Box>
+            </Box> {/* End Modyfi web print */}
         </Box>
     )
 }

@@ -1,10 +1,11 @@
 import { Box, Typography } from "@mui/material";
+import ConstructionNotice from "../../molecules/ConstructionNotice";
 
 function ProjectsGamedev() {
 
     return (
         <Box className="projects-category" id="gamedev-container" sx={{display: "none"}}>
-            <Typography sx={{fontSize: "3rem"}}>Game Development</Typography>
+            <ConstructionNotice title={"Game Development Projects"} />
         </Box>
     )
 }
