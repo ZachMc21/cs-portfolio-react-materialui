@@ -1,5 +1,5 @@
 import { Box, Link, Typography } from "@mui/material";
-import "../../../styles/cs-projects-webdev.scss";
+import "../../../styles/cs-projects-categories.scss";
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import { RowsPhotoAlbum } from "react-photo-album";
 import "react-photo-album/rows.css";
@@ -224,20 +224,20 @@ function ProjectsWebdev() {
                         <Typography>agile & scrum</Typography>
                         <Typography>technical presentations</Typography>
                     </Box>
-                        <Box className="project-stack project-stack-hz">
-                            <Box className="tech-logo-name">
-                                <Box className="tech-logo-container"><img className="tech-logo-vt slide-bck-center anim-delay-5" src="/src/assets/logos/typescript-128.png" height="40" width="auto" /></Box>
-                                <Typography className="subtitle">TypeScript</Typography>
-                            </Box>
-                            <Box className="tech-logo-name">
-                                <Box className="tech-logo-container"><img className="tech-logo-hz slide-bck-center anim-delay-3" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" height="40" width="auto" /></Box>
-                                <Typography className="subtitle">Tailwind CSS</Typography>
-                            </Box>
-                            <Box className="tech-logo-name">
-                                <Box className="tech-logo-container"><img className="tech-logo-vt slide-bck-center anim-delay-5" src="/src/assets/logos/supabase.png" height="40" width="auto" /></Box>
-                                <Typography className="subtitle">Supabase</Typography>
-                            </Box>
+                    <Box className="project-stack project-stack-hz">
+                        <Box className="tech-logo-name">
+                            <Box className="tech-logo-container"><img className="tech-logo-vt slide-bck-center anim-delay-5" src="/src/assets/logos/typescript-128.png" height="40" width="auto" /></Box>
+                            <Typography className="subtitle">TypeScript</Typography>
                         </Box>
+                        <Box className="tech-logo-name">
+                            <Box className="tech-logo-container"><img className="tech-logo-hz slide-bck-center anim-delay-3" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" height="40" width="auto" /></Box>
+                            <Typography className="subtitle">Tailwind CSS</Typography>
+                        </Box>
+                        <Box className="tech-logo-name">
+                            <Box className="tech-logo-container"><img className="tech-logo-vt slide-bck-center anim-delay-5" src="/src/assets/logos/supabase.png" height="40" width="auto" /></Box>
+                            <Typography className="subtitle">Supabase</Typography>
+                        </Box>
+                    </Box>
                 </Box>
             </Box> {/* End Modyfi web print */}
         </Box>
