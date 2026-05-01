@@ -1,0 +1,14 @@
+@use "cs-variables" as cs;
+
+div.gallery-lazy-load {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+p.gallery-loading {
+  font-family: 'aller', 'sans-serif';
+  text-align: center;
+  font-size: 3rem;
+  color: cs.$primary-text;
+}

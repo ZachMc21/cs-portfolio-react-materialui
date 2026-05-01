@@ -3,6 +3,8 @@ import "../../../styles/cs-projects-categories.scss";
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import { RowsPhotoAlbum } from "react-photo-album";
 import "react-photo-album/rows.css";
+import { Suspense, lazy } from "react";
+import GalleryLazyLoad from "../../molecules/ProjectsLazyLoad";
 
 const photosPath: string = "/src/assets/projects/";
 
@@ -75,7 +77,9 @@ function ProjectsWebdev() {
                                 <Typography className="subtitle">Animista</Typography>
                             </Box>
                         </Box>
-                        <RowsPhotoAlbum photos={portfolio2Photos} targetRowHeight={400} rowConstraints={{ singleRowMaxHeight: 700 }}></RowsPhotoAlbum>
+                        <Suspense fallback={<GalleryLazyLoad />}>                        
+                            <RowsPhotoAlbum photos={portfolio2Photos} targetRowHeight={400} rowConstraints={{ singleRowMaxHeight: 700 }}></RowsPhotoAlbum>
+                        </Suspense>
                     </Box> {/* End project-stack-gallery */}
                 </Box>
             </Box> {/* End CS Portfolio v2 */}
@@ -118,7 +122,9 @@ function ProjectsWebdev() {
                                 <Typography className="subtitle">Azure DevOps</Typography>
                             </Box>
                         </Box>
-                        <RowsPhotoAlbum photos={omniaPhotos} targetRowHeight={400} rowConstraints={{ singleRowMaxHeight: 700 }}></RowsPhotoAlbum>
+                        <Suspense fallback={<GalleryLazyLoad />}> 
+                            <RowsPhotoAlbum photos={omniaPhotos} targetRowHeight={400} rowConstraints={{ singleRowMaxHeight: 700 }}></RowsPhotoAlbum>
+                        </Suspense>
                     </Box> {/* End project-stack-gallery */}
                 </Box>
             </Box> {/* End Omnia WorkSpace */}
@@ -166,7 +172,9 @@ function ProjectsWebdev() {
                                 <Typography className="subtitle">Linux deployment</Typography>
                             </Box>
                         </Box>
-                        <RowsPhotoAlbum photos={highgradePhotos} targetRowHeight={400} rowConstraints={{ singleRowMaxHeight: 700 }}></RowsPhotoAlbum>
+                        <Suspense fallback={<GalleryLazyLoad />}> 
+                            <RowsPhotoAlbum photos={highgradePhotos} targetRowHeight={400} rowConstraints={{ singleRowMaxHeight: 700 }}></RowsPhotoAlbum>
+                        </Suspense>
                     </Box> {/* End project-stack-gallery */}
                 </Box>
             </Box> {/* End HG Website */}
@@ -202,7 +210,9 @@ function ProjectsWebdev() {
                                 <Typography className="subtitle">JavaScript</Typography>
                             </Box>
                         </Box>
-                        <RowsPhotoAlbum photos={portfolio1Photos} targetRowHeight={400} rowConstraints={{ singleRowMaxHeight: 700 }}></RowsPhotoAlbum>
+                        <Suspense fallback={<GalleryLazyLoad />}> 
+                            <RowsPhotoAlbum photos={portfolio1Photos} targetRowHeight={400} rowConstraints={{ singleRowMaxHeight: 700 }}></RowsPhotoAlbum>
+                        </Suspense>
                     </Box> {/* End project-stack-gallery */}
                 </Box>
             </Box> {/* End CS Portfolio v1 */}
