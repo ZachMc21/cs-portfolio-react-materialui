@@ -18,13 +18,13 @@ function Skills() {
 		<Box sx={{ mt: 12 }}>
         <NavbarCS />
         <ThemeProvider theme={csLight}>
-			<Typography className="title" sx={{ py: 0, color: csLight.palette.primary.contrastText }}>
-                Skills
-            </Typography>
 
-            <Box id="skills-page">
+            <Box id="cs-skills-page">
+                <Typography className="title" sx={{ py: 0, color: csLight.palette.primary.contrastText }}>
+                    Skills
+                </Typography>
                 <Box id="front-end-container">
-                    <Typography className="h1 large rotated" sx={{ color: csLight.palette.secondary.contrastText }}>
+                    <Typography className="h1 rotated" sx={{ color: csLight.palette.secondary.contrastText }}>
                         Front-end
                     </Typography>
                     <Box className="skill-section-parent" id="front-end" sx={{ backgroundColor: csLight.palette.secondary.light }}>
@@ -78,7 +78,7 @@ function Skills() {
                 </Box> {/* end #front-end */}
 
                 <Box id="back-end-container">
-                    <Typography className="h1 large rotated" sx={{ color: csLight.palette.secondary.contrastText }}>
+                    <Typography className="h1 rotated" sx={{ color: csLight.palette.secondary.contrastText }}>
                         Back-end
                     </Typography>
                     <Box className="skill-section-parent" id="back-end" sx={{ backgroundColor: csLight.palette.secondary.light }}>
@@ -112,7 +112,7 @@ function Skills() {
                     </Box>
                 </Box> {/* end #back-end */}
                 <Box id="other-tech-container">
-                    <Typography className="h1 large rotated" sx={{ color: csLight.palette.secondary.contrastText }}>
+                    <Typography className="h1 rotated" sx={{ color: csLight.palette.secondary.contrastText }}>
                         Other Technologies
                     </Typography>
                     <Box className="skill-section-parent" id="back-end" sx={{ backgroundColor: csLight.palette.secondary.light }}>
@@ -176,7 +176,7 @@ function Skills() {
                     </Box>
                 </Box> {/* end other technologies */}
                 <Box id="other-skills-container">
-                    <Typography className="h1 large rotated" sx={{ color: csLight.palette.secondary.contrastText }}>
+                    <Typography className="h1 rotated" sx={{ color: csLight.palette.secondary.contrastText }}>
                         Other Skills
                     </Typography>
                     <Box className="skill-section-parent broad-skills" sx={{ backgroundColor: csLight.palette.secondary.light }}>

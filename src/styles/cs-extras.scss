@@ -1,0 +1,63 @@
+@use "cs-variables" as cs;
+
+.extras-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 3rem;
+
+  
+  p.title {
+    font-family: 'eightgon', 'sans-serif';
+    font-size: 3rem;
+    align-self: center;
+    margin-bottom: 1rem;
+  }
+
+}
+
+div.extras-category {
+  display: flex;
+  flex-direction: row;
+  margin-right: 1rem;
+  
+  p.h1 {
+    font-family: 'eightgon', 'sans-serif';
+    align-self: center;
+    text-transform: uppercase;
+    writing-mode: tb-rl;
+    font-size: 2rem;
+    color: cs.$secondary-text;
+  }
+
+  p.rotated {
+    rotate: -180deg;
+    text-wrap: nowrap;
+  }
+}
+
+div.extras-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-shrink: 1;
+  column-gap: 3rem;
+  row-gap: 1.5rem;
+  padding: 2rem;
+
+  background-color: rgba(255, 255, 255, 0.8);
+  background-image: url("/src/assets/backgrounds/cs-extras-bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat; 
+
+  p.h2 {
+    font-family: 'aller', 'sans-serif';
+    font-size: 1.25rem;
+  }
+  p.subtitle {
+    font-style: italic;
+  }
+}
