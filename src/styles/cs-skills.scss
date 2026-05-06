@@ -1,11 +1,5 @@
-:root {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  box-sizing: border-box;
-}
-
-
+@use "cs-variables" as cs;
+@forward "cs-main";
 
 /* Full-page styles */
 div#cs-skills-page {
@@ -18,13 +12,6 @@ div#cs-skills-page {
   /* General styling */
   p {
     font-family: 'aller', 'sans-serif';
-    font-size: 2rem;
-  }
-  p.title {
-    font-family: 'eightgon', 'sans-serif';
-    font-size: 3rem;
-    align-self: center;
-    margin-bottom: 1rem;
   }
   p.h1 {
     font-family: 'eightgon', 'sans-serif';
@@ -110,7 +97,7 @@ div.broad-skill-container {
   row-gap: 1rem;
 }
 
-div#skills-page {
+div#cs-skills-page {
   /* Animations */
   .tech-logo-container:hover {
     .tech-logo {

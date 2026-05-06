@@ -131,10 +131,9 @@ function CSPortfolio() {
                                 moved to Golden for college, and now lives in Denver.</Typography>
                         </Box>
                         <Box id="about-education-container" sx = {{ pl: "2rem", ml: 0 }}>
-                            <Typography id="education-header" sx={{ display: "flex", justifySelf: "left", pb: "0.5rem", color: csLight.palette.primary.contrastText }}>Education</Typography>
                             <Box id="about-education-text" sx = {{ pr: "1rem" }}>
+                                <img src="/src/assets/logos/mines.png" width="200px" height="auto"></img>
                                 <Typography>B.S. Computer Science</Typography>
-                                <Typography>Colorado School of Mines</Typography>
                                 <Typography>2021 - 2025</Typography>
                             </Box>
                         </Box>
@@ -164,7 +163,7 @@ function CSPortfolio() {
                             <Typography>Extras</Typography>
                             <KeyboardArrowRightIcon />
                         </Link>
-                        <Typography className="pages-text">Odds and ends - extracurriculars, volunteer work, and hobbies.</Typography>
+                        <Typography className="pages-text">Odds and ends - extracurriculars, hobbies, and older content.</Typography>
                     </Box>
                 </Box>
 

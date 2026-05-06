@@ -29,7 +29,7 @@ const highgradePhotos = [
 const portfolio1Photos = [
   { src: photosPath + "webdev-cs-portfolio-old_01.png", width: 840, height: 529 },
   { src: photosPath + "webdev-cs-portfolio-old_02.gif", width: 525, height: 799 },
-]
+];
 
 function ProjectsWebdev() {
 

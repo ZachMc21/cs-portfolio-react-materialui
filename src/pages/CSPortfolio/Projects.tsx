@@ -22,7 +22,7 @@ function Projects() {
         <NavbarCS />
         <ThemeProvider theme={csLight}>
 
-            <Typography className="title" sx={{ py: 0, color: csLight.palette.primary.contrastText }}>
+            <Typography className="cs-page-title">
                 Projects
             </Typography>
 

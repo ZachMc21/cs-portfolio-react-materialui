@@ -1,5 +1,6 @@
 @forward 'cs-navbar';
 @forward 'cs-footer';
+@use "cs-variables" as cs;
 
 /* GENERAL STYLING */
 :root {
@@ -14,6 +15,15 @@ html, body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+}
+
+p.cs-page-title {
+  font-family: 'eightgon', 'sans-serif';
+  font-size: 3rem;
+  align-self: center;
+  margin-bottom: 1rem;
+  padding: 0;
+  color: cs.$primary-text;
 }
 
 a.section-link {

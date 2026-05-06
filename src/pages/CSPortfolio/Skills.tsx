@@ -6,9 +6,9 @@ import DocumentTitle from '../../utils/DocumentTitle';
 import NavbarCS from "../../components/organisms/navbar/NavbarCS";
 
 import csLight from '../../styles/csLight';
-import "../../styles/cs-skills.scss";
 import "../../styles/animations.scss";
 import "../../styles/cs-main.scss";
+import "../../styles/cs-skills.scss";
 
 function Skills() {
 
@@ -20,7 +20,7 @@ function Skills() {
         <ThemeProvider theme={csLight}>
 
             <Box id="cs-skills-page">
-                <Typography className="title" sx={{ py: 0, color: csLight.palette.primary.contrastText }}>
+                <Typography className="cs-page-title">
                     Skills
                 </Typography>
                 <Box id="front-end-container">

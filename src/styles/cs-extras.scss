@@ -1,4 +1,5 @@
 @use "cs-variables" as cs;
+@forward "cs-main";
 
 .extras-container {
   display: flex;
@@ -33,6 +34,7 @@ div.extras-category {
   p.rotated {
     rotate: -180deg;
     text-wrap: nowrap;
+    padding: 1rem;
   }
 }
 
@@ -54,10 +56,35 @@ div.extras-content {
   background-repeat: no-repeat; 
 
   p.h2 {
-    font-family: 'aller', 'sans-serif';
     font-size: 1.25rem;
   }
   p.subtitle {
     font-style: italic;
   }
+
+  a {
+    color: black;
+  }
+}
+
+div.extras-img-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+div.extras-text {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  div.extras-content {
+    column-gap: 5rem;
+  }
+}
+
+div#keep-android-open {
+  width: 100%;
+  height: auto;
 }

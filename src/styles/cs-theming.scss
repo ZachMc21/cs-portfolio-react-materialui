@@ -1,0 +1,41 @@
+
+
+body {
+  @include lightmode();
+  &.is_inverted {
+      @include darkmode();
+    }
+  @media (prefers-color-scheme: dark) {
+      @include darkmode();
+      &.is_inverted {
+          @include lightmode();
+      }
+  }
+}
+
+/* THEMES */
+@mixin lightmode() {
+  $bg-color: #dff6f7;
+  $primary-light: #e0f7fa;
+  $primary-main: #c3e8ed;
+  $primary-dark: #7ca6ab;
+  $primary-text: #165057;
+  $secondary-light: #c4ccf7;
+  $secondary-main: #6c7eda;
+  $secondary-dark: #292f56;
+  $secondary-text: #4d1aab;
+  $navbar-bg: #899ebf;
+}
+
+@mixin darkmode() {
+  $bg-color: #0e3539;
+  $primary-dark: #165057;
+  $primary-main: #7ca6ab;
+  $primary-light: #c3e8ed;
+  $primary-text: #e0f7fa;
+  $secondary-light: #292f56;
+  $secondary-main: #6c7eda;
+  $secondary-dark: #c4ccf7;
+  $secondary-text: #4d1aab;
+  $navbar-bg: #142c53;
+}
