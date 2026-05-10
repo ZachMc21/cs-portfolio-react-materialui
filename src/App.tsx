@@ -8,6 +8,7 @@ import router from "./routes/AppRoutes";
 import { Box } from '@mui/material';
 
 function App() {
+
   return (
     <ThemeProvider theme={homeLight}>
         <Box className="App">

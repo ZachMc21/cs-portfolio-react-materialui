@@ -5,11 +5,12 @@ import ConstructionNotice from '../../components/molecules/ConstructionNotice';
 import Footer from '../../components/molecules/Footer';
 
 import DocumentTitle from '../../utils/DocumentTitle';
+import mountKaoScript from "../../utils/ComponentDidMount";
 import NavbarCS from "../../components/organisms/navbar/NavbarCS";
 
 import csLight from '../../styles/csLight';
 import "../../styles/cs-extras.scss";
-import { Suspense } from 'react';
+import { Suspense, useEffect } from 'react';
 import GalleryLazyLoad from '../../components/molecules/ProjectsLazyLoad';
 import { RowsPhotoAlbum } from 'react-photo-album';
 
@@ -23,7 +24,22 @@ const hobbyPhotos = [
 
 function Extras() {
 
-    DocumentTitle("Extras | CS Portfolio");
+  DocumentTitle("Extras | CS Portfolio");
+	
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.id = "kao-script";
+    script.src = "https://keepandroidopen.org/banner.js?size=mini&animation=off&id=keep-android-open";
+    script.async = true;
+
+    document.getElementById("keep-android-open")!.appendChild(script);
+	console.log("KAO script mounted successfully");
+
+    // // clean up the script when the component is unmounted
+    // return () => {
+    //   document.getElementById("keep-android-open")!.removeChild(script);
+    // }
+  }, []);
 	
 	return (
 		<Box id="cs-extras-page" sx={{ mt: 12 }} >
@@ -42,13 +58,13 @@ function Extras() {
 							<img src="/src/assets/logos/high-grade.png" height="60" width="auto" ></img>
 								
 							<strong>
-							<Link href="highgrade.mines.edu">
+							<a href="highgrade.mines.edu">
 								<Box className="extras-text">
 									<Typography className="h2">High Grade</Typography>
 									<Typography className="h2">CSM Journal of the Arts</Typography>
 									<Typography className="subtitle">Jury member, contributor</Typography>
 								</Box>
-							</Link>
+							</a>
 							</strong>
 						</Box>
 						<Box className="extras-text">
@@ -56,7 +72,7 @@ function Extras() {
 							<Typography className="subtitle">Flute</Typography>
 						</Box>
 						<Box className="extras-text">
-							<Typography className="h2">Pyrotechnics club</Typography>
+							<Typography className="h2">Pyrotechnics Club</Typography>
 							<Typography className="subtitle">Member</Typography>
 						</Box>
 					</Box>
@@ -97,7 +113,12 @@ function Extras() {
 						</Box>
 					</Box>
 				</Box>
+
 			</Box>
+
+		<div id="keep-android-open">
+		</div>
+
 		<Footer bgColor="" tColor="csLight.palette.secondary.contrastText" />
 		</ThemeProvider>
 		</Box>
