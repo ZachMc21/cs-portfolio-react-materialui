@@ -62,6 +62,13 @@ function Extras() {
 								<Typography className="subtitle">Intermediate SQL</Typography>
 							</Box>
 						</Box>
+						<Box className="extras-img-text">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Cib-hackerrank_%28CoreUI_Icons_v1.0.0%29.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" height="60" width="auto"></img>
+							<Box className="extras-text">
+								<Typography className="h2">HackerRank</Typography>
+								<Typography className="subtitle">Coming soon...</Typography>
+							</Box>
+						</Box>
 					</Box>
 				</Box>
 
@@ -87,6 +94,14 @@ function Extras() {
 						</Box>
 						<Box className="extras-text">
 							<Typography className="h2">Pyrotechnics Club</Typography>
+							<Typography className="subtitle">Member</Typography>
+						</Box>
+						<Box className="extras-text">
+							<Typography className="h2">Fiber Arts Club</Typography>
+							<Typography className="subtitle">Member</Typography>
+						</Box>
+						<Box className="extras-text">
+							<Typography className="h2">Creative Arts Club</Typography>
 							<Typography className="subtitle">Member</Typography>
 						</Box>
 					</Box>
