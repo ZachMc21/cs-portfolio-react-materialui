@@ -7,10 +7,6 @@
   gap: 1rem;
   margin-bottom: 3rem;
 
-  a {
-    text-decoration-thickness: 0.075rem;
-  }
-
   p.title {
     font-family: 'eightgon', 'sans-serif';
     font-size: 3rem;
@@ -67,11 +63,16 @@ div.extras-content {
 
   a {
     color: black;
-    text-decoration-color: black;
+    text-decoration: none;
+    font-style: italic;
+    
+    a:hover {
+      transform: "scale3d(1.06, 1.06, 1)",
+    }
   }
 }
 
-div.extras-img-text {
+.extras-img-text {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -80,6 +81,17 @@ div.extras-img-text {
 div.extras-text {
   display: flex;
   flex-direction: column;
+
+  div.subtitle-hz {
+    display: flex;
+    gap: 0.85rem;
+  }
+}
+
+/* Inactive className */
+.featured {
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 @media screen and (min-width: 768px) {
