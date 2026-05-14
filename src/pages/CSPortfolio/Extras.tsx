@@ -52,6 +52,20 @@ function Extras() {
 				</Typography>
 
 				<Box className="extras-category">
+					<Typography className="h1 rotated">Certificates</Typography>
+					<Box className="extras-content">
+						<Box className="extras-img-text">
+							<img src="/src/assets/logos/datacamp.png" height="60" width="auto"></img>
+							<Box className="extras-text">
+								<Typography className="h2">Datacamp</Typography>
+								<Typography className="subtitle">Introduction to SQL</Typography>
+								<Typography className="subtitle">Intermediate SQL</Typography>
+							</Box>
+						</Box>
+					</Box>
+				</Box>
+
+				<Box className="extras-category">
 					<Typography className="h1 rotated">Extracurriculars</Typography>
 					<Box className="extras-content">
 						<Box className="extras-img-text">
@@ -91,7 +105,7 @@ function Extras() {
 							<Typography className="subtitle">graphite, acrylic, gouache, mixed media</Typography>
 						</Box>
                         <Suspense fallback={<GalleryLazyLoad />}> 
-                            <RowsPhotoAlbum photos={hobbyPhotos} targetRowHeight={400} rowConstraints={{ singleRowMaxHeight: 700 }}></RowsPhotoAlbum>
+                            <RowsPhotoAlbum photos={hobbyPhotos} targetRowHeight={400} rowConstraints={{ singleRowMaxHeight: 400 }}></RowsPhotoAlbum>
                         </Suspense>
 					</Box>
 				</Box>

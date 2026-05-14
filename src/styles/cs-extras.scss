@@ -7,7 +7,10 @@
   gap: 1rem;
   margin-bottom: 3rem;
 
-  
+  a {
+    text-decoration-thickness: 0.075rem;
+  }
+
   p.title {
     font-family: 'eightgon', 'sans-serif';
     font-size: 3rem;

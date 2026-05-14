@@ -3,7 +3,7 @@ function KeepAndroidOpenScript() {
 
     let kao_script = document.createElement("script");
     kao_script.id = "kao-script";
-    kao_script.src = "https://keepandroidopen.org/banner.js?size=mini&animation=off?id=keep-android-open";
+    kao_script.src = "https://keepandroidopen.org/banner.js?size=mini&animation=off&id=keep-android-open";
     kao_script.async = true;
     //kao_script.type = "text/javascript";
 
