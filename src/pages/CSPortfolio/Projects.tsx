@@ -18,9 +18,11 @@ function Projects() {
     DocumentTitle("Projects | CS Portfolio");
 
 	return (
-		<Container maxWidth={false} id="cs-portfolio-projects" sx={{ mt: 12 }} >
-        <NavbarCS />
-        <ThemeProvider theme={csLight}>
+		<Container maxWidth={false} id="cs-portfolio-projects" sx={{ pt: 12 }} >
+        <Box id="height-wrapper">
+                
+            <ThemeProvider theme={csLight}>
+            <NavbarCS />
 
             <Typography className="cs-page-title">
                 Projects
@@ -34,9 +36,12 @@ function Projects() {
             <ProjectsSwe />
             <ProjectsData />
             <ProjectsGamedev />
+            
+            </ThemeProvider>
+        </Box>
+
+        <Footer bgColor="" tColor="csLight.palette.secondary.contrastText" />
       
-            <Footer bgColor="" tColor="csLight.palette.secondary.contrastText" />
-        </ThemeProvider>
 		</Container>
 	)
 };

@@ -78,7 +78,7 @@ function ProjectsWebdev() {
                             </Box>
                         </Box>
                         <Suspense fallback={<GalleryLazyLoad />}>                        
-                            <RowsPhotoAlbum photos={portfolio2Photos} targetRowHeight={400} rowConstraints={{ singleRowMaxHeight: 700 }}></RowsPhotoAlbum>
+                            <RowsPhotoAlbum photos={portfolio2Photos} targetRowHeight={400} rowConstraints={{ singleRowMaxHeight: 400 }}></RowsPhotoAlbum>
                         </Suspense>
                     </Box> {/* End project-stack-gallery */}
                 </Box>

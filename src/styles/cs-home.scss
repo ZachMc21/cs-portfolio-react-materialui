@@ -76,6 +76,9 @@
   }
 
   /* General About me section */
+  div#about {
+    margin-bottom: 1rem;
+  }
   div#about-content {
     width: 80%;
     margin: 0 auto;
@@ -91,6 +94,7 @@
   div#about-blurb {
     border: none;
     padding-right: 0;
+
   }
   div#about-education-container {
     display: flex;

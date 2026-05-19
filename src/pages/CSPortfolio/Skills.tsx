@@ -171,6 +171,7 @@ function Skills() {
                             </Typography>
                             <Box className="tech-stack-container">
                                 <Box className="tech-logo-container"><img className="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" height="40" width="auto" /></Box>
+                                <Box className="tech-logo-container"><img className="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Affinity_%28App%29_Logo.svg" height="40" width="auto" /></Box>
                             </Box>
                         </Box> {/* end #design */}
                     </Box>

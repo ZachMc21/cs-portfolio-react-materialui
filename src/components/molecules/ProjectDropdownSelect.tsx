@@ -75,7 +75,7 @@ export default function ProjectDropdownSelect() {
           <MenuItem disabled value="">
             <Typography>Choose a field...</Typography>
           </MenuItem>
-          <MenuItem value={"webdev"}>
+          <MenuItem value={"webdev"} className="cs-menu-option">
             <Typography className="dropdown">Web Development</Typography>
           </MenuItem>
           <MenuItem value={"swe"} className="cs-menu-option">

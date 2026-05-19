@@ -1,6 +1,15 @@
 @use "cs-variables" as cs;
 @forward "cs-main";
 
+
+div#height-wrapper {
+  display: flex;
+  flex-direction: column;
+  /* window height - navbar height - footer height */
+  /* I think there's a better way to do this */
+  min-height: calc(100vh - 16px - 42px);
+}
+
 #project-dropdown-formcontrol {
   margin-bottom: 2rem;
 }

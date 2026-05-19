@@ -155,7 +155,7 @@ function CSPortfolio() {
                             <Typography>Projects</Typography>
                             <KeyboardArrowRightIcon />
                         </Link>
-                            <Typography className="pages-text">A description of school, work, and personal projects I've worked on. <br className="line-break"/> Includes screenshots, code snippets, and retrospectives.</Typography>
+                            <Typography className="pages-text">A description of school, work, and personal projects I've worked on. <br className="line-break"/> Includes retrospective thougths and screenshots of the final products.</Typography>
                     </Box>
 
                     <Box id="extras-link" className="pages-overview-child">
