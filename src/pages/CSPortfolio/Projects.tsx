@@ -2,7 +2,6 @@
 import { Box, Container, ThemeProvider, Typography } from '@mui/material';
 import Footer from '../../components/molecules/Footer';
 
-import ConstructionNotice from '../../components/molecules/ConstructionNotice';
 import DocumentTitle from '../../utils/DocumentTitle';
 import NavbarCS from "../../components/organisms/navbar/NavbarCS";
 import csLight from "../../styles/csLight";
@@ -11,7 +10,7 @@ import ProjectsWebdev from '../../components/organisms/cs-projects/ProjectsWebde
 import ProjectsSwe from '../../components/organisms/cs-projects/ProjectsSwe';
 import ProjectsData from '../../components/organisms/cs-projects/ProjectsData';
 import ProjectsGamedev from '../../components/organisms/cs-projects/ProjectsGamedev';
-import "../../styles/cs-projects.scss";
+import "../../styles/cs-portfolio/projects.scss";
 
 function Projects() {
 	

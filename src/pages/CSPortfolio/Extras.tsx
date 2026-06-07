@@ -1,15 +1,13 @@
 
-import { Box, Container, Link, ThemeProvider, Typography } from '@mui/material';
-import ConstructionNotice from '../../components/molecules/ConstructionNotice';
+import { Box, Link, ThemeProvider, Typography } from '@mui/material';
 
 import Footer from '../../components/molecules/Footer';
 
 import DocumentTitle from '../../utils/DocumentTitle';
-import mountKaoScript from "../../utils/ComponentDidMount";
 import NavbarCS from "../../components/organisms/navbar/NavbarCS";
 
 import csLight from '../../styles/csLight';
-import "../../styles/cs-extras.scss";
+import "../../styles/cs-portfolio/extras.scss";
 import { Suspense, useEffect } from 'react';
 import GalleryLazyLoad from '../../components/molecules/ProjectsLazyLoad';
 import { RowsPhotoAlbum } from 'react-photo-album';

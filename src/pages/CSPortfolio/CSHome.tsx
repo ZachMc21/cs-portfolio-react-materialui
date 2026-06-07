@@ -4,7 +4,7 @@ import Footer from '../../components/molecules/Footer';
 
 import csLight from '../../styles/csLight';
 import homeTheme from '../../styles/homeTheme';
-import '../../styles/cs-home.scss';
+import '../../styles/cs-portfolio/home.scss';
 
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';

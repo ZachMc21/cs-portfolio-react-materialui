@@ -7,8 +7,8 @@ import NavbarCS from "../../components/organisms/navbar/NavbarCS";
 
 import csLight from '../../styles/csLight';
 import "../../styles/animations.scss";
-import "../../styles/cs-main.scss";
-import "../../styles/cs-skills.scss";
+import "../../styles/cs-portfolio/main.scss";
+import "../../styles/cs-portfolio/skills.scss";
 
 function Skills() {
 
@@ -196,6 +196,9 @@ function Skills() {
                             </Typography>
                             <Typography className="other-skill" sx={{ color: csLight.palette.secondary.contrastText }}>
                                 Agile software development
+                            </Typography>
+                            <Typography className="other-skill" sx={{ color: csLight.palette.secondary.contrastText }}>
+                                Test-driven development
                             </Typography>
                             <Typography className="other-skill" sx={{ color: csLight.palette.secondary.contrastText }}>
                                 Object-oriented programming

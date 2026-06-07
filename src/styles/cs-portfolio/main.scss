@@ -1,6 +1,6 @@
-@forward 'cs-navbar';
-@forward 'cs-footer';
-@use "cs-variables" as cs;
+@forward 'navbar';
+@forward '../footer';
+@use "variables" as cs;
 
 /* GENERAL STYLING */
 :root {

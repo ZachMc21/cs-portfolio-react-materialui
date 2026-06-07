@@ -2,7 +2,7 @@ import { Box, FormControl, InputLabel, MenuItem, Select, Typography, type Select
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import React from "react";
 import csLight from "../../styles/csLight";
-import "../../styles/cs-projects-dropdown.scss";
+import "../../styles/cs-portfolio/projects-dropdown.scss";
 import NotFound from "../../pages/NotFound/NotFound";
 
 export default function ProjectDropdownSelect() {

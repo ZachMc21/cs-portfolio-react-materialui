@@ -1,5 +1,5 @@
-@use "cs-variables" as cs;
-@forward "cs-main";
+@use "variables" as cs;
+@forward "main";
 
 /* Full-page styles */
 div#cs-skills-page {
@@ -93,7 +93,7 @@ div.broad-skill-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  column-gap: 2rem;
+  column-gap: 3rem;
   row-gap: 1rem;
 }
 

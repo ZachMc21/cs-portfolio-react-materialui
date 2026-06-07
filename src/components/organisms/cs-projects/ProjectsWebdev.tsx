@@ -1,5 +1,5 @@
 import { Box, Link, Typography } from "@mui/material";
-import "../../../styles/cs-projects-categories.scss";
+import "../../../styles/cs-portfolio/projects-categories.scss";
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import { RowsPhotoAlbum } from "react-photo-album";
 import "react-photo-album/rows.css";

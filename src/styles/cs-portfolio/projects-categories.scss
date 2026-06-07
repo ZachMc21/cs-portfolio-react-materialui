@@ -1,6 +1,6 @@
-@use "cs-variables" as cs;
-@use "animations" as anim;
-@forward "cs-main";
+@use "variables" as cs;
+@use "../animations" as anim;
+@forward "main";
 
 .project-item {
   display: flex;
