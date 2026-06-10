@@ -53,7 +53,7 @@ function Extras() {
 					<Typography className="h1 rotated">Certificates</Typography>
 					<Box className="extras-content">
 						<Box className="extras-img-text">
-							<img src="/src/assets/logos/datacamp.png" height="60" width="auto"></img>
+							<img src="/src/assets/logos/datacamp.png" height="50" width="auto"></img>
 							<Box className="extras-text">
 								<Typography className="h2">Datacamp</Typography>
 								<Typography className="subtitle">Introduction to SQL</Typography>
@@ -62,7 +62,7 @@ function Extras() {
 						</Box>
 						<Box className="extras-img-text ">
 							<a className="extras-img-text" href="https://www.hackerrank.com/profile/ZachMc21">
-								<img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Cib-hackerrank_%28CoreUI_Icons_v1.0.0%29.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" height="60" width="auto"></img>
+								<img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Cib-hackerrank_%28CoreUI_Icons_v1.0.0%29.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" height="50" width="auto"></img>
 								<Box className="extras-text">
 									<Typography className="h2">HackerRank</Typography>
 									<Typography className="subtitle">Coming soon</Typography>
@@ -71,7 +71,7 @@ function Extras() {
 						</Box>
 						<Box className="extras-img-text">
 							<a className="extras-img-text" href="https://www.freecodecamp.org/Zach-Mc-21">
-								<img src="/src/assets/logos/freecodecamp.png" height="60" width="auto"></img>
+								<img src="/src/assets/logos/freecodecamp.png" height="50" width="auto"></img>
 								<Box className="extras-text">
 									<Typography className="h2">FreeCodeCamp</Typography>
 									<Typography className="subtitle">Coming soon</Typography>
@@ -86,7 +86,7 @@ function Extras() {
 					<Box className="extras-content">
 						<Box className="extras-img-text">
 							<a className="extras-img-text" href="highgrade.mines.edu">
-								<img src="/src/assets/logos/high-grade.png" height="60" width="auto" ></img>
+								<img src="/src/assets/logos/high-grade.png" height="50" width="auto" ></img>
 								
 								<Box className="extras-text">
 									<Typography className="h2">High Grade</Typography>
@@ -143,7 +143,7 @@ function Extras() {
 					<Typography className="h1 rotated">High School</Typography>
 					<Box className="extras-content">
 						<Box className="extras-img-text">
-							<img src="/src/assets/logos/cyber-patriot.png" height="60px" width="auto"></img>
+							<img src="/src/assets/logos/cyber-patriot.png" height="50px" width="auto"></img>
 							<Box className="extras-text">
 								<Typography className="h2">AFA CyberPatriot</Typography>
 								<Typography className="subtitle">Grades 8th-12th</Typography>
