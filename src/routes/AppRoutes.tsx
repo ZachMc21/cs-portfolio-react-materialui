@@ -1,6 +1,8 @@
 // src/routes/Routes.js
 import { createBrowserRouter, Outlet } from "react-router-dom";
 import Homepage from "../pages/Homepage/Homepage";
+import NotFound from "../pages/NotFound/NotFound";
+
 import CSPortfolio from "../pages/CSPortfolio/CSHome";
 import Skills from "../pages/CSPortfolio/Skills";
 import Projects from "../pages/CSPortfolio/Projects";
@@ -9,9 +11,9 @@ import Extras from "../pages/CSPortfolio/Extras";
 import PhotographyPortfolio from "../pages/PhotographyPortfolio/PhotographyPortfolio";
 import PublishedWorks from "../pages/PhotographyPortfolio/PublishedWorks";
 import CompletePhotoGallery from "../pages/PhotographyPortfolio/CompletePhotoGallery";
+
 import MusicDatabase from "../pages/MusicDatabase/MusicDatabase";
 import TextRPG from "../pages/TextRPG/TextRPG";
-import NotFound from "../pages/NotFound/NotFound";
 
  
 // Define your routes here

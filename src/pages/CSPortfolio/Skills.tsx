@@ -161,6 +161,7 @@ function Skills() {
                                 Data Science
                             </Typography>
                             <Box className="tech-stack-container">
+                                <Box className="tech-logo-container"><img className="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg" height="40" width="auto" /></Box>
                                 <Box className="tech-logo-container"><img className="tech-logo" src="https://matplotlib.org/3.6.0/_images/sphx_glr_logos2_002_2_0x.png" height="40" width="auto" /></Box>
                                 <Box className="tech-logo-container"><img className="tech-logo" src="https://pandas.pydata.org/static/img/pandas_mark.svg" height="40" width="auto" /></Box>
                             </Box>
