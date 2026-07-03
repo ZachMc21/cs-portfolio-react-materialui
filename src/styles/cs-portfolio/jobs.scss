@@ -1,0 +1,63 @@
+@use "variables" as cs;
+@forward "main";
+
+div#cs-jobs-page {
+  padding: 1.5rem;
+}
+
+//Similar to project-categories.css .project-item
+div.job-container {
+  padding: 1rem;
+  margin-bottom: 2rem;
+
+  div.job-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+  }
+
+  div.title-date-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    //Similar to project-categories.css p.project-item-title
+    p.job-header-title {
+      font-family: 'eightgon', 'sans-serif';
+      font-size: 2.75rem;
+      text-align: left;
+      color: cs.$primary-text;
+      line-height: 2.5rem;
+    }
+
+    p.job-dates {
+      font-style: italic;
+      text-align: left;
+    }
+  }
+
+  div.job-company-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    padding-right: 0.5rem;
+  }
+
+  div.job-subtitle-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  
+    p.job-header-company {
+      font-size: 1.25rem;
+    }
+
+    p.job-header-location {
+      font-size: 1rem;
+      font-style: italic;
+    }
+  }
+}

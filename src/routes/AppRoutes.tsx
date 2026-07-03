@@ -7,6 +7,7 @@ import CSPortfolio from "../pages/CSPortfolio/CSHome";
 import Skills from "../pages/CSPortfolio/Skills";
 import Projects from "../pages/CSPortfolio/Projects";
 import Extras from "../pages/CSPortfolio/Extras";
+import Jobs from "../pages/CSPortfolio/Jobs";
 
 import PhotographyPortfolio from "../pages/PhotographyPortfolio/PhotographyPortfolio";
 import PublishedWorks from "../pages/PhotographyPortfolio/PublishedWorks";
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
 			{
 				path: "/cs-portfolio/skills",
 				element: <Skills />,
+			},
+			{
+				path: "/cs-portfolio/jobs",
+				element: <Jobs />,
 			},
 			{
 				path: "/cs-portfolio/projects",
