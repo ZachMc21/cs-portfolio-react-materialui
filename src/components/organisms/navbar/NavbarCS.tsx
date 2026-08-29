@@ -1,5 +1,5 @@
 import { Box, Container, CssBaseline, ThemeProvider, Link  } from "@mui/material";
-import homeLight from "../../../styles/homeLight";
+import homeLight from "../../../styles/homepage/homeLight";
 import csLight from '../../../styles/csLight';
 import "./navbar_script";
 

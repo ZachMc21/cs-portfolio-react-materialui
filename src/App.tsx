@@ -1,7 +1,7 @@
 import { ThemeProvider } from '@mui/material/styles';
 
 import './App.css'
-import homeLight from "./styles/homeLight";
+import homeLight from "./styles/homepage/homeLight";
 
 import { RouterProvider } from "react-router-dom";
 import router from "./routes/AppRoutes";

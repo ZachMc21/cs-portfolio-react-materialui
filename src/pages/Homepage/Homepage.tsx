@@ -1,7 +1,7 @@
 import { CssBaseline, Box, Typography, ThemeProvider, Button, alpha } from "@mui/material";
 import Footer from "../../components/molecules/Footer";
-import homeThemeLight from "../../styles/homeLight";
-import homeThemeDark from "../../styles/homeDark";
+import homeThemeLight from "../../styles/homepage/homeLight";
+import homeThemeDark from "../../styles/homepage/homeDark";
 import HomepageButton from "../../components/atoms/HomepageButton";
 import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
 import DocumentTitle from "../../utils/DocumentTitle";

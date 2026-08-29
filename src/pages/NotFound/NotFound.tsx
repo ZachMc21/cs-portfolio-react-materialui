@@ -2,7 +2,7 @@ import { ThemeProvider } from '@emotion/react';
 import ConstructionNotice from '../../components/molecules/ConstructionNotice';
 import Footer from '../../components/molecules/Footer';
 import DocumentTitle from '../../utils/DocumentTitle';
-import HomeLight from "../../styles/homeLight";
+import HomeLight from "../../styles/homepage/homeLight";
 
 function NotFound() {
 

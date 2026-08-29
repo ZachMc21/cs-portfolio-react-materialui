@@ -3,7 +3,7 @@ import { Box, Link, ThemeProvider, Typography } from '@mui/material';
 import Footer from '../../components/molecules/Footer';
 
 import csLight from '../../styles/csLight';
-import homeTheme from '../../styles/homeTheme';
+import homeTheme from '../../styles/archives/homeTheme';
 import '../../styles/cs-portfolio/home.scss';
 
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
