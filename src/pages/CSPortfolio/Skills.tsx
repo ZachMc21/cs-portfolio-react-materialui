@@ -94,7 +94,7 @@ function Skills() {
                                 </Box>
                                 <Box className="tech-stack-row">
                                     <Box className="tech-logo-container"><img className="tech-logo" src="/src/assets/logos/java.png" height="40" width="auto" /></Box>
-                                    <Box className="tech-logo-container"><img className="tech-logo" src="https://en.vetores.org/d/c-plus-plus.svg" height="40" width="auto" /></Box>
+                                    <Box className="tech-logo-container"><img className="tech-logo" src="/src/assets/logos/c-plus-plus.png" height="40" width="auto" /></Box>
                                 </Box>
                             </Box>
                         </Box> {/* end #front-end-core */}

@@ -19,7 +19,6 @@ const NavbarCS = () => {
 
             <Box id="pages-container" sx = {{ display: "flex", flexDirection: "row", justifyContent: "flex-start", alignItems: "center", gap: "2em" }}>
                 <Link href="/cs-portfolio/skills" className="navbar-link">Skills</Link>
-                <Link href="/cs-portfolio/jobs" className="navbar-link">Jobs</Link>
                 <Link href="/cs-portfolio/projects" className="navbar-link">Projects</Link>
                 <Link href="/cs-portfolio/extras" className="navbar-link">Extras</Link>
             </Box>
