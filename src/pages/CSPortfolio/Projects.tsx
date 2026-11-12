@@ -39,7 +39,7 @@ function Projects() {
             </ThemeProvider>
         </Box>
 
-        <Footer bgColor="" tColor="csLight.palette.secondary.contrastText" />
+        <Footer bgColor="" textColor="csLight.palette.secondary.contrastText" />
       
 		</Container>
 	)

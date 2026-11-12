@@ -60,7 +60,7 @@ function Extras() {
 								<Typography className="subtitle">Intermediate SQL</Typography>
 							</Box>
 						</Box>
-						<Box className="extras-img-text ">
+						<Box className="extras-img-text">
 							<a className="extras-img-text" href="https://www.hackerrank.com/profile/ZachMc21">
 								<img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Cib-hackerrank_%28CoreUI_Icons_v1.0.0%29.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" height="50" width="auto"></img>
 								<Box className="extras-text">
@@ -162,7 +162,7 @@ function Extras() {
 		<div id="keep-android-open">
 		</div>
 
-		<Footer bgColor="" tColor="csLight.palette.secondary.contrastText" />
+		<Footer bgColor="" textColor="csLight.palette.secondary.contrastText" />
 		</ThemeProvider>
 		</Box>
 	);

@@ -10,7 +10,7 @@ function PhotographyPortfolio() {
 	return (
 		<div id="photo-portfolio-parent">
 			<ConstructionNotice title={"Photography Portfolio"} />
-            <Footer bgColor="" tColor="white" />
+            <Footer bgColor="" textColor="black" />
 		</div>
 	);
 

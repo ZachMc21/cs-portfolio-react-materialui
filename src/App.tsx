@@ -11,10 +11,9 @@ function App() {
 
   return (
     <ThemeProvider theme={homeLight}>
-        <Box className="App">
-            <RouterProvider router={router} />
-        </Box>
-        
+      <Box className="App">
+        <RouterProvider router={router} />
+      </Box>
     </ThemeProvider>
   );
 }

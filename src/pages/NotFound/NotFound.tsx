@@ -12,7 +12,7 @@ function NotFound() {
 		<div id="page-not-found-parent">
             <ThemeProvider theme={HomeLight}>
                 <ConstructionNotice title={"Page Not Found"} />
-                <Footer bgColor="" tColor="white" />
+                <Footer bgColor="" textColor="white" />
             </ThemeProvider>
 		</div>
 	);

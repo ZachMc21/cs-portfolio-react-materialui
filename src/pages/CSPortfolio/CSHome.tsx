@@ -3,7 +3,7 @@ import { Box, Link, ThemeProvider, Typography } from '@mui/material';
 import Footer from '../../components/molecules/Footer';
 
 import csLight from '../../styles/csLight';
-import homeTheme from '../../styles/archives/homeTheme';
+import homeTheme from '../../styles/archives/homeThemeLight';
 import '../../styles/cs-portfolio/home.scss';
 
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
@@ -23,6 +23,8 @@ function CSPortfolio() {
     DocumentTitle("Zach Magloughlin | Computer Science Portfolio");
     EmailNewTab();
 
+    console.log("CSHome page is being loaded...");
+    
 	return (
 		<Box className="cs-page" id="cs-page">
 			<ThemeProvider theme={csLight}>
@@ -167,7 +169,7 @@ function CSPortfolio() {
                     </Box>
                 </Box>
 
-                <Footer bgColor="" tColor="csLight.palette.primary.contrastText" />
+                <Footer bgColor="" textColor="csLight.palette.primary.contrastText" />
 			</ThemeProvider>
             </ThemeProvider>
             <Outlet />

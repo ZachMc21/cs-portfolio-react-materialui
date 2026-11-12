@@ -1,4 +1,4 @@
-import { Container, CssBaseline } from '@mui/material';
+import { Box, Container, CssBaseline } from '@mui/material';
 import ConstructionIcon from '@mui/icons-material/Construction';
 import BackButton from '../atoms/BackButton.tsx';
 
@@ -12,16 +12,16 @@ interface ConstructionProps {
 const ConstructionNotice = ({ title }: ConstructionProps) => {
 
 	return (
-		<Container>
+		<Box>
 			<CssBaseline />
 
-			<div className="construction-notice">
-				<ConstructionIcon sx={{ fontSize: "6rem", marginTop: "4rem", marginBottom: "1rem" }} />
+			<Box className="construction-notice">
+				<ConstructionIcon sx={{ fontSize: "6rem" }} />
 				<h1 style = {{ marginBottom: 0 }}>{title}</h1>
 				<p style={{ marginBottom: "2rem" }}>This page is under construction. <br /> Check back later!</p>
 				<BackButton />
-			</div>
-		</Container>
+			</Box>
+		</Box>
 	);
 }
 

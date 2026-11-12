@@ -11,7 +11,7 @@ function MusicDatabase() {
 	return (
 		<div id="music-database">
 			<ConstructionNotice title={"Music Database"} />
-			<Footer bgColor="" tColor="black" />
+			<Footer bgColor="" textColor="black" />
 		</div>
 	);
 

@@ -6,13 +6,13 @@ const currentDate = new Date();
 
 interface FooterProps {
 	bgColor: string;
-    tColor: string;
+    textColor: string;
 }
 
-const Footer = ( {bgColor, tColor}: FooterProps ) => {
+const Footer = ( {bgColor, textColor}: FooterProps ) => {
     if(bgColor=="") {
         return (
-            <Box id="footer" sx={{ color: tColor }}>
+            <Box id="footer" sx={{ color: textColor }}>
                 <a className="footer-nav" href="/">Return to Portfolio Homepage</a>
                 <p className="footer-attribution">© {currentDate.getFullYear()} Zach Magloughlin. All rights reserved.</p>
             </Box>
@@ -20,7 +20,7 @@ const Footer = ( {bgColor, tColor}: FooterProps ) => {
     }
     else {
         return (
-            <Box id="footer" sx={{ color: tColor, backgroundColor: bgColor }}>
+            <Box id="footer" sx={{ color: textColor, backgroundColor: bgColor }}>
                 <a className="footer-nav" href="/">Return to Portfolio Homepage</a>
                 <p className="footer-attribution">© {currentDate.getFullYear()} Zach Magloughlin. All rights reserved.</p>
             </Box>
