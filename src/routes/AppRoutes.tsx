@@ -25,7 +25,7 @@ import TextRPG from "../pages/TextRPG/TextRPG";
 // }
 const router = createBrowserRouter([
   {
-    path: "/", // URL path
+    path: "/cs-portfolio-react-materialui", // URL path
     element: <Homepage />, // Component to render
   },
   {
