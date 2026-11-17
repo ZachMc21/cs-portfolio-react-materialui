@@ -3,7 +3,7 @@ import "../../../styles/cs-portfolio/projects-categories.scss";
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import { RowsPhotoAlbum } from "react-photo-album";
 import "react-photo-album/rows.css";
-import { Suspense, lazy } from "react";
+import { Suspense } from "react";
 import GalleryLazyLoad from "../../molecules/ProjectsLazyLoad";
 
 const photosPath: string = "/src/assets/projects/";

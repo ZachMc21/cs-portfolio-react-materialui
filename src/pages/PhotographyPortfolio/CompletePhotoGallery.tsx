@@ -10,7 +10,7 @@ function CompletePhotoGallery() {
 	return (
 		<div id="photo-portfolio-gallery">
 			<ConstructionNotice title={"Photo Gallery"} />
-            <Footer bgColor="" tColor="white" />
+            <Footer bgColor="" textColor="white" />
 		</div>
 	);
 

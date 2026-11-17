@@ -10,7 +10,7 @@ function PublishedWorks() {
 	return (
 		<div id="photo-portfolio-published">
 			<ConstructionNotice title={"Published Photography"} />
-            <Footer bgColor="" tColor="white" />
+            <Footer bgColor="" textColor="white" />
 		</div>
 	);
 

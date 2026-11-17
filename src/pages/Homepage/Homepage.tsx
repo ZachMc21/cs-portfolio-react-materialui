@@ -1,4 +1,4 @@
-import { CssBaseline, Box, Typography, ThemeProvider, Button, alpha, FormGroup, FormControlLabel, Switch, createTheme, useTheme, useColorScheme, FormControl, FormLabel, RadioGroup, Radio } from "@mui/material";
+import { CssBaseline, Box, Typography, ThemeProvider, Button, alpha, createTheme, useTheme } from "@mui/material";
 import Footer from "../../components/molecules/Footer";
 //import homeThemeLight from "../../styles/homepage/homeLight";
 //import homeThemeDark from "../../styles/homepage/homeDark";
@@ -8,9 +8,6 @@ import DocumentTitle from "../../utils/DocumentTitle";
 
 import "../../styles/homepage/homepage.scss";
 import { useState } from "react";
-import homeThemeLight from "../../styles/archives/homeThemeLight";
-import homeThemeDark from "../../styles/archives/homeThemeDark";
-import csTheme from "../../styles/archives/csTheme";
 
 function Homepage() {
     

@@ -1,5 +1,5 @@
 
-import { Box, Container, ThemeProvider, Typography } from '@mui/material';
+import { Box, ThemeProvider, Typography } from '@mui/material';
 import Footer from '../../components/molecules/Footer';
 
 import DocumentTitle from '../../utils/DocumentTitle';
@@ -38,6 +38,8 @@ function Jobs() {
 
                 </Box>
             </Box>
+
+            <Footer bgColor="" textColor="csLight.palette.secondary.contrastText"/>
 
         </ThemeProvider>
         </Box>

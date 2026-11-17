@@ -1,4 +1,4 @@
-import { Box, Container, CssBaseline } from '@mui/material';
+import { Box, CssBaseline } from '@mui/material';
 import ConstructionIcon from '@mui/icons-material/Construction';
 import BackButton from '../atoms/BackButton.tsx';
 

@@ -221,7 +221,7 @@ function Skills() {
                 </Box> {/* end other skills */}
             </Box>
 
-            <Footer bgColor="" tColor="csLight.palette.secondary.contrastText" />
+            <Footer bgColor="" textColor="csLight.palette.secondary.contrastText" />
 
         </ThemeProvider>
 		</Box>

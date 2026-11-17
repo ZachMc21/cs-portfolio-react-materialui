@@ -1,4 +1,4 @@
-import { Box, Container, createTheme, CssBaseline, ThemeProvider } from '@mui/material';
+import { Box, createTheme, CssBaseline, ThemeProvider } from '@mui/material';
 import ConstructionNotice from '../../components/molecules/ConstructionNotice';
 import Footer from '../../components/molecules/Footer';
 import DocumentTitle from '../../utils/DocumentTitle';

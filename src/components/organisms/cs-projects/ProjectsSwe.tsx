@@ -1,15 +1,8 @@
-import { Box, Link, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import "../../../styles/cs-portfolio/projects-categories.scss";
-import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import "react-photo-album/rows.css";
 
-const photosPath: string = "/src/assets/projects/";
-
-const portfolio2Photos = [
-  { src: photosPath + "webdev-cs-portfolio_01.png", width: 1263, height: 579 },
-  { src: photosPath + "webdev-cs-portfolio_02.png", width: 658, height: 520 },
-  { src: photosPath + "webdev-cs-portfolio_03.png", width: 658, height: 739 },
-];
+//const photosPath: string = "/src/assets/projects/";
 
 function ProjectsSwe() {
 

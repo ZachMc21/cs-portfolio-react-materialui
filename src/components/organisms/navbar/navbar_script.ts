@@ -1,4 +1,3 @@
-import { useLocation } from "react-router-dom";
 //import type { NavbarLink } from "../../types/navbar.types";
 //import { useState } from "react";
 
@@ -26,7 +25,7 @@ window.onload = function() {
 }
 
 window.onpopstate = function() {
-    const pagesContainer = document.getElementById("pages-container");
+    //const pagesContainer = document.getElementById("pages-container");
 
     let navLinks = Array.from(document.getElementsByClassName("nav-link"));
     console.log(navLinks);
