@@ -29,7 +29,7 @@ const router = createBrowserRouter([
     element: <Homepage />, // Component to render
   },
   {
-    path: "/cs-portfolio",
+    path: "/cs-portfolio-react-materialui/cs-portfolio",
     element: <Outlet />,
     errorElement: <NotFound />, // Handles errors in this route/children
 		children: [
@@ -38,21 +38,21 @@ const router = createBrowserRouter([
 				element: <CSPortfolio />,
 			},
 			{
-				path: "/cs-portfolio/skills",
+				path: "/cs-portfolio-react-materialui/cs-portfolio/skills",
 				element: <Skills />,
 			},
 			{
-				path: "/cs-portfolio/projects",
+				path: "/cs-portfolio-react-materialui/cs-portfolio/projects",
 				element: <Projects />,
 			},
 			{
-				path: "/cs-portfolio/extras",
+				path: "/cs-portfolio-react-materialui/cs-portfolio/extras",
 				element: <Extras />,
 			}
 		]
   },
   {
-    path: "/photography-portfolio",
+    path: "/cs-portfolio-react-materialui/photography-portfolio",
     element: <Outlet />,
     errorElement: <NotFound />, // Handles errors in this route/children
 		children: [
@@ -61,21 +61,21 @@ const router = createBrowserRouter([
 				element: <PhotographyPortfolio />,
 			},
 			{
-				path: "/photography-portfolio/published",
+				path: "/cs-portfolio-react-materialui/photography-portfolio/published",
 				element: <PublishedWorks />,
 			},
 			{
-				path: "/photography-portfolio/gallery",
+				path: "/cs-portfolio-react-materialui/photography-portfolio/gallery",
 				element: <CompletePhotoGallery />,
 			},
 		]
   },
   {
-    path: "/music-database",
+    path: "/cs-portfolio-react-materialui/music-database",
     element: <MusicDatabase />,
   },
   {
-    path: "/text-rpg",
+    path: "/cs-portfolio-react-materialui/text-rpg",
     element: <TextRPG />,
   },
   {
