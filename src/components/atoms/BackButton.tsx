@@ -25,13 +25,13 @@ const BackButton: React.FC = () => {
 		<Container>
 			<ThemeProvider theme={csLight}>
 			<Button onClick={handleBack} variant="contained" className="construction-notice"
-                sx={{
-                    mx: "auto", mt: 3, p: 3, fontSize: 2,
-                    color: csLight.palette.secondary.contrastText,
-                    backgroundColor: alpha(csLight.palette.secondary.light, 0.8),
-                    display: "flex", flexDirection: "column", justifyContent: "center", justifySelf: "center",
-                    '&:hover': { transform: "scale3d(1.05, 1.05, 1)" }
-                }}>
+        sx={{
+            mx: "auto", mt: 3, p: 3, fontSize: 2,
+            color: csLight.palette.secondary.contrastText,
+            backgroundColor: alpha(csLight.palette.secondary.light, 0.8),
+            display: "flex", flexDirection: "column", justifyContent: "center", justifySelf: "center",
+            '&:hover': { transform: "scale3d(1.05, 1.05, 1)" }
+        }}>
 				<Typography sx={{ fontStyle: "italic" }}> Go back </Typography>
 				<ArrowBackIcon />
 			</Button>
