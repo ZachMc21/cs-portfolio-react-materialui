@@ -12,7 +12,6 @@ jspm_packages/
 .pnp.js
 
 # Distribution directories
-dist/
 dist-ssr
 
 #Not sure what this is (defaulted from vite)
