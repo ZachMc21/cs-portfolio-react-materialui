@@ -25,7 +25,7 @@ const NavbarCS = () => {
 
             {/* Icon on mobile, text on desktop */}
             <Link href="/cs-portfolio-react-materialui/cs-portfolio" className="navbar-link navbar-link-home">Return to <br /> CS Homepage</Link>
-            <Link href="/cs-portfolio-react-materialui" className="navbar-link navbar-icon-home">
+            <Link href="/cs-portfolio-react-materialui/cs-portfolio" className="navbar-link navbar-icon-home">
                 <HomeFilledIcon></HomeFilledIcon>
             </Link>
 

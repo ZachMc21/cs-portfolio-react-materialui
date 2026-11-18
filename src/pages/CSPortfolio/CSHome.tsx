@@ -97,7 +97,7 @@ function CSPortfolio() {
 
                     {/* TODO fix link jumps below & redo clicked styling */}
                     <Box className="section-links-row">
-                        <Box sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center",
+                        <Box sx = {{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center",
                             color: csLight.palette.primary.contrastText }}>
                             <NavLink className="section-link nav-link" to="#skills">
                                 <KeyboardArrowRightIcon sx = {{ fontSize: "1.5rem" }} />

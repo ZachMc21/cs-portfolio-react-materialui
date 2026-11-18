@@ -74,6 +74,10 @@
     flex-direction: row;
     gap: 2rem;
   }
+  a.nav-link {
+    display: flex;
+    flex-direction: row;
+  }
 
   /* General About me section */
   div#about {
