@@ -1,15 +1,15 @@
 
 @font-face {
   font-family: aller;
-  src: url(./assets/fonts/aller.regular.ttf);
+  src: url(/fonts/aller.regular.ttf);
 }
 @font-face {
   font-family: eightgon;
-  src: url(./assets/fonts/eightgon.regular.ttf);
+  src: url(/fonts/eightgon.regular.ttf);
 }
 @font-face {
   font-family: rollbox;
-  src: url(./assets/fonts/rollbox.regular.ttf);
+  src: url(/fonts/rollbox.regular.ttf);
 }
 
 

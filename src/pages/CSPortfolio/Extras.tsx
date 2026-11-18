@@ -12,13 +12,18 @@ import { Suspense, useEffect } from 'react';
 import GalleryLazyLoad from '../../components/molecules/ProjectsLazyLoad';
 import { RowsPhotoAlbum } from 'react-photo-album';
 
+import DatacampLogo from "/logos/datacamp.png";
+import FreeCodeCampLogo from "/logos/freecodecamp.png";
+import HighGradeLogo from "/logos/high-grade.png";
+import CyberPatriotLogo from "/logos/cyber-patriot.png";
 
-const photosPath: string = "/src/assets/extras/";
-
+// //const photosPath: string = "/src/assets/extras/";
+import CrossStitch01 from "/extras/cross-stitch_01.jpg";
+import CrossStitch02 from "/extras/cross-stitch_02.jpg";
 const hobbyPhotos = [
-  { src: photosPath + "cross-stitch_01.jpg", width: 424, height: 386 },
-  { src: photosPath + "cross-stitch_02.jpg", width: 462, height: 462 },
-]
+  { src: CrossStitch01, width: 424, height: 386 },
+  { src: CrossStitch02, width: 462, height: 462 },
+];
 
 function Extras() {
 
@@ -53,7 +58,7 @@ function Extras() {
 					<Typography className="h1 rotated">Certificates</Typography>
 					<Box className="extras-content">
 						<Box className="extras-img-text">
-							<img src="/src/assets/logos/datacamp.png" height="50" width="auto"></img>
+							<img src={DatacampLogo} height="50" width="auto"></img>
 							<Box className="extras-text">
 								<Typography className="h2">Datacamp</Typography>
 								<Typography className="subtitle">Introduction to SQL</Typography>
@@ -71,7 +76,7 @@ function Extras() {
 						</Box>
 						<Box className="extras-img-text">
 							<a className="extras-img-text" href="https://www.freecodecamp.org/Zach-Mc-21">
-								<img src="/src/assets/logos/freecodecamp.png" height="50" width="auto"></img>
+								<img src={FreeCodeCampLogo} height="50" width="auto"></img>
 								<Box className="extras-text">
 									<Typography className="h2">FreeCodeCamp</Typography>
 									<Typography className="subtitle">Coming soon</Typography>
@@ -86,7 +91,7 @@ function Extras() {
 					<Box className="extras-content">
 						<Box className="extras-img-text">
 							<a className="extras-img-text" href="highgrade.mines.edu">
-								<img src="/src/assets/logos/high-grade.png" height="50" width="auto" ></img>
+								<img src={HighGradeLogo} height="50" width="auto" ></img>
 								
 								<Box className="extras-text">
 									<Typography className="h2">High Grade</Typography>
@@ -143,7 +148,7 @@ function Extras() {
 					<Typography className="h1 rotated">High School</Typography>
 					<Box className="extras-content">
 						<Box className="extras-img-text">
-							<img src="/src/assets/logos/cyber-patriot.png" height="50px" width="auto"></img>
+							<img src={CyberPatriotLogo} height="50px" width="auto"></img>
 							<Box className="extras-text">
 								<Typography className="h2">AFA CyberPatriot</Typography>
 								<Typography className="subtitle">Grades 8th-12th</Typography>

@@ -10,6 +10,7 @@ import ProjectsWebdev from '../../components/organisms/cs-projects/ProjectsWebde
 import ProjectsSwe from '../../components/organisms/cs-projects/ProjectsSwe';
 import ProjectsData from '../../components/organisms/cs-projects/ProjectsData';
 import ProjectsGamedev from '../../components/organisms/cs-projects/ProjectsGamedev';
+
 import "../../styles/cs-portfolio/projects.scss";
 
 function Projects() {

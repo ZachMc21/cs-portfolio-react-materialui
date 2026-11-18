@@ -79,26 +79,26 @@ function Homepage() {
                         sx={{ p: 5, py: 10, mb: 8, mt: 6, mx: 4,
 							backgroundColor: 'primary.contrastText', opacity: 0.8,
                             }}>
-                        <Typography variant="title" id="page-title"
+                        <Typography id="page-title"
                             sx={{ fontSize: 52, color: "white" }}>
                             Zach Magloughlin
                         </Typography>
 					</Box>
 					<Box id="home-buttons-container" sx={{ mx: 0, mb: 10 }}>
-						<HomepageButton href="/cs-portfolio" className="home-column" variant="contained" disableElevation>
+						<HomepageButton href="cs-portfolio" className="home-column" variant="contained" disableElevation>
 							<Typography sx={{ textWrap: 'balance', mb: "0.5rem" }}>Enter CS Portfolio</Typography>
 							<DoubleArrowIcon />
 						</HomepageButton>
-						<HomepageButton href="/photography-portfolio" className="home-column" variant="contained" disableElevation>
+						<HomepageButton href="photography-portfolio" className="home-column" variant="contained" disableElevation>
 							<Typography sx={{ textWrap: 'balance', mb: "0.5rem" }}>Enter Photography Portfolio</Typography>
 							<DoubleArrowIcon />
 						</HomepageButton>
 
-						<HomepageButton href="/music-database" className="home-column" variant="contained" disableElevation>
+						<HomepageButton href="music-database" className="home-column" variant="contained" disableElevation>
 							<Typography sx={{ textWrap: 'balance', mb: "0.5rem" }}>Enter Music Database </Typography>
 							<DoubleArrowIcon />
 						</HomepageButton>
-						<HomepageButton href="/text-rpg" className="home-column" variant="contained" disableElevation>
+						<HomepageButton href="text-rpg" className="home-column" variant="contained" disableElevation>
 							<Typography sx={{ textWrap: 'balance', mb: "0.5rem" }}>Enter Text RPG</Typography>
 							<DoubleArrowIcon />
 						</HomepageButton>

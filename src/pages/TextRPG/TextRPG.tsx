@@ -10,7 +10,7 @@ function TextRPG() {
 	const textRPGTheme = createTheme({
 		palette: {
 			background: {
-				default: "#23242E",
+				default: "#BDC7C7",
 			},
 			primary: {
 				main: "#000000",
@@ -29,7 +29,7 @@ function TextRPG() {
 		<Box id="text-rpg-parent" sx={{ backgroundImage: "none", backgroundColor: textRPGTheme.palette.background.default }}>
 			<ThemeProvider theme={textRPGTheme}>
 				<ConstructionNotice title={"Text RPG"} />
-				<Footer bgColor="" textColor={textRPGTheme.palette.primary.contrastText} />
+				<Footer bgColor="" textColor={textRPGTheme.palette.primary.main} />
 			</ThemeProvider>
 		</Box>
 		</>

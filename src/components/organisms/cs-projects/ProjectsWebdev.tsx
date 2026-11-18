@@ -6,30 +6,48 @@ import "react-photo-album/rows.css";
 import { Suspense } from "react";
 import GalleryLazyLoad from "../../molecules/ProjectsLazyLoad";
 
-const photosPath: string = "/src/assets/projects/";
+import ViteLogo from "/logos/vite.svg";
+import MUILogo from "/logos/mui.svg";
+import TSLogo from "/logos/typescript-128.png";
+import NotionLogo from "/logos/notion.svg";
+import RubyLogo from "/logos/ruby.png";
+import JekyllLogo from "/logos/jekyll.png";
+import SupabaseLogo from "/logos/supabase.png";
 
+import Portfolio2Photo1 from "/projects/webdev-cs-portfolio_01.png";
+import Portfolio2Photo2 from "/projects/webdev-cs-portfolio_02.png";
+import Portfolio2Photo3 from "/projects/webdev-cs-portfolio_03.png";
 const portfolio2Photos = [
-  { src: photosPath + "webdev-cs-portfolio_01.png", width: 1263, height: 579 },
-  { src: photosPath + "webdev-cs-portfolio_02.png", width: 658, height: 520 },
-  { src: photosPath + "webdev-cs-portfolio_03.png", width: 658, height: 739 },
+  { src: Portfolio2Photo1, width: 1263, height: 579 },
+  { src: Portfolio2Photo2, width: 658, height: 520 },
+  { src: Portfolio2Photo3, width: 658, height: 739 },
 ];
 
+import OmniaPhoto1 from "/projects/webdev-omnia_01.png";
+import OmniaPhoto2 from "/projects/webdev-omnia_02.gif";
+import OmniaPhoto3 from "/projects/webdev-omnia_03.gif";
 const omniaPhotos = [
-  { src: photosPath + "webdev-omnia_01.png", width: 1267, height: 577 },
-  { src: photosPath + "webdev-omnia_02.gif", width: 1266, height: 573 },
-  { src: photosPath + "webdev-omnia_03.gif", width: 529, height: 820 },
+  { src: OmniaPhoto1, width: 1267, height: 577 },
+  { src: OmniaPhoto2, width: 1266, height: 573 },
+  { src: OmniaPhoto3, width: 529, height: 820 },
 ];
 
+import HighGrade1 from "/projects/webdev-highgrade_01.png";
+import HighGrade2 from "/projects/webdev-highgrade_02.png";
+import HighGrade3 from "/projects/webdev-highgrade_03.png";
 const highgradePhotos = [
-  { src: photosPath + "webdev-highgrade_01.png", width: 1148, height: 526 },
-  { src: photosPath + "webdev-highgrade_02.png", width: 701, height: 702 },
-  { src: photosPath + "webdev-highgrade_03.png", width: 1146, height: 527 },
+  { src: HighGrade1, width: 1148, height: 526 },
+  { src: HighGrade2, width: 701, height: 702 },
+  { src: HighGrade3, width: 1146, height: 527 },
 ];
 
+import portfolio1Photo1 from "/projects/webdev-cs-portfolio-old_01.png";
+import portfolio1Photo2 from "/projects/webdev-cs-portfolio-old_02.gif";
 const portfolio1Photos = [
-  { src: photosPath + "webdev-cs-portfolio-old_01.png", width: 840, height: 529 },
-  { src: photosPath + "webdev-cs-portfolio-old_02.gif", width: 525, height: 799 },
+  { src: portfolio1Photo1, width: 840, height: 529 },
+  { src: portfolio1Photo2, width: 525, height: 799 },
 ];
+
 
 function ProjectsWebdev() {
 
@@ -61,7 +79,7 @@ function ProjectsWebdev() {
                                 <Typography className="subtitle">React</Typography>
                             </Box>
                             <Box className="tech-logo-name">
-                                <Box className="tech-logo-container"><img className="tech-logo-vt slide-bck-center anim-delay-3" src="/src/assets/logos/vite.svg" height="40" width="auto" /></Box>
+                                <Box className="tech-logo-container"><img className="tech-logo-vt slide-bck-center anim-delay-3" src={ViteLogo} height="40" width="auto" /></Box>
                                 <Typography className="subtitle">Vite</Typography>
                             </Box>
                             <Box className="tech-logo-name">
@@ -69,7 +87,7 @@ function ProjectsWebdev() {
                                 <Typography className="subtitle">SASS</Typography>
                             </Box>
                             <Box className="tech-logo-name">
-                                <Box className="tech-logo-container"><img className="tech-logo-hz slide-bck-center anim-delay-7" src="/src/assets/logos/mui.svg" /></Box>
+                                <Box className="tech-logo-container"><img className="tech-logo-hz slide-bck-center anim-delay-7" src={MUILogo} /></Box>
                                 <Typography className="subtitle">Material UI</Typography>
                             </Box>
                             <Box className="tech-logo-name">
@@ -110,11 +128,11 @@ function ProjectsWebdev() {
                                 <Typography className="subtitle">CSS3</Typography>
                             </Box>
                             <Box className="tech-logo-name">
-                                <Box className="tech-logo-container"><img className="tech-logo-vt slide-bck-center anim-delay-5" src="/src/assets/logos/typescript-128.png" height="40" width="auto" /></Box>
+                                <Box className="tech-logo-container"><img className="tech-logo-vt slide-bck-center anim-delay-5" src={TSLogo} height="40" width="auto" /></Box>
                                 <Typography className="subtitle">TypeScript</Typography>
                             </Box>
                             <Box className="tech-logo-name">
-                                <Box className="tech-logo-container"><img className="tech-logo-vt slide-bck-center anim-delay-7" src="/src/assets/logos/notion.svg" /></Box>
+                                <Box className="tech-logo-container"><img className="tech-logo-vt slide-bck-center anim-delay-7" src={NotionLogo} /></Box>
                                 <Typography className="subtitle">Notion</Typography>
                             </Box>
                             <Box className="tech-logo-name">
@@ -160,11 +178,11 @@ function ProjectsWebdev() {
                     <Box className="project-stack-gallery">
                         <Box className="project-stack">
                             <Box className="tech-logo-name">
-                                <Box className="tech-logo-container"><img className="tech-logo-vt slide-bck-center anim-delay-1" src="/src/assets/logos/ruby.png" height="40" width="auto" /></Box>
+                                <Box className="tech-logo-container"><img className="tech-logo-vt slide-bck-center anim-delay-1" src={RubyLogo} height="40" width="auto" /></Box>
                                 <Typography className="subtitle">Ruby 2.8</Typography>
                             </Box>
                             <Box className="tech-logo-name">
-                                <Box className="tech-logo-container"><img className="tech-logo-hz slide-bck-center anim-delay-3" src="/src/assets/logos/jekyll.png" height="40" width="auto" /></Box>
+                                <Box className="tech-logo-container"><img className="tech-logo-hz slide-bck-center anim-delay-3" src={JekyllLogo} height="40" width="auto" /></Box>
                                 <Typography className="subtitle">Jekyll 3</Typography>
                             </Box>
                             <Box className="tech-logo-name">
@@ -236,7 +254,7 @@ function ProjectsWebdev() {
                     </Box>
                     <Box className="project-stack project-stack-hz">
                         <Box className="tech-logo-name">
-                            <Box className="tech-logo-container"><img className="tech-logo-vt slide-bck-center anim-delay-5" src="/src/assets/logos/typescript-128.png" height="40" width="auto" /></Box>
+                            <Box className="tech-logo-container"><img className="tech-logo-vt slide-bck-center anim-delay-5" src={TSLogo} height="40" width="auto" /></Box>
                             <Typography className="subtitle">TypeScript</Typography>
                         </Box>
                         <Box className="tech-logo-name">
@@ -244,7 +262,7 @@ function ProjectsWebdev() {
                             <Typography className="subtitle">Tailwind CSS</Typography>
                         </Box>
                         <Box className="tech-logo-name">
-                            <Box className="tech-logo-container"><img className="tech-logo-vt slide-bck-center anim-delay-5" src="/src/assets/logos/supabase.png" height="40" width="auto" /></Box>
+                            <Box className="tech-logo-container"><img className="tech-logo-vt slide-bck-center anim-delay-5" src={SupabaseLogo} height="40" width="auto" /></Box>
                             <Typography className="subtitle">Supabase</Typography>
                         </Box>
                     </Box>

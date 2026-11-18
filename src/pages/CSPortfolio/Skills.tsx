@@ -10,6 +10,26 @@ import "../../styles/animations.scss";
 import "../../styles/cs-portfolio/main.scss";
 import "../../styles/cs-portfolio/skills.scss";
 
+/* logo image imports */
+import TSLogo from "/logos/typescript-128.png";
+import MUILogo from "/logos/mui.svg";
+import ViteLogo from "/logos/vite.svg";
+import JekyllLogo from "/logos/jekyll.png";
+
+import RubyLogo from "/logos/ruby.png";
+import JavaLogo from "/logos/java.png";
+import CPPLogo from "/logos/c-plus-plus.png";
+
+import MySQLLogo from "/logos/mysql.png";
+import SupabaseLogo from "/logos/supabase.png";
+
+import JiraLogo from "/logos/jira.png";
+import NotionLogo from "/logos/notion.svg";
+
+import DockerLogo from "/logos/docker.svg";
+import BashLogo from "/logos/bash.png";
+/* end logo image imports */
+
 function Skills() {
 
     DocumentTitle("Skills | CS Portfolio");
@@ -36,7 +56,7 @@ function Skills() {
                                 <Box className="tech-logo-container"><img className="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/8/80/HTML5_logo_resized.svg" height="40" width="auto" /></Box>
                                 <Box className="tech-logo-container"><img className="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" height="40" width="auto" /></Box>
                                 <Box className="tech-logo-container"><img className="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Javascript-shield.svg" height="40" width="auto" /></Box>
-                                <Box className="tech-logo-container"><img className="tech-logo" src="/src/assets/logos/typescript-128.png" /></Box>
+                                <Box className="tech-logo-container"><img className="tech-logo" src={TSLogo} width={40}/></Box>
                             </Box>
                         </Box> {/* end #front-end-core */}
                         <Box id="front-end-frameworks" className="skill-section-child">
@@ -62,7 +82,7 @@ function Skills() {
                                 Design Languages
                             </Typography>
                             <Box id="mui-logo" className="tech-stack-container">
-                                <Box className="tech-logo-container"><img className="tech-logo" src="/src/assets/logos/mui.svg" /></Box>
+                                <Box className="tech-logo-container"><img className="tech-logo" src={MUILogo} /></Box>
                             </Box>
                         </Box> {/* end #design-languages */}
                         <Box id="build-tools" className="skill-section-child">
@@ -70,8 +90,8 @@ function Skills() {
                                 Build Tools & Site Generators
                             </Typography>
                             <Box className="tech-stack-container">
-                                <Box className="tech-logo-container"><img className="tech-logo" src="/src/assets/logos/vite.svg" height="40" width="auto" /></Box>
-                                <Box className="tech-logo-container"><img className="tech-logo" src="/src/assets/logos/jekyll.png" height="40" width="auto" /></Box>
+                                <Box className="tech-logo-container"><img className="tech-logo" src={ViteLogo} alt="" height="40" width="auto" /></Box>
+                                <Box className="tech-logo-container"><img className="tech-logo" src={JekyllLogo} height="40" width="auto" /></Box>
                             </Box>
                         </Box> {/* end #build-tools */}
                     </Box>
@@ -90,11 +110,11 @@ function Skills() {
                                 <Box className="tech-stack-row">
                                     <Box className="tech-logo-container"><img className="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" height="40" width="auto" /></Box>
                                     <Box className="tech-logo-container"><img className="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/3/3b/PHP_Logo%2C_text_only.svg" height="40" width="auto" /></Box>
-                                    <Box className="tech-logo-container"><img className="tech-logo" src="/src/assets/logos/ruby.png" height="40" width="auto" /></Box>
+                                    <Box className="tech-logo-container"><img className="tech-logo" src={RubyLogo} height="40" width="auto" /></Box>
                                 </Box>
                                 <Box className="tech-stack-row">
-                                    <Box className="tech-logo-container"><img className="tech-logo" src="/src/assets/logos/java.png" height="40" width="auto" /></Box>
-                                    <Box className="tech-logo-container"><img className="tech-logo" src="/src/assets/logos/c-plus-plus.png" height="40" width="auto" /></Box>
+                                    <Box className="tech-logo-container"><img className="tech-logo" src={JavaLogo} height="40" width="auto" /></Box>
+                                    <Box className="tech-logo-container"><img className="tech-logo" src={CPPLogo} height="40" width="auto" /></Box>
                                 </Box>
                             </Box>
                         </Box> {/* end #front-end-core */}
@@ -103,10 +123,10 @@ function Skills() {
                                 Databases
                             </Typography>
                             <Box className="tech-stack-container">
-                                <Box className="tech-logo-container"><img className="tech-logo" src="/src/assets/logos/mysql.png" height="40" width="auto" /></Box>
+                                <Box className="tech-logo-container"><img className="tech-logo" src={MySQLLogo} height="40" width="auto" /></Box>
                                 <Box className="tech-logo-container"><img className="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg" height="40" width="auto" /></Box>
                                 <Box className="tech-logo-container"><img className="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/3/38/SQLite370.svg" height="40" width="auto" /></Box>
-                                <Box className="tech-logo-container"><img className="tech-logo" src="/src/assets/logos/supabase.png" height="40" width="auto" /></Box>
+                                <Box className="tech-logo-container"><img className="tech-logo" src={SupabaseLogo} height="40" width="auto" /></Box>
                             </Box>
                         </Box> {/* end #back-end-databses */}
                     </Box>
@@ -130,9 +150,9 @@ function Skills() {
                                 Project <br /> Management
                             </Typography>
                             <Box className="tech-stack-container">
-                                <Box className="tech-logo-container"><img className="tech-logo" src="/src/assets/logos/jira.png" height="40" width="auto" /></Box>
+                                <Box className="tech-logo-container"><img className="tech-logo" src={JiraLogo} height="40" width="auto" /></Box>
                                 <Box className="tech-logo-container"><img className="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Azure_DevOps_icon.svg" height="40" width="auto" /></Box>
-                                <Box className="tech-logo-container"><img className="tech-logo" src="/src/assets/logos/notion.svg" height="40" width="auto" /></Box>
+                                <Box className="tech-logo-container"><img className="tech-logo" src={NotionLogo} height="40" width="auto" /></Box>
                                 <Box className="tech-logo-container"><img className="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/8/86/Feather-logos-trello.svg" height="40" width="auto" /></Box>
                             </Box>
                         </Box> {/* end #project-management */}
@@ -142,8 +162,8 @@ function Skills() {
                             </Typography>
                             <Box className="tech-stack-container">
                                 <Box className="tech-logo-container"><img className="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Linux_mascot_tux.png" height="40" width="auto" /></Box>
-                                <Box className="tech-logo-container"><img className="tech-logo" src="/src/assets/logos/docker.svg" height="40" width="auto" /></Box>
-                                <Box className="tech-logo-container"><img className="tech-logo" src="/src/assets/logos/bash.png" height="40" width="auto" /></Box>
+                                <Box className="tech-logo-container"><img className="tech-logo" src={DockerLogo} height="40" width="auto" /></Box>
+                                <Box className="tech-logo-container"><img className="tech-logo" src={BashLogo} height="40" width="auto" /></Box>
                             </Box>
                         </Box> {/* end #deployment */}
                         <Box id="ides" className="skill-section-child">

@@ -18,14 +18,14 @@ const NavbarCS = () => {
 			<CssBaseline />
 
             <Box id="pages-container" sx = {{ display: "flex", flexDirection: "row", justifyContent: "flex-start", alignItems: "center", gap: "2em" }}>
-                <Link href="/cs-portfolio/skills" className="navbar-link">Skills</Link>
-                <Link href="/cs-portfolio/projects" className="navbar-link">Projects</Link>
-                <Link href="/cs-portfolio/extras" className="navbar-link">Extras</Link>
+                <Link href="/cs-portfolio-react-materialui/cs-portfolio/skills" className="navbar-link">Skills</Link>
+                <Link href="/cs-portfolio-react-materialui/cs-portfolio/projects" className="navbar-link">Projects</Link>
+                <Link href="/cs-portfolio-react-materialui/cs-portfolio/extras" className="navbar-link">Extras</Link>
             </Box>
 
             {/* Icon on mobile, text on desktop */}
-            <Link href="/cs-portfolio" className="navbar-link navbar-link-home">Return to <br /> CS Homepage</Link>
-            <Link href="/" className="navbar-link navbar-icon-home">
+            <Link href="/cs-portfolio-react-materialui/cs-portfolio" className="navbar-link navbar-link-home">Return to <br /> CS Homepage</Link>
+            <Link href="/cs-portfolio-react-materialui" className="navbar-link navbar-icon-home">
                 <HomeFilledIcon></HomeFilledIcon>
             </Link>
 

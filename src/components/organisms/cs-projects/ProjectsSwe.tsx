@@ -4,6 +4,12 @@ import "react-photo-album/rows.css";
 
 //const photosPath: string = "/src/assets/projects/";
 
+// Logo image imports
+import KotlinLogo from "/logos/kotlin.png";
+import JavaLogo from "/logos/java.png";
+import JUnitLogo from "/logos/junit.svg";
+
+
 function ProjectsSwe() {
 
     return (
@@ -25,7 +31,7 @@ function ProjectsSwe() {
                     </Box>
                     <Box className="project-stack project-stack-hz">
                         <Box className="tech-logo-name">
-                            <Box className="tech-logo-container"><img className="tech-logo-vt slide-bck-center anim-delay-1" src="/src/assets/logos/kotlin.png" height="40" width="auto" /></Box>
+                            <Box className="tech-logo-container"><img className="tech-logo-vt slide-bck-center anim-delay-1" src={KotlinLogo} height="40" width="auto" /></Box>
                             <Typography className="subtitle">Kotlin</Typography>
                         </Box>
                         <Box className="tech-logo-name">
@@ -51,11 +57,11 @@ function ProjectsSwe() {
                     </Box>
                     <Box className="project-stack project-stack-hz">
                         <Box className="tech-logo-name">
-                            <Box className="tech-logo-container"><img className="tech-logo-vt slide-bck-center anim-delay-1" src="/src/assets/logos/java.png" height="40" width="auto" /></Box>
+                            <Box className="tech-logo-container"><img className="tech-logo-vt slide-bck-center anim-delay-1" src={JavaLogo} height="40" width="auto" /></Box>
                             <Typography className="subtitle">Java</Typography>
                         </Box>
                         <Box className="tech-logo-name">
-                            <Box className="tech-logo-container"><img className="tech-logo-vt slide-bck-center anim-delay-3" src="/src/assets/logos/junit.svg" height="40" width="auto" /></Box>
+                            <Box className="tech-logo-container"><img className="tech-logo-vt slide-bck-center anim-delay-3" src={JUnitLogo} height="40" width="auto" /></Box>
                             <Typography className="subtitle">JUnit</Typography>
                         </Box>
                         <Box className="tech-logo-name">
