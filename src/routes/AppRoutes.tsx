@@ -1,5 +1,5 @@
 // src/routes/Routes.js
-import { createBrowserRouter, Outlet } from "react-router-dom";
+import { createHashRouter, Outlet } from "react-router-dom";
 import Homepage from "../pages/Homepage/Homepage";
 import NotFound from "../pages/NotFound/NotFound";
 
@@ -24,9 +24,9 @@ import TextRPG from "../pages/TextRPG/TextRPG";
 //   element: <PageHere />,
 // }
 
-const pathBase = "/cs-portfolio-react-materialui";
+const pathBase = "/cs-portfolio-react-mui";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/", // URL path
     element: <Homepage />, // Component to render

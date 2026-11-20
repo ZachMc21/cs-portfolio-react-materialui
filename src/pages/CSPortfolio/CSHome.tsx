@@ -1,6 +1,6 @@
 
-import { Box, Link, ThemeProvider, Typography } from '@mui/material';
-import { NavLink } from "react-router";
+import { Box, ThemeProvider, Typography, Link as StyledLink } from '@mui/material';
+import { Link } from "react-router";
 import Footer from '../../components/molecules/Footer';
 
 import csLight from '../../styles/csLight';
@@ -60,66 +60,70 @@ function CSPortfolio() {
                     </Box> {/* End header-top */}
 
                     <Box id="header-links" sx= {{ display: "flex", flexDirection: "row", justifyContent: "space-between", gap: "4rem", pb: 0, mb: "1rem" }}>
-                        <Link className="header-link" id="email-link" sx = {{ textDecoration: "none", color: csLight.palette.secondary.contrastText, p: 0, display: "flex", alignItems: "center", justifyContent: "center", gap: "0.5rem" }}
+                        <StyledLink className="header-link" id="email-link" sx = {{ textDecoration: "none", color: csLight.palette.secondary.contrastText, p: 0, display: "flex", alignItems: "center", justifyContent: "center", gap: "0.5rem" }}
                             href="mailto:magloughlin.zach@gmail.com" target="_blank" rel="noopener noreferrer">
                             <MailOutlineIcon sx = {{ fontSize: "1.25rem" }} />
                             <Typography sx = {{ fontSize: "1.25rem" }}> Email</Typography>
-                        </Link>
-                        <Link className="header-link" href="https://www.linkedin.com/in/zach-magloughlin/" target="_blank" rel="noopener noreferrer"
+                        </StyledLink>
+                        <StyledLink className="header-link" href="https://www.linkedin.com/in/zach-magloughlin/" target="_blank" rel="noopener noreferrer"
                             sx = {{ textDecoration: "none", color: csLight.palette.secondary.contrastText, p: 0, display: "flex", alignItems: "center", justifyContent: "center", gap: "0.25rem" }}>
                             <LinkedInIcon sx = {{ fontSize: "1.25rem" }} />
                             <Typography sx = {{ fontSize: "1.25rem" }}> LinkedIn</Typography>
-                        </Link>
-                        <Link className="header-link" href="https://github.com/ZachMc21" target="_blank" rel="noopener noreferrer"
+                        </StyledLink>
+                        <StyledLink className="header-link" href="https://github.com/ZachMc21" target="_blank" rel="noopener noreferrer"
                             sx = {{ textDecoration: "none", color: csLight.palette.secondary.contrastText, p: 0, display: "flex", alignItems: "center", justifyContent: "center", gap: "0.25rem" }}>
                             <GitHubIcon sx = {{ fontSize: "1.25rem" }} />
                             <Typography sx = {{ fontSize: "1.25rem" }}> GitHub</Typography>
-                        </Link>
+                        </StyledLink>
                     </Box> {/* End header row 2*/}
 				</Box> {/* End header box*/}
 
-                {/* Text color: palette.primary.dark 
-                Background color: palette.primary.light*/}
-                <Box id="section-links-container"
-                    sx = {{ display: "flex", flex: 1, flexDirection: "row", justifyContent: "space-around", pt: 5, mb: 5 }}>
-                    <Box className="section-links-row">
-                        <Link className="section-link" href="#header-container"
-                            sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", color: csLight.palette.primary.contrastText }}>
-                            <KeyboardArrowDownIcon sx = {{ fontSize: "1.5rem" }} />
-                            <Typography sx = {{ fontSize: "1.5rem" }}>Contact</Typography>
-                        </Link>
-                        <Link className="section-link" href="#about"
-                            sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", color: csLight.palette.primary.contrastText }}>
-                            <KeyboardArrowDownIcon sx = {{ fontSize: "1.5rem" }} />
-                            <Typography sx = {{ fontSize: "1.5rem" }} >About Me</Typography>
-                        </Link>
-                    </Box>
+      {/* Text color: palette.primary.dark 
+      Background color: palette.primary.light*/}
+      <Box id="section-links-container"
+          sx = {{ display: "flex", flex: 1, flexDirection: "row", justifyContent: "space-around", pt: 5, mb: 5 }}>
+        <Box className="section-links-row">
+            <Box sx = {{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", color: csLight.palette.primary.contrastText }}>
+                <Link className="section-link nav-link" to={{hash: "#header-container"}}>
+                    <KeyboardArrowDownIcon sx = {{ fontSize: "1.5rem" }} />
+                    <Typography sx = {{ fontSize: "1.5rem" }}>Contact</Typography>
+                </Link>
+            </Box>
+            <Box sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", color: csLight.palette.primary.contrastText }}>
+                <Link className="section-link nav-link" to="#about">
+                    <KeyboardArrowDownIcon sx = {{ fontSize: "1.5rem" }} />
+                    <Typography sx = {{ fontSize: "1.5rem" }} >About Me</Typography>
+                </Link>
+            </Box>
+        </Box>
 
-                    {/* TODO fix link jumps below & redo clicked styling */}
-                    <Box className="section-links-row">
-                        <Box sx = {{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center",
-                            color: csLight.palette.primary.contrastText }}>
-                            <NavLink className="section-link nav-link" to="#skills">
-                                <KeyboardArrowRightIcon sx = {{ fontSize: "1.5rem" }} />
-                                <Typography sx = {{ fontSize: "1.5rem" }} >Skills</Typography>
-                            </NavLink>
-                        </Box>
-                        <Box sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center",
-                            color: csLight.palette.primary.contrastText }}>
-                            <NavLink className="section-link nav-link" to="#projects">
-                                <KeyboardArrowRightIcon sx = {{ fontSize: "1.5rem" }} />
-                                <Typography sx = {{ fontSize: "1.5rem" }} >Projects</Typography>
-                            </NavLink>
-                        </Box>
-                        <Box sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center",
-                            color: csLight.palette.primary.contrastText }}>
-                            <NavLink className="section-link nav-link" to="#extras">
-                                <KeyboardArrowRightIcon sx = {{ fontSize: "1.5rem" }} />
-                                <Typography sx = {{ fontSize: "1.5rem" }} >Extras</Typography>
-                            </NavLink>
-                        </Box>
-                    </Box>
-				</Box> {/* End section for page jumping */}
+        {/* TODO fix link jumps below & redo clicked styling */}
+        {/* https://dev.to/mindactuate/scroll-to-anchor-element-with-react-router-v6-38op
+        npm install @cascadia-code/scroll-to-hash-element */}
+        <Box className="section-links-row">
+          <Box sx = {{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center",
+              color: csLight.palette.primary.contrastText }}>
+              <Link className="section-link nav-link" to="/cs-portfolio#skills">
+                  <KeyboardArrowRightIcon sx = {{ fontSize: "1.5rem" }} />
+                  <Typography sx = {{ fontSize: "1.5rem" }} >Skills</Typography>
+              </Link>
+          </Box>
+          <Box sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center",
+              color: csLight.palette.primary.contrastText }}>
+              <Link className="section-link nav-link" to="#projects">
+                  <KeyboardArrowRightIcon sx = {{ fontSize: "1.5rem" }} />
+                  <Typography sx = {{ fontSize: "1.5rem" }} >Projects</Typography>
+              </Link>
+          </Box>
+          <Box sx = {{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center",
+              color: csLight.palette.primary.contrastText }}>
+              <Link className="section-link nav-link" to="#extras">
+                  <KeyboardArrowRightIcon sx = {{ fontSize: "1.5rem" }} />
+                  <Typography sx = {{ fontSize: "1.5rem" }} >Extras</Typography>
+              </Link>
+          </Box>
+        </Box> {/* End section for page jumping */}
+      </Box>
 
 				<Box id="about">
                     <Box>
@@ -150,24 +154,24 @@ function CSPortfolio() {
 
                 {/*TODO: Convert this to a grid layout (2wide or 1wide)*/}
                 <Box id="pages-overview">
-                    <Box id="skills-link" className="pages-overview-child">
-                        <Link className="pages-link" href="/cs-portfolio-react-materialui/cs-portfolio/skills" sx = {{ color: csLight.palette.primary.contrastText, textDecorationColor: csLight.palette.primary.contrastText }}>
+                    <Box id="skills-link" className="pages-overview-child"  sx = {{ color: csLight.palette.primary.contrastText, textDecorationColor: csLight.palette.primary.contrastText }}>
+                        <Link className="pages-link" to="skills">
                             <Typography>Skills</Typography>
                             <KeyboardArrowRightIcon />
                         </Link>
                         <Typography className="pages-text">A look at my technical and non-technical skills, <br className="line-break"/> learned through education, work, and personal projects.</Typography>
                     </Box>
 
-                    <Box id="projects-link" className="pages-overview-child">
-                        <Link className="pages-link" href="/cs-portfolio-react-materialui/cs-portfolio/projects" sx = {{ color: csLight.palette.primary.contrastText, textDecorationColor: csLight.palette.primary.contrastText }}>
+                    <Box id="projects-link" className="pages-overview-child" sx = {{ color: csLight.palette.primary.contrastText, textDecorationColor: csLight.palette.primary.contrastText }}>
+                        <Link className="pages-link" to="projects">
                             <Typography>Projects</Typography>
                             <KeyboardArrowRightIcon />
                         </Link>
                             <Typography className="pages-text">A description of school, work, and personal projects I've worked on. <br className="line-break"/> Includes retrospective thougths and screenshots of the final products.</Typography>
                     </Box>
 
-                    <Box id="extras-link" className="pages-overview-child">
-                        <Link className="pages-link" href="/cs-portfolio-react-materialui/cs-portfolio/extras" sx = {{ color: csLight.palette.primary.contrastText, textDecorationColor: csLight.palette.primary.contrastText }}>
+                    <Box id="extras-link" className="pages-overview-child" sx = {{ color: csLight.palette.primary.contrastText, textDecorationColor: csLight.palette.primary.contrastText }}>
+                        <Link className="pages-link" to="extras">
                             <Typography>Extras</Typography>
                             <KeyboardArrowRightIcon />
                         </Link>

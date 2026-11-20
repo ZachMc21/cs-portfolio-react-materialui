@@ -3,27 +3,43 @@ div#enter-site {
   background-size: cover;
 }
 
+a.homepage-button {
+	padding: 1rem;
+	flex-direction: column;
+	justify-content: center;
+	height: 8rem;
+  width: 100%;
+}
+
+.home-column {
+  display: flex;
+}
+
 /* HomepageButtons - mobile-first (1-wide) */
-div#home-buttons-container {
+div#homepage-buttons-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
-  margin-left: 15%;
-  margin-right: 15%;
-  gap: 0.5rem;
-  margin-bottom: 3rem;
+  width: 75%;
+  gap: 2rem;
+  margin: 0 auto 5rem auto;
+}
+.home-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 /* HomepageButtons layout - tablet (2-wide) */
 @media screen and (min-width: 640px) {
-  div#home-buttons-container {
+  div#homepage-buttons-container {
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
+    width: 90%;
+    gap: 2rem;
   }
   .home-column {
+    gap: 2rem;
     flex-basis: 38%;
     max-width: 38%;
   }
@@ -31,12 +47,16 @@ div#home-buttons-container {
 
 /* HomepageButtons layout - laptops & desktops (4-wide) */
 @media screen and (min-width: 1024px) {
-  div#home-buttons-container {
+  div#homepage-buttons-container {
     flex-direction: row;
-    /* margin-bottom: 3rem; */
+    flex-wrap: nowrap;
+    width: 90%;
+    gap: 2rem;
   }
   .home-column {
-    flex-basis: 20%;
-    max-width: 20%;
+    flex-direction: row;
+    gap: 2rem;
+    flex-basis: 50%;
+    max-width: 50%;
   }
 }
